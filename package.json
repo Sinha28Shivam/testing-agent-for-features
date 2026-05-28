@@ -1,0 +1,22 @@
+{
+  "name": "ai-multitest-agent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@playwright/test": "^1.60.0",
+    "bullmq": "^5.77.6",
+    "dotenv": "^17.4.2",
+    "mongodb": "^7.2.0",
+    "pg": "^8.21.0",
+    "playwright": "^1.60.0",
+    "redis": "^5.12.1",
+    "uuid": "^14.0.0"
+  }
+}
