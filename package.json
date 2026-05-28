@@ -1,9 +1,12 @@
 {
   "name": "ai-multitest-agent",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "src/index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "db:init": "node src/db/init.js",
+    "test": "npx playwright test"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +16,7 @@
     "@playwright/test": "^1.60.0",
     "bullmq": "^5.77.6",
     "dotenv": "^17.4.2",
+    "js-yaml": "^4.1.1",
     "mongodb": "^7.2.0",
     "pg": "^8.21.0",
     "playwright": "^1.60.0",
