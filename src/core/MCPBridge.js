@@ -16,9 +16,9 @@ class MCPBridge {
   // Start the MCP server subprocess
   async start() {
     console.log('[MCPBridge] Starting Playwright MCP server subprocess...');
-    
+
     // Spawn npx @playwright/mcp
-    this.process = spawn('npx', ['@playwright/mcp'], {
+    this.process = spawn('npx', ['@playwright/mcp', '--isolated'], {
       stdio: ['pipe', 'pipe', 'pipe'],
       shell: true
     });
@@ -55,7 +55,7 @@ class MCPBridge {
     while ((newlineIdx = this.messageBuffer.indexOf('\n')) !== -1) {
       const line = this.messageBuffer.substring(0, newlineIdx).trim();
       this.messageBuffer = this.messageBuffer.substring(newlineIdx + 1);
-      
+
       if (line) {
         try {
           const message = JSON.parse(line);
@@ -72,7 +72,7 @@ class MCPBridge {
     if (message.id !== undefined && this.pendingCalls.has(message.id)) {
       const { resolve, reject } = this.pendingCalls.get(message.id);
       this.pendingCalls.delete(message.id);
-      
+
       if (message.error) {
         reject(new Error(message.error.message || JSON.stringify(message.error)));
       } else {
@@ -90,16 +90,16 @@ class MCPBridge {
     const id = ++this.messageId;
     return new Promise((resolve, reject) => {
       this.pendingCalls.set(id, { resolve, reject });
-      
+
       const message = JSON.stringify({
         jsonrpc: '2.0',
         id,
         method,
         params
       }) + '\n';
-      
+
       this.process.stdin.write(message);
-      
+
       // Timeout per call
       setTimeout(() => {
         if (this.pendingCalls.has(id)) {
@@ -147,7 +147,7 @@ class MCPBridge {
 
   async stop() {
     console.log('[MCPBridge] Stopping MCP subprocess...');
-    
+
     // Close browser if open
     try {
       await this.callTool('browser_close');
