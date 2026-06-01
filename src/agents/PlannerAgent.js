@@ -23,12 +23,10 @@ class PlannerAgent {
           domain: 'unknown',
           scenarioType: 'navigation',
           targetUrl: 'https://demo.playwright.dev/todomvc',
+          executionMode: 'explore',
+          storedSequence: null,
           coldStart: true,
-          useCache: false,
-          specialist: 'GenericGeneratorAgent',
-          complexity: 5,
-          checklist: ['Navigate to target URL', 'Perform test case validation'],
-          agents: ['DOMWorker', 'SpecialistGeneratorAgent', 'StaticAnalyzerAgent', 'RuntimeAnalyzerAgent', 'PushDecisionCouncil']
+          checklist: ['Navigate to target URL']
         };
         await messageBus.publish(EVENTS.PLAN_CREATED, fallbackPlan);
       }
@@ -39,19 +37,19 @@ class PlannerAgent {
   }
 
   async createPlan(runId, prompt) {
-    console.log('[PlannerAgent] Parsing prompt using local heuristics...');
+    console.log('[PlannerAgent] Parsing prompt using heuristics...');
     
     // 1. Extract Target URL
     const urlRegex = /(https?:\/\/[^\s"'`\)]+)/gi;
     const urlMatch = urlRegex.exec(prompt);
     let targetUrl = 'https://demo.playwright.dev/todomvc';
     if (urlMatch) {
-      targetUrl = urlMatch[1];
+      targetUrl = urlMatch[1].replace(/[,.]$/, '');
     } else {
       const wwwRegex = /(www\.[^\s"'`\)]+)/gi;
       const wwwMatch = wwwRegex.exec(prompt);
       if (wwwMatch) {
-        targetUrl = `https://${wwwMatch[1]}`;
+        targetUrl = `https://${wwwMatch[1]}`.replace(/[,.]$/, '');
       }
     }
 
@@ -75,54 +73,41 @@ class PlannerAgent {
       scenarioType = 'form';
     }
 
-    // 4. Generate Checklist
+    // 4. Generate Heuristic Checklist
     const checklist = [];
     checklist.push(`Navigate to ${targetUrl}`);
-    
-    // Extract actions from user instructions
-    if (lowerPrompt.includes('add a todo') || lowerPrompt.includes('add todo')) {
-      checklist.push("Add a todo item 'Buy Milk'");
-      checklist.push("Verify 'Buy Milk' is added to the list");
-    } else if (lowerPrompt.includes('search for') || lowerPrompt.includes('query')) {
-      checklist.push("Enter search query in the search bar");
-      checklist.push("Submit search and verify results are displayed");
+    if (lowerPrompt.includes('add a todo') || lowerPrompt.includes('add todo') || lowerPrompt.includes('task')) {
+      checklist.push("Add a todo item");
+      checklist.push("Verify todo item is added");
+    } else if (lowerPrompt.includes('search') || lowerPrompt.includes('query')) {
+      checklist.push("Enter search query");
+      checklist.push("Verify search results");
     } else {
-      checklist.push("Verify that the target page loaded successfully");
-      checklist.push("Assert the main container is visible");
+      checklist.push("Verify that target page loaded successfully");
     }
 
-    console.log(`[PlannerAgent] Local heuristics parsed: Domain=${domain}, URL=${targetUrl}, Scenario=${scenarioType}, ActionsCount=${checklist.length}`);
-
-    // Query MemoryAgent for site history
+    // Connect memoryAgent to query domain profiles and action sequences
     await memoryAgent.connect();
-    const siteProfile = await memoryAgent.getSiteProfile(domain);
-
+    
+    // Check if we have a verified sequence in database for this domain + scenarioType
+    const sequence = await memoryAgent.getActionSequence(domain, scenarioType);
+    
+    let executionMode = 'explore';
+    let storedSequence = null;
     let coldStart = true;
-    let useCache = false;
-    let shadowDom = false;
-    let authRequired = false;
 
-    if (siteProfile) {
+    if (sequence) {
       coldStart = false;
-      shadowDom = siteProfile.shadow_dom;
-      authRequired = siteProfile.auth_required;
-      
-      // Cache can be used if last run was in the last 2 hours (7200000 ms)
-      const lastRun = siteProfile.last_run_at ? new Date(siteProfile.last_run_at).getTime() : 0;
-      const now = Date.now();
-      if (now - lastRun < 7200000 && siteProfile.volatility !== 'high') {
-        useCache = true;
+      // Replay only if verified
+      if (sequence.state === 'verified') {
+        executionMode = 'replay';
+        storedSequence = sequence.sequence;
+        console.log(`[PlannerAgent] Verified sequence found. Setting mode to REPLAY.`);
+      } else {
+        console.log(`[PlannerAgent] Sequence found but in state '${sequence.state}'. Setting mode to EXPLORE.`);
       }
-    }
-
-    // Determine the specialist agent
-    let specialist = 'GenericGeneratorAgent';
-    if (scenarioType === 'authentication' || authRequired) {
-      specialist = 'AuthSpecialistAgent';
-    } else if (shadowDom) {
-      specialist = 'ShadowDOMSpecialistAgent';
-    } else if (scenarioType === 'search') {
-      specialist = 'SearchSpecialistAgent';
+    } else {
+      console.log(`[PlannerAgent] No sequence found for domain ${domain} and scenario ${scenarioType}. Setting mode to EXPLORE (cold start).`);
     }
 
     // Create execution plan
@@ -132,21 +117,13 @@ class PlannerAgent {
       domain,
       scenarioType,
       targetUrl,
-      complexity: 5,
-      checklist,
+      executionMode,
+      storedSequence,
       coldStart,
-      useCache,
-      specialist,
-      agents: [
-        'DOMWorker',
-        'SpecialistGeneratorAgent',
-        'StaticAnalyzerAgent',
-        'RuntimeAnalyzerAgent',
-        'PushDecisionCouncil'
-      ]
+      checklist
     };
 
-    console.log('[PlannerAgent] Execution plan created:', plan);
+    console.log('[PlannerAgent] Plan successfully created:', plan);
     return plan;
   }
 }

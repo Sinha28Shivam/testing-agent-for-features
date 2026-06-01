@@ -1,7 +1,8 @@
-const { Client } = require('pg');
-const { MongoClient } = require('mongodb');
-const { createClient } = require('redis');
-require('dotenv').config();
+import { Client } from 'pg';
+import { MongoClient } from 'mongodb';
+import { createClient } from 'redis';
+import dotenv from 'dotenv';
+dotenv.config();
 
 async function verify() {
   console.log("Checking environment variables...");

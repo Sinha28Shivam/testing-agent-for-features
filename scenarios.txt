@@ -1,0 +1,7 @@
+# Multi-Agent Test Platform Scenarios List
+# Write one prompt per line. Lines starting with # are comments.
+
+Test search at https://demo.playwright.dev/todomvc
+
+# Add more prompts below:
+# Test login at https://example.com/login

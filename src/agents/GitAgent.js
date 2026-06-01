@@ -38,7 +38,7 @@ class GitAgent {
   }
 
   async pushToGit(payload) {
-    const { runId, scriptPath } = payload;
+    const { runId, scriptPath, domain } = payload;
     
     // 1. Acquire Redis-based soft lock to prevent concurrent git conflicts
     console.log('[GitAgent] Acquiring Redis git lock...');
@@ -62,8 +62,14 @@ class GitAgent {
       throw new Error('Failed to acquire Git write lock. A concurrent git operation is in progress.');
     }
 
+    const slug = domain ? domain.replace(/[^a-zA-Z0-9]/g, '-').toLowerCase() : 'default';
+    const branchName = `auto-tests/${slug}`;
+
     try {
-      // 2. Perform Git Operations (add, commit, push)
+      // 2. Perform Git Operations (checkout branch, add, commit, push)
+      console.log(`[GitAgent] Checking out branch: ${branchName}`);
+      await this.runGitCommand(['checkout', '-B', branchName]);
+
       console.log(`[GitAgent] Adding file: ${scriptPath}`);
       await this.runGitCommand(['add', scriptPath]);
 
@@ -71,18 +77,22 @@ class GitAgent {
       const commitMsg = `Auto-generated test script for run ${runId}`;
       await this.runGitCommand(['commit', '-m', commitMsg]);
 
-      console.log('[GitAgent] Pushing to remote repository...');
-      // Push master branch to origin remote
-      await this.runGitCommand(['push', 'origin', 'master']);
+      console.log(`[GitAgent] Pushing branch ${branchName} to remote repository...`);
+      await this.runGitCommand(['push', '-u', 'origin', branchName, '--force']);
 
       console.log('[GitAgent] Git push completed successfully.');
       return {
         runId,
         success: true,
-        pushedToBranch: 'origin/master'
+        pushedToBranch: `origin/${branchName}`
       };
 
     } finally {
+      // Switch back to master/main to keep workspace clean
+      await this.runGitCommand(['checkout', 'master']).catch(() => {
+        this.runGitCommand(['checkout', 'main']).catch(() => {});
+      });
+
       // 3. Always release the lock
       console.log('[GitAgent] Releasing Redis git lock...');
       const lockVal = await this.redisClient.get('git_lock');

@@ -1,21 +1,78 @@
 import { spawn } from 'child_process';
 
 /**
- * LlmClient wraps the local GitHub Copilot CLI.
- * It provides a clean async API to query Copilot.
+ * LlmClient wraps the local GitHub Copilot CLI and direct API.
+ * It provides a clean async API to query Copilot with timeouts and retries.
  */
 class LlmClient {
   /**
-   * Send a prompt to the Copilot CLI.
+   * Send a prompt to the Copilot CLI or API with retries and exponential backoff.
    * @param {string} prompt - The prompt text.
+   * @param {string} [model] - The optional model name.
+   * @param {number} [attempt=1] - The current retry attempt.
    * @returns {Promise<string>} - The completion text.
    */
-  async ask(prompt) {
+  async ask(prompt, model = null, attempt = 1) {
+    const maxAttempts = 3;
+    try {
+      return await this._askRaw(prompt, model);
+    } catch (err) {
+      if (attempt < maxAttempts) {
+        const delay = Math.pow(2, attempt) * 1000;
+        console.warn(`[LLM] Error: ${err.message}. Retrying in ${delay}ms (Attempt ${attempt}/${maxAttempts})...`);
+        await new Promise(resolve => setTimeout(resolve, delay));
+        return await this.ask(prompt, model, attempt + 1);
+      } else {
+        throw err;
+      }
+    }
+  }
+
+  async _askRaw(prompt, model = null) {
+    // Check if GITHUB_TOKEN is available to use the faster Azure GitHub Models API directly
+    if (process.env.GITHUB_TOKEN) {
+      console.log(`[LLM] Requesting completion from GitHub Models API (direct)...`);
+      try {
+        const apiUrl = process.env.AI_API_URL || 'https://models.inference.ai.azure.com';
+        const chosenModel = model || process.env.AI_MODEL_STANDARD || 'gpt-4o-mini';
+        
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 30000);
+
+        const response = await fetch(`${apiUrl}/chat/completions`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${process.env.GITHUB_TOKEN}`
+          },
+          body: JSON.stringify({
+            model: chosenModel,
+            messages: [{ role: 'user', content: prompt }]
+          }),
+          signal: controller.signal
+        });
+        
+        clearTimeout(timeoutId);
+
+        if (!response.ok) {
+          const errText = await response.text();
+          throw new Error(`API returned status ${response.status}: ${errText}`);
+        }
+        
+        const data = await response.json();
+        const content = data.choices?.[0]?.message?.content;
+        if (content) {
+          return content.trim();
+        }
+        throw new Error('Empty response from GitHub Models API');
+      } catch (err) {
+        console.warn(`[LLM Warning] Direct API call failed: ${err.message}. Falling back to GitHub Copilot CLI...`);
+      }
+    }
+
     console.log(`[LLM] Requesting completion from GitHub Copilot CLI (Auto-Model)...`);
     
     return new Promise((resolve, reject) => {
-      // Build arguments for: gh copilot -- -p "prompt" -s --model auto --excluded-tools shell,write,read
-      // We use --model auto to bypass premium model rate limits, and exclude tools to prevent shell command execution attempts.
       const args = [
         'copilot', 
         '--', 
@@ -30,6 +87,11 @@ class LlmClient {
       let stdout = '';
       let stderr = '';
       
+      const timeoutId = setTimeout(() => {
+        child.kill();
+        reject(new Error('Copilot CLI execution timed out after 30s'));
+      }, 30000);
+
       child.stdout.on('data', (data) => {
         stdout += data.toString();
       });
@@ -39,6 +101,7 @@ class LlmClient {
       });
       
       child.on('close', (code) => {
+        clearTimeout(timeoutId);
         if (code === 0) {
           resolve(stdout.trim());
         } else {
@@ -48,6 +111,7 @@ class LlmClient {
       });
       
       child.on('error', (err) => {
+        clearTimeout(timeoutId);
         console.error('[LLM Error] Failed to start gh process:', err);
         reject(err);
       });
@@ -60,13 +124,13 @@ class LlmClient {
    * @param {string} prompt - The prompt text.
    * @returns {Promise<object>} - Parsed JSON object.
    */
-  async askJson(prompt) {
+  async askJson(prompt, model = null) {
     const jsonPrompt = `${prompt}\n\nIMPORTANT: You must respond ONLY with a raw JSON object. Do not include any explanation, introductory text, markdown formatting (like \`\`\`json), or anything else. Just the raw JSON.`;
     
     let attempts = 3;
     while (attempts > 0) {
       try {
-        const responseText = await this.ask(jsonPrompt);
+        const responseText = await this.ask(jsonPrompt, model);
         // Clean markdown code blocks if the model ignored instructions
         let cleanText = responseText;
         if (cleanText.includes('```')) {

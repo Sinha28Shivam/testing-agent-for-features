@@ -1,6 +1,5 @@
 import fs from 'fs/promises';
 import { spawn } from 'child_process';
-import { chromium } from 'playwright';
 import messageBus, { EVENTS } from '../core/MessageBus.js';
 
 class StaticAnalyzerAgent {
@@ -102,57 +101,6 @@ class StaticAnalyzerAgent {
         message: "Use of page.waitForTimeout() detected. Use explicit waits instead."
       });
       validationScore -= 1;
-    }
-
-    // 6. Selector Existence Pre-check
-    // Extract simple CSS/XPath strings from locators, page.click, etc.
-    const selectorRegex = /(?:locator|click|fill|type|hover|focus|selectOption)\(\s*['"`]([a-zA-Z0-9_\-\.\#\:\s\>\+\[\]\=\'\"]+?)['"`]/g;
-    const selectors = [];
-    let match;
-    while ((match = selectorRegex.exec(content)) !== null) {
-      const sel = match[1].trim();
-      // Skip URLs or non-selectors
-      if (sel.startsWith('http://') || sel.startsWith('https://') || sel.includes('/') && !sel.startsWith('//')) {
-        continue;
-      }
-      selectors.push(sel);
-    }
-
-    if (selectors.length > 0 && targetUrl) {
-      console.log(`[StaticAnalyzerAgent] Pre-checking ${selectors.length} selectors on live URL: ${targetUrl}...`);
-      const browser = await chromium.launch({ headless: true });
-      const page = await browser.newPage();
-      try {
-        await page.goto(targetUrl, { waitUntil: 'domcontentloaded', timeout: 15000 });
-        for (const selector of selectors) {
-          try {
-            // Count matching elements
-            const count = await page.locator(selector).count();
-            if (count === 0) {
-              issues.push({
-                severity: 'warning',
-                type: 'selector_precheck',
-                message: `Selector '${selector}' returned 0 matching elements on current DOM.`,
-                selector
-              });
-              validationScore -= 1;
-            }
-          } catch (err) {
-            // Invalid selector syntax in locator
-            issues.push({
-              severity: 'warning',
-              type: 'selector_syntax',
-              message: `Selector syntax is invalid for: '${selector}'`,
-              selector
-            });
-            validationScore -= 1;
-          }
-        }
-      } catch (err) {
-        console.warn(`[StaticAnalyzerAgent] Selector pre-check connection failed: ${err.message}`);
-      } finally {
-        await browser.close();
-      }
     }
 
     const passed = !issues.some(issue => issue.severity === 'blocking') && validationScore >= 5;

@@ -1,6 +1,5 @@
 import messageBus, { EVENTS } from '../core/MessageBus.js';
 import llmClient from '../core/LlmClient.js';
-import promptLoader from '../config/PromptLoader.js';
 
 class PushDecisionCouncil {
   constructor() {
@@ -55,57 +54,43 @@ class PushDecisionCouncil {
       };
     }
 
-    // Call Conservative Reviewer
-    console.log('[PushDecisionCouncil] Invoking ConservativeReviewerAgent...');
-    const conservativeReview = await this.getConservativeReview(payload);
-    console.log('[PushDecisionCouncil] Conservative Review:\n', conservativeReview);
+    console.log('[PushDecisionCouncil] Deliberating push decision in a single consolidated Copilot call...');
+    const prompt = `You are the Push Decision Council consisting of three agents:
+1. ConservativeReviewerAgent: Find reasons NOT to push this generated test script (focus on risks, code smell, instability).
+2. OptimisticReviewerAgent: Highlight the benefits, testing value, and code quality.
+3. ArbiterAgent: Make the final decision. Approve only if stable, clean, and reliable.
 
-    // Call Optimistic Reviewer
-    console.log('[PushDecisionCouncil] Invoking OptimisticReviewerAgent...');
-    const optimisticReview = await this.getOptimisticReview(payload);
-    console.log('[PushDecisionCouncil] Optimistic Review:\n', optimisticReview);
+CONTEXT:
+- Domain: ${domain}
+- Scenario Type: ${scenarioType}
+- Validation Score: ${validationScore}/10
+- Healing Attempts: ${healingAttempts}
 
-    // Arbiter Agent Decides
-    console.log('[PushDecisionCouncil] Invoking ArbiterAgent for final decision...');
-    const promptTemplate = await promptLoader.getPrompt('push_council', 'arbiter');
-    const decisionPrompt = promptTemplate
-      .replaceAll('{domain}', domain)
-      .replaceAll('{scenarioType}', scenarioType)
-      .replaceAll('{validationScore}', validationScore)
-      .replaceAll('{healingAttempts}', healingAttempts)
-      .replaceAll('{conservativeReview}', conservativeReview)
-      .replaceAll('{optimisticReview}', optimisticReview);
+RESPOND WITH THIS JSON FORMAT ONLY:
+{
+  "conservativeReview": "under 100 words paragraph focusing on risks",
+  "optimisticReview": "under 100 words paragraph focusing on benefits",
+  "decision": {
+    "approved": true or false,
+    "confidence": 0.0 to 1.0,
+    "reason": "brief summary of the final choice"
+  }
+}`;
 
-    const decision = await llmClient.askJson(decisionPrompt);
-    console.log('[PushDecisionCouncil] Arbiter final decision:', decision);
+    const deliberation = await llmClient.askJson(prompt);
+    console.log('[PushDecisionCouncil] Deliberation results:', deliberation);
+
+    const approved = deliberation.decision?.approved || false;
+    const confidence = deliberation.decision?.confidence || 0.5;
+    const reason = deliberation.decision?.reason || 'No reason provided by Arbiter.';
 
     return {
       runId,
       domain,
-      shouldPush: decision.approved || false,
-      confidence: decision.confidence || 0.5,
-      reason: decision.reason || 'No reason provided by Arbiter.'
+      shouldPush: approved,
+      confidence,
+      reason: `[Arbiter] Approved: ${approved}. Reason: ${reason}. (Consolidated Reviews: Conservative: "${deliberation.conservativeReview}" | Optimistic: "${deliberation.optimisticReview}")`
     };
-  }
-
-  async getConservativeReview(payload) {
-    const { domain, validationScore, healingAttempts } = payload;
-    const promptTemplate = await promptLoader.getPrompt('push_council', 'conservative');
-    const prompt = promptTemplate
-      .replaceAll('{domain}', domain)
-      .replaceAll('{validationScore}', validationScore)
-      .replaceAll('{healingAttempts}', healingAttempts);
-    return await llmClient.ask(prompt);
-  }
-
-  async getOptimisticReview(payload) {
-    const { domain, validationScore, healingAttempts } = payload;
-    const promptTemplate = await promptLoader.getPrompt('push_council', 'optimistic');
-    const prompt = promptTemplate
-      .replaceAll('{domain}', domain)
-      .replaceAll('{validationScore}', validationScore)
-      .replaceAll('{healingAttempts}', healingAttempts);
-    return await llmClient.ask(prompt);
   }
 }
 

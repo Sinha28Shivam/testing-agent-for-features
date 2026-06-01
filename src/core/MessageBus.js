@@ -39,6 +39,7 @@ export const EVENTS = {
   FAILURE_RECORD:   'memory.failure.record',
   SUCCESS_RECORD:   'memory.success.record',
   PATTERN_MINED:    'memory.pattern.mined',
+  PATTERN_MINED_COMPLETE: 'memory.pattern.mined.complete',
 
   // Push Decision
   PUSH_REVIEW_REQUESTED: 'push.review.requested',
