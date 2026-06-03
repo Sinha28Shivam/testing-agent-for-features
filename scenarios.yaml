@@ -2,13 +2,15 @@
 # Define your test prompts here. They will be executed sequentially.
 
 scenarios:
-  - name: "TodoMVC Search Scenario"
-    prompt: open url "https://demo.playwright.dev/todomvc",
-            add task "Homework"
-            and mark them as completed
-            and attach screenshot on every steps
-
-
-  # You can add more scenarios here:
-  # - name: "Another Scenario"
-  #   prompt: "Test login at https://example.com/login"
+  - name: "MSN-001: Homepage Load Verification"
+    prompt: >
+      Navigate to https://www.msn.com/en-in,
+      Verify MSN homepage loads successfully,
+      Take a screenshot to document the page state.
+      Verify that page title is displayed correctly (contains 'MSN'),
+      Verify that main homepage sections are visible,
+      Verify that news articles or feed loads,
+      Verify that standard content modules load,
+      Verify that the page becomes interactive,
+      Verify that images display correctly,
+      Verify that navigation icons are visible,
