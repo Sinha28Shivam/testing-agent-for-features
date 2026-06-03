@@ -1,7 +1,11 @@
 # Multi-Agent Test Platform Scenarios List
 # Write one prompt per line. Lines starting with # are comments.
 
-Test search at https://demo.playwright.dev/todomvc
-
-# Add more prompts below:
-# Test login at https://example.com/login
+Navigate to https://www.msn.com/en-in and verify MSN homepage loads successfully and document the page state with a screenshot.
+Navigate to https://www.msn.com/en-in and verify the page title contains 'MSN'.
+Navigate to https://www.msn.com/en-in and verify main homepage sections are visible.
+Navigate to https://www.msn.com/en-in and verify that news feed articles load.
+Navigate to https://www.msn.com/en-in and verify that content modules render.
+Navigate to https://www.msn.com/en-in and verify that the page becomes interactive quickly.
+Navigate to https://www.msn.com/en-in and verify images display correctly.
+Navigate to https://www.msn.com/en-in and verify navigation icons are visible.

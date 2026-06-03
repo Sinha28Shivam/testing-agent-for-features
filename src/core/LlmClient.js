@@ -1,4 +1,56 @@
 import { spawn } from 'child_process';
+import fs from 'fs';
+import path from 'path';
+
+function spawnCopilot() {
+  if (process.platform === 'win32') {
+    const username = process.env.USERNAME || 'sinha';
+    const copilotPath = `C:\\Users\\${username}\\AppData\\Local\\GitHub CLI\\copilot\\copilot.exe`;
+    if (fs.existsSync(copilotPath)) {
+      const args = [
+        '-s',
+        '--model', 'auto',
+        '--excluded-tools', 'shell,write,read'
+      ];
+      return spawn(copilotPath, args);
+    }
+    
+    const localAppDataCopilot = path.join(process.env.LOCALAPPDATA || '', 'GitHub CLI', 'copilot', 'copilot.exe');
+    if (fs.existsSync(localAppDataCopilot)) {
+      const args = [
+        '-s',
+        '--model', 'auto',
+        '--excluded-tools', 'shell,write,read'
+      ];
+      return spawn(localAppDataCopilot, args);
+    }
+  }
+  
+  // Fallback to gh copilot
+  const args = [
+    'copilot',
+    '--',
+    '-s',
+    '--model', 'auto',
+    '--excluded-tools', 'shell,write,read'
+  ];
+  
+  let ghPath = 'gh';
+  if (process.platform === 'win32') {
+    const commonPaths = [
+      'C:\\Program Files\\GitHub CLI\\gh.exe',
+      'C:\\Program Files (x86)\\GitHub CLI\\gh.exe',
+      path.join(process.env.LOCALAPPDATA || '', 'Programs', 'GitHub CLI', 'gh.exe')
+    ];
+    for (const p of commonPaths) {
+      if (fs.existsSync(p)) {
+        ghPath = p;
+        break;
+      }
+    }
+  }
+  return spawn(ghPath, args);
+}
 
 /**
  * LlmClient wraps the local GitHub Copilot CLI and direct API.
@@ -29,7 +81,90 @@ class LlmClient {
   }
 
   async _askRaw(prompt, model = null) {
-    // Check if GITHUB_TOKEN is available to use the faster Azure GitHub Models API directly
+    // 1. Azure OpenAI Service Support
+    if (process.env.AZURE_OPENAI_API_KEY && process.env.AZURE_OPENAI_ENDPOINT) {
+      console.log(`[LLM] Requesting completion from Azure OpenAI Service...`);
+      try {
+        const endpoint = process.env.AZURE_OPENAI_ENDPOINT.replace(/\/$/, '');
+        const deployment = process.env.AZURE_OPENAI_DEPLOYMENT || model || process.env.AI_MODEL_STANDARD || 'gpt-4o-mini';
+        const apiVersion = process.env.AZURE_OPENAI_API_VERSION || '2024-02-01';
+        const url = `${endpoint}/openai/deployments/${deployment}/chat/completions?api-version=${apiVersion}`;
+        
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 90000);
+
+        const response = await fetch(url, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'api-key': process.env.AZURE_OPENAI_API_KEY
+          },
+          body: JSON.stringify({
+            messages: [{ role: 'user', content: prompt }]
+          }),
+          signal: controller.signal
+        });
+
+        clearTimeout(timeoutId);
+
+        if (!response.ok) {
+          const errText = await response.text();
+          throw new Error(`Azure API returned status ${response.status}: ${errText}`);
+        }
+
+        const data = await response.json();
+        const content = data.choices?.[0]?.message?.content;
+        if (content) {
+          return content.trim();
+        }
+        throw new Error('Empty response from Azure OpenAI Service');
+      } catch (err) {
+        console.warn(`[LLM Warning] Azure OpenAI call failed: ${err.message}. Trying next provider...`);
+      }
+    }
+
+    // 2. Standard OpenAI API Support
+    if (process.env.OPENAI_API_KEY) {
+      console.log(`[LLM] Requesting completion from OpenAI API...`);
+      try {
+        const apiUrl = process.env.OPENAI_API_URL || 'https://api.openai.com/v1';
+        const chosenModel = model || process.env.AI_MODEL_STANDARD || 'gpt-4o-mini';
+        
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 90000);
+
+        const response = await fetch(`${apiUrl}/chat/completions`, {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Authorization': `Bearer ${process.env.OPENAI_API_KEY}`
+          },
+          body: JSON.stringify({
+            model: chosenModel,
+            messages: [{ role: 'user', content: prompt }]
+          }),
+          signal: controller.signal
+        });
+
+        clearTimeout(timeoutId);
+
+        if (!response.ok) {
+          const errText = await response.text();
+          throw new Error(`OpenAI API returned status ${response.status}: ${errText}`);
+        }
+
+        const data = await response.json();
+        const content = data.choices?.[0]?.message?.content;
+        if (content) {
+          return content.trim();
+        }
+        throw new Error('Empty response from OpenAI API');
+      } catch (err) {
+        console.warn(`[LLM Warning] OpenAI API call failed: ${err.message}. Trying next provider...`);
+      }
+    }
+
+    // 3. GitHub Models API Support (direct)
     if (process.env.GITHUB_TOKEN) {
       console.log(`[LLM] Requesting completion from GitHub Models API (direct)...`);
       try {
@@ -37,7 +172,7 @@ class LlmClient {
         const chosenModel = model || process.env.AI_MODEL_STANDARD || 'gpt-4o-mini';
         
         const controller = new AbortController();
-        const timeoutId = setTimeout(() => controller.abort(), 30000);
+        const timeoutId = setTimeout(() => controller.abort(), 90000);
 
         const response = await fetch(`${apiUrl}/chat/completions`, {
           method: 'POST',
@@ -56,7 +191,7 @@ class LlmClient {
 
         if (!response.ok) {
           const errText = await response.text();
-          throw new Error(`API returned status ${response.status}: ${errText}`);
+          throw new Error(`GitHub Models API returned status ${response.status}: ${errText}`);
         }
         
         const data = await response.json();
@@ -70,27 +205,25 @@ class LlmClient {
       }
     }
 
-    console.log(`[LLM] Requesting completion from GitHub Copilot CLI (Auto-Model)...`);
+    console.log(`[LLM] Requesting completion from GitHub Copilot CLI (Auto-Model)... Prompt length: ${prompt.length}`);
     
     return new Promise((resolve, reject) => {
-      const args = [
-        'copilot', 
-        '--', 
-        '-p', prompt, 
-        '-s', 
-        '--model', 'auto', 
-        '--excluded-tools', 'shell,write,read'
-      ];
-      
-      const child = spawn('gh', args);
+      const child = spawnCopilot();
       
       let stdout = '';
       let stderr = '';
       
       const timeoutId = setTimeout(() => {
         child.kill();
-        reject(new Error('Copilot CLI execution timed out after 30s'));
-      }, 30000);
+        reject(new Error('Copilot CLI execution timed out after 90s'));
+      }, 90000);
+
+      child.stdin.on('error', (err) => {
+        console.error('[LLM Error] stdin error:', err);
+      });
+
+      child.stdin.write(prompt);
+      child.stdin.end();
 
       child.stdout.on('data', (data) => {
         stdout += data.toString();

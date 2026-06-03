@@ -70,6 +70,10 @@ class AgentLoop {
       }
 
       // Execute tool
+      if (decision.tool === 'browser_wait_for' && decision.args && typeof decision.args.time === 'number' && decision.args.time > 100) {
+        console.log(`[AgentLoop Check] Converting wait time ${decision.args.time} seconds to ${decision.args.time / 1000} seconds (assuming milliseconds was intended).`);
+        decision.args.time = decision.args.time / 1000;
+      }
       console.log(`[AgentLoop] Executing tool ${decision.tool} with args:`, decision.args);
       let result;
       try {

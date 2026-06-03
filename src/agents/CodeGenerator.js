@@ -39,7 +39,7 @@ INSTRUCTIONS:
 3. These selectors come from the accessibility snapshot – they match the real DOM.
 4. Add expect() assertions after each significant state change.
 5. Use waitFor() for dynamic elements shown in the snapshots.
-6. Use CommonJS: const { test, expect } = require('@playwright/test')
+6. Use ES Modules: import { test, expect } from '@playwright/test';
 7. Wrap all steps in a single test() block.
 8. Use process.env for any credential values – NEVER hardcode them.
 9. Output ONLY the code in a single \`\`\`javascript code block.
