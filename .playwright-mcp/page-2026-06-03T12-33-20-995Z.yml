@@ -1,0 +1,497 @@
+- generic [ref=e3]:
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - img "Microsoft Edge" [ref=e10]
+      - link "BannerHeadlineAndLead" [ref=e11] [cursor=pointer]:
+        - /url: https://www.microsoft.com/edge/launch/msn-1
+        - paragraph [ref=e12]: The power of Windows with Microsoft Edge
+        - text: For a fast, secure web experience use the best browser for MSN
+    - generic [ref=e13]:
+      - button "DismissBanner" [ref=e14] [cursor=pointer]: Close
+      - button "ActionButton1" [ref=e15] [cursor=pointer]: Go now
+  - banner [ref=e18]:
+    - generic [ref=e19]:
+      - generic "Skip to content" [ref=e20] [cursor=pointer]:
+        - button "Skip to content" [ref=e21]:
+          - generic:
+            - generic: Skip to content
+      - generic "Skip to footer" [ref=e22] [cursor=pointer]:
+        - button "Skip to footer" [ref=e23]:
+          - generic:
+            - generic: Skip to footer
+      - link "MSN" [ref=e26] [cursor=pointer]:
+        - /url: https://www.msn.com/en-in
+      - search [ref=e30]:
+        - generic [ref=e31]:
+          - generic "Web search" [ref=e32] [cursor=pointer]:
+            - button "Web search" [ref=e33]:
+              - generic:
+                - generic:
+                  - img
+          - searchbox "Enter your search term" [ref=e34]
+          - generic "Open Copilot" [ref=e38] [cursor=pointer]:
+            - button "Open Copilot" [ref=e39]:
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Open Copilot"
+      - generic [ref=e40]:
+        - generic "Open settings" [ref=e44] [cursor=pointer]:
+          - button "Open settings" [ref=e45]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Page settings
+                  - generic:
+                    - img
+        - generic:
+          - generic:
+            - generic:
+              - generic "Sign In"
+  - generic [ref=e46]:
+    - generic [ref=e47]:
+      - generic [ref=e52]:
+        - list [ref=e55]:
+          - listitem [ref=e56]:
+            - link "Outlook.com" [ref=e59] [cursor=pointer]:
+              - /url: https://outlook.com
+              - generic [ref=e63]: Outlook.com
+          - listitem [ref=e64]:
+            - link "Flipkart" [ref=e67] [cursor=pointer]:
+              - /url: https://clk.tradedoubler.com/click?p=401531&a=3419260&epi=enin-msn-hp-mestripe
+              - generic [ref=e70]:
+                - generic [ref=e71]: Flipkart
+                - generic [ref=e73]: Sponsored
+          - listitem [ref=e74]:
+            - link "Find a tutor" [ref=e77] [cursor=pointer]:
+              - /url: https://www.bing.com/pros?FORM=BPIMNS
+              - generic [ref=e81]: Find a tutor
+          - listitem [ref=e82]:
+            - link "Booking.com" [ref=e85] [cursor=pointer]:
+              - /url: https://www.booking.com/index.html?aid=1624937&label=enin-msn-hp-mestripe
+              - generic [ref=e88]:
+                - generic [ref=e89]: Booking.com
+                - generic [ref=e91]: Sponsored
+          - listitem [ref=e92]:
+            - link "Nykaa" [ref=e95] [cursor=pointer]:
+              - /url: https://sovrn.co/p9zogj8
+              - generic [ref=e98]:
+                - generic [ref=e99]: Nykaa
+                - generic [ref=e101]: Sponsored
+          - listitem [ref=e102]:
+            - link "Facebook" [ref=e105] [cursor=pointer]:
+              - /url: https://www.facebook.com
+              - generic [ref=e109]: Facebook
+          - listitem [ref=e110]:
+            - link "Microsoft 365" [ref=e113] [cursor=pointer]:
+              - /url: https://www.office.com/?omkt=en-IN
+              - generic [ref=e117]: Microsoft 365
+          - listitem [ref=e118]:
+            - link "X" [ref=e121] [cursor=pointer]:
+              - /url: https://x.com
+              - generic [ref=e125]: X
+          - listitem [ref=e126]:
+            - link "OneDrive" [ref=e129] [cursor=pointer]:
+              - /url: https://onedrive.live.com/?wt.mc_id=oo_msn_msnhomepage_header
+              - generic [ref=e133]: OneDrive
+          - listitem [ref=e134]:
+            - link "Skype" [ref=e137] [cursor=pointer]:
+              - /url: https://www.skype.com/
+              - generic [ref=e141]: Skype
+          - listitem [ref=e142]:
+            - link "OneNote" [ref=e145] [cursor=pointer]:
+              - /url: https://www.onenote.com/notebooks?WT.mc_id=MSN_OneNote_TopMenu&auth=1&wdorigin=msn
+              - generic [ref=e149]: OneNote
+          - listitem [ref=e150]:
+            - link "Maps" [ref=e153] [cursor=pointer]:
+              - /url: https://bing.com/maps/?FORM=MSNMAP
+              - generic [ref=e157]: Maps
+          - listitem [ref=e158]:
+            - link "Microsoft Store" [ref=e161] [cursor=pointer]:
+              - /url: https://www.microsoft.com/en-in
+              - generic [ref=e165]: Microsoft Store
+        - button [ref=e166]:
+          - img [ref=e169]
+      - generic [ref=e171]:
+        - banner [ref=e172]
+        - generic [ref=e173]:
+          - generic [ref=e177]:
+            - navigation [ref=e179]:
+              - generic [ref=e180]:
+                - list [ref=e181]:
+                  - listitem [ref=e182]:
+                    - link "Discover" [ref=e183] [cursor=pointer]:
+                      - /url: https://www.msn.com/en-in
+                - list [ref=e184]:
+                  - listitem [ref=e185]:
+                    - link "News" [ref=e186] [cursor=pointer]:
+                      - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f
+                  - listitem [ref=e187]:
+                    - link "Sports" [ref=e188] [cursor=pointer]:
+                      - /url: https://www.msn.com/en-in/sports
+                  - listitem [ref=e189]:
+                    - link "Play" [ref=e190] [cursor=pointer]:
+                      - /url: https://www.msn.com/en-in/play?cgfrom=cg_home_pivot
+                  - listitem [ref=e191]:
+                    - link "Money" [ref=e192] [cursor=pointer]:
+                      - /url: https://www.msn.com/en-in/money
+                  - listitem [ref=e193]:
+                    - link "Weather" [ref=e194] [cursor=pointer]:
+                      - /url: https://www.msn.com/en-in/weather
+                  - listitem [ref=e195]:
+                    - link "Watch" [ref=e196] [cursor=pointer]:
+                      - /url: https://www.msn.com/en-in/video
+                  - listitem [ref=e197]:
+                    - link "Shopping" [ref=e198] [cursor=pointer]:
+                      - /url: https://www.bing.com/shop?entrypoint=msn&adunitId=378983&propertyId=316966&FORM=NVBSHP
+            - generic "Personalize your feed\"" [ref=e200] [cursor=pointer]:
+              - button "Personalize your feed\"" [ref=e201]:
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic: Personalize
+          - button "Make MSN my homepage" [ref=e203] [cursor=pointer]
+      - main [ref=e206]:
+        - generic [ref=e209]:
+          - generic [ref=e212]:
+            - tablist [ref=e214]:
+              - tab [selected] [ref=e215] [cursor=pointer]
+              - tab [ref=e217] [cursor=pointer]
+              - tab [ref=e219] [cursor=pointer]
+              - tab [ref=e221] [cursor=pointer]
+              - tab [ref=e223] [cursor=pointer]
+              - tab [ref=e225] [cursor=pointer]
+              - tab [ref=e227] [cursor=pointer]
+              - tab [ref=e229] [cursor=pointer]
+              - tab [ref=e231] [cursor=pointer]
+              - tab [ref=e233] [cursor=pointer]
+              - tab [ref=e235] [cursor=pointer]
+              - tab [ref=e237] [cursor=pointer]
+              - tab [ref=e239] [cursor=pointer]
+              - tab [ref=e241] [cursor=pointer]
+              - tab [ref=e243] [cursor=pointer]
+              - tab [ref=e245] [cursor=pointer]
+              - tab [ref=e247] [cursor=pointer]
+              - tab [ref=e249] [cursor=pointer]
+              - tab [ref=e251] [cursor=pointer]
+              - tab [ref=e253] [cursor=pointer]
+              - tab [ref=e255] [cursor=pointer]
+              - tab [ref=e257] [cursor=pointer]
+              - tab [ref=e259] [cursor=pointer]
+              - tab [ref=e261] [cursor=pointer]
+              - tab [ref=e263] [cursor=pointer]
+              - tab [ref=e265] [cursor=pointer]
+            - button [ref=e269]
+            - button [ref=e272]
+            - 'article "Petrol, diesel & CNG fresh prices announced: Check city-wise rates for June 3" [ref=e273] [cursor=pointer]':
+              - generic [ref=e275]:
+                - img [ref=e276]
+                - generic [ref=e277]:
+                  - generic [ref=e278]:
+                    - generic [ref=e279]:
+                      - generic [ref=e280]:
+                        - img [ref=e281]
+                        - generic [ref=e282]: News18
+                      - generic [ref=e283]: ·
+                      - generic [ref=e284]: 9h
+                    - 'link "Petrol, diesel & CNG fresh prices announced: Check city-wise rates for June 3, News18" [ref=e285]':
+                      - /url: https://www.msn.com/en-in/money/news/petrol-diesel-cng-fresh-prices-announced-check-city-wise-rates-for-june-3/ar-AA24GU8c
+                      - text: "Petrol, diesel & CNG fresh prices announced: Check city-wise rates for June 3"
+                  - 'generic "Petrol, diesel & CNG fresh prices announced: Check city-wise rates for June 3" [ref=e288]':
+                    - generic [ref=e290]:
+                      - generic [ref=e291]:
+                        - button "60 Like" [ref=e292]:
+                          - generic [ref=e293]:
+                            - img [ref=e294]
+                            - generic [ref=e296]: "60"
+                        - button "Dislike" [ref=e297]:
+                          - img [ref=e299]
+                      - link "Start the conversation" [ref=e302]:
+                        - /url: https://www.msn.com/en-in/money/news/petrol-diesel-cng-fresh-prices-announced-check-city-wise-rates-for-june-3/ar-AA24GU8c#comments
+                        - button "Start the conversation" [ref=e303]:
+                          - img [ref=e304]
+                - generic [ref=e306]:
+                  - button "Hide this story" [ref=e307]:
+                    - img [ref=e308]
+                    - text: Hide this story
+                  - button "See more" [ref=e309]:
+                    - img [ref=e310]
+          - article [ref=e311] [cursor=pointer]:
+            - generic [ref=e315]:
+              - generic: Sponsored
+          - article [ref=e316] [cursor=pointer]:
+            - generic [ref=e321]:
+              - generic [ref=e323]:
+                - link "Top stories" [ref=e325]:
+                  - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f?cvid=6a201f094e574932ad7636d92a1fa0e4&ocid=hpmsn
+                  - heading "Top stories" [level=2] [ref=e326]
+                - button "More options" [ref=e328]
+              - list [ref=e331]:
+                - 'listitem "With Constitution in hand, DK Shivakumar takes oath as Karnataka CM: Full list of ministers who were sworn-in" [ref=e332]':
+                  - generic [ref=e333]:
+                    - generic [ref=e334]:
+                      - generic:
+                        - generic [ref=e335]: Breaking
+                        - img [ref=e336]
+                      - generic [ref=e337]:
+                        - generic: Moneycontrol ·1h
+                    - generic [ref=e338]: "With Constitution in hand, DK Shivakumar takes oath as Karnataka CM: Full list of ministers who were sworn-in"
+                - 'listitem "''Single exit, sealed windows, illegal expansion'': Inside the chain of failures behind Delhi''s Malviya Nagar fire that killed 21" [ref=e339]':
+                  - generic [ref=e340]:
+                    - generic [ref=e341]:
+                      - img [ref=e342]
+                      - generic [ref=e343]:
+                        - generic: WION ·now
+                    - generic [ref=e344]: "'Single exit, sealed windows, illegal expansion': Inside the chain of failures behind Delhi's Malviya Nagar fire that killed 21"
+                - 'listitem "Bengal: 58 rebel TMC MLAs back expelled leader Ritabrata Banerjee, party dissolves all committees" [ref=e345]':
+                  - generic [ref=e346]:
+                    - generic [ref=e347]:
+                      - img [ref=e348]
+                      - generic [ref=e349]:
+                        - generic: Press Trust of India ·now
+                    - generic [ref=e350]: "Bengal: 58 rebel TMC MLAs back expelled leader Ritabrata Banerjee, party dissolves all committees"
+              - generic [ref=e352]:
+                - generic [ref=e353]:
+                  - generic "Previous" [ref=e354]:
+                    - button "Previous" [ref=e355]
+                  - tablist [ref=e357]:
+                    - tab "tab-0" [selected] [ref=e358]
+                    - tab "tab-1" [ref=e360]
+                    - tab "tab-2" [ref=e362]
+                  - generic "Next" [ref=e364]:
+                    - button "Next" [ref=e365]
+                - link "See more" [ref=e367]:
+                  - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f?cvid=6a201f094e574932ad7636d92a1fa0e4&ocid=hpmsn
+          - article "Best Public Speaking Course for Children (Age 4-14)" [ref=e368] [cursor=pointer]:
+            - generic [ref=e370]:
+              - img [ref=e371]
+              - generic [ref=e372]:
+                - generic [ref=e373]:
+                  - generic [ref=e376]: PlanetSpark
+                  - link "Best Public Speaking Course for Children (Age 4-14), PlanetSpark" [ref=e377]:
+                    - /url: https://msft-ssp-apac.adnxs.com/click2?e=wqT_3QKjAfBDowAAAAMAxBkFAQiMvoDRBhCLz5uo0-z3-AMY1cDJ6aOw6YN9IO37sBAomAIwmjw4jwNAi_i2vAJI8opOUABaA1VTRGIBBZBoAXABeJmgZ4AB2tQFiAEBkAEAmAEFoAECqQE25QrvchGPP7EBEQoouQEAAAAgheuxP8EVHgDJFQo82AGOvQLgAQDwAYrPAvgBAA../s=d5c4399ed9c7ab9dceed7eef9fc42ca1881ecf0e/bcr=AAAAAAAA8D8=/pp=0.02/bn=92762/clickenc=https%3A%2F%2Fpaid.outbrain.com%2Fnetwork%2Fredir%3Fp%3DzkzCfUfmRR0wckUII8DYbFxl-G7_ju_KjWNwmwynrxBtHxnaFL1jZvlPV8w2rDOw1QEZaTo-452NuwKRpWsjnK7plusT8NUCyO2dxtU00VUZ2qBGYiN5f9b0ZDxcP1orHCxwVL59sQGAiDNHk-AKGo8Wn-vJSYNxZ9XBITxluUE9zJetdEHFlMSHEa6Qc4aN7RKmlLkfLna6vghrIKMNJ9rsOvu-QfdhlRwLYd0Ly5cKDUG7jwaltfug7yAYY29rg5_q_MMWdyBGW-jDvBv3s426XbHEtMfodU6rfjmiiMEIZ_NczGsxkUnmv5odpcaT705ZpeGuaZZN0-15qWg1FHwZh7KO1T3syMTILBv9PC1MJqrMvzlmLmfrSL_TYNh7sETvai0Z0XrSIseYCwOPr8z3ZCFA4l2H3ySCk-ZI7hywXvoEuEuqyCE5LAZEoUO5Ehyrkbdk9FCPGG-PczBfYGCjZ3G7fERNSk2PDf_0fztRVAtTi-iHJTCwEBtnRAtedivAVDADywZ7fIlFTpqwPOtoOfXYObXkCXVtbHySXiYl6DtEoTkMsANWoePST1OY-vgP4Hikm1f0kxtUaLmeuyzA8918-dzG40x1wPwFgifmK0jpNw1CFxJSa8eUOQTJK61Q_D7-lgd3bOauigIYhsXFzf2KMe1MpXDYiBeasIxB9MbGr0bWpXc4WMW5dTRSZGjkN4k7zI5mNRaIehrVQPhMit7FbS6OIkolBjzQS7bFSfQgfiNTYXGa3YUcu4su539vCo7-WamE4ZMjKhTQwNB-YXduSTDF1Og2eKo7oE6lsomDBJkmz_6uLvm2vts1b1f_lyOhhYlx940ZIq_zyAZ0VpA-jp4e79gHPOZd2qE8pn_PYKapXUCzltw6tTKxzeJGVn2W_5uB-L2hWs9hEptUtjqQ4tg5ELKi6M7xWNtDOnY6xlcPbdTrg_4OLqsFV2MSmDsIqjJGYoXXBo3SULoqIQyDh053tm7islm0H8QmJHwCn1pNEiC6CskTr2EM3Cfphjq8kAH-BAz76Sa9Csi9aWzsXguzKomkzvW_-nM64sflKBkSJkF6_CFN8MfBAAMyhYaWUdBFjO_eyM3os06TyDoV1bx6ADewkw_O_zyszarusvjS76Y5trjTuJp_O9BmvC41pi_JVW35IfTohN0BCyOYsXNNEbcdh5WrGqPCuPl13YKh5sQIFiy6SSAmBSWY5L7BkItMnbi24PAr-136UpihSFKL_8wa-yLKgcRg_0E7-h5NYrmaN-zGtvkB4uqIUTkUrxb91Y0mWtCWxfamTJm6eaI7trGSHYv9gHqzmNhg0buRtVe6OKwo43PMe5uRjEmVo9ebeqx531IAD3xQA7x6nWfLcVczYqVcTQJlABdFpfqeqbZwtvxVcVDL5Wt9ThcRCu2mdpdtDPtVdTVIsSIUMj_H6h-fHtJsGZvQI3wBjQgba0GeF6Hsnbwz5KC5d-8jxRytfUg-pIjd_91Yt5mAxtnArimrefcuOrJgUofySbnkzVRCitvW-6uCtlhf8gpGj52_d8FUf5T6Ne69-3l13i0gPomKTwYQYhxvsD4aPfzGgZdK6FLeyP95BiOKkqy6F2GPtR4F4ZNyzKQ57-bL_DAMSJmtl63TwNttFNhqltNAmGoDZIvq3giYqsDD-epFIEgeBsnpocoqPCYttERLDuk2R2vmvicGWP9GsXGYL65ttPVdgeAG-_BwMgDCXVcBvaMjG-g0ASKWCuzLZmMhRyZR4b-VIVvmuucb4LA8bvuEB9Z_S_FDRkft6hmYVioGwz5YoXPHcCOXJzWmuUARWdInI5gQI03LSe2BdjjXCIFLOYC0Bmd0_8rh8V5p6P-PwxBilRYFQd3T6c9mIe7XQ6WubMi-gGDEtv49ej8snolTzFdEKQdAVXxeP5ntfOuQYmql3zdipPGtsv0E2jN4N-imG66Ac3sQVx7PxUZtCAPDquSkNPY_Fu45qqE86CkkPpWtIm0pHMyp-b2zC9f5HLefK_dkAE_YvgLarF_KSgjwVAQeCODmT7NffTOFQ_c36ORFa-qf3s8hwKUnHR0nOo7alv2w_T7EcZfYOxITagRDHLMzKL2xcbY3EtLQDVFagssx8aJbvfY6K03C_4GK1Uh4yYBtaYZP4Mg%26c%3D21559650%26v%3D3
+                    - text: Best Public Speaking Course for Children (Age 4-14)
+                - link "Sponsored" [ref=e379]:
+                  - /url: https://msft-ssp-apac.adnxs.com/click2?e=wqT_3QKjAfBDowAAAAMAxBkFAQiMvoDRBhCLz5uo0-z3-AMY1cDJ6aOw6YN9IO37sBAomAIwmjw4jwNAi_i2vAJI8opOUABaA1VTRGIBBZBoAXABeJmgZ4AB2tQFiAEBkAEAmAEFoAECqQE25QrvchGPP7EBEQoouQEAAAAgheuxP8EVHgDJFQo82AGOvQLgAQDwAYrPAvgBAA../s=d5c4399ed9c7ab9dceed7eef9fc42ca1881ecf0e/bcr=AAAAAAAA8D8=/pp=0.02/bn=92762/clickenc=https%3A%2F%2Fpaid.outbrain.com%2Fnetwork%2Fredir%3Fp%3DzkzCfUfmRR0wckUII8DYbFxl-G7_ju_KjWNwmwynrxBtHxnaFL1jZvlPV8w2rDOw1QEZaTo-452NuwKRpWsjnK7plusT8NUCyO2dxtU00VUZ2qBGYiN5f9b0ZDxcP1orHCxwVL59sQGAiDNHk-AKGo8Wn-vJSYNxZ9XBITxluUE9zJetdEHFlMSHEa6Qc4aN7RKmlLkfLna6vghrIKMNJ9rsOvu-QfdhlRwLYd0Ly5cKDUG7jwaltfug7yAYY29rg5_q_MMWdyBGW-jDvBv3s426XbHEtMfodU6rfjmiiMEIZ_NczGsxkUnmv5odpcaT705ZpeGuaZZN0-15qWg1FHwZh7KO1T3syMTILBv9PC1MJqrMvzlmLmfrSL_TYNh7sETvai0Z0XrSIseYCwOPr8z3ZCFA4l2H3ySCk-ZI7hywXvoEuEuqyCE5LAZEoUO5Ehyrkbdk9FCPGG-PczBfYGCjZ3G7fERNSk2PDf_0fztRVAtTi-iHJTCwEBtnRAtedivAVDADywZ7fIlFTpqwPOtoOfXYObXkCXVtbHySXiYl6DtEoTkMsANWoePST1OY-vgP4Hikm1f0kxtUaLmeuyzA8918-dzG40x1wPwFgifmK0jpNw1CFxJSa8eUOQTJK61Q_D7-lgd3bOauigIYhsXFzf2KMe1MpXDYiBeasIxB9MbGr0bWpXc4WMW5dTRSZGjkN4k7zI5mNRaIehrVQPhMit7FbS6OIkolBjzQS7bFSfQgfiNTYXGa3YUcu4su539vCo7-WamE4ZMjKhTQwNB-YXduSTDF1Og2eKo7oE6lsomDBJkmz_6uLvm2vts1b1f_lyOhhYlx940ZIq_zyAZ0VpA-jp4e79gHPOZd2qE8pn_PYKapXUCzltw6tTKxzeJGVn2W_5uB-L2hWs9hEptUtjqQ4tg5ELKi6M7xWNtDOnY6xlcPbdTrg_4OLqsFV2MSmDsIqjJGYoXXBo3SULoqIQyDh053tm7islm0H8QmJHwCn1pNEiC6CskTr2EM3Cfphjq8kAH-BAz76Sa9Csi9aWzsXguzKomkzvW_-nM64sflKBkSJkF6_CFN8MfBAAMyhYaWUdBFjO_eyM3os06TyDoV1bx6ADewkw_O_zyszarusvjS76Y5trjTuJp_O9BmvC41pi_JVW35IfTohN0BCyOYsXNNEbcdh5WrGqPCuPl13YKh5sQIFiy6SSAmBSWY5L7BkItMnbi24PAr-136UpihSFKL_8wa-yLKgcRg_0E7-h5NYrmaN-zGtvkB4uqIUTkUrxb91Y0mWtCWxfamTJm6eaI7trGSHYv9gHqzmNhg0buRtVe6OKwo43PMe5uRjEmVo9ebeqx531IAD3xQA7x6nWfLcVczYqVcTQJlABdFpfqeqbZwtvxVcVDL5Wt9ThcRCu2mdpdtDPtVdTVIsSIUMj_H6h-fHtJsGZvQI3wBjQgba0GeF6Hsnbwz5KC5d-8jxRytfUg-pIjd_91Yt5mAxtnArimrefcuOrJgUofySbnkzVRCitvW-6uCtlhf8gpGj52_d8FUf5T6Ne69-3l13i0gPomKTwYQYhxvsD4aPfzGgZdK6FLeyP95BiOKkqy6F2GPtR4F4ZNyzKQ57-bL_DAMSJmtl63TwNttFNhqltNAmGoDZIvq3giYqsDD-epFIEgeBsnpocoqPCYttERLDuk2R2vmvicGWP9GsXGYL65ttPVdgeAG-_BwMgDCXVcBvaMjG-g0ASKWCuzLZmMhRyZR4b-VIVvmuucb4LA8bvuEB9Z_S_FDRkft6hmYVioGwz5YoXPHcCOXJzWmuUARWdInI5gQI03LSe2BdjjXCIFLOYC0Bmd0_8rh8V5p6P-PwxBilRYFQd3T6c9mIe7XQ6WubMi-gGDEtv49ej8snolTzFdEKQdAVXxeP5ntfOuQYmql3zdipPGtsv0E2jN4N-imG66Ac3sQVx7PxUZtCAPDquSkNPY_Fu45qqE86CkkPpWtIm0pHMyp-b2zC9f5HLefK_dkAE_YvgLarF_KSgjwVAQeCODmT7NffTOFQ_c36ORFa-qf3s8hwKUnHR0nOo7alv2w_T7EcZfYOxITagRDHLMzKL2xcbY3EtLQDVFagssx8aJbvfY6K03C_4GK1Uh4yYBtaYZP4Mg%26c%3D21559650%26v%3D3
+              - button "See more" [ref=e381]:
+                - img [ref=e382]
+          - article [ref=e383] [cursor=pointer]:
+            - generic [ref=e389]:
+              - generic [ref=e391]:
+                - img "Watchlist suggestions" [ref=e393]
+                - link "Watchlist suggestions" [ref=e394]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?ocid=hpmsn
+                  - heading "Watchlist suggestions" [level=2] [ref=e395]
+                - button "More options" [ref=e397]
+              - generic [ref=e402]:
+                - link "USD/INR US Dollar/Indian Rupee ‎+0.47%‎ 95.705" [ref=e404]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?id=avyo8m&ocid=hpmsn
+                  - generic [ref=e405]:
+                    - generic [ref=e407]: USD/INR
+                    - generic [ref=e409]: US Dollar/Indian Rupee
+                  - generic [ref=e414]:
+                    - generic [ref=e415]: ‎+0.47%‎
+                    - generic [ref=e416]: "95.705"
+                  - button "Add to watchlist" [ref=e419]:
+                    - img [ref=e420]
+                - link "24K Gold (10 Grams) - Indian Rupee XAUINR ‎-0.57%‎ 153675" [ref=e424]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?id=cejq77&ocid=hpmsn
+                  - generic [ref=e425]:
+                    - generic [ref=e427]: 24K Gold (10 Grams) - Indian Rupee
+                    - generic [ref=e429]: XAUINR
+                  - generic [ref=e434]:
+                    - generic [ref=e435]: ‎-0.57%‎
+                    - generic [ref=e436]: "153675"
+                  - button "Add to watchlist" [ref=e439]:
+                    - img [ref=e440]
+                - link "Silver Silver ‎-1.07%‎ 74.75" [ref=e444]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?id=auvwr7&ocid=hpmsn
+                  - generic [ref=e445]:
+                    - generic [ref=e447]: Silver
+                    - generic [ref=e449]: Silver
+                  - generic [ref=e454]:
+                    - generic [ref=e455]: ‎-1.07%‎
+                    - generic [ref=e456]: "74.75"
+                  - button "Add to watchlist" [ref=e459]:
+                    - img [ref=e460]
+                - link "ITC Ltd ITC Ltd Dropping fast ‎-2.21%‎ 277.00" [ref=e464]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?id=ahie2w&noti=Price&ocid=hpmsn
+                  - generic [ref=e465]:
+                    - generic [ref=e466]:
+                      - generic [ref=e467]: ITC Ltd
+                      - img "ITC Ltd" [ref=e468]
+                    - generic [ref=e470]: Dropping fast
+                  - generic [ref=e475]:
+                    - generic [ref=e476]: ‎-2.21%‎
+                    - generic [ref=e477]: "277.00"
+                  - button "Add to watchlist" [ref=e480]:
+                    - img [ref=e481]
+                - link "Citigroup Inc C ‎+1.68%‎ 131.26" [ref=e485]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?id=a1p3ww&ocid=hpmsn
+                  - generic [ref=e486]:
+                    - generic [ref=e488]: Citigroup Inc
+                    - generic [ref=e490]: C
+                  - generic [ref=e495]:
+                    - generic [ref=e496]: ‎+1.68%‎
+                    - generic [ref=e497]: "131.26"
+                  - button "Add to watchlist" [ref=e500]:
+                    - img [ref=e501]
+              - generic [ref=e505]:
+                - generic [ref=e506]:
+                  - generic "Previous" [ref=e507]:
+                    - button "Previous" [ref=e508]
+                  - tablist [ref=e510]:
+                    - tab "tab-0" [selected] [ref=e511]
+                    - tab "tab-1" [ref=e513]
+                    - tab "tab-2" [ref=e515]
+                    - tab "tab-3" [ref=e517]
+                    - tab "tab-4" [ref=e519]
+                    - tab "tab-5"
+                    - tab "tab-6"
+                  - generic "Next" [ref=e521]:
+                    - button "Next" [ref=e522]
+                - link "See watchlist suggestions" [ref=e524]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?ocid=hpmsn
+          - article "Why more healthy-looking young people are dying of heart attacks" [ref=e525] [cursor=pointer]:
+            - generic [ref=e527]:
+              - img [ref=e528]
+              - generic [ref=e529]:
+                - generic [ref=e530]:
+                  - generic [ref=e531]:
+                    - generic [ref=e532]:
+                      - img [ref=e533]
+                      - generic [ref=e534]: Times Now
+                    - generic [ref=e535]: ·
+                    - generic [ref=e536]: 3w
+                  - link "Why more healthy-looking young people are dying of heart attacks, Times Now" [ref=e537]:
+                    - /url: https://www.msn.com/en-in/health/health-news/why-more-healthy-looking-young-people-are-dying-of-heart-attacks/ar-AA22QBvs
+                    - text: Why more healthy-looking young people are dying of heart attacks
+                - generic "Why more healthy-looking young people are dying of heart attacks" [ref=e540]:
+                  - generic [ref=e542]:
+                    - generic [ref=e543]:
+                      - button "158 Like" [ref=e544]:
+                        - generic [ref=e545]:
+                          - img [ref=e546]
+                          - generic [ref=e548]: "158"
+                      - button "Dislike" [ref=e549]:
+                        - img [ref=e551]
+                    - link "Start the conversation" [ref=e554]:
+                      - /url: https://www.msn.com/en-in/health/health-news/why-more-healthy-looking-young-people-are-dying-of-heart-attacks/ar-AA22QBvs#comments
+                      - button "Start the conversation" [ref=e555]:
+                        - img [ref=e556]
+              - generic [ref=e558]:
+                - button "Hide this story" [ref=e559]:
+                  - img [ref=e560]
+                  - text: Hide this story
+                - button "See more" [ref=e561]:
+                  - img [ref=e562]
+          - article "I kept cooking... they became chewy, and he... Madhuri Dixit shares her culinary disasters after marriage and Dr. Nene's reaction" [ref=e563] [cursor=pointer]:
+            - generic [ref=e565]:
+              - img [ref=e566]
+              - generic [ref=e567]:
+                - generic [ref=e568]:
+                  - generic [ref=e569]:
+                    - generic [ref=e570]:
+                      - img [ref=e571]
+                      - generic [ref=e572]: The Times of India
+                    - generic [ref=e573]: ·
+                    - generic [ref=e574]: 5h
+                  - link "I kept cooking... they became chewy, and he... Madhuri Dixit shares her culinary disasters after marriage and Dr. Nene's reaction, The Times of India" [ref=e575]:
+                    - /url: https://www.msn.com/en-in/lifestyle/relationships/i-kept-cooking-they-became-chewy-and-he-madhuri-dixit-shares-her-culinary-disasters-after-marriage-and-dr-nene-s-reaction/ar-AA24Ilu4
+                    - text: I kept cooking... they became chewy, and he... Madhuri Dixit shares her culinary disasters after marriage and Dr. Nene's reaction
+                - generic "I kept cooking... they became chewy, and he... Madhuri Dixit shares her culinary disasters after marriage and Dr. Nene's reaction" [ref=e578]:
+                  - generic [ref=e580]:
+                    - generic [ref=e581]:
+                      - button "2 Like" [ref=e582]:
+                        - generic [ref=e583]:
+                          - img [ref=e584]
+                          - generic [ref=e586]: "2"
+                      - button "Dislike" [ref=e587]:
+                        - img [ref=e589]
+                    - link "Start the conversation" [ref=e592]:
+                      - /url: https://www.msn.com/en-in/lifestyle/relationships/i-kept-cooking-they-became-chewy-and-he-madhuri-dixit-shares-her-culinary-disasters-after-marriage-and-dr-nene-s-reaction/ar-AA24Ilu4#comments
+                      - button "Start the conversation" [ref=e593]:
+                        - img [ref=e594]
+              - generic [ref=e596]:
+                - button "Hide this story" [ref=e597]:
+                  - img [ref=e598]
+                  - text: Hide this story
+                - button "See more" [ref=e599]:
+                  - img [ref=e600]
+          - article "Can you guess Rajinikanth's first salary? A viral 1971 ID card has the answer" [ref=e601] [cursor=pointer]:
+            - generic [ref=e603]:
+              - img [ref=e604]
+              - generic [ref=e605]:
+                - generic [ref=e606]:
+                  - generic [ref=e607]:
+                    - generic [ref=e608]:
+                      - img [ref=e609]
+                      - generic [ref=e610]: India Today
+                    - generic [ref=e611]: ·
+                    - generic [ref=e612]: 3d
+                  - link "Can you guess Rajinikanth's first salary? A viral 1971 ID card has the answer, India Today" [ref=e613]:
+                    - /url: https://www.msn.com/en-in/entertainment/southcinema/can-you-guess-rajinikanth-s-first-salary-a-viral-1971-id-card-has-the-answer/ar-AA24sYP1
+                    - text: Can you guess Rajinikanth's first salary? A viral 1971 ID card has the answer
+                - generic "Can you guess Rajinikanth's first salary? A viral 1971 ID card has the answer" [ref=e616]:
+                  - generic [ref=e618]:
+                    - generic [ref=e619]:
+                      - button "437 Like" [ref=e620]:
+                        - generic [ref=e621]:
+                          - img [ref=e622]
+                          - generic [ref=e624]: "437"
+                      - button "Dislike" [ref=e625]:
+                        - img [ref=e627]
+                    - link "View comments 3 Comment" [ref=e630]:
+                      - /url: https://www.msn.com/en-in/entertainment/southcinema/can-you-guess-rajinikanth-s-first-salary-a-viral-1971-id-card-has-the-answer/ar-AA24sYP1#comments
+                      - button "View comments 3 Comment" [ref=e631]:
+                        - img [ref=e632]
+                      - generic [ref=e634]: "3"
+              - generic [ref=e635]:
+                - button "Hide this story" [ref=e636]:
+                  - img [ref=e637]
+                  - text: Hide this story
+                - button "See more" [ref=e638]:
+                  - img [ref=e639]
+          - 'article "GK: Which Indian city is called the litchi capital of the world?" [ref=e640] [cursor=pointer]':
+            - generic [ref=e642]:
+              - img [ref=e643]
+              - generic [ref=e644]:
+                - generic [ref=e645]:
+                  - generic [ref=e646]:
+                    - generic [ref=e647]:
+                      - img [ref=e648]
+                      - generic [ref=e649]: News18
+                    - generic [ref=e650]: ·
+                    - generic [ref=e651]: 2w
+                  - 'link "GK: Which Indian city is called the litchi capital of the world?, News18" [ref=e652]':
+                    - /url: https://www.msn.com/en-in/travel/tripideas/gk-which-indian-city-is-called-the-litchi-capital-of-the-world/ss-AA23ywsO
+                    - text: "GK: Which Indian city is called the litchi capital of the world?"
+                - 'generic "GK: Which Indian city is called the litchi capital of the world?" [ref=e655]':
+                  - generic [ref=e657]:
+                    - generic [ref=e658]:
+                      - button "335 Like" [ref=e659]:
+                        - generic [ref=e660]:
+                          - img [ref=e661]
+                          - generic [ref=e663]: "335"
+                      - button "Dislike" [ref=e664]:
+                        - img [ref=e666]
+                    - link "View comments 5 Comment" [ref=e669]:
+                      - /url: https://www.msn.com/en-in/travel/tripideas/gk-which-indian-city-is-called-the-litchi-capital-of-the-world/ss-AA23ywsO#comments
+                      - button "View comments 5 Comment" [ref=e670]:
+                        - img [ref=e671]
+                      - generic [ref=e673]: "5"
+              - generic [ref=e674]:
+                - button "Hide this story" [ref=e675]:
+                  - img [ref=e676]
+                  - text: Hide this story
+                - button "See more" [ref=e677]:
+                  - img [ref=e678]
+    - contentinfo [ref=e681]:
+      - generic "Feedback" [ref=e683] [cursor=pointer]:
+        - button "Feedback" [ref=e684]:
+          - generic:
+            - generic:
+              - img
+          - generic:
+            - generic: Feedback
