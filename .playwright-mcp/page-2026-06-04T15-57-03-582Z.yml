@@ -1,0 +1,490 @@
+- generic [ref=e3]:
+  - banner [ref=e6]:
+    - generic [ref=e7]:
+      - generic "Skip to content" [ref=e8] [cursor=pointer]:
+        - button "Skip to content" [ref=e9]:
+          - generic:
+            - generic: Skip to content
+      - generic "Skip to footer" [ref=e10] [cursor=pointer]:
+        - button "Skip to footer" [ref=e11]:
+          - generic:
+            - generic: Skip to footer
+      - link "MSN" [ref=e14] [cursor=pointer]:
+        - /url: https://www.msn.com/en-in
+      - search [ref=e18]:
+        - generic [ref=e19]:
+          - generic "Web search" [ref=e20] [cursor=pointer]:
+            - button "Web search" [ref=e21]:
+              - generic:
+                - generic:
+                  - img
+          - searchbox "Enter your search term" [ref=e22]
+          - generic "Open Copilot" [ref=e26] [cursor=pointer]:
+            - button "Open Copilot" [ref=e27]:
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Open Copilot"
+      - generic [ref=e28]:
+        - generic "Open settings" [ref=e32] [cursor=pointer]:
+          - button "Open settings" [ref=e33]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Page settings
+                  - generic:
+                    - img
+        - generic:
+          - generic:
+            - generic:
+              - generic "Sign In"
+  - generic [ref=e34]:
+    - generic [ref=e35]:
+      - generic [ref=e40]:
+        - list [ref=e43]:
+          - listitem [ref=e44]:
+            - link "Outlook.com" [ref=e47] [cursor=pointer]:
+              - /url: https://outlook.com
+              - generic [ref=e51]: Outlook.com
+          - listitem [ref=e52]:
+            - link "Flipkart" [ref=e55] [cursor=pointer]:
+              - /url: https://clk.tradedoubler.com/click?p=401531&a=3419260&epi=enin-msn-hp-mestripe
+              - generic [ref=e58]:
+                - generic [ref=e59]: Flipkart
+                - generic [ref=e61]: Sponsored
+          - listitem [ref=e62]:
+            - link "Find a tutor" [ref=e65] [cursor=pointer]:
+              - /url: https://www.bing.com/pros?FORM=BPIMNS
+              - generic [ref=e69]: Find a tutor
+          - listitem [ref=e70]:
+            - link "Booking.com" [ref=e73] [cursor=pointer]:
+              - /url: https://www.booking.com/index.html?aid=1624937&label=enin-msn-hp-mestripe
+              - generic [ref=e76]:
+                - generic [ref=e77]: Booking.com
+                - generic [ref=e79]: Sponsored
+          - listitem [ref=e80]:
+            - link "Nykaa" [ref=e83] [cursor=pointer]:
+              - /url: https://sovrn.co/p9zogj8
+              - generic [ref=e86]:
+                - generic [ref=e87]: Nykaa
+                - generic [ref=e89]: Sponsored
+          - listitem [ref=e90]:
+            - link "Facebook" [ref=e93] [cursor=pointer]:
+              - /url: https://www.facebook.com
+              - generic [ref=e97]: Facebook
+          - listitem [ref=e98]:
+            - link "Microsoft 365" [ref=e101] [cursor=pointer]:
+              - /url: https://www.office.com/?omkt=en-IN
+              - generic [ref=e105]: Microsoft 365
+          - listitem [ref=e106]:
+            - link "X" [ref=e109] [cursor=pointer]:
+              - /url: https://x.com
+              - generic [ref=e113]: X
+          - listitem [ref=e114]:
+            - link "OneDrive" [ref=e117] [cursor=pointer]:
+              - /url: https://onedrive.live.com/?wt.mc_id=oo_msn_msnhomepage_header
+              - generic [ref=e121]: OneDrive
+          - listitem [ref=e122]:
+            - link "Skype" [ref=e125] [cursor=pointer]:
+              - /url: https://www.skype.com/
+              - generic [ref=e129]: Skype
+          - listitem [ref=e130]:
+            - link "OneNote" [ref=e133] [cursor=pointer]:
+              - /url: https://www.onenote.com/notebooks?WT.mc_id=MSN_OneNote_TopMenu&auth=1&wdorigin=msn
+              - generic [ref=e137]: OneNote
+          - listitem [ref=e138]:
+            - link "Maps" [ref=e141] [cursor=pointer]:
+              - /url: https://bing.com/maps/?FORM=MSNMAP
+              - generic [ref=e145]: Maps
+          - listitem [ref=e146]:
+            - link "Microsoft Store" [ref=e149] [cursor=pointer]:
+              - /url: https://www.microsoft.com/en-in
+              - generic [ref=e153]: Microsoft Store
+        - button [ref=e154]:
+          - img [ref=e157]
+      - generic [ref=e159]:
+        - banner [ref=e160]
+        - generic [ref=e165]:
+          - navigation [ref=e167]:
+            - generic [ref=e168]:
+              - list [ref=e169]:
+                - listitem [ref=e170]:
+                  - link "Discover" [ref=e171] [cursor=pointer]:
+                    - /url: https://www.msn.com/en-in
+              - list [ref=e172]:
+                - listitem [ref=e173]:
+                  - link "News" [ref=e174] [cursor=pointer]:
+                    - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f
+                - listitem [ref=e175]:
+                  - link "Sports" [ref=e176] [cursor=pointer]:
+                    - /url: https://www.msn.com/en-in/sports
+                - listitem [ref=e177]:
+                  - link "Play" [ref=e178] [cursor=pointer]:
+                    - /url: https://www.msn.com/en-in/play?cgfrom=cg_home_pivot
+                - listitem [ref=e179]:
+                  - link "Money" [ref=e180] [cursor=pointer]:
+                    - /url: https://www.msn.com/en-in/money
+                - listitem [ref=e181]:
+                  - link "Weather" [ref=e182] [cursor=pointer]:
+                    - /url: https://www.msn.com/en-in/weather
+                - listitem [ref=e183]:
+                  - link "Watch" [ref=e184] [cursor=pointer]:
+                    - /url: https://www.msn.com/en-in/video
+                - listitem [ref=e185]:
+                  - link "Shopping" [ref=e186] [cursor=pointer]:
+                    - /url: https://www.bing.com/shop?entrypoint=msn&adunitId=378983&propertyId=316966&FORM=NVBSHP
+          - generic "Personalize your feed\"" [ref=e188] [cursor=pointer]:
+            - button "Personalize your feed\"" [ref=e189]:
+              - generic:
+                - generic:
+                  - img
+              - generic:
+                - generic: Personalize
+      - main [ref=e192]:
+        - generic [ref=e195]:
+          - generic [ref=e198]:
+            - tablist [ref=e200]:
+              - tab [ref=e201] [cursor=pointer]
+              - tab [selected] [ref=e203] [cursor=pointer]
+              - tab [ref=e205] [cursor=pointer]
+              - tab [ref=e207] [cursor=pointer]
+              - tab [ref=e209] [cursor=pointer]
+              - tab [ref=e211] [cursor=pointer]
+              - tab [ref=e213] [cursor=pointer]
+              - tab [ref=e215] [cursor=pointer]
+              - tab [ref=e217] [cursor=pointer]
+              - tab [ref=e219] [cursor=pointer]
+              - tab [ref=e221] [cursor=pointer]
+              - tab [ref=e223] [cursor=pointer]
+              - tab [ref=e225] [cursor=pointer]
+              - tab [ref=e227] [cursor=pointer]
+              - tab [ref=e229] [cursor=pointer]
+              - tab [ref=e231] [cursor=pointer]
+              - tab [ref=e233] [cursor=pointer]
+              - tab [ref=e235] [cursor=pointer]
+              - tab [ref=e237] [cursor=pointer]
+              - tab [ref=e239] [cursor=pointer]
+              - tab [ref=e241] [cursor=pointer]
+              - tab [ref=e243] [cursor=pointer]
+              - tab [ref=e245] [cursor=pointer]
+              - tab [ref=e247] [cursor=pointer]
+              - tab [ref=e249] [cursor=pointer]
+              - tab [ref=e251] [cursor=pointer]
+              - tab [ref=e253] [cursor=pointer]
+            - button [ref=e257]
+            - button [ref=e260]
+            - article "Shooter Action MMO" [ref=e261] [cursor=pointer]:
+              - generic [ref=e263]:
+                - img [ref=e264]
+                - generic [ref=e265]:
+                  - generic [ref=e266]:
+                    - generic [ref=e269]: Crossout
+                    - link "Shooter Action MMO, Crossout" [ref=e270]:
+                      - /url: https://msft-ssp-apac.adnxs.com/click2?e=wqT_3QKhAfBDoQAAAAMAxBkFAQjJwIbRBhDP3o3mtvmbx0oYtqm2wLu_lulnIIT9sBAomAIwxH04uARA7O2mggJI8opOUABaA1VTRGIBBZBoAXABeJmgZ4ABrdQFiAEBkAEAmAEFoAECqQFU46WbxCCgP7EBEQoouQEAAAAAKVzfP8EVHgDJFQo02AGOvQLgAQDwAQD4AQA./s=7a60e03de9412e5c0d22250949220fa89baf6384/bcr=AAAAAAAA8D8=/pp=0.03/bn=92717/clickenc=https%3A%2F%2Fapi.taboola.com%2F2.0%2Fjson%2Fmsn-india-home%2Frecommendations.notify-click%3Fapp.type%3Dbidder%26app.apikey%3D69629143827c91b118c7e0dc9f2a4eb0059feae9%26response.id%3D__460edb5af4c7d9c38a8831287500affa__4ee4a255a9b1bda0655669cef47070ed%26response.session%3Dv2_740f4dca8bd5efa3018a46735a665d75_7481140868675376310_1780588617_1780588617_CIi3jgYQ7_w-GMbT3ZXs78jRngEgASgMMGc4mNEKQPWPEEio5fIDUKrdFVgAYABoxIbm7PuHsLpscAGAAQCIAQCQAQA%26item.id%3D%257E%257EV1%257E%257E-8744745637405065298%257E%257EnG293_-q9b7m91WrplTivdAewKs_c1QiPF9ir3R1vSKV6bsFxrzjI4grhjJKH4V23aoogmtI0n8idYo9N9hyDOLxD3GvAJFX3VOIPfQmIueH0Yr9MEDj9YTwa__25q-b-9Iipb23u89BJoEvA8mRXbCFv22WXbmTAc0AuF1hT3ebrQPzXasjc2OlsIF3hxHvBJY0XaPqFQssa35j_HNdGYzUN8uC7O3CTVERvUaFkB3i1X8Z9Nrmkzsw3vD01FwFUCIhcigDKLqfXahALYKC6sVjc2_E_8YIixkgdoTVGQ3hYbym6hsogv6YgWyO2BpafDbzwwdWa6UApUauRm_aYVkxiVzkqUwUQ7lMUC_-Z67QN95X3bkDyp-WFsizFYM7%26item.type%3Dtext%26sig%3D26c23be36c88ef265d817489a02922203793c805ecff%26redir%3Dhttps%253A%252F%252Fcrossout.net%252Fplay4free%252F%253Fr%253Dtaboola_31242326%2526utm_source%253Dtaboola%2526utm_medium%253Dreferral%2526tblci%253DGiBmaOZEYwCCzo7CW8SFzp4u9sGO8CD60WYvJba656cGEyDip2Mo1JPax9jAvpZ2MO_8Pg%2523tblciGiBmaOZEYwCCzo7CW8SFzp4u9sGO8CD60WYvJba656cGEyDip2Mo1JPax9jAvpZ2MO_8Pg%26st%3Df%26ui%3D7481140868675376310%26cpb%3DGPghINrqHyoZc2cudGFib29sYXN5bmRpY2F0aW9uLmNvbTIIdHJjMzAxMjg4gKaTiQNAmNEKSPWPEFCo5fIDWKrdFWMI3f__________ARDd__________8BGCNkYwjInAEQ99EBGENkYwjSAxDgBhgIZGMIx7ABELnmARhJZGMIjLwBEJrxARgJZGMIpCcQgzUYL2RjCJasARCc2wEYMGRjCJkKEMUPGBFkYwjt__________8BEO3__________wEYE2RjCPIkEJ2hARgUZGMI0AwQ0xIYF2RjCJYUEJ8cGBhkYwiohQEQ7qgBGDpkYwj0jgEQ9LMBGD1kYwj0FBCeHRgfZGoTODgwMzY1MTYwMzY0NDc3MzE1MngBgAHiI4gB6vmYnwKQARiYAfe76JrpM6IBBFNDT06qARJTQ09OX01TRlRfTU9ORVRJWkWyARJTQ09OX01TRlRfTU9ORVRJWkW6AQRob21lwAHAngTKAQJzZ9ABANsBEAHcAQ%26viperAppType%3DSCON
+                      - text: Shooter Action MMO
+                  - link "Sponsored" [ref=e272]:
+                    - /url: https://msft-ssp-apac.adnxs.com/click2?e=wqT_3QKhAfBDoQAAAAMAxBkFAQjJwIbRBhDP3o3mtvmbx0oYtqm2wLu_lulnIIT9sBAomAIwxH04uARA7O2mggJI8opOUABaA1VTRGIBBZBoAXABeJmgZ4ABrdQFiAEBkAEAmAEFoAECqQFU46WbxCCgP7EBEQoouQEAAAAAKVzfP8EVHgDJFQo02AGOvQLgAQDwAQD4AQA./s=7a60e03de9412e5c0d22250949220fa89baf6384/bcr=AAAAAAAA8D8=/pp=0.03/bn=92717/clickenc=https%3A%2F%2Fapi.taboola.com%2F2.0%2Fjson%2Fmsn-india-home%2Frecommendations.notify-click%3Fapp.type%3Dbidder%26app.apikey%3D69629143827c91b118c7e0dc9f2a4eb0059feae9%26response.id%3D__460edb5af4c7d9c38a8831287500affa__4ee4a255a9b1bda0655669cef47070ed%26response.session%3Dv2_740f4dca8bd5efa3018a46735a665d75_7481140868675376310_1780588617_1780588617_CIi3jgYQ7_w-GMbT3ZXs78jRngEgASgMMGc4mNEKQPWPEEio5fIDUKrdFVgAYABoxIbm7PuHsLpscAGAAQCIAQCQAQA%26item.id%3D%257E%257EV1%257E%257E-8744745637405065298%257E%257EnG293_-q9b7m91WrplTivdAewKs_c1QiPF9ir3R1vSKV6bsFxrzjI4grhjJKH4V23aoogmtI0n8idYo9N9hyDOLxD3GvAJFX3VOIPfQmIueH0Yr9MEDj9YTwa__25q-b-9Iipb23u89BJoEvA8mRXbCFv22WXbmTAc0AuF1hT3ebrQPzXasjc2OlsIF3hxHvBJY0XaPqFQssa35j_HNdGYzUN8uC7O3CTVERvUaFkB3i1X8Z9Nrmkzsw3vD01FwFUCIhcigDKLqfXahALYKC6sVjc2_E_8YIixkgdoTVGQ3hYbym6hsogv6YgWyO2BpafDbzwwdWa6UApUauRm_aYVkxiVzkqUwUQ7lMUC_-Z67QN95X3bkDyp-WFsizFYM7%26item.type%3Dtext%26sig%3D26c23be36c88ef265d817489a02922203793c805ecff%26redir%3Dhttps%253A%252F%252Fcrossout.net%252Fplay4free%252F%253Fr%253Dtaboola_31242326%2526utm_source%253Dtaboola%2526utm_medium%253Dreferral%2526tblci%253DGiBmaOZEYwCCzo7CW8SFzp4u9sGO8CD60WYvJba656cGEyDip2Mo1JPax9jAvpZ2MO_8Pg%2523tblciGiBmaOZEYwCCzo7CW8SFzp4u9sGO8CD60WYvJba656cGEyDip2Mo1JPax9jAvpZ2MO_8Pg%26st%3Df%26ui%3D7481140868675376310%26cpb%3DGPghINrqHyoZc2cudGFib29sYXN5bmRpY2F0aW9uLmNvbTIIdHJjMzAxMjg4gKaTiQNAmNEKSPWPEFCo5fIDWKrdFWMI3f__________ARDd__________8BGCNkYwjInAEQ99EBGENkYwjSAxDgBhgIZGMIx7ABELnmARhJZGMIjLwBEJrxARgJZGMIpCcQgzUYL2RjCJasARCc2wEYMGRjCJkKEMUPGBFkYwjt__________8BEO3__________wEYE2RjCPIkEJ2hARgUZGMI0AwQ0xIYF2RjCJYUEJ8cGBhkYwiohQEQ7qgBGDpkYwj0jgEQ9LMBGD1kYwj0FBCeHRgfZGoTODgwMzY1MTYwMzY0NDc3MzE1MngBgAHiI4gB6vmYnwKQARiYAfe76JrpM6IBBFNDT06qARJTQ09OX01TRlRfTU9ORVRJWkWyARJTQ09OX01TRlRfTU9ORVRJWkW6AQRob21lwAHAngTKAQJzZ9ABANsBEAHcAQ%26viperAppType%3DSCON
+                - button "See more" [ref=e274]:
+                  - img [ref=e275]
+          - article [ref=e276] [cursor=pointer]:
+            - generic [ref=e280]:
+              - generic: Sponsored
+          - article "Virat Kohli almost doesn't want the life he lives in India, says ex-RCB teammate" [ref=e281] [cursor=pointer]:
+            - generic [ref=e283]:
+              - img [ref=e284]
+              - generic [ref=e285]:
+                - generic [ref=e286]:
+                  - generic [ref=e287]:
+                    - generic [ref=e288]:
+                      - img [ref=e289]
+                      - generic [ref=e290]: India Today
+                    - generic [ref=e291]: ·
+                    - generic [ref=e292]: 1h
+                  - link "Virat Kohli almost doesn't want the life he lives in India, says ex-RCB teammate, India Today" [ref=e293]:
+                    - /url: https://www.msn.com/en-in/news/other/virat-kohli-almost-doesn-t-want-the-life-he-lives-in-india-says-ex-rcb-teammate/ar-AA24QkaK
+                    - text: Virat Kohli almost doesn't want the life he lives in India, says ex-RCB teammate
+                - generic "Virat Kohli almost doesn't want the life he lives in India, says ex-RCB teammate" [ref=e296]:
+                  - generic [ref=e298]:
+                    - generic [ref=e299]:
+                      - button "13 Like" [ref=e300]:
+                        - generic [ref=e301]:
+                          - img [ref=e302]
+                          - generic [ref=e304]: "13"
+                      - button "Dislike" [ref=e305]:
+                        - img [ref=e307]
+                    - link "View comments 2 Comment" [ref=e310]:
+                      - /url: https://www.msn.com/en-in/news/other/virat-kohli-almost-doesn-t-want-the-life-he-lives-in-india-says-ex-rcb-teammate/ar-AA24QkaK#comments
+                      - button "View comments 2 Comment" [ref=e311]:
+                        - img [ref=e312]
+                      - generic [ref=e314]: "2"
+              - generic [ref=e315]:
+                - button "Hide this story" [ref=e316]:
+                  - img [ref=e317]
+                  - text: Hide this story
+                - button "See more" [ref=e318]:
+                  - img [ref=e319]
+          - article "“Islam-friendly” gym in Kerala’s Palakkad? No music, separate timings for men & women, strict workout rules, claim reports" [ref=e320] [cursor=pointer]:
+            - generic [ref=e322]:
+              - img [ref=e323]
+              - generic [ref=e324]:
+                - generic [ref=e325]:
+                  - generic [ref=e326]:
+                    - generic [ref=e327]:
+                      - img [ref=e328]
+                      - generic [ref=e329]: The Economic Times
+                    - generic [ref=e330]: ·
+                    - generic [ref=e331]: 9h
+                  - link "“Islam-friendly” gym in Kerala’s Palakkad? No music, separate timings for men & women, strict workout rules, claim reports, The Economic Times" [ref=e332]:
+                    - /url: https://www.msn.com/en-in/entertainment/southcinema/islam-friendly-gym-in-kerala-s-palakkad-no-music-separate-timings-for-men-women-strict-workout-rules-claim-reports/ar-AA24NrCU
+                    - text: “Islam-friendly” gym in Kerala’s Palakkad? No music, separate timings for men & women, strict workout rules, claim reports
+                - generic "“Islam-friendly” gym in Kerala’s Palakkad? No music, separate timings for men & women, strict workout rules, claim reports" [ref=e335]:
+                  - generic [ref=e337]:
+                    - generic [ref=e338]:
+                      - button "13 Like" [ref=e339]:
+                        - generic [ref=e340]:
+                          - img [ref=e341]
+                          - generic [ref=e343]: "13"
+                      - button "Dislike" [ref=e344]:
+                        - img [ref=e346]
+                    - link "View comments 1 Comment" [ref=e349]:
+                      - /url: https://www.msn.com/en-in/entertainment/southcinema/islam-friendly-gym-in-kerala-s-palakkad-no-music-separate-timings-for-men-women-strict-workout-rules-claim-reports/ar-AA24NrCU#comments
+                      - button "View comments 1 Comment" [ref=e350]:
+                        - img [ref=e351]
+                      - generic [ref=e353]: "1"
+              - generic [ref=e354]:
+                - button "Hide this story" [ref=e355]:
+                  - img [ref=e356]
+                  - text: Hide this story
+                - button "See more" [ref=e357]:
+                  - img [ref=e358]
+          - article [ref=e359] [cursor=pointer]:
+            - generic [ref=e365]:
+              - generic [ref=e367]:
+                - img "Watchlist suggestions" [ref=e369]
+                - link "Watchlist suggestions" [ref=e370]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?ocid=hpmsn
+                  - heading "Watchlist suggestions" [level=2] [ref=e371]
+                - button "More options" [ref=e373]
+              - generic [ref=e378]:
+                - link "DOW DOW Rising fast ‎+1.70%‎ 51,551.19" [ref=e380]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?id=a6qja2&noti=Price&ocid=hpmsn
+                  - generic [ref=e381]:
+                    - generic [ref=e382]:
+                      - generic [ref=e383]: DOW
+                      - img "DOW" [ref=e384]
+                    - generic [ref=e386]: Rising fast
+                  - generic [ref=e391]:
+                    - generic [ref=e392]: ‎+1.70%‎
+                    - generic [ref=e393]: 51,551.19
+                  - button "Add to watchlist" [ref=e396]:
+                    - img [ref=e397]
+                - link "ITC Ltd ITC ‎+1.19%‎ 280.30" [ref=e401]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?id=ahie2w&ocid=hpmsn
+                  - generic [ref=e402]:
+                    - generic [ref=e404]: ITC Ltd
+                    - generic [ref=e406]: ITC
+                  - generic [ref=e411]:
+                    - generic [ref=e412]: ‎+1.19%‎
+                    - generic [ref=e413]: "280.30"
+                  - button "Add to watchlist" [ref=e416]:
+                    - img [ref=e417]
+                - link "Citigroup Inc Citigroup Inc Rising fast ‎+3.39%‎ 134.34" [ref=e421]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?id=a1p3ww&noti=Price&ocid=hpmsn
+                  - generic [ref=e422]:
+                    - generic [ref=e423]:
+                      - generic [ref=e424]: Citigroup Inc
+                      - img "Citigroup Inc" [ref=e425]
+                    - generic [ref=e427]: Rising fast
+                  - generic [ref=e432]:
+                    - generic [ref=e433]: ‎+3.39%‎
+                    - generic [ref=e434]: "134.34"
+                  - button "Add to watchlist" [ref=e437]:
+                    - img [ref=e438]
+                - link "Dominion Energy Inc Dominion Energy Inc Rising fast ‎+1.63%‎ 66.53" [ref=e442]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?id=a1qpw7&noti=Price&ocid=hpmsn
+                  - generic [ref=e443]:
+                    - generic [ref=e444]:
+                      - generic [ref=e445]: Dominion Energy Inc
+                      - img "Dominion Energy Inc" [ref=e446]
+                    - generic [ref=e448]: Rising fast
+                  - generic [ref=e453]:
+                    - generic [ref=e454]: ‎+1.63%‎
+                    - generic [ref=e455]: "66.53"
+                  - button "Add to watchlist" [ref=e458]:
+                    - img [ref=e459]
+                - link "AT&T Inc AT&T Inc Dropping fast ‎-2.53%‎ 22.95" [ref=e463]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?id=a23www&noti=Price&ocid=hpmsn
+                  - generic [ref=e464]:
+                    - generic [ref=e465]:
+                      - generic [ref=e466]: AT&T Inc
+                      - img "AT&T Inc" [ref=e467]
+                    - generic [ref=e469]: Dropping fast
+                  - generic [ref=e474]:
+                    - generic [ref=e475]: ‎-2.53%‎
+                    - generic [ref=e476]: "22.95"
+                  - button "Add to watchlist" [ref=e479]:
+                    - img [ref=e480]
+              - generic [ref=e484]:
+                - generic [ref=e485]:
+                  - generic "Previous" [ref=e486]:
+                    - button "Previous" [ref=e487]
+                  - tablist [ref=e489]:
+                    - tab "tab-0" [selected] [ref=e490]
+                    - tab "tab-1" [ref=e492]
+                    - tab "tab-2" [ref=e494]
+                    - tab "tab-3" [ref=e496]
+                    - tab "tab-4" [ref=e498]
+                    - tab "tab-5"
+                    - tab "tab-6"
+                  - generic "Next" [ref=e500]:
+                    - button "Next" [ref=e501]
+                - link "See watchlist suggestions" [ref=e503]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?ocid=hpmsn
+          - 'article "BMW owner earning ₹40 LPA feels ''very poor'' in Gurgaon: ''I can''t sleep at night''" [ref=e504] [cursor=pointer]':
+            - generic [ref=e506]:
+              - img [ref=e507]
+              - generic [ref=e508]:
+                - generic [ref=e509]:
+                  - generic [ref=e510]:
+                    - generic [ref=e511]:
+                      - img [ref=e512]
+                      - generic [ref=e513]: Hindustan Times
+                    - generic [ref=e514]: ·
+                    - generic [ref=e515]: 11h
+                  - 'link "BMW owner earning ₹40 LPA feels ''very poor'' in Gurgaon: ''I can''t sleep at night'', Hindustan Times" [ref=e516]':
+                    - /url: https://www.msn.com/en-in/news/india/bmw-owner-earning-40-lpa-feels-very-poor-in-gurgaon-i-can-t-sleep-at-night/ar-AA24Ni52
+                    - text: "BMW owner earning ₹40 LPA feels 'very poor' in Gurgaon: 'I can't sleep at night'"
+                - 'generic "BMW owner earning ₹40 LPA feels ''very poor'' in Gurgaon: ''I can''t sleep at night''" [ref=e519]':
+                  - generic [ref=e521]:
+                    - generic [ref=e522]:
+                      - button "14 Like" [ref=e523]:
+                        - generic [ref=e524]:
+                          - img [ref=e525]
+                          - generic [ref=e527]: "14"
+                      - button "Dislike" [ref=e528]:
+                        - img [ref=e530]
+                    - link "View comments 2 Comment" [ref=e533]:
+                      - /url: https://www.msn.com/en-in/news/india/bmw-owner-earning-40-lpa-feels-very-poor-in-gurgaon-i-can-t-sleep-at-night/ar-AA24Ni52#comments
+                      - button "View comments 2 Comment" [ref=e534]:
+                        - img [ref=e535]
+                      - generic [ref=e537]: "2"
+              - generic [ref=e538]:
+                - button "Hide this story" [ref=e539]:
+                  - img [ref=e540]
+                  - text: Hide this story
+                - button "See more" [ref=e541]:
+                  - img [ref=e542]
+          - article "Viral escape photo from Malviya Nagar fire helps relatives trace couple who came to Delhi for IVF treatment" [ref=e543] [cursor=pointer]:
+            - generic [ref=e545]:
+              - img [ref=e546]
+              - generic [ref=e547]:
+                - generic [ref=e548]:
+                  - generic [ref=e549]:
+                    - generic [ref=e550]:
+                      - img [ref=e551]
+                      - generic [ref=e552]: The New Indian Express
+                    - generic [ref=e553]: ·
+                    - generic [ref=e554]: 22h
+                  - link "Viral escape photo from Malviya Nagar fire helps relatives trace couple who came to Delhi for IVF treatment, The New Indian Express" [ref=e555]:
+                    - /url: https://www.msn.com/en-in/news/india/viral-escape-photo-from-malviya-nagar-fire-helps-relatives-trace-couple-who-came-to-delhi-for-ivf-treatment/ar-AA24Lctw
+                    - text: Viral escape photo from Malviya Nagar fire helps relatives trace couple who came to Delhi for IVF treatment
+                - generic "Viral escape photo from Malviya Nagar fire helps relatives trace couple who came to Delhi for IVF treatment" [ref=e558]:
+                  - generic [ref=e560]:
+                    - generic [ref=e561]:
+                      - button "77 Like" [ref=e562]:
+                        - generic [ref=e563]:
+                          - img [ref=e564]
+                          - generic [ref=e566]: "77"
+                      - button "Dislike" [ref=e567]:
+                        - img [ref=e569]
+                    - link "View comments 4 Comment" [ref=e572]:
+                      - /url: https://www.msn.com/en-in/news/india/viral-escape-photo-from-malviya-nagar-fire-helps-relatives-trace-couple-who-came-to-delhi-for-ivf-treatment/ar-AA24Lctw#comments
+                      - button "View comments 4 Comment" [ref=e573]:
+                        - img [ref=e574]
+                      - generic [ref=e576]: "4"
+              - generic [ref=e577]:
+                - button "Hide this story" [ref=e578]:
+                  - img [ref=e579]
+                  - text: Hide this story
+                - button "See more" [ref=e580]:
+                  - img [ref=e581]
+          - 'article "Relive Your Childhood: Top 10 Cartoon Network Shows We Can’t Forget" [ref=e582] [cursor=pointer]':
+            - generic [ref=e584]:
+              - img [ref=e585]
+              - generic [ref=e586]:
+                - generic [ref=e587]:
+                  - generic [ref=e589]:
+                    - img [ref=e590]
+                    - generic [ref=e591]: News18
+                  - 'link "Relive Your Childhood: Top 10 Cartoon Network Shows We Can’t Forget, News18" [ref=e592]':
+                    - /url: https://www.msn.com/en-in/money/technology/relive-your-childhood-top-10-cartoon-network-shows-we-can-t-forget/ss-AA1MA0Oz
+                    - text: "Relive Your Childhood: Top 10 Cartoon Network Shows We Can’t Forget"
+                - 'generic "Relive Your Childhood: Top 10 Cartoon Network Shows We Can’t Forget" [ref=e595]':
+                  - generic [ref=e597]:
+                    - generic [ref=e598]:
+                      - button "3k Like" [ref=e599]:
+                        - generic [ref=e600]:
+                          - img [ref=e601]
+                          - generic [ref=e603]: 3k
+                      - button "Dislike" [ref=e604]:
+                        - img [ref=e606]
+                    - link "View comments 4 Comment" [ref=e609]:
+                      - /url: https://www.msn.com/en-in/money/technology/relive-your-childhood-top-10-cartoon-network-shows-we-can-t-forget/ss-AA1MA0Oz#comments
+                      - button "View comments 4 Comment" [ref=e610]:
+                        - img [ref=e611]
+                      - generic [ref=e613]: "4"
+              - generic [ref=e614]:
+                - button "Hide this story" [ref=e615]:
+                  - img [ref=e616]
+                  - text: Hide this story
+                - button "See more" [ref=e617]:
+                  - img [ref=e618]
+          - article [ref=e619] [cursor=pointer]:
+            - generic [ref=e624]:
+              - generic [ref=e626]:
+                - link "Top stories" [ref=e628]:
+                  - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f?cvid=6a21a04521bc4c328ccddf604a33a7bc&ocid=hpmsn
+                  - heading "Top stories" [level=2] [ref=e629]
+                - button "More options" [ref=e631]
+              - list [ref=e634]:
+                - 'listitem "Delhi: Malviya Nagar fire wake-up call, locals vow to prioritise fire safety" [ref=e635]':
+                  - generic [ref=e636]:
+                    - generic [ref=e637]:
+                      - img [ref=e638]
+                      - generic [ref=e639]:
+                        - generic: Press Trust of India ·now
+                    - generic [ref=e640]: "Delhi: Malviya Nagar fire wake-up call, locals vow to prioritise fire safety"
+                - listitem "DMK to skip INDIA alliance meet in Delhi; cites 'Congress' betrayal" [ref=e641]:
+                  - generic [ref=e642]:
+                    - generic [ref=e643]:
+                      - img [ref=e644]
+                      - generic [ref=e645]:
+                        - generic: WION ·now
+                    - generic [ref=e646]: DMK to skip INDIA alliance meet in Delhi; cites 'Congress' betrayal
+                - listitem "Indian man travelling home for nephew’s wedding killed in Iran drone strike at Kuwait airport" [ref=e647]:
+                  - generic [ref=e648]:
+                    - generic [ref=e649]:
+                      - img [ref=e650]
+                      - generic [ref=e651]:
+                        - generic: The Indian Express ·1h
+                    - generic [ref=e652]: Indian man travelling home for nephew’s wedding killed in Iran drone strike at Kuwait airport
+              - generic [ref=e654]:
+                - generic [ref=e655]:
+                  - generic "Previous" [ref=e656]:
+                    - button "Previous" [ref=e657]
+                  - tablist [ref=e659]:
+                    - tab "tab-0" [selected] [ref=e660]
+                    - tab "tab-1" [ref=e662]
+                    - tab "tab-2" [ref=e664]
+                  - generic "Next" [ref=e666]:
+                    - button "Next" [ref=e667]
+                - link "See more" [ref=e669]:
+                  - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f?cvid=6a21a04521bc4c328ccddf604a33a7bc&ocid=hpmsn
+    - contentinfo [ref=e672]:
+      - generic "Feedback" [ref=e674] [cursor=pointer]:
+        - button "Feedback" [ref=e675]:
+          - generic:
+            - generic:
+              - img
+          - generic:
+            - generic: Feedback

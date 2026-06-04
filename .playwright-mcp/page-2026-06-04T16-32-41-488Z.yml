@@ -1,0 +1,1289 @@
+- generic [ref=e3]:
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - img "Microsoft Edge" [ref=e10]
+      - link "BannerHeadlineAndLead" [ref=e11] [cursor=pointer]:
+        - /url: https://www.microsoft.com/edge/launch/msn-1
+        - paragraph [ref=e12]: The power of Windows with Microsoft Edge
+        - text: For a fast, secure web experience use the best browser for MSN
+    - generic [ref=e13]:
+      - button "DismissBanner" [ref=e14] [cursor=pointer]: Close
+      - button "ActionButton1" [ref=e15] [cursor=pointer]: Go now
+  - banner [ref=e18]:
+    - generic [ref=e19]:
+      - generic "Skip to content" [ref=e20] [cursor=pointer]:
+        - button "Skip to content" [ref=e21]:
+          - generic:
+            - generic: Skip to content
+      - generic "Skip to footer" [ref=e22] [cursor=pointer]:
+        - button "Skip to footer" [ref=e23]:
+          - generic:
+            - generic: Skip to footer
+      - link "MSN" [ref=e26] [cursor=pointer]:
+        - /url: https://www.msn.com/en-in
+      - search [ref=e30]:
+        - generic [ref=e31]:
+          - generic "Web search" [ref=e32] [cursor=pointer]:
+            - button "Web search" [ref=e33]:
+              - generic:
+                - generic:
+                  - img
+          - searchbox "Enter your search term" [ref=e34]
+          - generic "Open Copilot" [ref=e38] [cursor=pointer]:
+            - button "Open Copilot" [ref=e39]:
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Open Copilot"
+      - generic [ref=e40]:
+        - generic "Open settings" [ref=e44] [cursor=pointer]:
+          - button "Open settings" [ref=e45]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Page settings
+                  - generic:
+                    - img
+        - generic:
+          - generic:
+            - generic:
+              - generic "Sign In"
+  - generic [ref=e46]:
+    - generic [ref=e47]:
+      - generic [ref=e52]:
+        - list [ref=e55]:
+          - listitem [ref=e56]:
+            - link "Outlook.com" [ref=e59] [cursor=pointer]:
+              - /url: https://outlook.com
+              - generic [ref=e63]: Outlook.com
+          - listitem [ref=e64]:
+            - link "Flipkart" [ref=e67] [cursor=pointer]:
+              - /url: https://clk.tradedoubler.com/click?p=401531&a=3419260&epi=enin-msn-hp-mestripe
+              - generic [ref=e70]:
+                - generic [ref=e71]: Flipkart
+                - generic [ref=e73]: Sponsored
+          - listitem [ref=e74]:
+            - link "Find a tutor" [ref=e77] [cursor=pointer]:
+              - /url: https://www.bing.com/pros?FORM=BPIMNS
+              - generic [ref=e81]: Find a tutor
+          - listitem [ref=e82]:
+            - link "Booking.com" [ref=e85] [cursor=pointer]:
+              - /url: https://www.booking.com/index.html?aid=1624937&label=enin-msn-hp-mestripe
+              - generic [ref=e88]:
+                - generic [ref=e89]: Booking.com
+                - generic [ref=e91]: Sponsored
+          - listitem [ref=e92]:
+            - link "Nykaa" [ref=e95] [cursor=pointer]:
+              - /url: https://sovrn.co/p9zogj8
+              - generic [ref=e98]:
+                - generic [ref=e99]: Nykaa
+                - generic [ref=e101]: Sponsored
+          - listitem [ref=e102]:
+            - link "Facebook" [ref=e105] [cursor=pointer]:
+              - /url: https://www.facebook.com
+              - generic [ref=e109]: Facebook
+          - listitem [ref=e110]:
+            - link "Microsoft 365" [ref=e113] [cursor=pointer]:
+              - /url: https://www.office.com/?omkt=en-IN
+              - generic [ref=e117]: Microsoft 365
+          - listitem [ref=e118]:
+            - link "X" [ref=e121] [cursor=pointer]:
+              - /url: https://x.com
+              - generic [ref=e125]: X
+          - listitem [ref=e126]:
+            - link "OneDrive" [ref=e129] [cursor=pointer]:
+              - /url: https://onedrive.live.com/?wt.mc_id=oo_msn_msnhomepage_header
+              - generic [ref=e133]: OneDrive
+          - listitem [ref=e134]:
+            - link "Skype" [ref=e137] [cursor=pointer]:
+              - /url: https://www.skype.com/
+              - generic [ref=e141]: Skype
+          - listitem [ref=e142]:
+            - link "OneNote" [ref=e145] [cursor=pointer]:
+              - /url: https://www.onenote.com/notebooks?WT.mc_id=MSN_OneNote_TopMenu&auth=1&wdorigin=msn
+              - generic [ref=e149]: OneNote
+          - listitem [ref=e150]:
+            - link "Maps" [ref=e153] [cursor=pointer]:
+              - /url: https://bing.com/maps/?FORM=MSNMAP
+              - generic [ref=e157]: Maps
+          - listitem [ref=e158]:
+            - link "Microsoft Store" [ref=e161] [cursor=pointer]:
+              - /url: https://www.microsoft.com/en-in
+              - generic [ref=e165]: Microsoft Store
+        - button [ref=e166]:
+          - img [ref=e169]
+      - generic [ref=e171]:
+        - banner [ref=e172]:
+          - generic [ref=e175]:
+            - iframe [ref=e178]:
+              - generic [active] [ref=f5e1]:
+                - generic [ref=f5e2]:
+                  - generic [ref=f5e4]:
+                    - generic:
+                      - generic:
+                        - link "Privacy Settings" [ref=f5e5] [cursor=pointer]:
+                          - /url: https://account.microsoft.com/privacy/ad-settings
+                          - img [ref=f5e6]
+                        - generic:
+                          - generic:
+                            - generic:
+                              - generic:
+                                - generic: American Express®
+                            - generic:
+                              - generic: American Express® Platinum Reserve℠ Credit Card
+                            - generic:
+                              - generic: Welcome Gift of 11,000* Bonus Membership Rewards Points. *T&C Apply
+                            - button "Learn more" [ref=f5e8] [cursor=pointer]:
+                              - generic [ref=f5e9]:
+                                - generic [ref=f5e10]: Learn more
+                                - img [ref=f5e11]
+                      - link "American Express® Platinum Reserve℠ Credit Card" [ref=f5e13] [cursor=pointer]:
+                        - /url: https://www.bing.com/aclick?ld=e8S3oXcyCFET4hVhXrmBqDRDVUCUyVkGwC4Ch_GkReYQ0831wGnsT2_omlml-dpCZeqV2P7pZAqSJqGTrsDZT8iH1a-CORL1azDqhvL4WftlzniI2g1N4GgJl4n_gGyWEqzDcXPJ-3XvKNhEDlckEgrur-lx8GMRodfy8F7HPj3_T8hZAGnLTGb9F14lVy-vclg3YRYg&u=aHR0cHMlM2ElMmYlMmZ3d3cuYW1lcmljYW5leHByZXNzLmNvbSUyZmluJTJmY3JlZGl0LWNhcmRzJTJmcGxhdGludW0tcmVzZXJ2ZS1jcmVkaXQtY2FyZCUyZiUzZkNQSUQlM2QxMDA2MTIxODElMjZtc2Nsa2lkJTNkYzM4MWU4Mjk1ZmMzMTQwZjQ3MmU4MjA4Zjc2NmRkNjE&rlid=c381e8295fc3140f472e8208f766dd61
+                  - iframe [ref=f5e14]:
+                    
+                  - img
+                - img
+            - generic: Sponsored
+        - generic [ref=e179]:
+          - generic [ref=e183]:
+            - navigation [ref=e185]:
+              - generic [ref=e186]:
+                - list [ref=e187]:
+                  - listitem [ref=e188]:
+                    - link "Discover" [ref=e189] [cursor=pointer]:
+                      - /url: https://www.msn.com/en-in
+                - list [ref=e190]:
+                  - listitem [ref=e191]:
+                    - link "News" [ref=e192] [cursor=pointer]:
+                      - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f
+                  - listitem [ref=e193]:
+                    - link "Sports" [ref=e194] [cursor=pointer]:
+                      - /url: https://www.msn.com/en-in/sports
+                  - listitem [ref=e195]:
+                    - link "Play" [ref=e196] [cursor=pointer]:
+                      - /url: https://www.msn.com/en-in/play?cgfrom=cg_home_pivot
+                  - listitem [ref=e197]:
+                    - link "Money" [ref=e198] [cursor=pointer]:
+                      - /url: https://www.msn.com/en-in/money
+                  - listitem [ref=e199]:
+                    - link "Weather" [ref=e200] [cursor=pointer]:
+                      - /url: https://www.msn.com/en-in/weather
+                  - listitem [ref=e201]:
+                    - link "Watch" [ref=e202] [cursor=pointer]:
+                      - /url: https://www.msn.com/en-in/video
+                  - listitem [ref=e203]:
+                    - link "Shopping" [ref=e204] [cursor=pointer]:
+                      - /url: https://www.bing.com/shop?entrypoint=msn&adunitId=378983&propertyId=316966&FORM=NVBSHP
+            - generic "Personalize your feed\"" [ref=e206] [cursor=pointer]:
+              - button "Personalize your feed\"" [ref=e207]:
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic: Personalize
+          - button "Make MSN my homepage" [ref=e209] [cursor=pointer]
+      - main [ref=e212]:
+        - generic [ref=e214]:
+          - generic [ref=e215]:
+            - generic [ref=e218]:
+              - tablist [ref=e220]:
+                - tab [ref=e221] [cursor=pointer]
+                - tab [selected] [ref=e223] [cursor=pointer]
+                - tab [ref=e225] [cursor=pointer]
+                - tab [ref=e227] [cursor=pointer]
+                - tab [ref=e229] [cursor=pointer]
+                - tab [ref=e231] [cursor=pointer]
+                - tab [ref=e233] [cursor=pointer]
+                - tab [ref=e235] [cursor=pointer]
+                - tab [ref=e237] [cursor=pointer]
+                - tab [ref=e239] [cursor=pointer]
+                - tab [ref=e241] [cursor=pointer]
+                - tab [ref=e243] [cursor=pointer]
+                - tab [ref=e245] [cursor=pointer]
+                - tab [ref=e247] [cursor=pointer]
+                - tab [ref=e249] [cursor=pointer]
+                - tab [ref=e251] [cursor=pointer]
+                - tab [ref=e253] [cursor=pointer]
+                - tab [ref=e255] [cursor=pointer]
+                - tab [ref=e257] [cursor=pointer]
+                - tab [ref=e259] [cursor=pointer]
+                - tab [ref=e261] [cursor=pointer]
+                - tab [ref=e263] [cursor=pointer]
+                - tab [ref=e265] [cursor=pointer]
+                - tab [ref=e267] [cursor=pointer]
+                - tab [ref=e269] [cursor=pointer]
+                - tab [ref=e271] [cursor=pointer]
+                - tab [ref=e273] [cursor=pointer]
+                - tab [ref=e275] [cursor=pointer]
+              - button [ref=e279]
+              - button [ref=e282]
+              - article "American Express® Platinum Reserve℠ Credit Card" [ref=e283] [cursor=pointer]:
+                - generic [ref=e285]:
+                  - img [ref=e286]
+                  - generic [ref=e287]:
+                    - generic [ref=e288]:
+                      - generic [ref=e291]: American Express®
+                      - link "American Express® Platinum Reserve℠ Credit Card, American Express®" [ref=e292]:
+                        - /url: https://www.bing.com/api/v1/mediation/tracking?adUnit=1732768568&auId=8d5f8a6c-86b0-4e70-80d9-257cae4c5420&bdc=ch&bidId=1&bidderId=4&cmExpId=CL&impId=1&impTy=1&ldc=xfnczr&mkt=en-in&oAdUnit=1732768568&pId=1&publisherId=17160724&rId=d89f3d1a-1e68-4ebb-8b3e-467db2e7e867&region=apac&rlink=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8OZ7Mk7ERfWy4AM0-IPeMNzVUCUxLPT4JYyFyViwa-Xl-jFnbz39qsSnjpH0WJ0IaL8DsQP2UCv0lp9XClqR5LdvLYzH068QIfh5WeEhZBD4rje-oXsJbvLESIsgObXs0tLSZoHhizGKoGTKQ0rzYW_mTzCNbOFEH_mIwPfIUwutrvh80znzm5G8jzGqs4JQ1u-dj4A%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuYW1lcmljYW5leHByZXNzLmNvbSUyZmluJTJmY3JlZGl0LWNhcmRzJTJmcGxhdGludW0tcmVzZXJ2ZS1jcmVkaXQtY2FyZCUyZiUzZkNQSUQlM2QxMDA2MTIxODElMjZtc2Nsa2lkJTNkMjFjZDE0ZTM0ZWQzMTg3MDg4OTY3ZWMyZTY3NzZmOTA%26rlid%3D21cd14e34ed3187088967ec2e6776f90&rtype=targetURL&tagId=hp2-infopane-2&trafficGroup=zfa_angvir&trafficSubGroup=erfreir&uberGroup=hore_1c&uberSubGroup=erfreir
+                        - text: American Express® Platinum Reserve℠ Credit Card
+                    - link "Sponsored" [ref=e294]:
+                      - /url: https://www.bing.com/api/v1/mediation/tracking?adUnit=1732768568&auId=8d5f8a6c-86b0-4e70-80d9-257cae4c5420&bdc=ch&bidId=1&bidderId=4&cmExpId=CL&impId=1&impTy=1&ldc=xfnczr&mkt=en-in&oAdUnit=1732768568&pId=1&publisherId=17160724&rId=d89f3d1a-1e68-4ebb-8b3e-467db2e7e867&region=apac&rlink=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8OZ7Mk7ERfWy4AM0-IPeMNzVUCUxLPT4JYyFyViwa-Xl-jFnbz39qsSnjpH0WJ0IaL8DsQP2UCv0lp9XClqR5LdvLYzH068QIfh5WeEhZBD4rje-oXsJbvLESIsgObXs0tLSZoHhizGKoGTKQ0rzYW_mTzCNbOFEH_mIwPfIUwutrvh80znzm5G8jzGqs4JQ1u-dj4A%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuYW1lcmljYW5leHByZXNzLmNvbSUyZmluJTJmY3JlZGl0LWNhcmRzJTJmcGxhdGludW0tcmVzZXJ2ZS1jcmVkaXQtY2FyZCUyZiUzZkNQSUQlM2QxMDA2MTIxODElMjZtc2Nsa2lkJTNkMjFjZDE0ZTM0ZWQzMTg3MDg4OTY3ZWMyZTY3NzZmOTA%26rlid%3D21cd14e34ed3187088967ec2e6776f90&rtype=targetURL&tagId=hp2-infopane-2&trafficGroup=zfa_angvir&trafficSubGroup=erfreir&uberGroup=hore_1c&uberSubGroup=erfreir
+                  - button "See more" [ref=e296]:
+                    - img [ref=e297]
+            - article [ref=e298] [cursor=pointer]:
+              - generic [ref=e301]:
+                - iframe [ref=e304]:
+                  - generic [ref=f6e2]:
+                    - link [ref=f6e3] [cursor=pointer]:
+                      - /url: https://sin3-ib.msn.com/click2?e=wqT_3QKfAfCBnwAAAAMAxBkFAQil0YbRBhDoydrwsefykS4YnoLf0eWwnqxTIN-k3RAomAIwmAI4AkCn2IXhAkjOuRRQAFoDVVNEYgNVU0RorAJw-gF47gKAAbXTBYgBAZABAZgBBKABAqkBexSuR-F6hD-xAXsUrkfheoQ_uQEAAADgo3DNP8EBew0UAMkVKCzYAQDgAQDwAUP4AQA./s=a62d2c38cafe4bc578cad4f2a0c67bf0033dff8c/bcr=AAAAAAAA8D8=/cnd=%21bxTs5Qj7htMfEKfYheECGM65FCAEKAAxexSuR-F6hD86CVNJTjM6NDc0NkChTEkAAAAAAADwP1EAAAAAAAAAAFkAAAAAAAAAAGEAAAAAAAAAAGkAAAAAAAAAAHEAAAAAAAAAAHgAiQEAAAAAAADwPw../cca=MjgwI1NJTjM6NDc0Ng==/bn=92597/clickenc=https%3A%2F%2Fwww.bing.com%2Fapps%2Fwallpaper%2Fthemes%2FXbox%3Fpc%3Dw363%26index%3D0
+                      - img [ref=f6e4]
+                    - iframe [ref=f6e5]:
+                      
+                    - img
+                - generic:
+                  - generic: Sponsored
+                - generic [ref=e305]:
+                  - generic: Sponsored
+            - 'article "Bobby Deol opens up on alcohol addiction, reveals wife Tanya Deol ran the house financially when he had no work: ''Bacche puchte the papa kyun..''" [ref=e306] [cursor=pointer]':
+              - generic [ref=e308]:
+                - img [ref=e309]
+                - generic [ref=e310]:
+                  - generic [ref=e311]:
+                    - generic [ref=e312]:
+                      - generic [ref=e313]:
+                        - img [ref=e314]
+                        - generic [ref=e315]: The Times of India
+                      - generic [ref=e316]: ·
+                      - generic [ref=e317]: 3d
+                    - 'link "Bobby Deol opens up on alcohol addiction, reveals wife Tanya Deol ran the house financially when he had no work: ''Bacche puchte the papa kyun..'', The Times of India" [ref=e318]':
+                      - /url: https://www.msn.com/en-in/entertainment/bollywood/bobby-deol-opens-up-on-alcohol-addiction-reveals-wife-tanya-deol-ran-the-house-financially-when-he-had-no-work-bacche-puchte-the-papa-kyun/ar-AA24uYCR
+                      - text: "Bobby Deol opens up on alcohol addiction, reveals wife Tanya Deol ran the house financially when he had no work: 'Bacche puchte the papa kyun..'"
+                  - 'generic "Bobby Deol opens up on alcohol addiction, reveals wife Tanya Deol ran the house financially when he had no work: ''Bacche puchte the papa kyun..''" [ref=e321]':
+                    - generic [ref=e323]:
+                      - generic [ref=e324]:
+                        - button "54 Like" [ref=e325]:
+                          - generic [ref=e326]:
+                            - img [ref=e327]
+                            - generic [ref=e329]: "54"
+                        - button "Dislike" [ref=e330]:
+                          - img [ref=e332]
+                      - link "View comments 1 Comment" [ref=e335]:
+                        - /url: https://www.msn.com/en-in/entertainment/bollywood/bobby-deol-opens-up-on-alcohol-addiction-reveals-wife-tanya-deol-ran-the-house-financially-when-he-had-no-work-bacche-puchte-the-papa-kyun/ar-AA24uYCR#comments
+                        - button "View comments 1 Comment" [ref=e336]:
+                          - img [ref=e337]
+                        - generic [ref=e339]: "1"
+                - generic [ref=e340]:
+                  - button "Hide this story" [ref=e341]:
+                    - img [ref=e342]
+                    - text: Hide this story
+                  - button "See more" [ref=e343]:
+                    - img [ref=e344]
+            - article "The American Express® Platinum Card" [ref=e345] [cursor=pointer]:
+              - generic [ref=e347]:
+                - img [ref=e348]
+                - generic [ref=e349]:
+                  - generic [ref=e350]:
+                    - generic [ref=e353]: American Express®
+                    - link "The American Express® Platinum Card, American Express®" [ref=e354]:
+                      - /url: https://www.bing.com/api/v1/mediation/tracking?adUnit=1732768568&auId=257c4a7b-5c18-4ad4-bbe3-27cb3f03c4f6&bdc=ch&bidId=2&bidderId=4&cmExpId=CL&impId=8&impTy=1&ldc=xfnczr&mkt=en-in&oAdUnit=1732768568&pId=1&publisherId=17160724&rId=d89f3d1a-1e68-4ebb-8b3e-467db2e7e867&region=apac&rlink=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De820PEXumDkj5hh56i1K7lXTVUCUz5lu2PVDcJ65ya5AdhzYDFDyhWugT2C6f_EXP-jeTmLiG7ugL6rkGSvp6Bbfyedxnv41e1Wkt6wHhxCcWc6xjVAdVgoWmcA75QoDTHRkxkxR0ovm_cUwEVSUD9exlBlv-Glpd5lXILpyy2bmA5sFGTlTk1jVJ-1fOEQAX_NXfGIA%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuYW1lcmljYW5leHByZXNzLmNvbSUyZmluJTJmY2hhcmdlLWNhcmRzJTJmcGxhdGludW0tY2FyZCUyZiUzZkNQSUQlM2QxMDA2MTIxNzIlMjZtc2Nsa2lkJTNkMmYyOWU0YWRlM2VjMTU1NzhiMWI4ZThjNGI0ODE4ODk%26rlid%3D2f29e4ade3ec15578b1b8e8c4b481889&rtype=targetURL&tagId=hp2-river-1&trafficGroup=zfa_angvir&trafficSubGroup=erfreir&uberGroup=hore_1c&uberSubGroup=erfreir
+                      - text: The American Express® Platinum Card
+                  - link "Sponsored" [ref=e356]:
+                    - /url: https://www.bing.com/api/v1/mediation/tracking?adUnit=1732768568&auId=257c4a7b-5c18-4ad4-bbe3-27cb3f03c4f6&bdc=ch&bidId=2&bidderId=4&cmExpId=CL&impId=8&impTy=1&ldc=xfnczr&mkt=en-in&oAdUnit=1732768568&pId=1&publisherId=17160724&rId=d89f3d1a-1e68-4ebb-8b3e-467db2e7e867&region=apac&rlink=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De820PEXumDkj5hh56i1K7lXTVUCUz5lu2PVDcJ65ya5AdhzYDFDyhWugT2C6f_EXP-jeTmLiG7ugL6rkGSvp6Bbfyedxnv41e1Wkt6wHhxCcWc6xjVAdVgoWmcA75QoDTHRkxkxR0ovm_cUwEVSUD9exlBlv-Glpd5lXILpyy2bmA5sFGTlTk1jVJ-1fOEQAX_NXfGIA%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuYW1lcmljYW5leHByZXNzLmNvbSUyZmluJTJmY2hhcmdlLWNhcmRzJTJmcGxhdGludW0tY2FyZCUyZiUzZkNQSUQlM2QxMDA2MTIxNzIlMjZtc2Nsa2lkJTNkMmYyOWU0YWRlM2VjMTU1NzhiMWI4ZThjNGI0ODE4ODk%26rlid%3D2f29e4ade3ec15578b1b8e8c4b481889&rtype=targetURL&tagId=hp2-river-1&trafficGroup=zfa_angvir&trafficSubGroup=erfreir&uberGroup=hore_1c&uberSubGroup=erfreir
+                - button "See more" [ref=e358]:
+                  - img [ref=e359]
+            - article [ref=e360] [cursor=pointer]:
+              - generic [ref=e366]:
+                - generic [ref=e368]:
+                  - img "World Cup coverage" [ref=e370]
+                  - link "World Cup coverage" [ref=e371]:
+                    - /url: https://www.msn.com/en-in/sports/moments/league/ka-KACCA5F295?serviceName=contentRetrieverService&query=FIFA+World+Cup+2026--243&newsid=AA24JsNx&ocid=hpmsn&cvid=6a21a8a24b5d439baf851cc57ec8cc24
+                    - heading "World Cup coverage" [level=2] [ref=e372]
+                  - button "More interests" [ref=e373]
+                  - generic [ref=e374]:
+                    - generic "Popular in your area" [ref=e375]:
+                      - button "Popular in your area" [ref=e376]
+                    - button "More options" [ref=e377]
+                - link "+18 · Curated by Copilot FIFA World Cup 2026 navigates unrest, policy changes and rising talent" [ref=e381]:
+                  - /url: https://www.msn.com/en-in/sports/moments/league/ka-KACCA5F295?serviceName=contentRetrieverService&query=FIFA+World+Cup+2026--243&newsid=AA24JsNx&ocid=hpmsn&cvid=6a21a8a24b5d439baf851cc57ec8cc24
+                  - generic [ref=e385]: +18 · Curated by Copilot
+                  - button "FIFA World Cup 2026 navigates unrest, policy changes and rising talent" [ref=e386]
+                - generic [ref=e388]:
+                  - generic [ref=e389]:
+                    - generic "Previous" [ref=e390]:
+                      - button "Previous" [ref=e391]
+                    - tablist [ref=e393]:
+                      - tab "tab-0" [selected] [ref=e394]
+                      - tab "tab-1" [ref=e396]
+                    - generic "Next" [ref=e398]:
+                      - button "Next" [ref=e399]
+                  - link "See full coverage" [ref=e401]:
+                    - /url: https://www.msn.com/en-in/sports/moments/league/ka-KACCA5F295?serviceName=contentRetrieverService&query=FIFA+World+Cup+2026--243&newsid=AA24JsNx&ocid=hpmsn&cvid=6a21a8a24b5d439baf851cc57ec8cc24
+            - article "Feel the power of Intel® Core™" [ref=e402] [cursor=pointer]:
+              - generic [ref=e404]:
+                - img [ref=e405]
+                - generic [ref=e406]:
+                  - generic [ref=e407]:
+                    - generic [ref=e410]: Intel
+                    - link "Feel the power of Intel® Core™, Intel" [ref=e411]:
+                      - /url: https://msft-ssp-apac.adnxs.com/click2?e=wqT_3QKkAfBDpAAAAAMAxBkFAQik0YbRBhCu4cu3kfS0zHMYnoLf0eWwnqxTIO77sBAomAIwnxc4twFAmJ_R5AJI8opOUABaA1VTRGIBBZBoAXABeJmgZ4AB_tIFiAEBkAEAmAEFoAECqQF4tAd6ngWIP7EBEQoouQEAAAAgheuxP8EVHgDJFQpA2AGOvQLgAQDwAYbxxgj4AQA./s=a55b3205679393759ad53bf1f2cc313b748205c6/bcr=AAAAAAAA8D8=/pp=0.01/bn=92542/clickenc=https%3A%2F%2Fpn.ybp.yahoo.com%2Fcj%2Fcrid%2FvI1tfkhSJxHvSWp_7Cx4BAqobUe5ww89%2Fcd%2FsbavXr5TAKILHU_pWMSXf7qc3784lzQ9pjHIK-_WuVztenfwhQ5Zy2QRrq9IRWQ4ZgGm7XlJmb3-dYoMuCntqhKigOIYJA5GJZML05C_ZWYZP1XGqNdJYV7aHyrwf_IV4XTzWeAY8qoSnvguEWbwaQC1iC21zOcln6As4K84zgXqQjeWXi2Q5X4saRXERns5IW6tAspCIr5c3xu-HRx0h0pmOmfTYYpikUeAhOB9a_CvOiJScRfqvIpeUaiL_FYqfca-gOHQ_SE%2Frurl%2Fhttps%3A%2F%2Fgame.intel.com%2Fus%2Fcore-gaming%2F%3Fcid%3Ddiad%26source%3Dgcm%26campid%3D35740953%26sid%3D4309167%26plid%3D445270514%26aid%3D638875144%26crid%3D254699634%26dclid%3DCJPB3MXTtZQDFcBCRwEdOn8fBg%26gad_source%3D7%26gad_campaignid%3D23771162805
+                      - text: Feel the power of Intel® Core™
+                  - link "Sponsored" [ref=e413]:
+                    - /url: https://msft-ssp-apac.adnxs.com/click2?e=wqT_3QKkAfBDpAAAAAMAxBkFAQik0YbRBhCu4cu3kfS0zHMYnoLf0eWwnqxTIO77sBAomAIwnxc4twFAmJ_R5AJI8opOUABaA1VTRGIBBZBoAXABeJmgZ4AB_tIFiAEBkAEAmAEFoAECqQF4tAd6ngWIP7EBEQoouQEAAAAgheuxP8EVHgDJFQpA2AGOvQLgAQDwAYbxxgj4AQA./s=a55b3205679393759ad53bf1f2cc313b748205c6/bcr=AAAAAAAA8D8=/pp=0.01/bn=92542/clickenc=https%3A%2F%2Fpn.ybp.yahoo.com%2Fcj%2Fcrid%2FvI1tfkhSJxHvSWp_7Cx4BAqobUe5ww89%2Fcd%2FsbavXr5TAKILHU_pWMSXf7qc3784lzQ9pjHIK-_WuVztenfwhQ5Zy2QRrq9IRWQ4ZgGm7XlJmb3-dYoMuCntqhKigOIYJA5GJZML05C_ZWYZP1XGqNdJYV7aHyrwf_IV4XTzWeAY8qoSnvguEWbwaQC1iC21zOcln6As4K84zgXqQjeWXi2Q5X4saRXERns5IW6tAspCIr5c3xu-HRx0h0pmOmfTYYpikUeAhOB9a_CvOiJScRfqvIpeUaiL_FYqfca-gOHQ_SE%2Frurl%2Fhttps%3A%2F%2Fgame.intel.com%2Fus%2Fcore-gaming%2F%3Fcid%3Ddiad%26source%3Dgcm%26campid%3D35740953%26sid%3D4309167%26plid%3D445270514%26aid%3D638875144%26crid%3D254699634%26dclid%3DCJPB3MXTtZQDFcBCRwEdOn8fBg%26gad_source%3D7%26gad_campaignid%3D23771162805
+                - button "See more" [ref=e415]:
+                  - img [ref=e416]
+            - article "Virat Kohli almost doesn't want the life he lives in India, says ex-RCB teammate" [ref=e417] [cursor=pointer]:
+              - generic [ref=e419]:
+                - img [ref=e420]
+                - generic [ref=e421]:
+                  - generic [ref=e422]:
+                    - generic [ref=e423]:
+                      - generic [ref=e424]:
+                        - img [ref=e425]
+                        - generic [ref=e426]: India Today
+                      - generic [ref=e427]: ·
+                      - generic [ref=e428]: 2h
+                    - link "Virat Kohli almost doesn't want the life he lives in India, says ex-RCB teammate, India Today" [ref=e429]:
+                      - /url: https://www.msn.com/en-in/news/other/virat-kohli-almost-doesn-t-want-the-life-he-lives-in-india-says-ex-rcb-teammate/ar-AA24QkaK
+                      - text: Virat Kohli almost doesn't want the life he lives in India, says ex-RCB teammate
+                  - generic "Virat Kohli almost doesn't want the life he lives in India, says ex-RCB teammate" [ref=e432]:
+                    - generic [ref=e434]:
+                      - generic [ref=e435]:
+                        - button "14 Like" [ref=e436]:
+                          - generic [ref=e437]:
+                            - img [ref=e438]
+                            - generic [ref=e440]: "14"
+                        - button "Dislike" [ref=e441]:
+                          - img [ref=e443]
+                      - link "View comments 2 Comment" [ref=e446]:
+                        - /url: https://www.msn.com/en-in/news/other/virat-kohli-almost-doesn-t-want-the-life-he-lives-in-india-says-ex-rcb-teammate/ar-AA24QkaK#comments
+                        - button "View comments 2 Comment" [ref=e447]:
+                          - img [ref=e448]
+                        - generic [ref=e450]: "2"
+                - generic [ref=e451]:
+                  - button "Hide this story" [ref=e452]:
+                    - img [ref=e453]
+                    - text: Hide this story
+                  - button "See more" [ref=e454]:
+                    - img [ref=e455]
+            - 'article "GK: Which Indian city is called the litchi capital of the world?" [ref=e456] [cursor=pointer]':
+              - generic [ref=e458]:
+                - img [ref=e459]
+                - generic [ref=e460]:
+                  - generic [ref=e461]:
+                    - generic [ref=e462]:
+                      - generic [ref=e463]:
+                        - img [ref=e464]
+                        - generic [ref=e465]: News18
+                      - generic [ref=e466]: ·
+                      - generic [ref=e467]: 2w
+                    - 'link "GK: Which Indian city is called the litchi capital of the world?, News18" [ref=e468]':
+                      - /url: https://www.msn.com/en-in/travel/tripideas/gk-which-indian-city-is-called-the-litchi-capital-of-the-world/ss-AA23ywsO
+                      - text: "GK: Which Indian city is called the litchi capital of the world?"
+                  - 'generic "GK: Which Indian city is called the litchi capital of the world?" [ref=e471]':
+                    - generic [ref=e473]:
+                      - generic [ref=e474]:
+                        - button "438 Like" [ref=e475]:
+                          - generic [ref=e476]:
+                            - img [ref=e477]
+                            - generic [ref=e479]: "438"
+                        - button "Dislike" [ref=e480]:
+                          - img [ref=e482]
+                      - link "View comments 6 Comment" [ref=e485]:
+                        - /url: https://www.msn.com/en-in/travel/tripideas/gk-which-indian-city-is-called-the-litchi-capital-of-the-world/ss-AA23ywsO#comments
+                        - button "View comments 6 Comment" [ref=e486]:
+                          - img [ref=e487]
+                        - generic [ref=e489]: "6"
+                - generic [ref=e490]:
+                  - button "Hide this story" [ref=e491]:
+                    - img [ref=e492]
+                    - text: Hide this story
+                  - button "See more" [ref=e493]:
+                    - img [ref=e494]
+            - article [ref=e495] [cursor=pointer]:
+              - generic [ref=e500]:
+                - generic [ref=e502]:
+                  - link "Top stories" [ref=e504]:
+                    - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f?cvid=6a21a8a24b5d439baf851cc57ec8cc24&ocid=hpmsn
+                    - heading "Top stories" [level=2] [ref=e505]
+                  - button "More options" [ref=e507]
+                - list [ref=e510]:
+                  - listitem "DMK to skip INDIA alliance meet in Delhi; cites 'Congress' betrayal" [ref=e511]:
+                    - generic [ref=e512]:
+                      - generic [ref=e513]:
+                        - img [ref=e514]
+                        - generic [ref=e515]:
+                          - generic: WION ·now
+                      - generic [ref=e516]: DMK to skip INDIA alliance meet in Delhi; cites 'Congress' betrayal
+                  - 'listitem "Delhi: Malviya Nagar fire wake-up call, locals vow to prioritise fire safety" [ref=e517]':
+                    - generic [ref=e518]:
+                      - generic [ref=e519]:
+                        - img [ref=e520]
+                        - generic [ref=e521]:
+                          - generic: Press Trust of India ·now
+                      - generic [ref=e522]: "Delhi: Malviya Nagar fire wake-up call, locals vow to prioritise fire safety"
+                  - listitem "Tamil Nadu BJP's K Annamalai to break silence tomorrow amid exit buzz" [ref=e523]:
+                    - generic [ref=e524]:
+                      - generic [ref=e525]:
+                        - img [ref=e526]
+                        - generic [ref=e527]:
+                          - generic: NDTV 24x7 ·53m
+                      - generic [ref=e528]: Tamil Nadu BJP's K Annamalai to break silence tomorrow amid exit buzz
+                - generic [ref=e530]:
+                  - generic [ref=e531]:
+                    - generic "Previous" [ref=e532]:
+                      - button "Previous" [ref=e533]
+                    - tablist [ref=e535]:
+                      - tab "tab-0" [selected] [ref=e536]
+                      - tab "tab-1" [ref=e538]
+                      - tab "tab-2" [ref=e540]
+                    - generic "Next" [ref=e542]:
+                      - button "Next" [ref=e543]
+                  - link "See more" [ref=e545]:
+                    - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f?cvid=6a21a8a24b5d439baf851cc57ec8cc24&ocid=hpmsn
+          - generic [ref=e546]:
+            - article [ref=e547] [cursor=pointer]:
+              - generic [ref=e552]:
+                - generic [ref=e554]:
+                  - link "Top Engaging News" [ref=e556]:
+                    - /url: https://www.msn.com/en-in/channel/topic/Top Engaging News/tp-Y_42e62c1c-32a7-462e-a6b0-8a718bfe473d?ocid=hpmsn&cvid=6a21a8a24b5d439baf851cc57ec8cc24
+                    - heading "Top Engaging News" [level=2] [ref=e557]
+                  - button "More options" [ref=e559]
+                - generic [ref=e561]:
+                  - 'link "NDTV 24x7 14 Comments Suchitra Krishnamoorthi reacts to Aamir Khan getting married for the third time: ''Very brave of him''" [ref=e563]':
+                    - /url: https://www.msn.com/en-in/entertainment/bollywood/suchitra-krishnamoorthi-reacts-to-aamir-khan-getting-married-for-the-third-time-very-brave-of-him/ar-AA24Nese
+                    - generic [ref=e564]:
+                      - img [ref=e565]
+                      - generic [ref=e566]: NDTV 24x7
+                      - link "14 Comments" [ref=e568]:
+                        - /url: https://www.msn.com/en-in/entertainment/bollywood/suchitra-krishnamoorthi-reacts-to-aamir-khan-getting-married-for-the-third-time-very-brave-of-him/ar-AA24Nese#comments
+                        - img [ref=e569]
+                        - paragraph [ref=e570]: "14"
+                    - paragraph [ref=e571]: "Suchitra Krishnamoorthi reacts to Aamir Khan getting married for the third time: 'Very brave of him'"
+                  - link "NDTV 24x7 5 Comments Delhi heroes let go of lakhs worth of mattresses to save guests from fire" [ref=e573]:
+                    - /url: https://www.msn.com/en-in/news/india/delhi-heroes-let-go-of-lakhs-worth-of-mattresses-to-save-guests-from-fire/ar-AA24NNEF
+                    - generic [ref=e574]:
+                      - img [ref=e575]
+                      - generic [ref=e576]: NDTV 24x7
+                      - link "5 Comments" [ref=e578]:
+                        - /url: https://www.msn.com/en-in/news/india/delhi-heroes-let-go-of-lakhs-worth-of-mattresses-to-save-guests-from-fire/ar-AA24NNEF#comments
+                        - img [ref=e579]
+                        - paragraph [ref=e580]: "5"
+                    - paragraph [ref=e581]: Delhi heroes let go of lakhs worth of mattresses to save guests from fire
+                  - 'link "India Today 4 Comments Humanity wins in Delhi hotel fire: Father-son duo''s quick thinking saved 8 lives" [ref=e583]':
+                    - /url: https://www.msn.com/en-in/news/india/humanity-wins-in-delhi-hotel-fire-father-son-duo-s-quick-thinking-saved-8-lives/ar-AA24Ow9D
+                    - generic [ref=e584]:
+                      - img [ref=e585]
+                      - generic [ref=e586]: India Today
+                      - link "4 Comments" [ref=e588]:
+                        - /url: https://www.msn.com/en-in/news/india/humanity-wins-in-delhi-hotel-fire-father-son-duo-s-quick-thinking-saved-8-lives/ar-AA24Ow9D#comments
+                        - img [ref=e589]
+                        - paragraph [ref=e590]: "4"
+                    - paragraph [ref=e591]: "Humanity wins in Delhi hotel fire: Father-son duo's quick thinking saved 8 lives"
+                - generic [ref=e593]:
+                  - generic [ref=e594]:
+                    - generic "Previous" [ref=e595]:
+                      - button "Previous" [ref=e596]
+                    - tablist [ref=e598]:
+                      - tab "tab-0" [selected] [ref=e599]
+                      - tab "tab-1" [ref=e601]
+                      - tab "tab-2" [ref=e603]
+                    - generic "Next" [ref=e605]:
+                      - button "Next" [ref=e606]
+                  - link "See more" [ref=e608]:
+                    - /url: https://www.msn.com/en-in/channel/topic/Top Engaging News/tp-Y_42e62c1c-32a7-462e-a6b0-8a718bfe473d?ocid=hpmsn&cvid=6a21a8a24b5d439baf851cc57ec8cc24
+            - 'article "Forget keto and gym: Kidney doctor who lost 40 kg says only one rule truly works for weight loss" [ref=e609] [cursor=pointer]':
+              - generic [ref=e611]:
+                - img [ref=e612]
+                - generic [ref=e613]:
+                  - generic [ref=e614]:
+                    - generic [ref=e616]:
+                      - img [ref=e617]
+                      - generic [ref=e618]: The Economic Times
+                    - 'link "Forget keto and gym: Kidney doctor who lost 40 kg says only one rule truly works for weight loss, The Economic Times" [ref=e619]':
+                      - /url: https://www.msn.com/en-in/health/other/forget-keto-and-gym-kidney-doctor-who-lost-40-kg-says-only-one-rule-truly-works-for-weight-loss/ss-AA1RRVwx
+                      - text: "Forget keto and gym: Kidney doctor who lost 40 kg says only one rule truly works for weight loss"
+                  - 'generic "Forget keto and gym: Kidney doctor who lost 40 kg says only one rule truly works for weight loss" [ref=e622]':
+                    - generic [ref=e624]:
+                      - generic [ref=e625]:
+                        - button "130 Like" [ref=e626]:
+                          - generic [ref=e627]:
+                            - img [ref=e628]
+                            - generic [ref=e630]: "130"
+                        - button "Dislike" [ref=e631]:
+                          - img [ref=e633]
+                      - link "Start the conversation" [ref=e636]:
+                        - /url: https://www.msn.com/en-in/health/other/forget-keto-and-gym-kidney-doctor-who-lost-40-kg-says-only-one-rule-truly-works-for-weight-loss/ss-AA1RRVwx#comments
+                        - button "Start the conversation" [ref=e637]:
+                          - img [ref=e638]
+                - generic [ref=e640]:
+                  - button "Hide this story" [ref=e641]:
+                    - img [ref=e642]
+                    - text: Hide this story
+                  - button "See more" [ref=e643]:
+                    - img [ref=e644]
+            - article [ref=e645] [cursor=pointer]:
+              - generic [ref=e651]:
+                - generic [ref=e653]:
+                  - link "Lucknow" [ref=e655]:
+                    - /url: https://www.msn.com/en-in/weather/forecast/in-Lucknow,Uttar-Pradesh?loc=eyJsIjoiTHVja25vdyIsInIiOiJVdHRhciBQcmFkZXNoIiwiYyI6IkluZGlhIiwiaSI6IklOIiwiZyI6ImVuLWluIiwieCI6ODAuOTIzMjMzMDMyMjI2NTYsInkiOjI2LjgwMDMzODc0NTExNzE4OH0%3D&weadegreetype=C&ocid=hpmsn&cvid=6a21a8a24b5d439baf851cc57ec8cc24&content=AQICard_wxaqi
+                    - heading "Lucknow" [level=2] [ref=e656]
+                  - button "My location" [ref=e657]
+                  - button "More options" [ref=e659]
+                - generic [ref=e663]:
+                  - generic [ref=e664]:
+                    - generic [ref=e666]:
+                      - link "Clear" [ref=e667]:
+                        - /url: https://www.msn.com/en-in/weather/forecast/in-Lucknow,Uttar-Pradesh?loc=eyJsIjoiTHVja25vdyIsInIiOiJVdHRhciBQcmFkZXNoIiwiYyI6IkluZGlhIiwiaSI6IklOIiwiZyI6ImVuLWluIiwieCI6ODAuOTIzMjMzMDMyMjI2NTYsInkiOjI2LjgwMDMzODc0NTExNzE4OH0%3D&weadegreetype=C&ocid=hpmsn&cvid=6a21a8a24b5d439baf851cc57ec8cc24&content=AQICard_wxaqi
+                        - img "Clear" [ref=e668]
+                      - link "33°C" [ref=e669]:
+                        - /url: https://www.msn.com/en-in/weather/forecast/in-Lucknow,Uttar-Pradesh?loc=eyJsIjoiTHVja25vdyIsInIiOiJVdHRhciBQcmFkZXNoIiwiYyI6IkluZGlhIiwiaSI6IklOIiwiZyI6ImVuLWluIiwieCI6ODAuOTIzMjMzMDMyMjI2NTYsInkiOjI2LjgwMDMzODc0NTExNzE4OH0%3D&weadegreetype=C&ocid=hpmsn&cvid=6a21a8a24b5d439baf851cc57ec8cc24&content=AQICard_wxaqi
+                        - generic [ref=e670]: ‎33‎
+                        - generic [ref=e672]: ‎°C‎
+                    - generic [ref=e674]:
+                      - link "Moderate air quality" [ref=e676]:
+                        - /url: https://www.msn.com/en-in/weather/forecast/in-Lucknow,Uttar-Pradesh?loc=eyJsIjoiTHVja25vdyIsInIiOiJVdHRhciBQcmFkZXNoIiwiYyI6IkluZGlhIiwiaSI6IklOIiwiZyI6ImVuLWluIiwieCI6ODAuOTIzMjMzMDMyMjI2NTYsInkiOjI2LjgwMDMzODc0NTExNzE4OH0%3D&weadegreetype=C&ocid=hpmsn&cvid=6a21a8a24b5d439baf851cc57ec8cc24&fcsttab=airquality
+                        - text: Moderate air quality
+                      - link "See full forecast" [ref=e678]:
+                        - /url: https://www.msn.com/en-in/weather/forecast/in-Lucknow,Uttar-Pradesh?loc=eyJsIjoiTHVja25vdyIsInIiOiJVdHRhciBQcmFkZXNoIiwiYyI6IkluZGlhIiwiaSI6IklOIiwiZyI6ImVuLWluIiwieCI6ODAuOTIzMjMzMDMyMjI2NTYsInkiOjI2LjgwMDMzODc0NTExNzE4OH0%3D&weadegreetype=C&ocid=hpmsn&cvid=6a21a8a24b5d439baf851cc57ec8cc24&fcsttab=airquality
+                        - img "arrow" [ref=e679]
+                  - generic [ref=e684]:
+                    - link "Larger map" [ref=e685]:
+                      - /url: https://www.msn.com/en-in/weather/maps/airquality/in-Lucknow,Uttar-Pradesh?loc=eyJsIjoiTHVja25vdyIsInIiOiJVdHRhciBQcmFkZXNoIiwiYyI6IkluZGlhIiwiaSI6IklOIiwiZyI6ImVuLWluIiwieCI6ODAuOTIzMjMzMDMyMjI2NTYsInkiOjI2LjgwMDMzODc0NTExNzE4OH0%3D&weadegreetype=C&ocid=hpmsn&cvid=6a21a8a24b5d439baf851cc57ec8cc24&content=AQICard_wxaqi&zoom=8
+                      - generic [ref=e686]:
+                        - generic:
+                          - generic:
+                            - img
+                            - img
+                            - img
+                            - img
+                            - img
+                            - img
+                      - img
+                    - link "Check global air quality" [ref=e687]:
+                      - /url: https://www.msn.com/en-in/weather/maps/airquality/in-Lucknow,Uttar-Pradesh?loc=eyJsIjoiTHVja25vdyIsInIiOiJVdHRhciBQcmFkZXNoIiwiYyI6IkluZGlhIiwiaSI6IklOIiwiZyI6ImVuLWluIiwieCI6ODAuOTIzMjMzMDMyMjI2NTYsInkiOjI2LjgwMDMzODc0NTExNzE4OH0%3D&weadegreetype=C&ocid=hpmsn&cvid=6a21a8a24b5d439baf851cc57ec8cc24&content=AQICard_wxaqi&zoom=8
+                      - img [ref=e689]
+                      - generic "Check global air quality" [ref=e690]
+                      - img [ref=e692]
+                - button "See full forecast" [ref=e695]
+            - article [ref=e696] [cursor=pointer]
+            - article "US plans nuclear bomber deployment near Russia, raising fresh tensions" [ref=e703] [cursor=pointer]:
+              - generic [ref=e705]:
+                - generic [ref=e709]:
+                  - generic [ref=e710]:
+                    - generic [ref=e711]:
+                      - generic [ref=e712]:
+                        - img [ref=e713]
+                        - generic [ref=e714]: WION
+                      - generic [ref=e715]: ·
+                      - generic [ref=e716]: 16h
+                    - link "US plans nuclear bomber deployment near Russia, raising fresh tensions, WION" [ref=e717]:
+                      - /url: https://www.msn.com/en-in/news/world/us-plans-nuclear-bomber-deployment-near-russia-raising-fresh-tensions/vi-AA24LvDl
+                      - text: US plans nuclear bomber deployment near Russia, raising fresh tensions
+                  - generic "US plans nuclear bomber deployment near Russia, raising fresh tensions" [ref=e720]:
+                    - generic [ref=e722]:
+                      - generic [ref=e723]:
+                        - button "5 Like" [ref=e724]:
+                          - generic [ref=e725]:
+                            - img [ref=e726]
+                            - generic [ref=e728]: "5"
+                        - button "Dislike" [ref=e729]:
+                          - img [ref=e731]
+                      - link "Start the conversation" [ref=e734]:
+                        - /url: https://www.msn.com/en-in/news/world/us-plans-nuclear-bomber-deployment-near-russia-raising-fresh-tensions/vi-AA24LvDl#comments
+                        - button "Start the conversation" [ref=e735]:
+                          - img [ref=e736]
+                - generic [ref=e738]:
+                  - button "Hide this story" [ref=e739]:
+                    - img [ref=e740]
+                    - text: Hide this story
+                  - button "See more" [ref=e741]:
+                    - img [ref=e742]
+            - article "SpaceX IPO set to shake global markets as $75 billion listing sparks trillion-dollar valuation talk" [ref=e743] [cursor=pointer]:
+              - generic [ref=e745]:
+                - img [ref=e746]
+                - generic [ref=e747]:
+                  - generic [ref=e748]:
+                    - generic [ref=e749]:
+                      - generic [ref=e750]:
+                        - img [ref=e751]
+                        - generic [ref=e752]: Hindustan Times
+                      - generic [ref=e753]: ·
+                      - generic [ref=e754]: 9h
+                    - link "SpaceX IPO set to shake global markets as $75 billion listing sparks trillion-dollar valuation talk, Hindustan Times" [ref=e755]:
+                      - /url: https://www.msn.com/en-in/money/markets/spacex-ipo-set-to-shake-global-markets-as-75-billion-listing-sparks-trillion-dollar-valuation-talk/ar-AA24NK71
+                      - text: SpaceX IPO set to shake global markets as $75 billion listing sparks trillion-dollar valuation talk
+                  - generic "SpaceX IPO set to shake global markets as $75 billion listing sparks trillion-dollar valuation talk" [ref=e758]:
+                    - generic [ref=e760]:
+                      - generic [ref=e761]:
+                        - button "18 Like" [ref=e762]:
+                          - generic [ref=e763]:
+                            - img [ref=e764]
+                            - generic [ref=e766]: "18"
+                        - button "Dislike" [ref=e767]:
+                          - img [ref=e769]
+                      - link "Start the conversation" [ref=e772]:
+                        - /url: https://www.msn.com/en-in/money/markets/spacex-ipo-set-to-shake-global-markets-as-75-billion-listing-sparks-trillion-dollar-valuation-talk/ar-AA24NK71#comments
+                        - button "Start the conversation" [ref=e773]:
+                          - img [ref=e774]
+                - generic [ref=e776]:
+                  - button "Hide this story" [ref=e777]:
+                    - img [ref=e778]
+                    - text: Hide this story
+                  - button "See more" [ref=e779]:
+                    - img [ref=e780]
+            - article [ref=e781] [cursor=pointer]
+            - article [ref=e788] [cursor=pointer]:
+              - generic [ref=e793]:
+                - generic [ref=e795]:
+                  - link "Games" [ref=e797]:
+                    - /url: https://www.msn.com/en-in/play?ocid=msedgntp&cgfrom=cg_ntp_sd_cardtitle
+                    - heading "Games" [level=2] [ref=e798]
+                  - button "More options" [ref=e800]
+                - list [ref=e804]:
+                  - generic:
+                    - listitem [ref=e805]:
+                      - link "KickBlock.io" [ref=e806]:
+                        - /url: https://www.msn.com/en-in/play/games/kickblockio/cg-9pbsml0398c7?cgfrom=cg_ntp_sd_cardgameitem&ocid=hpmsn&cvid=6a21a8a24b5d439baf851cc57ec8cc24&ei=8
+                        - generic [ref=e807]:
+                          - img "KickBlock.io"
+                    - listitem [ref=e808]:
+                      - link "Cat and Granny" [ref=e809]:
+                        - /url: https://www.msn.com/en-in/play/games/cat-and-granny/cg-9nvw3pnt193n?cgfrom=cg_ntp_sd_cardgameitem&ocid=hpmsn&cvid=6a21a8a24b5d439baf851cc57ec8cc24&ei=8
+                        - generic [ref=e810]:
+                          - img "Cat and Granny"
+                    - listitem [ref=e811]:
+                      - link "LuckyBlocks.io" [ref=e812]:
+                        - /url: https://www.msn.com/en-in/play/games/luckyblocksio/cg-9nn8cw6lctxj?cgfrom=cg_ntp_sd_cardgameitem&ocid=hpmsn&cvid=6a21a8a24b5d439baf851cc57ec8cc24&ei=8
+                        - generic [ref=e813]:
+                          - img "LuckyBlocks.io"
+                    - listitem [ref=e814]:
+                      - 'link "Idol Livestream: Doll Dress Up" [ref=e815]':
+                        - /url: https://www.msn.com/en-in/play/games/idol-livestream-doll-dress-up/cg-9nvf53gxpx1x?cgfrom=cg_ntp_sd_cardgameitem&ocid=hpmsn&cvid=6a21a8a24b5d439baf851cc57ec8cc24&ei=8
+                        - generic [ref=e816]:
+                          - 'img "Idol Livestream: Doll Dress Up"'
+                    - listitem [ref=e817]:
+                      - link "PolyTrack" [ref=e818]:
+                        - /url: https://www.msn.com/en-in/play/games/polytrack/cg-9n02lr0qrbm2?cgfrom=cg_ntp_sd_cardgameitem&ocid=hpmsn&cvid=6a21a8a24b5d439baf851cc57ec8cc24&ei=8
+                        - generic [ref=e819]:
+                          - img "PolyTrack"
+                    - listitem [ref=e820]:
+                      - 'link "Playground Man: Ragdoll Show" [ref=e821]':
+                        - /url: https://www.msn.com/en-in/play/games/playground-man-ragdoll-show/cg-9nj10wf288jp?cgfrom=cg_ntp_sd_cardgameitem&ocid=hpmsn&cvid=6a21a8a24b5d439baf851cc57ec8cc24&ei=8
+                        - generic [ref=e822]:
+                          - 'img "Playground Man: Ragdoll Show"'
+                    - listitem [ref=e823]:
+                      - link "Drive Quest" [ref=e824]:
+                        - /url: https://www.msn.com/en-in/play/games/drive-quest/cg-9p4tn53ndjkw?cgfrom=cg_ntp_sd_cardgameitem&ocid=hpmsn&cvid=6a21a8a24b5d439baf851cc57ec8cc24&ei=8
+                        - generic [ref=e825]:
+                          - img "Drive Quest"
+                    - listitem [ref=e826]:
+                      - link "Veck.io" [ref=e827]:
+                        - /url: https://www.msn.com/en-in/play/games/veckio/cg-9mz3sdptqwm2?cgfrom=cg_ntp_sd_cardgameitem&ocid=hpmsn&cvid=6a21a8a24b5d439baf851cc57ec8cc24&ei=8
+                        - generic [ref=e828]:
+                          - img "Veck.io"
+                    - listitem [ref=e829]:
+                      - link "Poxel.io" [ref=e830]:
+                        - /url: https://www.msn.com/en-in/play/games/poxelio/cg-9p8cv7cvz5rl?cgfrom=cg_ntp_sd_cardgameitem&ocid=hpmsn&cvid=6a21a8a24b5d439baf851cc57ec8cc24&ei=8
+                        - generic [ref=e831]:
+                          - img "Poxel.io"
+                - generic [ref=e833]:
+                  - generic [ref=e834]:
+                    - generic "Previous" [ref=e835]:
+                      - button "Previous" [ref=e836]
+                    - tablist [ref=e838]:
+                      - tab "tab-0" [selected] [ref=e839]
+                      - tab "tab-1" [ref=e841]
+                    - generic "Next" [ref=e843]:
+                      - button "Next" [ref=e844]
+                  - link "Explore more games" [ref=e846]:
+                    - /url: https://www.msn.com/en-in/play?ocid=msedgntp&cgfrom=cg_ntp_sd_cardseemore
+            - article [ref=e847] [cursor=pointer]:
+              - generic [ref=e852]:
+                - generic [ref=e853]:
+                  - generic [ref=e854]:
+                    - link "Recommended videos" [ref=e855]:
+                      - /url: https://www.msn.com/en-in/video?ocid=hpmsn
+                      - img [ref=e856]
+                    - link "Recommended videos" [ref=e859]:
+                      - /url: https://www.msn.com/en-in/video?ocid=hpmsn
+                  - generic [ref=e860]:
+                    - generic:
+                      - link "See more" [ref=e861]:
+                        - /url: https://www.msn.com/en-in/video?ocid=hpmsn
+                      - generic "More options" [ref=e862]:
+                        - button "More options" [ref=e863]:
+                          - generic:
+                            - generic:
+                              - img
+                - tabpanel [ref=e865]:
+                  - generic [ref=e867]:
+                    - generic [ref=e869]:
+                      - generic:
+                        - article [ref=e872]:
+                          - generic [ref=e873]:
+                            - img "These Orcas Are Attacking Boats – And No One Knows Why" [ref=e875]
+                            - generic [ref=e877]: 12:58
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e878]:
+                              - generic [ref=e879]:
+                                - img "Real Science" [ref=e880]
+                                - generic "Real Science" [ref=e882]
+                              - link "These orcas are attacking boats – and no one knows why" [ref=e883]:
+                                - /url: https://www.msn.com/en-in/news/india/these-orcas-are-attacking-boats-and-no-one-knows-why/vi-AA1ZinXu?ocid=hpmsn
+                                - heading "These orcas are attacking boats – and no one knows why" [level=2] [ref=e884]:
+                                  - generic: These orcas are attacking boats – and no one knows why
+                            - button "See more" [ref=e888]
+                        - article "Dog viral video | Pet dog rescued from locked car in Guwahati heatwave, owner apologises later" [ref=e891]:
+                          - generic [ref=e892]:
+                            - img "Dog Viral Video | Pet Dog Rescued From Locked Car In Guwahati Heatwave, Owner Apologises Later" [ref=e894]
+                            - generic [ref=e896]: 01:04
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e897]:
+                              - generic [ref=e898]:
+                                - img "NDTV 24x7" [ref=e899]
+                                - generic [ref=e900]:
+                                  - generic:
+                                    - generic "NDTV 24x7" [ref=e901]
+                                    - generic [ref=e902]: ·
+                                    - generic [ref=e903]: 6h
+                              - link "Dog viral video | Pet dog rescued from locked car in Guwahati heatwave, owner apologises later" [ref=e904]:
+                                - /url: https://www.msn.com/en-in/lifestyle/pets-animals/dog-viral-video-pet-dog-rescued-from-locked-car-in-guwahati-heatwave-owner-apologises-later/vi-AA24OU82?ocid=hpmsn
+                                - heading "Dog viral video | Pet dog rescued from locked car in Guwahati heatwave, owner apologises later" [level=2] [ref=e905]:
+                                  - generic: Dog viral video | Pet dog rescued from locked car in Guwahati heatwave, owner apologises later
+                            - button "See more" [ref=e909]
+                        - article [ref=e912]:
+                          - generic [ref=e913]:
+                            - img "Inside Bihar’s Plan To Build A Grand Hindu Temple | I Witness" [ref=e915]
+                            - generic [ref=e917]: 03:33
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e918]:
+                              - generic [ref=e919]:
+                                - img "The Times of India" [ref=e920]
+                                - generic "The Times of India" [ref=e922]
+                              - link "Inside Bihar’s plan to build a grand Hindu temple | I Witness" [ref=e923]:
+                                - /url: https://www.msn.com/en-in/news/india/inside-bihar-s-plan-to-build-a-grand-hindu-temple-i-witness/vi-AA1UM0za?ocid=hpmsn
+                                - heading "Inside Bihar’s plan to build a grand Hindu temple | I Witness" [level=2] [ref=e924]:
+                                  - generic: Inside Bihar’s plan to build a grand Hindu temple | I Witness
+                            - button "See more" [ref=e928]
+                        - 'article "Video: Terrified guests jump from upper floors as fire tears through Delhi hotel" [ref=e931]':
+                          - generic [ref=e932]:
+                            - 'img "Video: Terrified guests jump from upper floors as fire tears through Delhi hotel" [ref=e934]'
+                            - generic [ref=e936]: 01:38
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e937]:
+                              - generic [ref=e938]:
+                                - img "India Today" [ref=e939]
+                                - generic [ref=e940]:
+                                  - generic:
+                                    - generic "India Today" [ref=e941]
+                                    - generic [ref=e942]: ·
+                                    - generic [ref=e943]: 23h
+                              - 'link "Video: Terrified guests jump from upper floors as fire tears through Delhi hotel" [ref=e944]':
+                                - /url: https://www.msn.com/en-in/news/india/video-terrified-guests-jump-from-upper-floors-as-fire-tears-through-delhi-hotel/vi-AA24L9WJ?ocid=hpmsn
+                                - 'heading "Video: Terrified guests jump from upper floors as fire tears through Delhi hotel" [level=2] [ref=e945]':
+                                  - generic: "Video: Terrified guests jump from upper floors as fire tears through Delhi hotel"
+                            - button "See more" [ref=e949]
+                        - 'article "Deccan Queen at 97: India’s railway icon, Mumbai–Pune heritage train gets upgrades & Vistadome" [ref=e952]':
+                          - generic [ref=e953]:
+                            - 'img "Deccan Queen at 97: India’s railway icon, Mumbai–Pune heritage train gets upgrades & Vistadome" [ref=e955]'
+                            - generic [ref=e957]: 01:50
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e958]:
+                              - generic [ref=e959]:
+                                - img "The Economic Times" [ref=e960]
+                                - generic [ref=e961]:
+                                  - generic:
+                                    - generic "The Economic Times" [ref=e962]
+                                    - generic [ref=e963]: ·
+                                    - generic [ref=e964]: 21h
+                              - 'link "Deccan Queen at 97: India’s railway icon, Mumbai–Pune heritage train gets upgrades & Vistadome" [ref=e965]':
+                                - /url: https://www.msn.com/en-in/news/india/deccan-queen-at-97-india-s-railway-icon-mumbai-pune-heritage-train-gets-upgrades-vistadome/vi-AA24JHwO?ocid=hpmsn
+                                - 'heading "Deccan Queen at 97: India’s railway icon, Mumbai–Pune heritage train gets upgrades & Vistadome" [level=2] [ref=e966]':
+                                  - generic: "Deccan Queen at 97: India’s railway icon, Mumbai–Pune heritage train gets upgrades & Vistadome"
+                            - button "See more" [ref=e970]
+                        - article [ref=e973]:
+                          - generic [ref=e974]:
+                            - img "Delhi Houses Episode 1 Roshandans Almirahs And an Aangan" [ref=e976]
+                            - generic [ref=e978]: 06:07
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e979]:
+                              - generic [ref=e980]:
+                                - img "Hindustan Times" [ref=e981]
+                                - generic "Hindustan Times" [ref=e983]
+                              - link "Delhi Houses Episode 1 Roshandans Almirahs and an Aangan" [ref=e984]:
+                                - /url: https://www.msn.com/en-in/video/watch/delhi-houses-episode-1-roshandans-almirahs-and-an-aangan/vi-AA20806q?ocid=hpmsn
+                                - heading "Delhi Houses Episode 1 Roshandans Almirahs and an Aangan" [level=2] [ref=e985]:
+                                  - generic: Delhi Houses Episode 1 Roshandans Almirahs and an Aangan
+                            - button "See more" [ref=e989]
+                        - article "Watch what happens when a 5,000kg orca hits a boat – it doesn’t end well" [ref=e992]:
+                          - generic [ref=e993]:
+                            - img "Watch What Happens When a 5,000kg Orca Hits a Boat – It Doesn’t End Well" [ref=e995]
+                            - generic [ref=e997]: 11:10
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e998]:
+                              - generic [ref=e999]:
+                                - img "Real Science" [ref=e1000]
+                                - generic [ref=e1001]:
+                                  - generic:
+                                    - generic "Real Science" [ref=e1002]
+                                    - generic [ref=e1003]: ·
+                                    - generic [ref=e1004]: 6h
+                              - link "Watch what happens when a 5,000kg orca hits a boat – it doesn’t end well" [ref=e1005]:
+                                - /url: https://www.msn.com/en-in/lifestyle/pets-animals/watch-what-happens-when-a-5-000kg-orca-hits-a-boat-it-doesn-t-end-well/vi-AA21ZyAE?ocid=hpmsn
+                                - heading "Watch what happens when a 5,000kg orca hits a boat – it doesn’t end well" [level=2] [ref=e1006]:
+                                  - generic: Watch what happens when a 5,000kg orca hits a boat – it doesn’t end well
+                            - button "See more" [ref=e1010]
+                        - article "Manoj Bajpayee breaks silence on 'Ghooskhor Pandat' row & death threats" [ref=e1013]:
+                          - generic [ref=e1014]:
+                            - img "Manoj Bajpayee Breaks Silence on 'Ghooskhor Pandat' Row & Death Threats" [ref=e1016]
+                            - generic [ref=e1018]: 04:35
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e1019]:
+                              - generic [ref=e1020]:
+                                - img "NDTV 24x7" [ref=e1021]
+                                - generic [ref=e1022]:
+                                  - generic:
+                                    - generic "NDTV 24x7" [ref=e1023]
+                                    - generic [ref=e1024]: ·
+                                    - generic [ref=e1025]: 1d
+                              - link "Manoj Bajpayee breaks silence on 'Ghooskhor Pandat' row & death threats" [ref=e1026]:
+                                - /url: https://www.msn.com/en-in/news/india/manoj-bajpayee-breaks-silence-on-ghooskhor-pandat-row-death-threats/vi-AA24FAC8?ocid=hpmsn
+                                - heading "Manoj Bajpayee breaks silence on 'Ghooskhor Pandat' row & death threats" [level=2] [ref=e1027]:
+                                  - generic: Manoj Bajpayee breaks silence on 'Ghooskhor Pandat' row & death threats
+                            - button "See more" [ref=e1031]
+                        - article "2026 Renault Duster walkaround | Features, exterior, interiors & more | Times Drive" [ref=e1034]:
+                          - generic [ref=e1035]:
+                            - img "2026 Renault Duster Walkaround | Features, Exterior, Interiors & More | Times Drive" [ref=e1037]
+                            - generic [ref=e1039]: 06:41
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e1040]:
+                              - generic [ref=e1041]:
+                                - img "Times Now" [ref=e1042]
+                                - generic "Times Now" [ref=e1044]
+                              - link "2026 Renault Duster walkaround | Features, exterior, interiors & more | Times Drive" [ref=e1045]:
+                                - /url: https://www.msn.com/en-in/autos/news/2026-renault-duster-walkaround-features-exterior-interiors-more-times-drive/vi-AA23ZVbW?ocid=hpmsn
+                                - heading "2026 Renault Duster walkaround | Features, exterior, interiors & more | Times Drive" [level=2] [ref=e1046]:
+                                  - generic: 2026 Renault Duster walkaround | Features, exterior, interiors & more | Times Drive
+                            - button "See more" [ref=e1050]
+                        - 'article "Beyond roads and troops: Why India is building a model village near the LAC" [ref=e1053]':
+                          - generic [ref=e1054]:
+                            - 'img "Beyond Roads And Troops: Why India Is Building A Model Village Near The LAC" [ref=e1056]'
+                            - generic [ref=e1058]: 06:10
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e1059]:
+                              - generic [ref=e1060]:
+                                - img "The Times of India" [ref=e1061]
+                                - generic [ref=e1062]:
+                                  - generic:
+                                    - generic "The Times of India" [ref=e1063]
+                                    - generic [ref=e1064]: ·
+                                    - generic [ref=e1065]: 3h
+                              - 'link "Beyond roads and troops: Why India is building a model village near the LAC" [ref=e1066]':
+                                - /url: https://www.msn.com/en-in/news/india/beyond-roads-and-troops-why-india-is-building-a-model-village-near-the-lac/vi-AA24OgPD?ocid=hpmsn
+                                - 'heading "Beyond roads and troops: Why India is building a model village near the LAC" [level=2] [ref=e1067]':
+                                  - generic: "Beyond roads and troops: Why India is building a model village near the LAC"
+                            - button "See more" [ref=e1071]
+                        - article "PM Narendra Modi holds talks with Venezuela acting president Delcy Rodriguez in Delhi" [ref=e1074]:
+                          - generic [ref=e1075]:
+                            - img "PM Narendra Modi holds talks with Venezuela Acting President Delcy Rodriguez in Delhi" [ref=e1077]
+                            - generic [ref=e1079]: 03:04
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e1080]:
+                              - generic [ref=e1081]:
+                                - img "The Economic Times" [ref=e1082]
+                                - generic [ref=e1083]:
+                                  - generic:
+                                    - generic "The Economic Times" [ref=e1084]
+                                    - generic [ref=e1085]: ·
+                                    - generic [ref=e1086]: 3h
+                              - link "PM Narendra Modi holds talks with Venezuela acting president Delcy Rodriguez in Delhi" [ref=e1087]:
+                                - /url: https://www.msn.com/en-in/news/india/pm-narendra-modi-holds-talks-with-venezuela-acting-president-delcy-rodriguez-in-delhi/vi-AA24NUNX?ocid=hpmsn
+                                - heading "PM Narendra Modi holds talks with Venezuela acting president Delcy Rodriguez in Delhi" [level=2] [ref=e1088]:
+                                  - generic: PM Narendra Modi holds talks with Venezuela acting president Delcy Rodriguez in Delhi
+                            - button "See more" [ref=e1092]
+                        - 'article "Banaras: Amish Tripathi Reveals the Untold Mysteries Hidden in India’s Most Spiritual City" [ref=e1095]':
+                          - generic [ref=e1096]:
+                            - 'img "Banaras: Amish Tripathi Reveals the Untold Mysteries Hidden in India’s Most Spiritual City" [ref=e1098]'
+                            - generic [ref=e1100]: 24:51
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e1101]:
+                              - generic [ref=e1102]:
+                                - img "The Times of India" [ref=e1103]
+                                - generic "The Times of India" [ref=e1105]
+                              - 'link "Banaras: Amish Tripathi Reveals the Untold Mysteries Hidden in India’s Most Spiritual City" [ref=e1106]':
+                                - /url: https://www.msn.com/en-in/travel/news/banaras-amish-tripathi-reveals-the-untold-mysteries-hidden-in-india-s-most-spiritual-city/vi-AA1Rttz0?ocid=hpmsn
+                                - 'heading "Banaras: Amish Tripathi Reveals the Untold Mysteries Hidden in India’s Most Spiritual City" [level=2] [ref=e1107]':
+                                  - generic: "Banaras: Amish Tripathi Reveals the Untold Mysteries Hidden in India’s Most Spiritual City"
+                            - button "See more" [ref=e1111]
+                        - 'article "Sachin Tendulkar on Facing Muralitharan: Secrets Behind the Legendary Doosra" [ref=e1114]':
+                          - generic [ref=e1115]:
+                            - 'img "Sachin Tendulkar on Facing Muralitharan: Secrets Behind the Legendary Doosra Thumbnail" [ref=e1117]'
+                            - generic [ref=e1119]: 05:04
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e1120]:
+                              - generic [ref=e1121]:
+                                - img "NDTV 24x7" [ref=e1122]
+                                - generic "NDTV 24x7" [ref=e1124]
+                              - 'link "Sachin Tendulkar on Facing Muralitharan: Secrets Behind the Legendary Doosra" [ref=e1125]':
+                                - /url: https://www.msn.com/en-in/sports/cricket/sachin-tendulkar-on-facing-muralitharan-secrets-behind-the-legendary-doosra/vi-AA1OLPQM?ocid=hpmsn
+                                - 'heading "Sachin Tendulkar on Facing Muralitharan: Secrets Behind the Legendary Doosra" [level=2] [ref=e1126]':
+                                  - generic: "Sachin Tendulkar on Facing Muralitharan: Secrets Behind the Legendary Doosra"
+                            - button "See more" [ref=e1130]
+                        - article "Captain Amarinder back to Congress? Bhupinder Hooda sparks speculation" [ref=e1133]:
+                          - generic [ref=e1134]:
+                            - img "Captain Amarinder Back To Congress? Bhupinder Hooda Sparks Speculation" [ref=e1136]
+                            - generic [ref=e1138]: 03:44
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e1139]:
+                              - generic [ref=e1140]:
+                                - img "NDTV 24x7" [ref=e1141]
+                                - generic [ref=e1142]:
+                                  - generic:
+                                    - generic "NDTV 24x7" [ref=e1143]
+                                    - generic [ref=e1144]: ·
+                                    - generic [ref=e1145]: 3h
+                              - link "Captain Amarinder back to Congress? Bhupinder Hooda sparks speculation" [ref=e1146]:
+                                - /url: https://www.msn.com/en-in/news/other/captain-amarinder-back-to-congress-bhupinder-hooda-sparks-speculation/vi-AA24PU9j?ocid=hpmsn
+                                - heading "Captain Amarinder back to Congress? Bhupinder Hooda sparks speculation" [level=2] [ref=e1147]:
+                                  - generic: Captain Amarinder back to Congress? Bhupinder Hooda sparks speculation
+                            - button "See more" [ref=e1151]
+                        - article "Uncomfortable questions with team Pati Patni Aur Woh Do, Ayushmann, Rakul, Wamiqa, Sara Ali Khan" [ref=e1154]:
+                          - generic [ref=e1155]:
+                            - img "Uncomfortable Questions with Team Pati Patni Aur Woh Do Ayushmann Rakul Wamiqa Sara Ali Khan" [ref=e1157]
+                            - generic [ref=e1159]: 11:25
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e1160]:
+                              - generic [ref=e1161]:
+                                - img "Hindustan Times" [ref=e1162]
+                                - generic [ref=e1163]:
+                                  - generic:
+                                    - generic "Hindustan Times" [ref=e1164]
+                                    - generic [ref=e1165]: ·
+                                    - generic [ref=e1166]: 2w
+                              - link "Uncomfortable questions with team Pati Patni Aur Woh Do, Ayushmann, Rakul, Wamiqa, Sara Ali Khan" [ref=e1167]:
+                                - /url: https://www.msn.com/en-in/video/watch/uncomfortable-questions-with-team-pati-patni-aur-woh-do-ayushmann-rakul-wamiqa-sara-ali-khan/vi-AA23BZqO?ocid=hpmsn
+                                - heading "Uncomfortable questions with team Pati Patni Aur Woh Do, Ayushmann, Rakul, Wamiqa, Sara Ali Khan" [level=2] [ref=e1168]:
+                                  - generic: Uncomfortable questions with team Pati Patni Aur Woh Do, Ayushmann, Rakul, Wamiqa, Sara Ali Khan
+                            - button "See more" [ref=e1172]
+                        - 'article "TMC not imploding, Mamata Banerjee and core group are the party: Mahua Moitra" [ref=e1175]':
+                          - generic [ref=e1176]:
+                            - 'img "TMC not imploding, Mamata Banerjee and core group are the party: Mahua Moitra" [ref=e1178]'
+                            - generic [ref=e1180]: 15:25
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e1181]:
+                              - generic [ref=e1182]:
+                                - img "India Today" [ref=e1183]
+                                - generic [ref=e1184]:
+                                  - generic:
+                                    - generic "India Today" [ref=e1185]
+                                    - generic [ref=e1186]: ·
+                                    - generic [ref=e1187]: 1h
+                              - 'link "TMC not imploding, Mamata Banerjee and core group are the party: Mahua Moitra" [ref=e1188]':
+                                - /url: https://www.msn.com/en-in/news/other/tmc-not-imploding-mamata-banerjee-and-core-group-are-the-party-mahua-moitra/vi-AA24QzFr?ocid=hpmsn
+                                - 'heading "TMC not imploding, Mamata Banerjee and core group are the party: Mahua Moitra" [level=2] [ref=e1189]':
+                                  - generic: "TMC not imploding, Mamata Banerjee and core group are the party: Mahua Moitra"
+                            - button "See more" [ref=e1193]
+                        - article [ref=e1196]:
+                          - generic [ref=e1197]:
+                            - img "This Used to Be a Large Living Room - Now It’s a Full 365sqft Apartment" [ref=e1199]
+                            - generic [ref=e1201]: 07:44
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e1202]:
+                              - generic [ref=e1203]:
+                                - img "NEVER TOO SMALL" [ref=e1204]
+                                - generic "NEVER TOO SMALL" [ref=e1206]
+                              - link "This used to be a large living room - now it’s a full 365sqft apartment" [ref=e1207]:
+                                - /url: https://www.msn.com/en-in/lifestyle/smart-living/this-used-to-be-a-large-living-room-now-it-s-a-full-365sqft-apartment/vi-AA1VZ7sA?ocid=hpmsn
+                                - heading "This used to be a large living room - now it’s a full 365sqft apartment" [level=2] [ref=e1208]:
+                                  - generic: This used to be a large living room - now it’s a full 365sqft apartment
+                            - button "See more" [ref=e1212]
+                        - article [ref=e1215]:
+                          - generic [ref=e1216]:
+                            - img "Watch How He Bought Elvis Presley’s Abandoned Jet" [ref=e1218]
+                            - generic [ref=e1220]: 14:21
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e1221]:
+                              - generic [ref=e1222]:
+                                - img "VINwiki" [ref=e1223]
+                                - generic "VINwiki" [ref=e1225]
+                              - link "Watch how he bought Elvis Presley’s abandoned jet" [ref=e1226]:
+                                - /url: https://www.msn.com/en-in/video/news/watch-how-he-bought-elvis-presley-s-abandoned-jet/vi-AA1ZOXol?ocid=hpmsn
+                                - heading "Watch how he bought Elvis Presley’s abandoned jet" [level=2] [ref=e1227]:
+                                  - generic: Watch how he bought Elvis Presley’s abandoned jet
+                            - button "See more" [ref=e1231]
+                        - article [ref=e1234]:
+                          - generic [ref=e1235]:
+                            - 'img "IndianOil Shows: Ethanol + STP Water Power Sustainable Fuel" [ref=e1237]'
+                            - generic [ref=e1239]: 00:30
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e1240]:
+                              - generic [ref=e1241]:
+                                - img "NDTV 24x7" [ref=e1242]
+                                - generic [ref=e1243]:
+                                  - generic:
+                                    - generic "NDTV 24x7" [ref=e1244]
+                                    - generic [ref=e1245]: ·
+                                    - generic [ref=e1246]: 5h
+                              - 'link "IndianOil Shows: Ethanol + STP Water Power Sustainable Fuel" [ref=e1247]':
+                                - /url: https://www.msn.com/en-in/news/other/indianoil-shows-ethanol-stp-water-power-sustainable-fuel/vi-AA24P0Ki?ocid=hpmsn
+                                - 'heading "IndianOil Shows: Ethanol + STP Water Power Sustainable Fuel" [level=2] [ref=e1248]':
+                                  - generic: "IndianOil Shows: Ethanol + STP Water Power Sustainable Fuel"
+                            - button "See more" [ref=e1252]
+                        - article "Manoj Bajpayee's inspiring story of hope, education & leadership" [ref=e1255]:
+                          - generic [ref=e1256]:
+                            - img "Manoj Bajpayee's Inspiring Story of Hope, Education & Leadership" [ref=e1258]
+                            - generic [ref=e1260]: 03:12
+                            - generic:
+                              - generic:
+                                - generic:
+                                  - img
+                            - generic [ref=e1261]:
+                              - generic [ref=e1262]:
+                                - img "NDTV 24x7" [ref=e1263]
+                                - generic [ref=e1264]:
+                                  - generic:
+                                    - generic "NDTV 24x7" [ref=e1265]
+                                    - generic [ref=e1266]: ·
+                                    - generic [ref=e1267]: 1d
+                              - link "Manoj Bajpayee's inspiring story of hope, education & leadership" [ref=e1268]:
+                                - /url: https://www.msn.com/en-in/entertainment/news/manoj-bajpayee-s-inspiring-story-of-hope-education-leadership/vi-AA24FI1A?ocid=hpmsn
+                                - heading "Manoj Bajpayee's inspiring story of hope, education & leadership" [level=2] [ref=e1269]:
+                                  - generic: Manoj Bajpayee's inspiring story of hope, education & leadership
+                            - button "See more" [ref=e1273]
+                        - link "See more" [ref=e1275]:
+                          - /url: https://www.msn.com/en-in/video?ocid=hpmsn
+                          - img [ref=e1276]
+                          - text: See more
+                    - button "next" [ref=e1280]:
+                      - img [ref=e1283]
+          - article [ref=e1286]
+          - generic [ref=e1288]:
+            - article "He paid $18,000 to sleep under the ocean - then the sharks appeared" [ref=e1289] [cursor=pointer]:
+              - generic [ref=e1291]:
+                - generic [ref=e1297]:
+                  - generic [ref=e1298]:
+                    - generic [ref=e1299]:
+                      - generic [ref=e1300]:
+                        - img [ref=e1301]
+                        - generic [ref=e1302]: Trek Trendy
+                      - generic [ref=e1303]: ·
+                      - generic [ref=e1304]: 6h
+                    - link "He paid $18,000 to sleep under the ocean - then the sharks appeared, Trek Trendy" [ref=e1305]:
+                      - /url: https://www.msn.com/en-in/travel/news/he-paid-18-000-to-sleep-under-the-ocean-then-the-sharks-appeared/vi-AA1XTwiK
+                      - text: He paid $18,000 to sleep under the ocean - then the sharks appeared
+                  - generic "He paid $18,000 to sleep under the ocean - then the sharks appeared" [ref=e1308]:
+                    - generic [ref=e1310]:
+                      - generic [ref=e1311]:
+                        - button "544 Like" [ref=e1312]:
+                          - generic [ref=e1313]:
+                            - img [ref=e1314]
+                            - generic [ref=e1316]: "544"
+                        - button "Dislike" [ref=e1317]:
+                          - img [ref=e1319]
+                      - link "View comments 8 Comment" [ref=e1322]:
+                        - /url: https://www.msn.com/en-in/travel/news/he-paid-18-000-to-sleep-under-the-ocean-then-the-sharks-appeared/vi-AA1XTwiK#comments
+                        - button "View comments 8 Comment" [ref=e1323]:
+                          - img [ref=e1324]
+                        - generic [ref=e1326]: "8"
+                - generic [ref=e1327]:
+                  - button "Hide this story" [ref=e1328]:
+                    - img [ref=e1329]
+                    - text: Hide this story
+                  - button "See more" [ref=e1330]:
+                    - img [ref=e1331]
+            - 'article "Nushrratt Bharuccha breaks silence on her viral clip of IPL finale: ''Calm your wild thoughts''" [ref=e1332] [cursor=pointer]':
+              - generic [ref=e1334]:
+                - img [ref=e1335]
+                - generic [ref=e1336]:
+                  - generic [ref=e1337]:
+                    - generic [ref=e1338]:
+                      - generic [ref=e1339]:
+                        - img [ref=e1340]
+                        - generic [ref=e1341]: The Times of India
+                      - generic [ref=e1342]: ·
+                      - generic [ref=e1343]: 5h
+                    - 'link "Nushrratt Bharuccha breaks silence on her viral clip of IPL finale: ''Calm your wild thoughts'', The Times of India" [ref=e1344]':
+                      - /url: https://www.msn.com/en-in/news/other/nushrratt-bharuccha-breaks-silence-on-her-viral-clip-of-ipl-finale-calm-your-wild-thoughts/ar-AA24P0Kv
+                      - text: "Nushrratt Bharuccha breaks silence on her viral clip of IPL finale: 'Calm your wild thoughts'"
+                  - 'generic "Nushrratt Bharuccha breaks silence on her viral clip of IPL finale: ''Calm your wild thoughts''" [ref=e1347]':
+                    - generic [ref=e1349]:
+                      - generic [ref=e1350]:
+                        - button "36 Like" [ref=e1351]:
+                          - generic [ref=e1352]:
+                            - img [ref=e1353]
+                            - generic [ref=e1355]: "36"
+                        - button "Dislike" [ref=e1356]:
+                          - img [ref=e1358]
+                      - link "Start the conversation" [ref=e1361]:
+                        - /url: https://www.msn.com/en-in/news/other/nushrratt-bharuccha-breaks-silence-on-her-viral-clip-of-ipl-finale-calm-your-wild-thoughts/ar-AA24P0Kv#comments
+                        - button "Start the conversation" [ref=e1362]:
+                          - img [ref=e1363]
+                - generic [ref=e1365]:
+                  - button "Hide this story" [ref=e1366]:
+                    - img [ref=e1367]
+                    - text: Hide this story
+                  - button "See more" [ref=e1368]:
+                    - img [ref=e1369]
+            - article [ref=e1370] [cursor=pointer]
+            - article [ref=e1372] [cursor=pointer]
+            - article "What happens when you drink saunf water every night for a month?" [ref=e1379] [cursor=pointer]:
+              - generic [ref=e1381]:
+                - img [ref=e1382]
+                - generic [ref=e1383]:
+                  - generic [ref=e1384]:
+                    - generic [ref=e1386]:
+                      - img [ref=e1387]
+                      - generic [ref=e1388]: India Today
+                    - link "What happens when you drink saunf water every night for a month?, India Today" [ref=e1389]:
+                      - /url: https://www.msn.com/en-in/health/health-news/what-happens-when-you-drink-saunf-water-every-night-for-a-month/ar-AA1RxiTy
+                      - text: What happens when you drink saunf water every night for a month?
+                  - generic "What happens when you drink saunf water every night for a month?" [ref=e1392]:
+                    - generic [ref=e1394]:
+                      - generic [ref=e1395]:
+                        - button "1k Like" [ref=e1396]:
+                          - generic [ref=e1397]:
+                            - img [ref=e1398]
+                            - generic [ref=e1400]: 1k
+                        - button "Dislike" [ref=e1401]:
+                          - img [ref=e1403]
+                      - link "View comments 5 Comment" [ref=e1406]:
+                        - /url: https://www.msn.com/en-in/health/health-news/what-happens-when-you-drink-saunf-water-every-night-for-a-month/ar-AA1RxiTy#comments
+                        - button "View comments 5 Comment" [ref=e1407]:
+                          - img [ref=e1408]
+                        - generic [ref=e1410]: "5"
+                - generic [ref=e1411]:
+                  - button "Hide this story" [ref=e1412]:
+                    - img [ref=e1413]
+                    - text: Hide this story
+                  - button "See more" [ref=e1414]:
+                    - img [ref=e1415]
+            - 'article "Madhuri Dixit reveals how Dr Sriram Nene has adapted to life in India after moving from the US: ''He has immersed himself''" [ref=e1416] [cursor=pointer]':
+              - generic [ref=e1418]:
+                - img [ref=e1419]
+                - generic [ref=e1420]:
+                  - generic [ref=e1421]:
+                    - generic [ref=e1422]:
+                      - generic [ref=e1423]:
+                        - img [ref=e1424]
+                        - generic [ref=e1425]: The Times of India
+                      - generic [ref=e1426]: ·
+                      - generic [ref=e1427]: 1d
+                    - 'link "Madhuri Dixit reveals how Dr Sriram Nene has adapted to life in India after moving from the US: ''He has immersed himself'', The Times of India" [ref=e1428]':
+                      - /url: https://www.msn.com/en-in/entertainment/bollywood/madhuri-dixit-reveals-how-dr-sriram-nene-has-adapted-to-life-in-india-after-moving-from-the-us-he-has-immersed-himself/ar-AA24Ipgw
+                      - text: "Madhuri Dixit reveals how Dr Sriram Nene has adapted to life in India after moving from the US: 'He has immersed himself'"
+                  - 'generic "Madhuri Dixit reveals how Dr Sriram Nene has adapted to life in India after moving from the US: ''He has immersed himself''" [ref=e1431]':
+                    - generic [ref=e1433]:
+                      - generic [ref=e1434]:
+                        - button "10 Like" [ref=e1435]:
+                          - generic [ref=e1436]:
+                            - img [ref=e1437]
+                            - generic [ref=e1439]: "10"
+                        - button "Dislike" [ref=e1440]:
+                          - img [ref=e1442]
+                      - link "View comments 1 Comment" [ref=e1445]:
+                        - /url: https://www.msn.com/en-in/entertainment/bollywood/madhuri-dixit-reveals-how-dr-sriram-nene-has-adapted-to-life-in-india-after-moving-from-the-us-he-has-immersed-himself/ar-AA24Ipgw#comments
+                        - button "View comments 1 Comment" [ref=e1446]:
+                          - img [ref=e1447]
+                        - generic [ref=e1449]: "1"
+                - generic [ref=e1450]:
+                  - button "Hide this story" [ref=e1451]:
+                    - img [ref=e1452]
+                    - text: Hide this story
+                  - button "See more" [ref=e1453]:
+                    - img [ref=e1454]
+            - article [ref=e1455] [cursor=pointer]
+            - 'article "What you eat affects your eyes: 5 foods that increase cataract risk" [ref=e1462] [cursor=pointer]':
+              - generic [ref=e1464]:
+                - img [ref=e1465]
+                - generic [ref=e1466]:
+                  - generic [ref=e1467]:
+                    - generic [ref=e1469]:
+                      - img [ref=e1470]
+                      - generic [ref=e1471]: India Today
+                    - 'link "What you eat affects your eyes: 5 foods that increase cataract risk, India Today" [ref=e1472]':
+                      - /url: https://www.msn.com/en-in/health/other/what-you-eat-affects-your-eyes-5-foods-that-increase-cataract-risk/ar-AA1NF8Aa
+                      - text: "What you eat affects your eyes: 5 foods that increase cataract risk"
+                  - 'generic "What you eat affects your eyes: 5 foods that increase cataract risk" [ref=e1475]':
+                    - generic [ref=e1477]:
+                      - generic [ref=e1478]:
+                        - button "246 Like" [ref=e1479]:
+                          - generic [ref=e1480]:
+                            - img [ref=e1481]
+                            - generic [ref=e1483]: "246"
+                        - button "Dislike" [ref=e1484]:
+                          - img [ref=e1486]
+                      - link "Start the conversation" [ref=e1489]:
+                        - /url: https://www.msn.com/en-in/health/other/what-you-eat-affects-your-eyes-5-foods-that-increase-cataract-risk/ar-AA1NF8Aa#comments
+                        - button "Start the conversation" [ref=e1490]:
+                          - img [ref=e1491]
+                - generic [ref=e1493]:
+                  - button "Hide this story" [ref=e1494]:
+                    - img [ref=e1495]
+                    - text: Hide this story
+                  - button "See more" [ref=e1496]:
+                    - img [ref=e1497]
+    - contentinfo [ref=e1500]:
+      - generic "Feedback" [ref=e1502] [cursor=pointer]:
+        - button "Feedback" [ref=e1503]:
+          - generic:
+            - generic:
+              - img
+          - generic:
+            - generic: Feedback

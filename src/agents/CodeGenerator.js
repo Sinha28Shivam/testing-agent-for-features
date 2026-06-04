@@ -6,12 +6,27 @@ import llmClient from '../core/LlmClient.js';
 class CodeGenerator {
   async generate(actionLog) {
     console.log('[CodeGenerator] Converting browser session actions to Playwright test script...');
-    const prompt = this.buildCodeGenPrompt(actionLog);
-    const raw = await llmClient.ask(prompt);
-    const code = this.extractCode(raw);
-    this.brittleAssertionCheck(code);
-    this.validateCode(code);
-    return code;
+    let prompt = this.buildCodeGenPrompt(actionLog);
+    
+    let attempts = 3;
+    while (attempts > 0) {
+      try {
+        const raw = await llmClient.ask(prompt);
+        const code = this.extractCode(raw);
+        this.brittleAssertionCheck(code);
+        this.validateCode(code);
+        return code;
+      } catch (err) {
+        attempts--;
+        if (attempts === 0) {
+          throw err;
+        }
+        console.warn(`[CodeGenerator] Spec check failed. Retrying... (${attempts} attempts remaining)`);
+        console.warn(`Error details: ${err.message}`);
+        // Append the feedback to the prompt for the next attempt
+        prompt = `${prompt}\n\n⚠️ PREVIOUS ATTEMPT FAILED WITH THE FOLLOWING BRITTLE ASSERTION/VALIDATION ERRORS:\n${err.message}\n\nPlease fix these issues and regenerate the code correctly.`;
+      }
+    }
   }
 
   buildCodeGenPrompt(log) {
@@ -56,11 +71,15 @@ ASSERTION RULES — READ CAREFULLY BEFORE WRITING ANY expect():
     ❌ WRONG:    await expect(page).toHaveTitle('MSN | Personalized News, Top Headlines, Live');
     Reason: Website titles change frequently. An exact match breaks on any wording update.
 
-14. TIMING / PERFORMANCE ASSERTIONS — ALWAYS use range bounds, NEVER toBe():
-    ✅ CORRECT:  expect(loadTime).toBeGreaterThan(0);
+14. TIMING / PERFORMANCE ASSERTIONS — ALWAYS use range bounds, NEVER toBe(). When measuring page load time in the page context, loadEventEnd might be 0 immediately after navigation. Use a fallback like Date.now() if loadEventEnd is not yet populated:
+    ✅ CORRECT:  const loadTime = await page.evaluate(() => {
+                   const t = window.performance.timing;
+                   const end = t.loadEventEnd > 0 ? t.loadEventEnd : Date.now();
+                   return end - t.navigationStart;
+                 });
+                 expect(loadTime).toBeGreaterThan(0);
                  expect(loadTime).toBeLessThan(60000);
     ❌ WRONG:    expect(loadTime).toBe(14446);
-    ❌ WRONG:    expect(loadTime).toEqual(14446);
     Reason: The exact millisecond from the recording session is a one-time measurement.
             Network speed varies on every run. toBe() on timing ALWAYS fails eventually.
 
@@ -69,18 +88,18 @@ ASSERTION RULES — READ CAREFULLY BEFORE WRITING ANY expect():
     ❌ WRONG:    expect(await page.locator('article').count()).toBe(12);
     Reason: CMS-driven pages add/remove items dynamically.
 
-16. SPA / REACT CONTENT — wait for networkidle before asserting content:
+16. SPA / REACT CONTENT — wait for load state before asserting content:
     ✅ CORRECT:  await page.goto(url, { waitUntil: 'domcontentloaded' });
-                 await page.waitForLoadState('networkidle', { timeout: 45000 });
+                 await page.waitForLoadState('load');
+                 await page.locator('a').first().waitFor({ state: 'attached', timeout: 30000 });
     ❌ WRONG:    await page.goto(url);
                  await expect(page.locator('main')).toBeVisible();  // may be empty SPA shell
     Reason: React/Angular/Vue pages render content after JS hydration, not at DOMContentLoaded.
+            Avoid waiting for 'networkidle' on pages with heavy tracking/telemetry (like MSN) as it will timeout.
 
-17. CONTENT VISIBILITY ON SPAs — use innerHTML.length, NOT innerText.length:
-    ✅ CORRECT:  const len = await page.evaluate(() => document.body.innerHTML.length);
-                 expect(len).toBeGreaterThan(1000);
-    ❌ WRONG:    const text = await page.evaluate(() => document.body.innerText.trim().length);
-    Reason: innerText requires CSS layout computation which is unreliable in headless mode.
+17. CONTENT VISIBILITY ON SPAs / SHADOW DOM — avoid page.evaluate with document.body.innerHTML.length if the page uses Web Components / Shadow DOM (as shadow roots are not included in innerHTML). Instead, assert that a key locator (e.g. page.locator('a').first()) is visible.
+    ✅ CORRECT:  await expect(page.locator('a').first()).toBeVisible();
+    ❌ WRONG:    const len = await page.evaluate(() => document.body.innerHTML.length); // returns small number if elements are inside shadow roots.
 
 18. LOCATORS — avoid structural locators that assume specific HTML tag structure:
     ✅ CORRECT:  page.getByRole('heading')  OR  page.getByText(/News/i)
@@ -105,6 +124,22 @@ ASSERTION RULES — READ CAREFULLY BEFORE WRITING ANY expect():
     ✅ CORRECT:  await page.click('a[href="/sports"]');
                  await page.waitForLoadState('domcontentloaded');
                  await expect(page).toHaveURL(/\\/sports/);
+
+23. DOM LOOKUPS / ELEMENT COUNT — NEVER use page.evaluate() with document.querySelector/querySelectorAll/getElementById/getElementsByTagName to count elements or assert their presence. Playwright locators automatically pierce Shadow DOM and support auto-waiting, whereas document API does not.
+    ✅ CORRECT:  const linksCount = await page.locator('a').count();
+                 expect(linksCount).toBeGreaterThan(0);
+    ❌ WRONG:    const linksCount = await page.evaluate(() => document.querySelectorAll('a').length);
+
+24. SHADOW DOM HYDRATION WAIT — Always wait for key locators (e.g. first link or first article) to become attached or visible before asserting element counts or verifying page content to prevent hydration race conditions. If elements can be hidden (like skip links), wait for state: 'attached'.
+    ✅ CORRECT:  await page.locator('a').first().waitFor({ state: 'attached', timeout: 30000 });
+                 const linksCount = await page.locator('a').count();
+                 expect(linksCount).toBeGreaterThan(0);
+
+25. BRANDING / LOGO ASSERTIONS — Avoid guessing specific logo image selectors or alt texts (like img[alt="MSN"] or img[alt="Microsoft News logo"]) as these are highly fragile. Instead, verify that the page has loaded successfully by asserting that the body is visible and checking that links or main content are attached/present (using Rule 24).
+    ✅ CORRECT:  await expect(page.locator('body')).toBeVisible();
+                 await page.locator('a').first().waitFor({ state: 'attached', timeout: 30000 });
+                 expect(await page.locator('a').count()).toBeGreaterThan(0);
+    ❌ WRONG:    await expect(page.locator('img[alt="Microsoft News logo"]')).toBeVisible();
 
 IMPORTANT: The actions above were actually executed against the real browser. Every selector and interaction is proven to work. Translate faithfully, but apply all Assertion Rules above to every expect() you write.`;
 
@@ -171,6 +206,21 @@ IMPORTANT: The actions above were actually executed against the real browser. Ev
         // page.locator('main') alone — MSN and many SPAs do not use <main>
         re: /page\.locator\(\s*['"`]main['"`]\s*\)/,
         message: 'page.locator(\'main\') is fragile — many SPAs do not have a <main> element. Use page.waitForLoadState(\'networkidle\') and check innerHTML.length instead.'
+      },
+      {
+        // document.querySelector / document.querySelectorAll / document.getElementById / document.getElementsByTagName inside page.evaluate()
+        re: /page\.evaluate\(\s*(?:\(\s*\)\s*=>|function\s*\(\s*\))\s*\{?\s*(?:return\s+)?document\.(?:querySelector|querySelectorAll|getElementById|getElementsBy)/,
+        message: 'Do not use document.querySelector/querySelectorAll/getElementById/getElementsByTagName inside page.evaluate() for DOM element checks or counts. Use Playwright native locators instead (e.g. page.locator()) to support Shadow DOM and auto-waiting.'
+      },
+      {
+        // Guessing logo/branding image alt text
+        re: /page\.locator\(\s*['"`]img\[alt=["'].*logo.*["']\]['"`]\s*\)/i,
+        message: 'Avoid guessing image alt selectors containing "logo" (e.g., img[alt="...logo..."]). These are usually fragile guesses. Use page.locator(\'a[href*="domain"]\').first() or verify main page text/headers instead.'
+      },
+      {
+        // toBeVisible() on page.locator('a').first()
+        re: /expect\(\s*page\.locator\(\s*['"`]a.*['"`]\s*\)\.first\(\)\s*\)\.toBeVisible\(\)/,
+        message: 'Do not use toBeVisible() on page.locator(\'a\').first() as the first link on many pages is a hidden skip link. Assert toBeAttached() instead, or target a specific visible element.'
       }
     ];
 

@@ -197,6 +197,7 @@ RULES:
 5. If the task is impossible (element not found after navigating, or page 404), use ABORT.
 6. Never repeat an action that already succeeded.
 7. If an overlay banner or pre-content pop-up (e.g., rebrand banners, cookies, sign-in alerts) intercepts your clicks or covers page elements, prioritize clicking the "DismissBanner" or "Close" button first to clear it out of the way.
+8. SHADOW DOM / WEB COMPONENTS: Many pages (like MSN) use Web Components and Shadow DOM. Standard document.querySelector/querySelectorAll inside browser_evaluate will return null for elements inside shadow roots. When using browser_evaluate to check elements, write functions that recursively search shadow roots (e.g. piercing shadow DOM) to find elements, or locate them using their visible text or by checking if a parent container has children.
 
 RESPOND WITH THIS JSON FORMAT ONLY:
 {

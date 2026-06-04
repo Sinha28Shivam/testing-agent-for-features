@@ -1,0 +1,287 @@
+- generic [ref=e3]:
+  - banner [ref=e6]:
+    - generic [ref=e7]:
+      - generic "Skip to content" [ref=e8] [cursor=pointer]:
+        - button "Skip to content" [ref=e9]:
+          - generic:
+            - generic: Skip to content
+      - generic "Skip to footer" [ref=e10] [cursor=pointer]:
+        - button "Skip to footer" [ref=e11]:
+          - generic:
+            - generic: Skip to footer
+      - link "MSN" [ref=e14] [cursor=pointer]:
+        - /url: https://www.msn.com/en-in
+      - search [ref=e18]:
+        - generic [ref=e19]:
+          - generic "Web search" [ref=e20] [cursor=pointer]:
+            - button "Web search" [ref=e21]:
+              - generic:
+                - generic:
+                  - img
+          - searchbox "Enter your search term" [ref=e22]
+      - generic [ref=e23]:
+        - generic "Open settings" [ref=e27] [cursor=pointer]:
+          - button "Open settings" [ref=e28]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Page settings
+                  - generic:
+                    - img
+        - generic:
+          - generic:
+            - generic:
+              - generic "Sign In"
+  - generic [ref=e30]:
+    - generic [ref=e32]:
+      - banner [ref=e33]
+      - generic [ref=e38]:
+        - navigation [ref=e40]:
+          - generic [ref=e41]:
+            - list [ref=e42]:
+              - listitem [ref=e43]:
+                - link "Discover" [ref=e44] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in
+            - list [ref=e45]:
+              - listitem [ref=e46]:
+                - link "News" [ref=e47] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f
+              - listitem [ref=e48]:
+                - link "Sports" [ref=e49] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/sports
+              - listitem [ref=e50]:
+                - link "Play" [ref=e51] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/play?cgfrom=cg_home_pivot
+              - listitem [ref=e52]:
+                - link "Money" [ref=e53] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/money
+              - listitem [ref=e54]:
+                - link "Weather" [ref=e55] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/weather
+              - listitem [ref=e56]:
+                - link "Watch" [ref=e57] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/video
+              - listitem [ref=e58]:
+                - link "Shopping" [ref=e59] [cursor=pointer]:
+                  - /url: https://www.bing.com/shop?entrypoint=msn&adunitId=378983&propertyId=316966&FORM=NVBSHP
+        - generic "Personalize your feed\"" [ref=e61] [cursor=pointer]:
+          - button "Personalize your feed\"" [ref=e62]:
+            - generic:
+              - generic:
+                - img
+            - generic:
+              - generic: Personalize
+    - main [ref=e65]:
+      - generic [ref=e68]:
+        - generic [ref=e71]:
+          - tablist [ref=e73]:
+            - tab [selected] [ref=e74] [cursor=pointer]
+            - tab [ref=e76] [cursor=pointer]
+            - tab [ref=e78] [cursor=pointer]
+            - tab [ref=e80] [cursor=pointer]
+            - tab [ref=e82] [cursor=pointer]
+            - tab [ref=e84] [cursor=pointer]
+            - tab [ref=e86] [cursor=pointer]
+            - tab [ref=e88] [cursor=pointer]
+            - tab [ref=e90] [cursor=pointer]
+            - tab [ref=e92] [cursor=pointer]
+            - tab [ref=e94] [cursor=pointer]
+            - tab [ref=e96] [cursor=pointer]
+            - tab [ref=e98] [cursor=pointer]
+            - tab [ref=e100] [cursor=pointer]
+            - tab [ref=e102] [cursor=pointer]
+            - tab [ref=e104] [cursor=pointer]
+            - tab [ref=e106] [cursor=pointer]
+            - tab [ref=e108] [cursor=pointer]
+            - tab [ref=e110] [cursor=pointer]
+            - tab [ref=e112] [cursor=pointer]
+            - tab [ref=e114] [cursor=pointer]
+            - tab [ref=e116] [cursor=pointer]
+            - tab [ref=e118] [cursor=pointer]
+            - tab [ref=e120] [cursor=pointer]
+            - tab [ref=e122] [cursor=pointer]
+            - tab [ref=e124] [cursor=pointer]
+            - tab [ref=e126] [cursor=pointer]
+            - tab [ref=e128] [cursor=pointer]
+            - tab [ref=e130] [cursor=pointer]
+            - tab [ref=e132] [cursor=pointer]
+            - tab [ref=e134] [cursor=pointer]
+          - button [ref=e138]
+          - button [ref=e141]
+          - article "Spot the 3 Differences in Lady Working in Office Beat the 45-Second Challenge!" [ref=e142] [cursor=pointer]:
+            - generic [ref=e144]:
+              - img [ref=e145]
+              - generic [ref=e146]:
+                - generic [ref=e147]:
+                  - generic [ref=e149]:
+                    - img [ref=e150]
+                    - generic [ref=e151]: Jagran Josh
+                  - link "Spot the 3 Differences in Lady Working in Office Beat the 45-Second Challenge!, Jagran Josh" [ref=e152]:
+                    - /url: https://www.msn.com/en-in/entertainment/news/spot-the-3-differences-in-lady-working-in-office-beat-the-45-second-challenge/ar-AA1NL4bs
+                    - text: Spot the 3 Differences in Lady Working in Office Beat the 45-Second Challenge!
+                - generic [ref=e153]:
+                  - generic:
+                    - generic:
+                      - generic "Spot the 3 Differences in Lady Working in Office Beat the 45-Second Challenge!"
+              - generic [ref=e154]:
+                - button "Hide this story" [ref=e155]:
+                  - img [ref=e156]
+                  - text: Hide this story
+                - button "See more" [ref=e157]:
+                  - img [ref=e158]
+        - article [ref=e159] [cursor=pointer]
+        - article "Why more healthy-looking young people are dying of heart attacks" [ref=e161] [cursor=pointer]:
+          - generic [ref=e163]:
+            - img [ref=e164]
+            - generic [ref=e165]:
+              - generic [ref=e166]:
+                - generic [ref=e167]:
+                  - generic [ref=e168]:
+                    - img [ref=e169]
+                    - generic [ref=e170]: Times Now
+                  - generic [ref=e171]: ·
+                  - generic [ref=e172]: 3w
+                - link "Why more healthy-looking young people are dying of heart attacks, Times Now" [ref=e173]:
+                  - /url: https://www.msn.com/en-in/health/health-news/why-more-healthy-looking-young-people-are-dying-of-heart-attacks/ar-AA22QBvs
+                  - text: Why more healthy-looking young people are dying of heart attacks
+              - generic [ref=e174]:
+                - generic:
+                  - generic:
+                    - generic "Why more healthy-looking young people are dying of heart attacks"
+            - generic [ref=e175]:
+              - button "Hide this story" [ref=e176]:
+                - img [ref=e177]
+                - text: Hide this story
+              - button "See more" [ref=e178]:
+                - img [ref=e179]
+        - article [ref=e180] [cursor=pointer]
+        - article [ref=e187] [cursor=pointer]:
+          - generic [ref=e193]:
+            - generic [ref=e195]:
+              - img "Watchlist suggestions" [ref=e197]
+              - link "Watchlist suggestions" [ref=e198]:
+                - /url: https://www.msn.com/en-in/money/watchlist?ocid=hpmsn
+                - heading "Watchlist suggestions" [level=2] [ref=e199]
+              - button "More options" [ref=e201]
+            - generic [ref=e206]:
+              - link "DOW DOW Rising fast ‎+1.71%‎ 51,553.08" [ref=e208]:
+                - /url: https://www.msn.com/en-in/money/watchlist?id=a6qja2&noti=Price&ocid=hpmsn
+                - generic [ref=e209]:
+                  - generic [ref=e210]:
+                    - generic [ref=e211]: DOW
+                    - img "DOW" [ref=e212]
+                  - generic [ref=e214]: Rising fast
+                - generic [ref=e217]:
+                  - generic [ref=e218]: ‎+1.71%‎
+                  - generic [ref=e219]: 51,553.08
+                - button "Add to watchlist" [ref=e222]:
+                  - img [ref=e223]
+              - link "ITC Ltd ITC ‎+1.19%‎ 280.30" [ref=e227]:
+                - /url: https://www.msn.com/en-in/money/watchlist?id=ahie2w&ocid=hpmsn
+                - generic [ref=e228]:
+                  - generic [ref=e230]: ITC Ltd
+                  - generic [ref=e232]: ITC
+                - generic [ref=e235]:
+                  - generic [ref=e236]: ‎+1.19%‎
+                  - generic [ref=e237]: "280.30"
+                - button "Add to watchlist" [ref=e240]:
+                  - img [ref=e241]
+              - link "Citigroup Inc Citigroup Inc Rising fast ‎+3.33%‎ 134.26" [ref=e245]:
+                - /url: https://www.msn.com/en-in/money/watchlist?id=a1p3ww&noti=Price&ocid=hpmsn
+                - generic [ref=e246]:
+                  - generic [ref=e247]:
+                    - generic [ref=e248]: Citigroup Inc
+                    - img "Citigroup Inc" [ref=e249]
+                  - generic [ref=e251]: Rising fast
+                - generic [ref=e254]:
+                  - generic [ref=e255]: ‎+3.33%‎
+                  - generic [ref=e256]: "134.26"
+                - button "Add to watchlist" [ref=e259]:
+                  - img [ref=e260]
+              - link "Dominion Energy Inc Dominion Energy Inc Rising fast ‎+1.53%‎ 66.46" [ref=e264]:
+                - /url: https://www.msn.com/en-in/money/watchlist?id=a1qpw7&noti=Price&ocid=hpmsn
+                - generic [ref=e265]:
+                  - generic [ref=e266]:
+                    - generic [ref=e267]: Dominion Energy Inc
+                    - img "Dominion Energy Inc" [ref=e268]
+                  - generic [ref=e270]: Rising fast
+                - generic [ref=e273]:
+                  - generic [ref=e274]: ‎+1.53%‎
+                  - generic [ref=e275]: "66.46"
+                - button "Add to watchlist" [ref=e278]:
+                  - img [ref=e279]
+              - link "AT&T Inc AT&T Inc Dropping fast ‎-2.21%‎ 23.03" [ref=e283]:
+                - /url: https://www.msn.com/en-in/money/watchlist?id=a23www&noti=Price&ocid=hpmsn
+                - generic [ref=e284]:
+                  - generic [ref=e285]:
+                    - generic [ref=e286]: AT&T Inc
+                    - img "AT&T Inc" [ref=e287]
+                  - generic [ref=e289]: Dropping fast
+                - generic [ref=e292]:
+                  - generic [ref=e293]: ‎-2.21%‎
+                  - generic [ref=e294]: "23.03"
+                - button "Add to watchlist" [ref=e297]:
+                  - img [ref=e298]
+            - generic [ref=e302]:
+              - generic [ref=e303]:
+                - generic "Previous" [ref=e304]:
+                  - button "Previous" [ref=e305]
+                - tablist [ref=e307]:
+                  - tab "tab-0" [selected] [ref=e308]
+                  - tab "tab-1" [ref=e310]
+                  - tab "tab-2" [ref=e312]
+                  - tab "tab-3" [ref=e314]
+                - generic "Next" [ref=e316]:
+                  - button "Next" [ref=e317]
+              - link "See watchlist suggestions" [ref=e319]:
+                - /url: https://www.msn.com/en-in/money/watchlist?ocid=hpmsn
+        - article [ref=e320] [cursor=pointer]
+        - 'article "Virat Kohli out, Rohit Sharma uncertain: BCCI feared this scenario, now gets chance to activate World Cup plan B" [ref=e327] [cursor=pointer]':
+          - generic [ref=e329]:
+            - img [ref=e330]
+            - generic [ref=e331]:
+              - generic [ref=e332]:
+                - generic [ref=e333]:
+                  - generic [ref=e334]:
+                    - img [ref=e335]
+                    - generic [ref=e336]: Hindustan Times
+                  - generic [ref=e337]: ·
+                  - generic [ref=e338]: 6h
+                - 'link "Virat Kohli out, Rohit Sharma uncertain: BCCI feared this scenario, now gets chance to activate World Cup plan B, Hindustan Times" [ref=e339]':
+                  - /url: https://www.msn.com/en-in/sports/cricket/virat-kohli-out-rohit-sharma-uncertain-bcci-feared-this-scenario-now-gets-chance-to-activate-world-cup-plan-b/ar-AA24O31J
+                  - text: "Virat Kohli out, Rohit Sharma uncertain: BCCI feared this scenario, now gets chance to activate World Cup plan B"
+              - generic [ref=e340]:
+                - generic:
+                  - generic:
+                    - 'generic "Virat Kohli out, Rohit Sharma uncertain: BCCI feared this scenario, now gets chance to activate World Cup plan B"'
+            - generic [ref=e341]:
+              - button "Hide this story" [ref=e342]:
+                - img [ref=e343]
+                - text: Hide this story
+              - button "See more" [ref=e344]:
+                - img [ref=e345]
+        - 'article "GK: Which Indian city is called the litchi capital of the world?" [ref=e346] [cursor=pointer]':
+          - generic [ref=e348]:
+            - img [ref=e349]
+            - generic [ref=e350]:
+              - generic [ref=e351]:
+                - generic [ref=e352]:
+                  - generic [ref=e353]:
+                    - img [ref=e354]
+                    - generic [ref=e355]: News18
+                  - generic [ref=e356]: ·
+                  - generic [ref=e357]: 2w
+                - 'link "GK: Which Indian city is called the litchi capital of the world?, News18" [ref=e358]':
+                  - /url: https://www.msn.com/en-in/travel/tripideas/gk-which-indian-city-is-called-the-litchi-capital-of-the-world/ss-AA23ywsO
+                  - text: "GK: Which Indian city is called the litchi capital of the world?"
+              - generic [ref=e359]:
+                - generic:
+                  - generic:
+                    - 'generic "GK: Which Indian city is called the litchi capital of the world?"'
+            - generic [ref=e360]:
+              - button "Hide this story" [ref=e361]:
+                - img [ref=e362]
+                - text: Hide this story
+              - button "See more" [ref=e363]:
+                - img [ref=e364]
+        - article [ref=e365] [cursor=pointer]

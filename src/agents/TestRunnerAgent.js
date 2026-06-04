@@ -62,7 +62,8 @@ class TestRunnerAgent {
   }
 
   parsePlaywrightSummary(stdout = '', stderr = '') {
-    const combined = `${stdout}\n${stderr}`;
+    const stripAnsi = (str) => str.replace(/[\u001b\u009b][[()#;?]*(?:[0-9]{1,4}(?:;[0-9]{0,4})*)?[0-9A-ORZcf-nqry=><]/g, '');
+    const combined = stripAnsi(`${stdout}\n${stderr}`);
     const stats = {
       total: 0,
       passed: 0,
@@ -84,12 +85,12 @@ class TestRunnerAgent {
     // We only want the LAST occurrence of each to avoid double-counting from
     // retry progress lines.  We scan all matches and keep only the last value.
     const matchers = [
-      { key: 'passed',      re: /(\d+)\s+passed(?:\s*\(|$)/gi },
-      { key: 'failed',      re: /(\d+)\s+failed(?:\s*\(|$)/gi },
-      { key: 'skipped',     re: /(\d+)\s+skipped(?:\s*\(|$)/gi },
-      { key: 'flaky',       re: /(\d+)\s+flaky(?:\s*\(|$)/gi },
-      { key: 'timedOut',    re: /(\d+)\s+timed\s+out(?:\s*\(|$)/gi },
-      { key: 'interrupted', re: /(\d+)\s+interrupted(?:\s*\(|$)/gi },
+      { key: 'passed',      re: /(\d+)\s+passed(?:\s*\(|$)/gim },
+      { key: 'failed',      re: /(\d+)\s+failed(?:\s*\(|$)/gim },
+      { key: 'skipped',     re: /(\d+)\s+skipped(?:\s*\(|$)/gim },
+      { key: 'flaky',       re: /(\d+)\s+flaky(?:\s*\(|$)/gim },
+      { key: 'timedOut',    re: /(\d+)\s+timed\s+out(?:\s*\(|$)/gim },
+      { key: 'interrupted', re: /(\d+)\s+interrupted(?:\s*\(|$)/gim },
     ];
 
     for (const { key, re } of matchers) {
