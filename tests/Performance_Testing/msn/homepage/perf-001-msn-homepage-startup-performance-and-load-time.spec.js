@@ -1,23 +1,40 @@
 import { test, expect } from '@playwright/test';
 
-test('Navigation and page load performance test for MSN homepage', async ({ page }) => {
-  // Step 1: Navigate to the URL
+test('MSN Homepage Navigation and Performance Testing', async ({ page }) => {
+  // Step 1: Navigate to MSN homepage
   await page.goto('https://www.msn.com/en-in', { waitUntil: 'domcontentloaded' });
-  await page.waitForLoadState('load'); // Ensure the page has fully loaded.
-  await expect(page).toHaveURL(/msn\.com\/en-in/); // Assert URL with a lenient regex.
-  await expect(page).toHaveTitle(/^MSN/); // Assert the page's title.
+  await page.waitForLoadState('load'); // Wait for the page to fully load
 
-  // Optional: Take a screenshot after navigation.
-  await page.screenshot({ path: 'test-results/Performance_Testing/msn/homepage/navigate_to_homepage.png' });
+  // Assert that the URL matches the expected pattern
+  await expect(page).toHaveURL(/www\.msn\.com\/en-in/);
+
+  // Assert that the page title matches the expected pattern
+  await expect(page).toHaveTitle(/^MSN/);
+
+  // Optional: Take a screenshot of the loaded page
+  await page.screenshot({ path: 'test-results/Performance_Testing/msn/homepage/homepage_loaded.png' });
 
   // Step 2: Measure page load time
-  const loadTime = await page.evaluate(() => performance.timing.loadEventEnd - performance.timing.navigationStart);
-  expect(loadTime).toBeGreaterThan(0); // Assert load time is positive.
-  expect(loadTime).toBeLessThan(60000); // Assert load time is within acceptable range.
+  const loadTime = await page.evaluate(() => {
+    const t = window.performance.timing;
+    const end = t.loadEventEnd > 0 ? t.loadEventEnd : Date.now();
+    return end - t.navigationStart;
+  });
 
-  // Optional: Log load time for debugging purposes.
-  console.log(`Page load time: ${loadTime} ms`);
+  // Assert that the load time is within a reasonable range
+  expect(loadTime).toBeGreaterThan(0);
+  expect(loadTime).toBeLessThan(60000);
 
-  // Optional: Take a screenshot after performance measurement.
-  await page.screenshot({ path: 'test-results/Performance_Testing/msn/homepage/page_load_verified.png' });
+  // Optional: Take a screenshot of the performance timing state, if needed
+  await page.screenshot({ path: 'test-results/Performance_Testing/msn/homepage/page_loaded_with_performance_metrics.png' });
+
+  // Final assertions to ensure that the page has loaded successful content
+  // Verify body is visible
+  await expect(page.locator('body')).toBeVisible();
+
+  // Wait for the first link or main content to be attached
+  await page.locator('a').first().waitFor({ state: 'attached', timeout: 30000 });
+
+  // Assert there is at least one visible link on the page
+  expect(await page.locator('a').count()).toBeGreaterThan(0);
 });
