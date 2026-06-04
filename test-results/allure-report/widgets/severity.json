@@ -1,1 +1,1 @@
-[{"uid":"a915e71b3b75d033","name":"Navigation and screenshot capture of MSN homepage","time":{"start":1780584256986,"stop":1780584264658,"duration":7672},"status":"passed","severity":"normal"}]
+[{"uid":"3b8805246a873ab1","name":"Navigation and homepage screenshot on MSN","time":{"start":1780586965483,"stop":1780586977627,"duration":12144},"status":"passed","severity":"normal"},{"uid":"d4f346582d490e71","name":"MSN homepage navigation and performance testing","time":{"start":1780586963575,"stop":1780586976179,"duration":12604},"status":"passed","severity":"normal"}]
