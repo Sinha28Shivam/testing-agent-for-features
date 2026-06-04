@@ -6,6 +6,7 @@ import messageBus, { EVENTS } from '../core/MessageBus.js';
 class IssueAgent {
   constructor() {
     this.initialized = false;
+    this.writePromise = Promise.resolve();
   }
 
   async init() {
@@ -59,29 +60,36 @@ ${body || 'No error logs provided.'}
     }
 
     // 2. Fallback: Write issue to logs/issues.json
-    const logDir = path.join('logs');
-    await fs.mkdir(logDir, { recursive: true });
-    
-    const logPath = path.join(logDir, 'issues.json');
-    let issues = [];
-    try {
-      const fileData = await fs.readFile(logPath, 'utf-8');
-      issues = JSON.parse(fileData);
-    } catch (err) {
-      // File doesn't exist yet
-    }
+    // Chain writes onto writePromise to serialize local file logging and prevent overwrite race conditions
+    this.writePromise = this.writePromise.then(async () => {
+      const logDir = path.join('logs');
+      await fs.mkdir(logDir, { recursive: true });
+      
+      const logPath = path.join(logDir, 'issues.json');
+      let issues = [];
+      try {
+        const fileData = await fs.readFile(logPath, 'utf-8');
+        issues = JSON.parse(fileData);
+      } catch (err) {
+        // File doesn't exist yet
+      }
 
-    issues.push({
-      runId,
-      domain,
-      title: issueTitle,
-      body: issueBody,
-      labels: labels || [],
-      createdAt: new Date().toISOString()
+      issues.push({
+        runId,
+        domain,
+        title: issueTitle,
+        body: issueBody,
+        labels: labels || [],
+        createdAt: new Date().toISOString()
+      });
+
+      await fs.writeFile(logPath, JSON.stringify(issues, null, 2), 'utf-8');
+      console.log(`[IssueAgent] Local issue logged successfully to: ${logPath}`);
+    }).catch(err => {
+      console.error('[IssueAgent Error] Failed to write issue to logs/issues.json:', err);
     });
 
-    await fs.writeFile(logPath, JSON.stringify(issues, null, 2), 'utf-8');
-    console.log(`[IssueAgent] Local issue logged successfully to: ${logPath}`);
+    await this.writePromise;
   }
 
   runGhCommand(args) {

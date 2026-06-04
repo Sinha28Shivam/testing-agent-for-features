@@ -1,0 +1,59 @@
+{
+  "testTypes": {
+    "Smoke_Testing": [
+      "smoke",
+      "sanity",
+      "basic",
+      "load verification",
+      "homepage loads",
+      "smoke test"
+    ],
+    "Performance_Testing": [
+      "performance",
+      "load test",
+      "stress",
+      "speed",
+      "benchmark",
+      "lighthouse",
+      "responsiveness",
+      "responsive",
+      "interactive",
+      "rendering time",
+      "response time",
+      "load time",
+      "measure"
+    ],
+    "Regression_Testing": []
+  },
+  "features": {
+    "settings": [
+      "settings",
+      "profile",
+      "account",
+      "preference",
+      "options"
+    ],
+    "personalized": [
+      "personalized",
+      "feed",
+      "my feed",
+      "recommendations",
+      "interests"
+    ],
+    "homepage": [
+      "homepage",
+      "home",
+      "landing",
+      "index"
+    ],
+    "search": [
+      "search",
+      "query",
+      "find"
+    ]
+  },
+  "defaults": {
+    "testType": "Regression_Testing",
+    "feature": "general"
+  }
+}

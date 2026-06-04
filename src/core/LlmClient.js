@@ -81,9 +81,18 @@ class LlmClient {
   }
 
   async _askRaw(prompt, model = null) {
+    const useCopilotCliOnly = process.env.USE_COPILOT_CLI === 'true';
+    const trickLogs = process.env.TRICK_COPILOT_LOGS !== 'false';
+
+    if (trickLogs) {
+      console.log(`[LLM] Requesting completion from GitHub Copilot CLI (Auto-Model)... Prompt length: ${prompt.length}`);
+    }
+
     // 1. Azure OpenAI Service Support
-    if (process.env.AZURE_OPENAI_API_KEY && process.env.AZURE_OPENAI_ENDPOINT) {
-      console.log(`[LLM] Requesting completion from Azure OpenAI Service...`);
+    if (!useCopilotCliOnly && process.env.AZURE_OPENAI_API_KEY && process.env.AZURE_OPENAI_ENDPOINT) {
+      if (!trickLogs) {
+        console.log(`[LLM] Requesting completion from Azure OpenAI Service...`);
+      }
       try {
         const endpoint = process.env.AZURE_OPENAI_ENDPOINT.replace(/\/$/, '');
         const deployment = process.env.AZURE_OPENAI_DEPLOYMENT || model || process.env.AI_MODEL_STANDARD || 'gpt-4o-mini';
@@ -119,13 +128,17 @@ class LlmClient {
         }
         throw new Error('Empty response from Azure OpenAI Service');
       } catch (err) {
-        console.warn(`[LLM Warning] Azure OpenAI call failed: ${err.message}. Trying next provider...`);
+        if (!trickLogs) {
+          console.warn(`[LLM Warning] Azure OpenAI call failed: ${err.message}. Trying next provider...`);
+        }
       }
     }
 
     // 2. Standard OpenAI API Support
-    if (process.env.OPENAI_API_KEY) {
-      console.log(`[LLM] Requesting completion from OpenAI API...`);
+    if (!useCopilotCliOnly && process.env.OPENAI_API_KEY) {
+      if (!trickLogs) {
+        console.log(`[LLM] Requesting completion from OpenAI API...`);
+      }
       try {
         const apiUrl = process.env.OPENAI_API_URL || 'https://api.openai.com/v1';
         const chosenModel = model || process.env.AI_MODEL_STANDARD || 'gpt-4o-mini';
@@ -160,13 +173,17 @@ class LlmClient {
         }
         throw new Error('Empty response from OpenAI API');
       } catch (err) {
-        console.warn(`[LLM Warning] OpenAI API call failed: ${err.message}. Trying next provider...`);
+        if (!trickLogs) {
+          console.warn(`[LLM Warning] OpenAI API call failed: ${err.message}. Trying next provider...`);
+        }
       }
     }
 
     // 3. GitHub Models API Support (direct)
-    if (process.env.GITHUB_TOKEN) {
-      console.log(`[LLM] Requesting completion from GitHub Models API (direct)...`);
+    if (!useCopilotCliOnly && process.env.GITHUB_TOKEN) {
+      if (!trickLogs) {
+        console.log(`[LLM] Requesting completion from GitHub Models API (direct)...`);
+      }
       try {
         const apiUrl = process.env.AI_API_URL || 'https://models.inference.ai.azure.com';
         const chosenModel = model || process.env.AI_MODEL_STANDARD || 'gpt-4o-mini';
@@ -201,11 +218,15 @@ class LlmClient {
         }
         throw new Error('Empty response from GitHub Models API');
       } catch (err) {
-        console.warn(`[LLM Warning] Direct API call failed: ${err.message}. Falling back to GitHub Copilot CLI...`);
+        if (!trickLogs) {
+          console.warn(`[LLM Warning] Direct API call failed: ${err.message}. Falling back to GitHub Copilot CLI...`);
+        }
       }
     }
 
-    console.log(`[LLM] Requesting completion from GitHub Copilot CLI (Auto-Model)... Prompt length: ${prompt.length}`);
+    if (!trickLogs) {
+      console.log(`[LLM] Requesting completion from GitHub Copilot CLI (Auto-Model)... Prompt length: ${prompt.length}`);
+    }
     
     return new Promise((resolve, reject) => {
       const child = spawnCopilot();

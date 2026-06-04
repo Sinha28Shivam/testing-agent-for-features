@@ -10,7 +10,7 @@ class AgentLoop {
 
   async run(plan, mcpBridge) {
     this.stepCount = 0;
-    const { runId, domain, scenarioType, targetUrl, prompt } = plan;
+    const { runId, domain, scenarioType, targetUrl, prompt, resolvedPathInfo } = plan;
     
     console.log(`[AgentLoop] Starting explore run for ${domain} on URL: ${targetUrl}`);
     
@@ -74,6 +74,33 @@ class AgentLoop {
         console.log(`[AgentLoop Check] Converting wait time ${decision.args.time} seconds to ${decision.args.time / 1000} seconds (assuming milliseconds was intended).`);
         decision.args.time = decision.args.time / 1000;
       }
+
+      // Intercept screenshots & snapshots to place them in correct structured folders under test-results/
+      if (resolvedPathInfo && (decision.tool === 'browser_screenshot' || decision.tool === 'browser_take_screenshot' || decision.tool === 'browser_snapshot')) {
+        const exploreOutputDir = resolvedPathInfo.dir.replace(/^tests/, 'test-results').replace(/\\/g, '/');
+        try {
+          const fs = await import('fs/promises');
+          await fs.mkdir(exploreOutputDir, { recursive: true });
+          
+          if (decision.args) {
+            // Force fullPage to false during explore runs to prevent timeouts on heavy pages
+            if (decision.tool === 'browser_screenshot' || decision.tool === 'browser_take_screenshot') {
+              decision.args.fullPage = false;
+            }
+
+            if (decision.args.filename) {
+              const basename = decision.args.filename.replace(/^.*[\\/]/, '');
+              decision.args.filename = `${exploreOutputDir}/${basename}`;
+            } else if (decision.args.path) {
+              const basename = decision.args.path.replace(/^.*[\\/]/, '');
+              decision.args.path = `${exploreOutputDir}/${basename}`;
+            }
+          }
+        } catch (err) {
+          console.error(`[AgentLoop Warning] Failed to ensure explore output dir exist: ${err.message}`);
+        }
+      }
+
       console.log(`[AgentLoop] Executing tool ${decision.tool} with args:`, decision.args);
       let result;
       try {
@@ -129,7 +156,20 @@ class AgentLoop {
       `Step ${a.step}: Called ${a.tool}(${JSON.stringify(a.args)}) -> ${a.result || 'success'}`
     ).join('\n');
 
-    const toolsList = availableTools.map(t => `- ${t.name}: ${t.description}`).join('\n');
+    const toolsList = availableTools.map(t => {
+      let paramDesc = '';
+      if (t.parameters && t.parameters.properties) {
+        const paramsList = Object.entries(t.parameters.properties).map(([name, schema]) => {
+          const typeStr = schema.type ? ` (${schema.type})` : '';
+          const descStr = schema.description ? `: ${schema.description}` : '';
+          return `${name}${typeStr}${descStr}`;
+        });
+        if (paramsList.length > 0) {
+          paramDesc = ` (Parameters: ${paramsList.join(', ')})`;
+        }
+      }
+      return `- ${t.name}: ${t.description}.${paramDesc}`;
+    }).join('\n');
     const patternsSection = knownPatterns && knownPatterns.length > 0
       ? `KNOWN ACCESSIBILITY PATTERNS:\n${knownPatterns.map(p => `- ${p.rule}`).join('\n')}\n`
       : '';
@@ -156,6 +196,7 @@ RULES:
 4. If the task appears complete, use COMPLETE.
 5. If the task is impossible (element not found after navigating, or page 404), use ABORT.
 6. Never repeat an action that already succeeded.
+7. If an overlay banner or pre-content pop-up (e.g., rebrand banners, cookies, sign-in alerts) intercepts your clicks or covers page elements, prioritize clicking the "DismissBanner" or "Close" button first to clear it out of the way.
 
 RESPOND WITH THIS JSON FORMAT ONLY:
 {

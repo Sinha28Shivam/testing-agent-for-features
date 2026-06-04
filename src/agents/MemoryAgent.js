@@ -19,10 +19,15 @@ class MemoryAgent {
   async connect() {
     if (this.connected) return;
     
-    // Connect PostgreSQL
-    await this.pgPool.connect();
+    // Connect PostgreSQL (recreate if ended)
+    if (!this.pgPool || this.pgPool.ended) {
+      this.pgPool = new pg.Pool({ connectionString: pgUri });
+    }
+    const client = await this.pgPool.connect();
+    client.release();
     
-    // Connect MongoDB
+    // Connect MongoDB (recreate client)
+    this.mongoClient = new MongoClient(mongoUri);
     await this.mongoClient.connect();
     const dbName = mongoUri.split('/').pop() || 'mydb';
     this.mongoDb = this.mongoClient.db(dbName);

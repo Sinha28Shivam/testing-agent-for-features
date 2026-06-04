@@ -1,6 +1,8 @@
 import { spawn } from 'child_process';
 import { createClient } from 'redis';
 import dotenv from 'dotenv';
+import fs from 'fs/promises';
+import path from 'path';
 import messageBus, { EVENTS } from '../core/MessageBus.js';
 
 dotenv.config();
@@ -39,6 +41,14 @@ class GitAgent {
 
   async pushToGit(payload) {
     const { runId, scriptPath, domain } = payload;
+    
+    // Read and back up the generated spec file content
+    let scriptContent = null;
+    try {
+      scriptContent = await fs.readFile(scriptPath, 'utf-8');
+    } catch (e) {
+      console.warn(`[GitAgent] Could not read script content for backup: ${e.message}`);
+    }
     
     // 1. Acquire Redis-based soft lock to prevent concurrent git conflicts
     console.log('[GitAgent] Acquiring Redis git lock...');
@@ -88,10 +98,36 @@ class GitAgent {
       };
 
     } finally {
-      // Switch back to master/main to keep workspace clean
-      await this.runGitCommand(['checkout', 'master']).catch(() => {
-        this.runGitCommand(['checkout', 'main']).catch(() => {});
-      });
+      // Switch back to master/main and merge the auto-test branch locally to preserve the generated test files
+      let baseBranch = 'master';
+      try {
+        await this.runGitCommand(['checkout', 'master']);
+      } catch (e) {
+        try {
+          await this.runGitCommand(['checkout', 'main']);
+          baseBranch = 'main';
+        } catch (e2) {
+          baseBranch = null;
+        }
+      }
+
+      if (baseBranch) {
+        console.log(`[GitAgent] Merging branch ${branchName} into ${baseBranch} locally to preserve test files...`);
+        await this.runGitCommand(['merge', branchName]).catch((err) => {
+          console.error(`[GitAgent Warning] Local merge failed: ${err.message}`);
+        });
+      }
+
+      // Restore/Preserve the spec file in local workspace
+      if (scriptContent) {
+        try {
+          await fs.mkdir(path.dirname(scriptPath), { recursive: true });
+          await fs.writeFile(scriptPath, scriptContent, 'utf-8');
+          console.log(`[GitAgent] Restored/Preserved test file at: ${scriptPath}`);
+        } catch (restoreErr) {
+          console.error(`[GitAgent Error] Failed to restore script file: ${restoreErr.message}`);
+        }
+      }
 
       // 3. Always release the lock
       console.log('[GitAgent] Releasing Redis git lock...');

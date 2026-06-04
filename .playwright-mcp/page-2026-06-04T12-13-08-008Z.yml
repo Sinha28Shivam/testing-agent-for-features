@@ -1,0 +1,439 @@
+- generic [ref=e3]:
+  - banner [ref=e10]:
+    - generic [ref=e11]:
+      - generic "Skip to content" [ref=e12] [cursor=pointer]:
+        - button "Skip to content" [ref=e13]:
+          - generic:
+            - generic: Skip to content
+      - generic "Skip to footer" [ref=e14] [cursor=pointer]:
+        - button "Skip to footer" [ref=e15]:
+          - generic:
+            - generic: Skip to footer
+      - link "MSN" [ref=e18] [cursor=pointer]:
+        - /url: https://www.msn.com/en-in
+      - search [ref=e22]:
+        - generic [ref=e23]:
+          - generic "Web search" [ref=e24] [cursor=pointer]:
+            - button "Web search" [ref=e25]:
+              - generic:
+                - generic:
+                  - img
+          - searchbox "Enter your search term" [ref=e26]
+          - generic "Open Copilot" [ref=e30] [cursor=pointer]:
+            - button "Open Copilot" [ref=e31]:
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Open Copilot"
+      - generic [ref=e32]:
+        - generic "Open settings" [ref=e36] [cursor=pointer]:
+          - button "Open settings" [ref=e37]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Page settings
+                  - generic:
+                    - img
+        - generic:
+          - generic:
+            - generic:
+              - generic "Sign In"
+  - generic [ref=e38]:
+    - generic [ref=e39]:
+      - generic [ref=e44]:
+        - list [ref=e47]:
+          - listitem [ref=e48]:
+            - link "Outlook.com" [ref=e51] [cursor=pointer]:
+              - /url: https://outlook.com
+              - generic [ref=e55]: Outlook.com
+          - listitem [ref=e56]:
+            - link "Flipkart" [ref=e59] [cursor=pointer]:
+              - /url: https://clk.tradedoubler.com/click?p=401531&a=3419260&epi=enin-msn-hp-mestripe
+              - generic [ref=e62]:
+                - generic [ref=e63]: Flipkart
+                - generic [ref=e65]: Sponsored
+          - listitem [ref=e66]:
+            - link "Find a tutor" [ref=e69] [cursor=pointer]:
+              - /url: https://www.bing.com/pros?FORM=BPIMNS
+              - generic [ref=e73]: Find a tutor
+          - listitem [ref=e74]:
+            - link "Booking.com" [ref=e77] [cursor=pointer]:
+              - /url: https://www.booking.com/index.html?aid=1624937&label=enin-msn-hp-mestripe
+              - generic [ref=e80]:
+                - generic [ref=e81]: Booking.com
+                - generic [ref=e83]: Sponsored
+          - listitem [ref=e84]:
+            - link "Nykaa" [ref=e87] [cursor=pointer]:
+              - /url: https://sovrn.co/p9zogj8
+              - generic [ref=e90]:
+                - generic [ref=e91]: Nykaa
+                - generic [ref=e93]: Sponsored
+          - listitem [ref=e94]:
+            - link "Facebook" [ref=e97] [cursor=pointer]:
+              - /url: https://www.facebook.com
+              - generic [ref=e101]: Facebook
+          - listitem [ref=e102]:
+            - link "Microsoft 365" [ref=e105] [cursor=pointer]:
+              - /url: https://www.office.com/?omkt=en-IN
+              - generic [ref=e109]: Microsoft 365
+          - listitem [ref=e110]:
+            - link "X" [ref=e113] [cursor=pointer]:
+              - /url: https://x.com
+              - generic [ref=e117]: X
+          - listitem [ref=e118]:
+            - link "OneDrive" [ref=e121] [cursor=pointer]:
+              - /url: https://onedrive.live.com/?wt.mc_id=oo_msn_msnhomepage_header
+              - generic [ref=e125]: OneDrive
+          - listitem [ref=e126]:
+            - link "Skype" [ref=e129] [cursor=pointer]:
+              - /url: https://www.skype.com/
+              - generic [ref=e133]: Skype
+          - listitem [ref=e134]:
+            - link "OneNote" [ref=e137] [cursor=pointer]:
+              - /url: https://www.onenote.com/notebooks?WT.mc_id=MSN_OneNote_TopMenu&auth=1&wdorigin=msn
+              - generic [ref=e141]: OneNote
+          - listitem [ref=e142]:
+            - link "Maps" [ref=e145] [cursor=pointer]:
+              - /url: https://bing.com/maps/?FORM=MSNMAP
+              - generic [ref=e149]: Maps
+          - listitem [ref=e150]:
+            - link "Microsoft Store" [ref=e153] [cursor=pointer]:
+              - /url: https://www.microsoft.com/en-in
+              - generic [ref=e157]: Microsoft Store
+        - button [ref=e158]:
+          - img [ref=e161]
+      - generic [ref=e163]:
+        - banner [ref=e164]
+        - generic [ref=e165]:
+          - generic [ref=e169]:
+            - navigation [ref=e171]:
+              - generic [ref=e172]:
+                - list [ref=e173]:
+                  - listitem [ref=e174]:
+                    - link "Discover" [ref=e175] [cursor=pointer]:
+                      - /url: https://www.msn.com/en-in
+                - list [ref=e176]:
+                  - listitem [ref=e177]:
+                    - link "News" [ref=e178] [cursor=pointer]:
+                      - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f
+                  - listitem [ref=e179]:
+                    - link "Sports" [ref=e180] [cursor=pointer]:
+                      - /url: https://www.msn.com/en-in/sports
+                  - listitem [ref=e181]:
+                    - link "Play" [ref=e182] [cursor=pointer]:
+                      - /url: https://www.msn.com/en-in/play?cgfrom=cg_home_pivot
+                  - listitem [ref=e183]:
+                    - link "Money" [ref=e184] [cursor=pointer]:
+                      - /url: https://www.msn.com/en-in/money
+                  - listitem [ref=e185]:
+                    - link "Weather" [ref=e186] [cursor=pointer]:
+                      - /url: https://www.msn.com/en-in/weather
+                  - listitem [ref=e187]:
+                    - link "Watch" [ref=e188] [cursor=pointer]:
+                      - /url: https://www.msn.com/en-in/video
+                  - listitem [ref=e189]:
+                    - link "Shopping" [ref=e190] [cursor=pointer]:
+                      - /url: https://www.bing.com/shop?entrypoint=msn&adunitId=378983&propertyId=316966&FORM=NVBSHP
+            - generic "Personalize your feed\"" [ref=e192] [cursor=pointer]:
+              - button "Personalize your feed\"" [ref=e193]:
+                - generic:
+                  - generic:
+                    - img
+                - generic:
+                  - generic: Personalize
+          - button "Make MSN my homepage" [ref=e195] [cursor=pointer]
+      - main [ref=e198]:
+        - generic [ref=e201]:
+          - generic [ref=e204]:
+            - tablist [ref=e206]:
+              - tab [selected] [ref=e207] [cursor=pointer]
+              - tab [ref=e209] [cursor=pointer]
+              - tab [ref=e211] [cursor=pointer]
+              - tab [ref=e213] [cursor=pointer]
+              - tab [ref=e215] [cursor=pointer]
+              - tab [ref=e217] [cursor=pointer]
+              - tab [ref=e219] [cursor=pointer]
+              - tab [ref=e221] [cursor=pointer]
+              - tab [ref=e223] [cursor=pointer]
+              - tab [ref=e225] [cursor=pointer]
+              - tab [ref=e227] [cursor=pointer]
+              - tab [ref=e229] [cursor=pointer]
+              - tab [ref=e231] [cursor=pointer]
+              - tab [ref=e233] [cursor=pointer]
+              - tab [ref=e235] [cursor=pointer]
+              - tab [ref=e237] [cursor=pointer]
+              - tab [ref=e239] [cursor=pointer]
+              - tab [ref=e241] [cursor=pointer]
+              - tab [ref=e243] [cursor=pointer]
+              - tab [ref=e245] [cursor=pointer]
+              - tab [ref=e247] [cursor=pointer]
+              - tab [ref=e249] [cursor=pointer]
+              - tab [ref=e251] [cursor=pointer]
+              - tab [ref=e253] [cursor=pointer]
+              - tab [ref=e255] [cursor=pointer]
+              - tab [ref=e257] [cursor=pointer]
+              - tab [ref=e259] [cursor=pointer]
+              - tab [ref=e261] [cursor=pointer]
+              - tab [ref=e263] [cursor=pointer]
+            - button [ref=e267]
+            - button [ref=e270]
+            - 'article "Who should avoid eating jamuns: Know the potential health risks" [ref=e271] [cursor=pointer]':
+              - generic [ref=e273]:
+                - img [ref=e274]
+                - generic [ref=e275]:
+                  - generic [ref=e276]:
+                    - generic [ref=e278]:
+                      - img [ref=e279]
+                      - generic [ref=e280]: The Times of India
+                    - 'link "Who should avoid eating jamuns: Know the potential health risks, The Times of India" [ref=e281]':
+                      - /url: https://www.msn.com/en-in/health/other/who-should-avoid-eating-jamuns-know-the-potential-health-risks/ar-AA1LRiuw
+                      - text: "Who should avoid eating jamuns: Know the potential health risks"
+                  - 'generic "Who should avoid eating jamuns: Know the potential health risks" [ref=e284]':
+                    - generic [ref=e286]:
+                      - generic [ref=e287]:
+                        - button "480 Like" [ref=e288]:
+                          - generic [ref=e289]:
+                            - img [ref=e290]
+                            - generic [ref=e292]: "480"
+                        - button "Dislike" [ref=e293]:
+                          - img [ref=e295]
+                      - link "View comments 7 Comment" [ref=e298]:
+                        - /url: https://www.msn.com/en-in/health/other/who-should-avoid-eating-jamuns-know-the-potential-health-risks/ar-AA1LRiuw#comments
+                        - button "View comments 7 Comment" [ref=e299]:
+                          - img [ref=e300]
+                        - generic [ref=e302]: "7"
+                - generic [ref=e303]:
+                  - button "Hide this story" [ref=e304]:
+                    - img [ref=e305]
+                    - text: Hide this story
+                  - button "See more" [ref=e306]:
+                    - img [ref=e307]
+          - article [ref=e308] [cursor=pointer]:
+            - generic [ref=e312]:
+              - generic: Sponsored
+          - article [ref=e313] [cursor=pointer]:
+            - generic [ref=e318]:
+              - generic [ref=e320]:
+                - link "Top stories" [ref=e322]:
+                  - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f?cvid=6a216bcdaa7c4e11b9174feeccee19a2&ocid=hpmsn
+                  - heading "Top stories" [level=2] [ref=e323]
+                - button "More options" [ref=e325]
+              - list [ref=e328]:
+                - 'listitem "Southwest monsoon arrives in Kerala: IMD" [ref=e329]':
+                  - generic [ref=e330]:
+                    - generic [ref=e331]:
+                      - generic:
+                        - generic [ref=e332]: Breaking
+                        - img [ref=e333]
+                      - generic [ref=e334]:
+                        - generic: Press Trust of India ·now
+                    - generic [ref=e335]: "Southwest monsoon arrives in Kerala: IMD"
+                - 'listitem "Delhi fire: Hotel owner drove past ablaze building, did not stop to assist in rescue efforts" [ref=e336]':
+                  - generic [ref=e337]:
+                    - generic [ref=e338]:
+                      - img [ref=e339]
+                      - generic [ref=e340]:
+                        - generic: WION ·now
+                    - generic [ref=e341]: "Delhi fire: Hotel owner drove past ablaze building, did not stop to assist in rescue efforts"
+                - listitem "India, Venezuela look beyond oil as strategic ties gather momentum" [ref=e342]:
+                  - generic [ref=e343]:
+                    - generic [ref=e344]:
+                      - img [ref=e345]
+                      - generic [ref=e346]:
+                        - generic: Times Now ·56m
+                    - generic [ref=e347]: India, Venezuela look beyond oil as strategic ties gather momentum
+              - generic [ref=e349]:
+                - generic [ref=e350]:
+                  - generic "Previous" [ref=e351]:
+                    - button "Previous" [ref=e352]
+                  - tablist [ref=e354]:
+                    - tab "tab-0" [selected] [ref=e355]
+                    - tab "tab-1" [ref=e357]
+                    - tab "tab-2" [ref=e359]
+                  - generic "Next" [ref=e361]:
+                    - button "Next" [ref=e362]
+                - link "See more" [ref=e364]:
+                  - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f?cvid=6a216bcdaa7c4e11b9174feeccee19a2&ocid=hpmsn
+          - article "Game Faster. Play Smarter." [ref=e365] [cursor=pointer]:
+            - generic [ref=e367]:
+              - img [ref=e368]
+              - generic [ref=e369]:
+                - generic [ref=e370]:
+                  - generic [ref=e373]: Intel
+                  - link "Game Faster. Play Smarter., Intel" [ref=e374]:
+                    - /url: https://msft-ssp-apac.adnxs.com/click2?e=wqT_3QKkAfBDpAAAAAMAxBkFAQjQ14XRBhClw9eRmvytyWkYp4iH-bCq8cVRIO37sBAomAIwnxc4twFA_J_R5AJI8opOUABaA1VTRGIBBZBoAXABeJmgZ4AB-5YGiAEBkAEAmAEFoAECqQGyy23NujWKP7EBEQoouQEAAADA9Si8P8EVHgDJFQpA2AGOvQLgAQDwAYbxxgj4AQA./s=44d0843629cc9728888b5e3432d109f17337fb08/bcr=AAAAAAAA8D8=/pp=0.01/bn=101243/clickenc=https%3A%2F%2Fpn.ybp.yahoo.com%2Fcj%2Fcrid%2Fcp2W_6Gaej3_oEXcohjmB8jUadn9YC44%2Fcd%2FkMD1-D8PlEV29hkgP5S7EpbVt4TqEcC1QCpw4RbvcWey5JnDq2JvtZLJk0Yl4kBenSl22znwAELUSOu75hELJKDRtAjmAk_x-xo9j2KU6VT4mVaqoQRIttrBK3CXVKo4OJo76GRZ1aiW11D-e1nE_XoHVEVLGjZACwBOnM-X07-pfnkdErrQ7QrWMrz5quPk0zxOP4g3nraifnMq74GWK8QtmiVGrqtfOzZBFIRWO1VNS515edqoEe7lh5MkkX4iiZlxh4_jqWE%2Frurl%2Fhttps%3A%2F%2Fgame.intel.com%2Fus%2Fcore-gaming%2F%3Fcid%3Ddiad%26source%3Dgcm%26campid%3D35740953%26sid%3D4309167%26plid%3D445148989%26aid%3D638873164%26crid%3D254000074%26dclid%3DCJL-tozTtZQDFaEvaAgd4YwGoA%26gad_source%3D7%26gad_campaignid%3D23781067636
+                    - text: Game Faster. Play Smarter.
+                - link "Sponsored" [ref=e376]:
+                  - /url: https://msft-ssp-apac.adnxs.com/click2?e=wqT_3QKkAfBDpAAAAAMAxBkFAQjQ14XRBhClw9eRmvytyWkYp4iH-bCq8cVRIO37sBAomAIwnxc4twFA_J_R5AJI8opOUABaA1VTRGIBBZBoAXABeJmgZ4AB-5YGiAEBkAEAmAEFoAECqQGyy23NujWKP7EBEQoouQEAAADA9Si8P8EVHgDJFQpA2AGOvQLgAQDwAYbxxgj4AQA./s=44d0843629cc9728888b5e3432d109f17337fb08/bcr=AAAAAAAA8D8=/pp=0.01/bn=101243/clickenc=https%3A%2F%2Fpn.ybp.yahoo.com%2Fcj%2Fcrid%2Fcp2W_6Gaej3_oEXcohjmB8jUadn9YC44%2Fcd%2FkMD1-D8PlEV29hkgP5S7EpbVt4TqEcC1QCpw4RbvcWey5JnDq2JvtZLJk0Yl4kBenSl22znwAELUSOu75hELJKDRtAjmAk_x-xo9j2KU6VT4mVaqoQRIttrBK3CXVKo4OJo76GRZ1aiW11D-e1nE_XoHVEVLGjZACwBOnM-X07-pfnkdErrQ7QrWMrz5quPk0zxOP4g3nraifnMq74GWK8QtmiVGrqtfOzZBFIRWO1VNS515edqoEe7lh5MkkX4iiZlxh4_jqWE%2Frurl%2Fhttps%3A%2F%2Fgame.intel.com%2Fus%2Fcore-gaming%2F%3Fcid%3Ddiad%26source%3Dgcm%26campid%3D35740953%26sid%3D4309167%26plid%3D445148989%26aid%3D638873164%26crid%3D254000074%26dclid%3DCJL-tozTtZQDFaEvaAgd4YwGoA%26gad_source%3D7%26gad_campaignid%3D23781067636
+              - button "See more" [ref=e378]:
+                - img [ref=e379]
+          - article [ref=e380] [cursor=pointer]:
+            - generic [ref=e386]:
+              - generic [ref=e388]:
+                - img "World Cup coverage" [ref=e390]
+                - link "World Cup coverage" [ref=e391]:
+                  - /url: https://www.msn.com/en-in/sports/moments/league/ka-KAC2DE454F?serviceName=contentRetrieverService&query=FIFA+World+Cup+2026--240&newsid=AA24JsNx&ocid=hpmsn&cvid=6a216bcdaa7c4e11b9174feeccee19a2
+                  - heading "World Cup coverage" [level=2] [ref=e392]
+                - button "More interests" [ref=e393]
+                - generic [ref=e394]:
+                  - generic "Popular in your area" [ref=e395]:
+                    - button "Popular in your area" [ref=e396]
+                  - button "More options" [ref=e397]
+              - link "+14 · Curated by Copilot FIFA World Cup 2026 faces disruptions, policy shifts and rising concerns" [ref=e401]:
+                - /url: https://www.msn.com/en-in/sports/moments/league/ka-KAC2DE454F?serviceName=contentRetrieverService&query=FIFA+World+Cup+2026--240&newsid=AA24JsNx&ocid=hpmsn&cvid=6a216bcdaa7c4e11b9174feeccee19a2
+                - generic [ref=e405]: +14 · Curated by Copilot
+                - button "FIFA World Cup 2026 faces disruptions, policy shifts and rising concerns" [ref=e406]
+              - generic [ref=e408]:
+                - generic [ref=e409]:
+                  - generic "Previous" [ref=e410]:
+                    - button "Previous" [ref=e411]
+                  - tablist [ref=e413]:
+                    - tab "tab-0" [selected] [ref=e414]
+                    - tab "tab-1" [ref=e416]
+                  - generic "Next" [ref=e418]:
+                    - button "Next" [ref=e419]
+                - link "See full coverage" [ref=e421]:
+                  - /url: https://www.msn.com/en-in/sports/moments/league/ka-KAC2DE454F?serviceName=contentRetrieverService&query=FIFA+World+Cup+2026--240&newsid=AA24JsNx&ocid=hpmsn&cvid=6a216bcdaa7c4e11b9174feeccee19a2
+          - 'article "''Forgive us Yogi ji'': Criminal history holders in Ghaziabad pledge to quit crime, seek CM''s pardon" [ref=e422] [cursor=pointer]':
+            - generic [ref=e424]:
+              - img [ref=e425]
+              - generic [ref=e426]:
+                - generic [ref=e427]:
+                  - generic [ref=e428]:
+                    - generic [ref=e429]:
+                      - img [ref=e430]
+                      - generic [ref=e431]: The Economic Times
+                    - generic [ref=e432]: ·
+                    - generic [ref=e433]: 19h
+                  - 'link "''Forgive us Yogi ji'': Criminal history holders in Ghaziabad pledge to quit crime, seek CM''s pardon, The Economic Times" [ref=e434]':
+                    - /url: https://www.msn.com/en-in/news/india/forgive-us-yogi-ji-criminal-history-holders-in-ghaziabad-pledge-to-quit-crime-seek-cm-s-pardon/ar-AA24KzEN
+                    - text: "'Forgive us Yogi ji': Criminal history holders in Ghaziabad pledge to quit crime, seek CM's pardon"
+                - 'generic "''Forgive us Yogi ji'': Criminal history holders in Ghaziabad pledge to quit crime, seek CM''s pardon" [ref=e437]':
+                  - generic [ref=e439]:
+                    - generic [ref=e440]:
+                      - button "34 Like" [ref=e441]:
+                        - generic [ref=e442]:
+                          - img [ref=e443]
+                          - generic [ref=e445]: "34"
+                      - button "Dislike" [ref=e446]:
+                        - img [ref=e448]
+                    - link "View comments 3 Comment" [ref=e451]:
+                      - /url: https://www.msn.com/en-in/news/india/forgive-us-yogi-ji-criminal-history-holders-in-ghaziabad-pledge-to-quit-crime-seek-cm-s-pardon/ar-AA24KzEN#comments
+                      - button "View comments 3 Comment" [ref=e452]:
+                        - img [ref=e453]
+                      - generic [ref=e455]: "3"
+              - generic [ref=e456]:
+                - button "Hide this story" [ref=e457]:
+                  - img [ref=e458]
+                  - text: Hide this story
+                - button "See more" [ref=e459]:
+                  - img [ref=e460]
+          - article "Anushka Sharma's re-post on homeopathy sparks backlash, the liver doc calls her 'illiterate celeb'" [ref=e461] [cursor=pointer]:
+            - generic [ref=e463]:
+              - img [ref=e464]
+              - generic [ref=e465]:
+                - generic [ref=e466]:
+                  - generic [ref=e467]:
+                    - generic [ref=e468]:
+                      - img [ref=e469]
+                      - generic [ref=e470]: News18
+                    - generic [ref=e471]: ·
+                    - generic [ref=e472]: 21h
+                  - link "Anushka Sharma's re-post on homeopathy sparks backlash, the liver doc calls her 'illiterate celeb', News18" [ref=e473]:
+                    - /url: https://www.msn.com/en-in/health/health-news/anushka-sharma-s-re-post-on-homeopathy-sparks-backlash-the-liver-doc-calls-her-illiterate-celeb/ar-AA24JQ77
+                    - text: Anushka Sharma's re-post on homeopathy sparks backlash, the liver doc calls her 'illiterate celeb'
+                - generic "Anushka Sharma's re-post on homeopathy sparks backlash, the liver doc calls her 'illiterate celeb'" [ref=e476]:
+                  - generic [ref=e478]:
+                    - generic [ref=e479]:
+                      - button "85 Like" [ref=e480]:
+                        - generic [ref=e481]:
+                          - img [ref=e482]
+                          - generic [ref=e484]: "85"
+                      - button "Dislike" [ref=e485]:
+                        - img [ref=e487]
+                    - link "View comments 11 Comment" [ref=e490]:
+                      - /url: https://www.msn.com/en-in/health/health-news/anushka-sharma-s-re-post-on-homeopathy-sparks-backlash-the-liver-doc-calls-her-illiterate-celeb/ar-AA24JQ77#comments
+                      - button "View comments 11 Comment" [ref=e491]:
+                        - img [ref=e492]
+                      - generic [ref=e494]: "11"
+              - generic [ref=e495]:
+                - button "Hide this story" [ref=e496]:
+                  - img [ref=e497]
+                  - text: Hide this story
+                - button "See more" [ref=e498]:
+                  - img [ref=e499]
+          - article "Viral escape photo from Malviya Nagar fire helps relatives trace couple who came to Delhi for IVF treatment" [ref=e500] [cursor=pointer]:
+            - generic [ref=e502]:
+              - img [ref=e503]
+              - generic [ref=e504]:
+                - generic [ref=e505]:
+                  - generic [ref=e506]:
+                    - generic [ref=e507]:
+                      - img [ref=e508]
+                      - generic [ref=e509]: The New Indian Express
+                    - generic [ref=e510]: ·
+                    - generic [ref=e511]: 18h
+                  - link "Viral escape photo from Malviya Nagar fire helps relatives trace couple who came to Delhi for IVF treatment, The New Indian Express" [ref=e512]:
+                    - /url: https://www.msn.com/en-in/news/india/viral-escape-photo-from-malviya-nagar-fire-helps-relatives-trace-couple-who-came-to-delhi-for-ivf-treatment/ar-AA24Lctw
+                    - text: Viral escape photo from Malviya Nagar fire helps relatives trace couple who came to Delhi for IVF treatment
+                - generic "Viral escape photo from Malviya Nagar fire helps relatives trace couple who came to Delhi for IVF treatment" [ref=e515]:
+                  - generic [ref=e517]:
+                    - generic [ref=e518]:
+                      - button "65 Like" [ref=e519]:
+                        - generic [ref=e520]:
+                          - img [ref=e521]
+                          - generic [ref=e523]: "65"
+                      - button "Dislike" [ref=e524]:
+                        - img [ref=e526]
+                    - link "View comments 4 Comment" [ref=e529]:
+                      - /url: https://www.msn.com/en-in/news/india/viral-escape-photo-from-malviya-nagar-fire-helps-relatives-trace-couple-who-came-to-delhi-for-ivf-treatment/ar-AA24Lctw#comments
+                      - button "View comments 4 Comment" [ref=e530]:
+                        - img [ref=e531]
+                      - generic [ref=e533]: "4"
+              - generic [ref=e534]:
+                - button "Hide this story" [ref=e535]:
+                  - img [ref=e536]
+                  - text: Hide this story
+                - button "See more" [ref=e537]:
+                  - img [ref=e538]
+          - 'article "Gold rate today (June 4, 2026): Check 24K, 22K, 18K prices in Delhi, Mumbai, Kolkata, Chennai, Lucknow and other major cities" [ref=e539] [cursor=pointer]':
+            - generic [ref=e541]:
+              - img [ref=e542]
+              - generic [ref=e543]:
+                - generic [ref=e544]:
+                  - generic [ref=e545]:
+                    - generic [ref=e546]:
+                      - img [ref=e547]
+                      - generic [ref=e548]: Times Now
+                    - generic [ref=e549]: ·
+                    - generic [ref=e550]: 7h
+                  - 'link "Gold rate today (June 4, 2026): Check 24K, 22K, 18K prices in Delhi, Mumbai, Kolkata, Chennai, Lucknow and other major cities, Times Now" [ref=e551]':
+                    - /url: https://www.msn.com/en-in/money/markets/gold-rate-today-june-4-2026-check-24k-22k-18k-prices-in-delhi-mumbai-kolkata-chennai-lucknow-and-other-major-cities/ar-AA24NE0m
+                    - text: "Gold rate today (June 4, 2026): Check 24K, 22K, 18K prices in Delhi, Mumbai, Kolkata, Chennai, Lucknow and other major cities"
+                - 'generic "Gold rate today (June 4, 2026): Check 24K, 22K, 18K prices in Delhi, Mumbai, Kolkata, Chennai, Lucknow and other major cities" [ref=e554]':
+                  - generic [ref=e556]:
+                    - generic [ref=e557]:
+                      - button "46 Like" [ref=e558]:
+                        - generic [ref=e559]:
+                          - img [ref=e560]
+                          - generic [ref=e562]: "46"
+                      - button "Dislike" [ref=e563]:
+                        - img [ref=e565]
+                    - link "Start the conversation" [ref=e568]:
+                      - /url: https://www.msn.com/en-in/money/markets/gold-rate-today-june-4-2026-check-24k-22k-18k-prices-in-delhi-mumbai-kolkata-chennai-lucknow-and-other-major-cities/ar-AA24NE0m#comments
+                      - button "Start the conversation" [ref=e569]:
+                        - img [ref=e570]
+              - generic [ref=e572]:
+                - button "Hide this story" [ref=e573]:
+                  - img [ref=e574]
+                  - text: Hide this story
+                - button "See more" [ref=e575]:
+                  - img [ref=e576]
+    - contentinfo [ref=e579]:
+      - generic "Feedback" [ref=e581] [cursor=pointer]:
+        - button "Feedback" [ref=e582]:
+          - generic:
+            - generic:
+              - img
+          - generic:
+            - generic: Feedback

@@ -1,0 +1,173 @@
+- generic [ref=e3]:
+  - banner [ref=e6]:
+    - generic [ref=e7]:
+      - generic "Skip to content" [ref=e8] [cursor=pointer]:
+        - button "Skip to content" [ref=e9]:
+          - generic:
+            - generic: Skip to content
+      - generic "Skip to footer" [ref=e10] [cursor=pointer]:
+        - button "Skip to footer" [ref=e11]:
+          - generic:
+            - generic: Skip to footer
+      - link "MSN" [ref=e14] [cursor=pointer]:
+        - /url: https://www.msn.com/en-in
+      - search [ref=e18]:
+        - generic [ref=e19]:
+          - generic "Web search" [ref=e20] [cursor=pointer]:
+            - button "Web search" [ref=e21]:
+              - generic:
+                - generic:
+                  - img
+          - searchbox "Enter your search term" [ref=e22]
+      - generic [ref=e23]:
+        - generic "Open settings" [ref=e27] [cursor=pointer]:
+          - button "Open settings" [ref=e28]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Page settings
+                  - generic:
+                    - img
+        - generic:
+          - generic:
+            - generic:
+              - generic "Sign In"
+  - generic [ref=e30]:
+    - generic [ref=e33]:
+      - banner [ref=e34]
+      - generic [ref=e40]:
+        - navigation [ref=e42]:
+          - generic [ref=e43]:
+            - list [ref=e44]:
+              - listitem [ref=e45]:
+                - link "Discover" [ref=e46] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in
+            - list [ref=e47]:
+              - listitem [ref=e48]:
+                - link "News" [ref=e49] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f
+              - listitem [ref=e50]:
+                - link "Sports" [ref=e51] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/sports
+              - listitem [ref=e52]:
+                - link "Play" [ref=e53] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/play?cgfrom=cg_home_pivot
+              - listitem [ref=e54]:
+                - link "Money" [ref=e55] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/money
+              - listitem [ref=e56]:
+                - link "Weather" [ref=e57] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/weather
+              - listitem [ref=e58]:
+                - link "Watch" [ref=e59] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/video
+              - listitem [ref=e60]:
+                - link "Shopping" [ref=e61] [cursor=pointer]:
+                  - /url: https://www.bing.com/shop?entrypoint=msn&adunitId=378983&propertyId=316966&FORM=NVBSHP
+        - generic "Personalize your feed\"" [ref=e63] [cursor=pointer]:
+          - button "Personalize your feed\"" [ref=e64]:
+            - generic:
+              - generic:
+                - img
+            - generic:
+              - generic: Personalize
+    - main [ref=e67]:
+      - generic [ref=e70]:
+        - 'article "Who should avoid eating jamuns: Know the potential health risks" [ref=e74] [cursor=pointer]':
+          - generic [ref=e76]:
+            - img [ref=e77]
+            - generic [ref=e78]:
+              - generic [ref=e79]:
+                - generic [ref=e81]:
+                  - img [ref=e82]
+                  - generic [ref=e83]: The Times of India
+                - 'link "Who should avoid eating jamuns: Know the potential health risks, The Times of India" [ref=e84]':
+                  - /url: https://www.msn.com/en-in/health/other/who-should-avoid-eating-jamuns-know-the-potential-health-risks/ar-AA1LRiuw
+                  - text: "Who should avoid eating jamuns: Know the potential health risks"
+              - generic [ref=e85]:
+                - generic:
+                  - generic:
+                    - 'generic "Who should avoid eating jamuns: Know the potential health risks"'
+            - generic [ref=e86]:
+              - button "Hide this story" [ref=e87]:
+                - img [ref=e88]
+                - text: Hide this story
+              - button "See more" [ref=e89]:
+                - img [ref=e90]
+        - article [ref=e91] [cursor=pointer]
+        - article [ref=e93] [cursor=pointer]
+        - article [ref=e95] [cursor=pointer]
+        - article [ref=e102] [cursor=pointer]
+        - article [ref=e104] [cursor=pointer]
+        - article "'What is this stupid game?' Lalit Modi claims he 'begged' Sachin, Dravid to play 2007 T20 World Cup" [ref=e111] [cursor=pointer]:
+          - generic [ref=e113]:
+            - img [ref=e114]
+            - generic [ref=e115]:
+              - generic [ref=e116]:
+                - generic [ref=e117]:
+                  - generic [ref=e118]:
+                    - img [ref=e119]
+                    - generic [ref=e120]: The Times of India
+                  - generic [ref=e121]: ·
+                  - generic [ref=e122]: 8h
+                - link "'What is this stupid game?' Lalit Modi claims he 'begged' Sachin, Dravid to play 2007 T20 World Cup, The Times of India" [ref=e123]:
+                  - /url: https://www.msn.com/en-in/sports/cricket/what-is-this-stupid-game-lalit-modi-claims-he-begged-sachin-dravid-to-play-2007-t20-world-cup/ar-AA24N1Y5
+                  - text: "'What is this stupid game?' Lalit Modi claims he 'begged' Sachin, Dravid to play 2007 T20 World Cup"
+              - generic [ref=e124]:
+                - generic:
+                  - generic:
+                    - generic "'What is this stupid game?' Lalit Modi claims he 'begged' Sachin, Dravid to play 2007 T20 World Cup"
+            - generic [ref=e125]:
+              - button "Hide this story" [ref=e126]:
+                - img [ref=e127]
+                - text: Hide this story
+              - button "See more" [ref=e128]:
+                - img [ref=e129]
+        - 'article "GK: Which Indian city is called the litchi capital of the world?" [ref=e130] [cursor=pointer]':
+          - generic [ref=e132]:
+            - img [ref=e133]
+            - generic [ref=e134]:
+              - generic [ref=e135]:
+                - generic [ref=e136]:
+                  - generic [ref=e137]:
+                    - img [ref=e138]
+                    - generic [ref=e139]: News18
+                  - generic [ref=e140]: ·
+                  - generic [ref=e141]: 2w
+                - 'link "GK: Which Indian city is called the litchi capital of the world?, News18" [ref=e142]':
+                  - /url: https://www.msn.com/en-in/travel/tripideas/gk-which-indian-city-is-called-the-litchi-capital-of-the-world/ss-AA23ywsO
+                  - text: "GK: Which Indian city is called the litchi capital of the world?"
+              - generic [ref=e143]:
+                - generic:
+                  - generic:
+                    - 'generic "GK: Which Indian city is called the litchi capital of the world?"'
+            - generic [ref=e144]:
+              - button "Hide this story" [ref=e145]:
+                - img [ref=e146]
+                - text: Hide this story
+              - button "See more" [ref=e147]:
+                - img [ref=e148]
+        - 'article "Gold rate today (June 4, 2026): Check 24K, 22K, 18K prices in Delhi, Mumbai, Kolkata, Chennai, Lucknow and other major cities" [ref=e149] [cursor=pointer]':
+          - generic [ref=e151]:
+            - img [ref=e152]
+            - generic [ref=e153]:
+              - generic [ref=e154]:
+                - generic [ref=e155]:
+                  - generic [ref=e156]:
+                    - img [ref=e157]
+                    - generic [ref=e158]: Times Now
+                  - generic [ref=e159]: ·
+                  - generic [ref=e160]: 7h
+                - 'link "Gold rate today (June 4, 2026): Check 24K, 22K, 18K prices in Delhi, Mumbai, Kolkata, Chennai, Lucknow and other major cities, Times Now" [ref=e161]':
+                  - /url: https://www.msn.com/en-in/money/markets/gold-rate-today-june-4-2026-check-24k-22k-18k-prices-in-delhi-mumbai-kolkata-chennai-lucknow-and-other-major-cities/ar-AA24NE0m
+                  - text: "Gold rate today (June 4, 2026): Check 24K, 22K, 18K prices in Delhi, Mumbai, Kolkata, Chennai, Lucknow and other major cities"
+              - generic [ref=e162]:
+                - generic:
+                  - generic:
+                    - 'generic "Gold rate today (June 4, 2026): Check 24K, 22K, 18K prices in Delhi, Mumbai, Kolkata, Chennai, Lucknow and other major cities"'
+            - generic [ref=e163]:
+              - button "Hide this story" [ref=e164]:
+                - img [ref=e165]
+                - text: Hide this story
+              - button "See more" [ref=e166]:
+                - img [ref=e167]

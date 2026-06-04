@@ -15,11 +15,134 @@ import staticAnalyzerAgent from './agents/StaticAnalyzerAgent.js';
 import pushDecisionCouncil from './agents/PushDecisionCouncil.js';
 import gitAgent from './agents/GitAgent.js';
 import issueAgent from './agents/IssueAgent.js';
+import testRunnerAgent from './agents/TestRunnerAgent.js';
 
 dotenv.config();
 
 // Track active pipeline state
 const activeRuns = new Map();
+
+async function resolveScriptPath(plan) {
+  let config = null;
+  try {
+    const configPath = path.resolve('folderConfig.json');
+    const content = await fs.readFile(configPath, 'utf-8');
+    config = JSON.parse(content);
+  } catch (err) {
+    console.warn('[Orchestrator] Failed to load folderConfig.json, using fallback logic:', err.message);
+  }
+
+  // Fallbacks
+  const defaults = config?.defaults || { testType: 'Regression_Testing', feature: 'general' };
+  const testTypes = config?.testTypes || {
+    "Smoke_Testing": ["smoke", "sanity", "basic", "load verification", "homepage loads", "smoke test"],
+    "Performance_Testing": ["performance", "load test", "stress", "speed", "benchmark", "lighthouse"],
+    "Regression_Testing": []
+  };
+  const features = config?.features || {
+    "settings": ["settings", "profile", "account", "preference", "options"],
+    "personalized": ["personalized", "feed", "my feed", "recommendations", "interests"],
+    "homepage": ["homepage", "home", "landing", "index"]
+  };
+
+  const searchText = `${plan.name || ''} ${plan.title || ''} ${plan.prompt || ''}`.toLowerCase();
+
+  // 1. Determine testType
+  let resolvedTestType = defaults.testType;
+  for (const [type, keywords] of Object.entries(testTypes)) {
+    if (keywords && keywords.length > 0) {
+      if (keywords.some(kw => searchText.includes(kw.toLowerCase()))) {
+        resolvedTestType = type;
+        break;
+      }
+    }
+  }
+
+  // 2. Determine siteName
+  let siteName = 'unknown';
+  if (plan.domain && plan.domain !== 'unknown') {
+    let clean = plan.domain.toLowerCase();
+    if (clean.startsWith('www.')) {
+      clean = clean.substring(4);
+    }
+    const parts = clean.split('.');
+    if (parts.length > 1) {
+      const commonSLDs = new Set(['com', 'co', 'net', 'org', 'gov', 'edu', 'mil', 'asn', 'intl']);
+      if (parts.length >= 3 && commonSLDs.has(parts[parts.length - 2])) {
+        siteName = parts[parts.length - 3];
+      } else {
+        siteName = parts[parts.length - 2];
+      }
+    } else {
+      siteName = clean;
+    }
+  } else {
+    // Attempt to extract from targetUrl if domain is unknown
+    const targetUrl = plan.targetUrl || '';
+    if (targetUrl.startsWith('http')) {
+      try {
+        const parsedUrl = new URL(targetUrl);
+        let clean = parsedUrl.hostname.toLowerCase();
+        if (clean.startsWith('www.')) {
+          clean = clean.substring(4);
+        }
+        const parts = clean.split('.');
+        if (parts.length > 1) {
+          const commonSLDs = new Set(['com', 'co', 'net', 'org', 'gov', 'edu', 'mil', 'asn', 'intl']);
+          if (parts.length >= 3 && commonSLDs.has(parts[parts.length - 2])) {
+            siteName = parts[parts.length - 3];
+          } else {
+            siteName = parts[parts.length - 2];
+          }
+        } else {
+          siteName = clean;
+        }
+      } catch (e) {
+        // Fallback
+      }
+    }
+  }
+
+  // 3. Determine featureName
+  let resolvedFeature = defaults.feature;
+  for (const [feat, keywords] of Object.entries(features)) {
+    if (keywords && keywords.length > 0) {
+      if (keywords.some(kw => searchText.includes(kw.toLowerCase()))) {
+        resolvedFeature = feat;
+        break;
+      }
+    }
+  }
+
+  // 4. Determine descriptive filename
+  let baseName = plan.name || plan.title || '';
+  if (!baseName) {
+    const cleanPrompt = (plan.prompt || '')
+      .toLowerCase()
+      .replace(/https?:\/\/[^\s]+/g, '')
+      .replace(/[^a-z0-9\s]/g, '')
+      .trim()
+      .split(/\s+/)
+      .slice(0, 5)
+      .join('-');
+    baseName = `${plan.scenarioType || 'test'}-${cleanPrompt}`;
+  }
+  let slug = baseName
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+  if (!slug) {
+    slug = plan.runId;
+  }
+  const fileName = `${slug}.spec.js`;
+
+  const relativeDir = path.join('tests', resolvedTestType, siteName, resolvedFeature);
+  return {
+    dir: relativeDir,
+    file: fileName,
+    fullPath: path.join(relativeDir, fileName)
+  };
+}
 
 async function bootstrap() {
   console.log('====================================================');
@@ -52,6 +175,10 @@ function setupPipelineOrchestration() {
     // Merge plan into run state
     Object.assign(run, plan);
     console.log(`[Orchestrator] Plan received for domain ${plan.domain}. Scenario: ${plan.scenarioType}. Mode: ${plan.executionMode}`);
+
+    // Resolve script path info and attach to plan
+    const pathInfo = await resolveScriptPath(plan);
+    plan.resolvedPathInfo = pathInfo;
 
     const mcpBridge = new MCPBridge();
     let mcpToolCallsCount = 0;
@@ -192,13 +319,16 @@ function setupPipelineOrchestration() {
         // 3. Code Generation (explore or first-time replay success)
         let scriptCode = '';
         try {
+          const pathInfo = plan.resolvedPathInfo;
+          
           scriptCode = await codeGenerator.generate({
             domain: plan.domain,
             scenarioType: plan.scenarioType,
             totalSteps: run.totalSteps,
             completed: true,
             completionReason: executionLog.completionReason || 'Success',
-            actions: executionLog.actions
+            actions: executionLog.actions,
+            testDir: pathInfo.dir
           });
 
           // Save Script version in MongoDB
@@ -209,10 +339,9 @@ function setupPipelineOrchestration() {
             generatedFromRunId: plan.runId
           });
 
-          // Write script file to tests/generated/{domain}/{runId}.spec.js
-          const genDir = path.join('tests', 'generated', plan.domain);
-          await fs.mkdir(genDir, { recursive: true });
-          const specPath = path.join(genDir, `${plan.runId}.spec.js`);
+          // Write script file to dynamic directory based on configuration
+          await fs.mkdir(pathInfo.dir, { recursive: true });
+          const specPath = pathInfo.fullPath;
           await fs.writeFile(specPath, scriptCode, 'utf-8');
           run.scriptPath = specPath;
           console.log(`[Orchestrator] Playwright spec script written to: ${specPath}`);
@@ -241,7 +370,24 @@ function setupPipelineOrchestration() {
             return;
           }
 
-          // 5. Push Decision Council
+          // 5. Run the generated Playwright test script (dynamic execution validation)
+          const runResult = await testRunnerAgent.run(specPath);
+          run.runnerPassed = runResult.success;
+          run.runnerDurationMs = runResult.durationMs;
+          run.reportPath = runResult.reportPath;
+
+          if (!runResult.success) {
+            console.error('[Orchestrator] Playwright test runner validation FAILED. Raising issue request...');
+            await messageBus.publish(EVENTS.ISSUE_REQUESTED, {
+              runId: plan.runId,
+              domain: plan.domain,
+              title: `Playwright test execution failure for ${plan.domain}`,
+              body: `The generated test script failed during execution under reporter ${process.env.REPORTER_TYPE || 'default'}. Check console log or Allure/Azure reports.`,
+              labels: ['test_execution_failed']
+            });
+          }
+
+          // 6. Push Decision Council
           console.log('[Orchestrator] Requesting push decision council review...');
           const pushDecision = await pushDecisionCouncil.deliberate({
             runId: plan.runId,
@@ -250,7 +396,7 @@ function setupPipelineOrchestration() {
             scriptPath: specPath,
             validationScore: run.validationScore,
             healingAttempts: 0,
-            success: true
+            success: run.runnerPassed
           });
 
           if (pushDecision.shouldPush) {
@@ -294,6 +440,16 @@ let hasFailures = false;
 function checkGracefulShutdown() {
   if (completedPromptsCount === totalPromptsCount) {
     setTimeout(async () => {
+      const reporterType = (process.env.REPORTER_TYPE || '').toLowerCase();
+      if (reporterType === 'allure') {
+        console.log('\n[Orchestrator] Generating unified Allure report...');
+        try {
+          await testRunnerAgent.generateAllureReport();
+          console.log('[Orchestrator] Unified Allure report generated successfully.');
+        } catch (err) {
+          console.error('[Orchestrator Error] Failed to generate Allure report:', err);
+        }
+      }
       console.log('\n[Orchestrator] Gracefully shutting down connections...');
       await gitAgent.close();
       await memoryAgent.disconnect();
@@ -372,6 +528,18 @@ async function main() {
 
   await bootstrap();
 
+  // Clean allure-results directory at start of run
+  const reporterType = (process.env.REPORTER_TYPE || '').toLowerCase();
+  if (reporterType === 'allure') {
+    try {
+      const allureResultsPath = path.resolve('allure-results');
+      await fs.rm(allureResultsPath, { recursive: true, force: true });
+      console.log('[Orchestrator] Cleared previous Allure results.');
+    } catch (err) {
+      console.warn('[Orchestrator Warning] Failed to clear previous Allure results:', err.message);
+    }
+  }
+
   let prompts = [];
   if (arg.endsWith('.yaml') || arg.endsWith('.yml') || arg.endsWith('.txt')) {
     try {
@@ -379,12 +547,12 @@ async function main() {
       if (arg.endsWith('.yaml') || arg.endsWith('.yml')) {
         const parsed = yaml.load(fileContent);
         if (parsed && Array.isArray(parsed.scenarios)) {
-          prompts = parsed.scenarios.map(s => s.prompt).filter(Boolean);
+          prompts = parsed.scenarios.filter(s => s.prompt);
         } else {
           throw new Error('YAML must contain a "scenarios" list with "prompt" keys.');
         }
       } else {
-        prompts = fileContent.split('\n').map(line => line.trim()).filter(line => line.length > 0 && !line.startsWith('#'));
+        prompts = fileContent.split('\n').map(line => line.trim()).filter(line => line.length > 0 && !line.startsWith('#')).map(line => ({ prompt: line, name: null }));
       }
       console.log(`[Orchestrator] Loaded ${prompts.length} scenarios from file: ${arg}`);
     } catch (err) {
@@ -392,34 +560,55 @@ async function main() {
       process.exit(1);
     }
   } else {
-    prompts = [arg];
+    prompts = [{ prompt: arg, name: null }];
   }
 
   totalPromptsCount = prompts.length;
 
-  // Run sequentially
-  for (const prompt of prompts) {
+  const maxConcurrency = parseInt(process.env.MAX_CONCURRENT_RUNS || '3', 10);
+  console.log(`[Orchestrator] Starting execution of ${totalPromptsCount} scenarios with concurrency limit: ${maxConcurrency}`);
+
+  const runScenario = async (item) => {
     const runId = uuidv4();
     activeRuns.set(runId, {
       runId,
-      prompt,
+      prompt: item.prompt,
+      name: item.name || null,
       startTime: Date.now(),
       passed: false,
       totalSteps: 0,
       copilotCalls: 0
     });
 
-    console.log(`\n[Orchestrator] Starting run: ${runId} with prompt: "${prompt}"`);
+    console.log(`\n[Orchestrator] Starting run: ${runId} with prompt: "${item.prompt}"`);
     await messageBus.publish(EVENTS.PLAN_REQUESTED, {
       runId,
-      prompt
+      prompt: item.prompt,
+      name: item.name || null
     });
 
     // Wait until this run finishes (activeRuns is cleared of this runId)
     while (activeRuns.has(runId)) {
-      await new Promise(r => setTimeout(r, 500));
+      await new Promise(r => setTimeout(r, 1000));
     }
-  }
+  };
+
+  // Process queue with concurrency control
+  const queue = [...prompts];
+  const workers = Array(Math.min(maxConcurrency, queue.length)).fill(null).map(async () => {
+    while (queue.length > 0) {
+      const item = queue.shift();
+      if (item) {
+        try {
+          await runScenario(item);
+        } catch (err) {
+          console.error(`[Orchestrator Error] Scenario run failed:`, err);
+        }
+      }
+    }
+  });
+
+  await Promise.all(workers);
 }
 
 main().catch(err => {

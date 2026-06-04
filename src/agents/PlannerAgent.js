@@ -12,13 +12,14 @@ class PlannerAgent {
     await messageBus.subscribe(EVENTS.PLAN_REQUESTED, async (payload) => {
       console.log(`[PlannerAgent] Received PLAN_REQUESTED event with prompt: "${payload.prompt}"`);
       try {
-        const plan = await this.createPlan(payload.runId, payload.prompt);
+        const plan = await this.createPlan(payload.runId, payload.prompt, payload.name);
         await messageBus.publish(EVENTS.PLAN_CREATED, plan);
       } catch (err) {
         console.error(`[PlannerAgent Error] Failed to create plan:`, err);
         // Fallback simple plan
         const fallbackPlan = {
           runId: payload.runId,
+          name: payload.name || null,
           prompt: payload.prompt,
           domain: 'unknown',
           scenarioType: 'navigation',
@@ -36,7 +37,7 @@ class PlannerAgent {
     console.log('[PlannerAgent] Subscribed to plan.requested.');
   }
 
-  async createPlan(runId, prompt) {
+  async createPlan(runId, prompt, name = null) {
     console.log('[PlannerAgent] Parsing prompt using heuristics...');
     
     // 1. Extract Target URL
@@ -113,6 +114,7 @@ class PlannerAgent {
     // Create execution plan
     const plan = {
       runId,
+      name,
       prompt,
       domain,
       scenarioType,

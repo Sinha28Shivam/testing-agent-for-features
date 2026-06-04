@@ -23,5 +23,9 @@
     "playwright": "^1.60.0",
     "redis": "^5.12.1",
     "uuid": "^14.0.0"
+  },
+  "devDependencies": {
+    "allure-commandline": "^2.42.0",
+    "allure-playwright": "^3.9.0"
   }
 }

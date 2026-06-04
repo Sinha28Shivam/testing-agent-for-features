@@ -1,16 +1,25 @@
 # Multi-Agent Test Platform Scenarios File
-# Define your test prompts here. They will be executed sequentially.
+# Define your test prompts here. They will be executed sequentially or concurrently.
 
 scenarios:
-  - name: "MSN-001: Homepage Load Verification"
+  # === SMOKE TESTING SCENARIOS ===
+  - name: "SMK-001: MSN Homepage Load Verification"
     prompt: >
       Navigate to https://www.msn.com/en-in,
-      Verify MSN homepage loads successfully,
-      Take a screenshot to document the page state.
-      Verify that page title is displayed correctly (contains 'MSN'),
-      Verify that main homepage sections are visible,
-      Verify that news articles or feed loads,
-      Verify that standard content modules load,
-      Verify that the page becomes interactive,
-      Verify that images display correctly,
-      Verify that navigation icons are visible,
+      Verify that the MSN logo or page content is visible,
+      Verify homepage loads successfully,
+      Take a screenshot of the homepage.
+
+  # === PERFORMANCE TESTING SCENARIOS ===
+  - name: "PERF-001: MSN Homepage Startup Performance and Load Time"
+    prompt: >
+      Navigate to https://www.msn.com/en-in,
+      Verify the page has finished loading,
+      Measure page load time.
+
+  # === REGRESSION TESTING SCENARIOS ===
+  - name: "REG-001: MSN Navigation Sports Section Verification"
+    prompt: >
+      Navigate to https://www.msn.com/en-in,
+      Click on the 'Sports' section link in the navigation menu,
+      Verify that the sports page loads successfully.

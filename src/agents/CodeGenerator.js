@@ -18,7 +18,8 @@ class CodeGenerator {
       `Step ${i + 1}: Called ${a.tool}(${JSON.stringify(a.args)})\nReason: ${a.reasoning || 'No reason'}\nResult: ${a.result || 'success'}`
     ).join('\n\n');
 
-    const finalSnapshot = log.actions[log.actions.length - 1]?.snapshotAfter || 'N/A';
+    const testDir = log.testDir || 'tests/generated';
+    const screenshotDir = testDir.replace(/^tests/, 'test-results').replace(/\\/g, '/');
 
     return `You are converting a recorded browser session into a Playwright test script.
 
@@ -30,31 +31,41 @@ COMPLETED: ${log.completed ? 'true' : 'false'} (${log.completionReason || 'None'
 RECORDED BROWSER SESSION:
 ${stepsDescription}
 
-FINAL PAGE STATE (Accessibility Snapshot):
-${finalSnapshot}
-
 INSTRUCTIONS:
 1. Convert each recorded step into the equivalent Playwright action.
-2. Use ONLY getByRole(), getByLabel(), getByPlaceholder(), getByText() selectors.
-3. These selectors come from the accessibility snapshot – they match the real DOM.
-4. Add expect() assertions after each significant state change.
-5. Use waitFor() for dynamic elements shown in the snapshots.
-6. Use ES Modules: import { test, expect } from '@playwright/test';
-7. Wrap all steps in a single test() block.
-8. Use process.env for any credential values – NEVER hardcode them.
-9. Output ONLY the code in a single \`\`\`javascript code block.
+2. Use the same selectors and actions that were executed in the recorded browser session.
+3. Add expect() assertions after each significant state change.
+4. Use ES Modules: import { test, expect } from '@playwright/test';
+5. Wrap all steps in a single test() block.
+6. Use process.env for any credential values – NEVER hardcode them.
+7. Output ONLY the code in a single \`\`\`javascript code block.
+8. When asserting the URL using expect(page).toHaveURL(), use a regular expression (e.g., /.*todomvc.*/) or allow a trailing slash/hash to ensure redirects do not fail the assertion.
+9. Do not use non-existent assertions like "toHaveCountGreaterThan". To check count bounds, use expect(await locator.count()).toBeGreaterThan(n) or await expect(locator).toHaveCount(n).
+10. Save screenshots using page.screenshot({ path: '...' }). The screenshot path MUST be placed under the directory: "${screenshotDir}/" (using descriptive, clear names, e.g. "${screenshotDir}/search_results_page.png"). Always use forward slashes in screenshot paths. Prefer standard viewport screenshots (without fullPage: true) to avoid timeout issues on dynamic pages.
+11. NEVER guess class names (e.g. '.news-article-selector') or data-automationid attributes (e.g. '[data-automationid="..."]') that were not explicitly proven to exist. Instead, use robust accessibility selectors like page.getByRole(), page.getByText(), or simple HTML tags like page.locator('img') or page.locator('footer').
+12. If verifying that images load successfully, DO NOT assert that ALL images on the page have complete === true and naturalWidth > 0, as pages often contain tracking pixels, lazy-loaded images, or ads that do not render. Instead, write lenient assertions – for example, verify that at least one main image is visible and loaded successfully, or filter out tracking pixels/hidden/empty-src images before performing page-wide checks.
 
 IMPORTANT: The actions above were actually executed against the real browser. Every selector and interaction is proven to work. Translate faithfully.`;
   }
 
   extractCode(rawResponse) {
-    let cleanText = rawResponse;
-    if (cleanText.includes('```')) {
-      const match = cleanText.match(/```(?:javascript|js)?\s*([\s\S]*?)\s*```/);
-      if (match) {
-        cleanText = match[1];
+    let cleanText = rawResponse.trim();
+    
+    // If it starts with markdown code block syntax
+    if (cleanText.startsWith('```')) {
+      const firstNewline = cleanText.indexOf('\n');
+      if (firstNewline !== -1) {
+        cleanText = cleanText.substring(firstNewline + 1);
+      } else {
+        cleanText = cleanText.replace(/^```(?:javascript|js)?/, '');
       }
     }
+    
+    // If it ends with markdown code block syntax
+    if (cleanText.endsWith('```')) {
+      cleanText = cleanText.substring(0, cleanText.length - 3);
+    }
+    
     return cleanText.trim();
   }
 
