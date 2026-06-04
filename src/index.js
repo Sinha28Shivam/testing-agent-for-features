@@ -16,13 +16,55 @@ import pushDecisionCouncil from './agents/PushDecisionCouncil.js';
 import gitAgent from './agents/GitAgent.js';
 import issueAgent from './agents/IssueAgent.js';
 import testRunnerAgent from './agents/TestRunnerAgent.js';
+import mailAgent from './agents/MailAgent.js';
 
 dotenv.config();
 
 // Track active pipeline state
 const activeRuns = new Map();
+const completedRuns = [];
+
+function extractTargetUrlFromText(text = '') {
+  const urlMatch = /(https?:\/\/[^\s"'`\)]+)/i.exec(text);
+  if (urlMatch) {
+    return urlMatch[1].replace(/[,.]$/, '');
+  }
+
+  const wwwMatch = /(www\.[^\s"'`\)]+)/i.exec(text);
+  if (wwwMatch) {
+    return `https://${wwwMatch[1]}`.replace(/[,.]$/, '');
+  }
+
+  return null;
+}
+
+function extractDomainFromUrl(targetUrl) {
+  try {
+    return new URL(targetUrl).hostname;
+  } catch (e) {
+    return 'unknown';
+  }
+}
+
+function normalizePlanTarget(plan) {
+  const promptUrl = extractTargetUrlFromText(plan.prompt || '');
+  if (!promptUrl) {
+    return plan;
+  }
+
+  const promptDomain = extractDomainFromUrl(promptUrl);
+  if (plan.targetUrl !== promptUrl || plan.domain !== promptDomain) {
+    console.warn(`[Orchestrator] Correcting plan target from ${plan.targetUrl || 'unknown'} to prompt URL ${promptUrl}.`);
+    plan.targetUrl = promptUrl;
+    plan.domain = promptDomain;
+  }
+
+  return plan;
+}
 
 async function resolveScriptPath(plan) {
+  normalizePlanTarget(plan);
+
   let config = null;
   try {
     const configPath = path.resolve('folderConfig.json');
@@ -173,6 +215,7 @@ function setupPipelineOrchestration() {
     if (!run) return;
     
     // Merge plan into run state
+    normalizePlanTarget(plan);
     Object.assign(run, plan);
     console.log(`[Orchestrator] Plan received for domain ${plan.domain}. Scenario: ${plan.scenarioType}. Mode: ${plan.executionMode}`);
 
@@ -238,6 +281,7 @@ function setupPipelineOrchestration() {
         } catch (err) {
           console.error('[Orchestrator] EXPLORE execution FAILED:', err.message);
           passed = false;
+          run.exploreError = err.message;
           
           // Log failure to Postgres failure_log
           await memoryAgent.writeFailureLog({
@@ -375,8 +419,19 @@ function setupPipelineOrchestration() {
           run.runnerPassed = runResult.success;
           run.runnerDurationMs = runResult.durationMs;
           run.reportPath = runResult.reportPath;
+          run.runnerStdout = runResult.stdout;
+          run.runnerStderr = runResult.stderr;
+          run.testStats = runResult.testStats;
 
-          if (!runResult.success) {
+          // Determine actual failure using parsed test stats as the primary signal.
+          // A process exit code of 1 does NOT always mean all tests failed —
+          // e.g. Playwright exits 1 if ANY test failed even when others passed.
+          const statsStatus = runResult.testStats?.statusFromStats;
+          const isActualFailure =
+            statsStatus === 'failed' ||           // all tests failed
+            (!statsStatus && !runResult.success); // no parsed stats + bad exit code
+
+          if (isActualFailure) {
             console.error('[Orchestrator] Playwright test runner validation FAILED. Raising issue request...');
             await messageBus.publish(EVENTS.ISSUE_REQUESTED, {
               runId: plan.runId,
@@ -385,6 +440,8 @@ function setupPipelineOrchestration() {
               body: `The generated test script failed during execution under reporter ${process.env.REPORTER_TYPE || 'default'}. Check console log or Allure/Azure reports.`,
               labels: ['test_execution_failed']
             });
+          } else if (statsStatus === 'partial') {
+            console.warn('[Orchestrator] Playwright test runner had PARTIAL failures (some tests passed, some failed).');
           }
 
           // 6. Push Decision Council
@@ -444,12 +501,24 @@ function checkGracefulShutdown() {
       if (reporterType === 'allure') {
         console.log('\n[Orchestrator] Generating unified Allure report...');
         try {
-          await testRunnerAgent.generateAllureReport();
-          console.log('[Orchestrator] Unified Allure report generated successfully.');
+          const allureGenerated = await testRunnerAgent.generateAllureReport();
+          if (allureGenerated) {
+            console.log('[Orchestrator] Unified Allure report generated successfully.');
+          } else {
+            console.warn('[Orchestrator Warning] Unified Allure report was not generated because no current raw Allure results were found.');
+          }
         } catch (err) {
           console.error('[Orchestrator Error] Failed to generate Allure report:', err);
         }
       }
+      
+      // Send email report via MailAgent
+      try {
+        await mailAgent.sendReport(completedRuns);
+      } catch (mailErr) {
+        console.error('[Orchestrator Error] Failed to send email report:', mailErr.message);
+      }
+      
       console.log('\n[Orchestrator] Gracefully shutting down connections...');
       await gitAgent.close();
       await memoryAgent.disconnect();
@@ -512,6 +581,33 @@ async function shutdownRun(runId, outcome) {
     hasFailures = true;
   }
 
+  // Determine the true pass/fail status for the email report:
+  // Priority 1: use parsed test-case counts (most accurate — reflects actual assertions)
+  // Priority 2: use Playwright process exit code (run.runnerPassed)
+  // Priority 3: fall back to browser-explore result (run.passed)
+  let resolvedPassed;
+  const stats = run.testStats;
+  if (stats && stats.statusFromStats) {
+    resolvedPassed = stats.statusFromStats === 'passed' || stats.statusFromStats === 'partial';
+  } else if (typeof run.runnerPassed === 'boolean') {
+    resolvedPassed = run.runnerPassed;
+  } else {
+    resolvedPassed = run.passed || false;
+  }
+
+  completedRuns.push({
+    name: run.name || run.prompt.substring(0, 40) + '...',
+    prompt: run.prompt,
+    domain: run.domain,
+    scenarioType: run.scenarioType,
+    passed: resolvedPassed,
+    durationMs,
+    outcome,
+    testStats: run.testStats || null,
+    stdout: run.runnerStdout || '',
+    stderr: run.runnerStderr || run.exploreError || ''
+  });
+
   completedPromptsCount++;
   activeRuns.delete(runId);
 
@@ -521,7 +617,7 @@ async function shutdownRun(runId, outcome) {
 async function main() {
   const arg = process.argv.slice(2).join(' ').trim();
   if (!arg) {
-    console.error('Error: Please provide a test prompt, e.g. npm start "Test search at https://demo.playwright.dev/todomvc"');
+    console.error('Error: Please provide a test prompt, e.g. npm start "Verify homepage loads at https://www.msn.com/en-in"');
     console.error('Or a path to a scenarios file, e.g. npm start scenarios.yaml');
     process.exit(1);
   }
@@ -532,9 +628,11 @@ async function main() {
   const reporterType = (process.env.REPORTER_TYPE || '').toLowerCase();
   if (reporterType === 'allure') {
     try {
-      const allureResultsPath = path.resolve('allure-results');
+      const allureResultsPath = path.resolve(process.env.ALLURE_RESULTS_DIR || 'allure-results');
+      const allureReportPath = path.resolve('test-results/allure-report');
       await fs.rm(allureResultsPath, { recursive: true, force: true });
-      console.log('[Orchestrator] Cleared previous Allure results.');
+      await fs.rm(allureReportPath, { recursive: true, force: true });
+      console.log('[Orchestrator] Cleared previous Allure results and HTML report.');
     } catch (err) {
       console.warn('[Orchestrator Warning] Failed to clear previous Allure results:', err.message);
     }

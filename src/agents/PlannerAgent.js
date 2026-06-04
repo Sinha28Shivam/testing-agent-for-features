@@ -16,19 +16,7 @@ class PlannerAgent {
         await messageBus.publish(EVENTS.PLAN_CREATED, plan);
       } catch (err) {
         console.error(`[PlannerAgent Error] Failed to create plan:`, err);
-        // Fallback simple plan
-        const fallbackPlan = {
-          runId: payload.runId,
-          name: payload.name || null,
-          prompt: payload.prompt,
-          domain: 'unknown',
-          scenarioType: 'navigation',
-          targetUrl: 'https://demo.playwright.dev/todomvc',
-          executionMode: 'explore',
-          storedSequence: null,
-          coldStart: true,
-          checklist: ['Navigate to target URL']
-        };
+        const fallbackPlan = this.createFallbackPlan(payload.runId, payload.prompt, payload.name);
         await messageBus.publish(EVENTS.PLAN_CREATED, fallbackPlan);
       }
     });
@@ -41,27 +29,13 @@ class PlannerAgent {
     console.log('[PlannerAgent] Parsing prompt using heuristics...');
     
     // 1. Extract Target URL
-    const urlRegex = /(https?:\/\/[^\s"'`\)]+)/gi;
-    const urlMatch = urlRegex.exec(prompt);
-    let targetUrl = 'https://demo.playwright.dev/todomvc';
-    if (urlMatch) {
-      targetUrl = urlMatch[1].replace(/[,.]$/, '');
-    } else {
-      const wwwRegex = /(www\.[^\s"'`\)]+)/gi;
-      const wwwMatch = wwwRegex.exec(prompt);
-      if (wwwMatch) {
-        targetUrl = `https://${wwwMatch[1]}`.replace(/[,.]$/, '');
-      }
+    const targetUrl = this.extractTargetUrl(prompt);
+    if (!targetUrl) {
+      throw new Error('No target URL found in prompt. Add a URL to the scenario prompt.');
     }
 
     // 2. Extract Domain
-    let domain = 'unknown';
-    try {
-      const parsedUrl = new URL(targetUrl);
-      domain = parsedUrl.hostname;
-    } catch (e) {
-      // Fallback
-    }
+    const domain = this.extractDomain(targetUrl);
 
     // 3. Determine Scenario Type
     let scenarioType = 'navigation';
@@ -127,6 +101,67 @@ class PlannerAgent {
 
     console.log('[PlannerAgent] Plan successfully created:', plan);
     return plan;
+  }
+
+  createFallbackPlan(runId, prompt, name = null) {
+    const targetUrl = this.extractTargetUrl(prompt);
+    if (!targetUrl) {
+      throw new Error('Fallback planning failed because no target URL was found in prompt.');
+    }
+
+    const domain = this.extractDomain(targetUrl);
+
+    return {
+      runId,
+      name: name || null,
+      prompt,
+      domain,
+      scenarioType: this.inferScenarioType(prompt),
+      targetUrl,
+      executionMode: 'explore',
+      storedSequence: null,
+      coldStart: true,
+      checklist: [`Navigate to ${targetUrl}`, 'Verify that target page loaded successfully']
+    };
+  }
+
+  extractTargetUrl(prompt = '') {
+    const urlRegex = /(https?:\/\/[^\s"'`\)]+)/gi;
+    const urlMatch = urlRegex.exec(prompt);
+    if (urlMatch) {
+      return urlMatch[1].replace(/[,.]$/, '');
+    }
+
+    const wwwRegex = /(www\.[^\s"'`\)]+)/gi;
+    const wwwMatch = wwwRegex.exec(prompt);
+    if (wwwMatch) {
+      return `https://${wwwMatch[1]}`.replace(/[,.]$/, '');
+    }
+
+    return null;
+  }
+
+  extractDomain(targetUrl) {
+    try {
+      const parsedUrl = new URL(targetUrl);
+      return parsedUrl.hostname;
+    } catch (e) {
+      return 'unknown';
+    }
+  }
+
+  inferScenarioType(prompt = '') {
+    const lowerPrompt = prompt.toLowerCase();
+    if (lowerPrompt.includes('login') || lowerPrompt.includes('signin') || lowerPrompt.includes('auth') || lowerPrompt.includes('register') || lowerPrompt.includes('signup')) {
+      return 'authentication';
+    }
+    if (lowerPrompt.includes('search') || lowerPrompt.includes('find') || lowerPrompt.includes('query')) {
+      return 'search';
+    }
+    if (lowerPrompt.includes('form') || lowerPrompt.includes('input') || lowerPrompt.includes('submit') || lowerPrompt.includes('fill')) {
+      return 'form';
+    }
+    return 'navigation';
   }
 }
 

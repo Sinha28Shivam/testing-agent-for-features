@@ -6,10 +6,12 @@ class TestRunnerAgent {
   async run(specPath) {
     console.log(`\n[TestRunnerAgent] Running Playwright test for spec: ${specPath}...`);
     const reporterType = (process.env.REPORTER_TYPE || '').toLowerCase();
+    const allureResultsDir = path.resolve(process.env.ALLURE_RESULTS_DIR || 'allure-results');
     
     const startTime = Date.now();
     const result = await this.executePlaywrightTest(specPath);
     const durationMs = Date.now() - startTime;
+    const allureResultCount = reporterType === 'allure' ? await this.countAllureResults(allureResultsDir) : 0;
     
     let allureGenerated = false;
     let reportPath = '';
@@ -17,6 +19,11 @@ class TestRunnerAgent {
     // Generate Allure Report if Allure is configured
     const skipInline = process.env.SKIP_INLINE_REPORT === 'true' || parseInt(process.env.MAX_CONCURRENT_RUNS || '1', 10) > 1;
     if (reporterType === 'allure') {
+      if (allureResultCount === 0) {
+        console.warn(`[TestRunnerAgent Warning] No Allure result JSON files were produced in ${allureResultsDir}.`);
+        console.warn('[TestRunnerAgent Warning] The Allure HTML report cannot show current pass/fail data without raw allure-playwright results.');
+      }
+
       if (!skipInline) {
         console.log('[TestRunnerAgent] Allure reporting enabled. Generating Allure HTML report...');
         allureGenerated = await this.generateAllureReport();
@@ -38,6 +45,7 @@ class TestRunnerAgent {
       reportPath,
       allureGenerated,
       skipInline,
+      allureResultCount,
       stdout: result.stdout,
       stderr: result.stderr
     });
@@ -47,8 +55,79 @@ class TestRunnerAgent {
       durationMs,
       stdout: result.stdout,
       stderr: result.stderr,
+      testStats: this.parsePlaywrightSummary(result.stdout, result.stderr),
+      allureResultCount,
       reportPath
     };
+  }
+
+  parsePlaywrightSummary(stdout = '', stderr = '') {
+    const combined = `${stdout}\n${stderr}`;
+    const stats = {
+      total: 0,
+      passed: 0,
+      failed: 0,
+      skipped: 0,
+      flaky: 0,
+      timedOut: 0,
+      interrupted: 0,
+      statusFromStats: null   // 'passed' | 'partial' | 'failed' | null
+    };
+
+    // Playwright prints a final summary block like:
+    //   "3 passed (5.3s)"
+    //   "1 failed"
+    //   "2 skipped"
+    //   "1 flaky"
+    //   "1 timed out"
+    //   "1 interrupted"
+    // We only want the LAST occurrence of each to avoid double-counting from
+    // retry progress lines.  We scan all matches and keep only the last value.
+    const matchers = [
+      { key: 'passed',      re: /(\d+)\s+passed(?:\s*\(|$)/gi },
+      { key: 'failed',      re: /(\d+)\s+failed(?:\s*\(|$)/gi },
+      { key: 'skipped',     re: /(\d+)\s+skipped(?:\s*\(|$)/gi },
+      { key: 'flaky',       re: /(\d+)\s+flaky(?:\s*\(|$)/gi },
+      { key: 'timedOut',    re: /(\d+)\s+timed\s+out(?:\s*\(|$)/gi },
+      { key: 'interrupted', re: /(\d+)\s+interrupted(?:\s*\(|$)/gi },
+    ];
+
+    for (const { key, re } of matchers) {
+      let last = null;
+      let m;
+      while ((m = re.exec(combined)) !== null) {
+        last = Number(m[1]);
+      }
+      if (last !== null) {
+        stats[key] = last;
+      }
+    }
+
+    // Prefer the "Running X tests" line for total; fall back to sum
+    const runningMatch = combined.match(/Running\s+(\d+)\s+tests?/i);
+    if (runningMatch) {
+      stats.total = Number(runningMatch[1]);
+    }
+
+    const countedTotal = stats.passed + stats.failed + stats.skipped + stats.flaky + stats.timedOut + stats.interrupted;
+    if (!stats.total && countedTotal > 0) {
+      stats.total = countedTotal;
+    }
+
+    if (stats.total === 0 && countedTotal === 0) {
+      return null;
+    }
+
+    // Derive a status string from actual test-case counts
+    if (stats.failed === 0 && stats.timedOut === 0 && stats.interrupted === 0) {
+      stats.statusFromStats = 'passed';
+    } else if (stats.passed > 0) {
+      stats.statusFromStats = 'partial';
+    } else {
+      stats.statusFromStats = 'failed';
+    }
+
+    return stats;
   }
 
   executePlaywrightTest(specPath) {
@@ -100,10 +179,27 @@ class TestRunnerAgent {
     });
   }
 
-  generateAllureReport() {
+  async countAllureResults(resultsDir = path.resolve(process.env.ALLURE_RESULTS_DIR || 'allure-results')) {
+    try {
+      const files = await fs.readdir(resultsDir);
+      return files.filter(file => file.endsWith('-result.json')).length;
+    } catch (err) {
+      return 0;
+    }
+  }
+
+  async generateAllureReport() {
+    const resultsDir = path.resolve(process.env.ALLURE_RESULTS_DIR || 'allure-results');
+    const outputDir = path.resolve('test-results/allure-report');
+    const resultCount = await this.countAllureResults(resultsDir);
+
+    if (resultCount === 0) {
+      console.warn(`[TestRunnerAgent Warning] Skipping Allure HTML generation because ${resultsDir} has no *-result.json files.`);
+      return false;
+    }
+
     return new Promise((resolve) => {
-      // Command: npx allure generate allure-results --clean -o test-results/allure-report
-      const args = ['allure', 'generate', 'allure-results', '--clean', '-o', 'test-results/allure-report'];
+      const args = ['allure', 'generate', resultsDir, '--clean', '-o', outputDir];
       
       console.log(`[TestRunnerAgent] Generating Allure Report: npx ${args.join(' ')}`);
       
@@ -123,7 +219,7 @@ class TestRunnerAgent {
   }
 
   printReportSummary(details) {
-    const { specPath, success, durationMs, reporterType, reportPath, allureGenerated, skipInline } = details;
+    const { specPath, success, durationMs, reporterType, reportPath, allureGenerated, skipInline, allureResultCount } = details;
     const durationSec = (durationMs / 1000).toFixed(2);
     const statusText = success ? 'SUCCESS (PASSED)' : 'FAILED';
     const statusColor = success ? '\x1b[32m' : '\x1b[31m'; // Green vs Red
@@ -137,7 +233,7 @@ class TestRunnerAgent {
     console.log(`- Status:      ${statusColor}${statusText}${resetColor}`);
     
     if (reporterType === 'allure') {
-      console.log(`- Raw Results: allure-results/`);
+      console.log(`- Raw Results: ${process.env.ALLURE_RESULTS_DIR || 'allure-results'}/ (${allureResultCount} result files)`);
       console.log(`- HTML Report: test-results/allure-report/`);
       if (allureGenerated) {
         console.log(`\n\x1b[33mTo view the interactive Allure Report in your browser, run:\x1b[0m`);

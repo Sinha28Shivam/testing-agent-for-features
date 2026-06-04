@@ -1,11 +1,20 @@
 import { defineConfig } from '@playwright/test';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 // Configure reporters based on REPORTER_TYPE env variable
 const reporters = [['line']];
 const reporterType = (process.env.REPORTER_TYPE || '').toLowerCase();
 
 if (reporterType === 'allure') {
-  const allureResultsDir = process.env.ALLURE_RESULTS_DIR || 'allure-results';
+  // Use an absolute path so that allure-playwright always writes results to the
+  // same directory regardless of the process working directory.
+  const allureResultsDir = path.resolve(
+    __dirname,
+    process.env.ALLURE_RESULTS_DIR || 'allure-results'
+  );
   reporters.push(['allure-playwright', { resultsDir: allureResultsDir }]);
 } else if (reporterType === 'azure' || reporterType === 'junit') {
   reporters.push(['junit', { outputFile: 'test-results/junit/results.xml' }]);
@@ -16,9 +25,11 @@ if (reporterType === 'allure') {
 
 export default defineConfig({
   testDir: './tests',
-  timeout: 30000,
+  // 60 s per test — enough headroom for slow external sites (MSN, etc.)
+  timeout: 60000,
   expect: {
-    timeout: 5000
+    // Give expect() assertions up to 10 s before failing
+    timeout: 10000
   },
   fullyParallel: false,
   forbidOnly: !!process.env.CI,
@@ -27,7 +38,10 @@ export default defineConfig({
   reporter: reporters,
   use: {
     headless: true,
-    actionTimeout: 10000,
+    // Give individual actions (click, fill, …) up to 15 s
+    actionTimeout: 15000,
+    // Give page.goto() up to 45 s before failing
+    navigationTimeout: 45000,
     trace: 'on-first-retry',
     screenshot: 'only-on-failure'
   },

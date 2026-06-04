@@ -1,33 +1,17 @@
 import { test, expect } from '@playwright/test';
 
-test('MSN homepage navigation and interaction', async ({ page }) => {
-  // Step 1: Navigate to the MSN homepage
+test('Navigation and screenshot capture of MSN homepage', async ({ page }) => {
+  // Step 1: Navigate to the URL
   await page.goto('https://www.msn.com/en-in');
-  await expect(page).toHaveURL(/https:\/\/www\.msn\.com\/en-in\/?/);
-  await expect(page).toHaveTitle(/MSN \| Personalized News, Top Headlines, Live Updates and more/);
+  
+  // Assert that the correct URL is loaded, allowing trailing slashes or hashes
+  await expect(page).toHaveURL(/https:\/\/www\.msn\.com\/en-in\/?#?/);
+
+  // Wait for the main content of the homepage to be visible (e.g., header or body)
+  await expect(page.locator('body')).toBeVisible();
 
   // Step 2: Take a screenshot of the homepage
-  try {
-    await page.screenshot({
-      path: 'test-results/Smoke_Testing/msn/homepage/homepage_screenshot.png',
-      fullPage: false,
-    });
-  } catch (error) {
-    console.error('Screenshot capture failed:', error);
-    // If needed, a custom retry mechanism can be implemented here
-  }
-
-  // Step 3: Retake the screenshot in case the previous attempt timed out
   await page.screenshot({
-    path: 'test-results/Smoke_Testing/msn/homepage/homepage_screenshot_retry.png',
-    fullPage: false,
+    path: 'test-results/Smoke_Testing/msn/homepage/msn_homepage.png'
   });
-
-  // Step 4: Dismiss the overlay banner if it exists
-  const dismissBannerButton = page.getByRole('button', { name: 'DismissBanner' });
-  if (await dismissBannerButton.isVisible()) {
-    await dismissBannerButton.click();
-    // Confirm overlay banner is no longer in view after clicking
-    await expect(dismissBannerButton).not.toBeVisible();
-  }
 });

@@ -1,0 +1,181 @@
+
+      <!DOCTYPE html>
+      <html>
+      <head>
+        <meta charset="utf-8">
+        <title>Test Execution Report</title>
+      </head>
+      <body style="font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; background-color: #f6f9fc; margin: 0; padding: 20px; color: #333;">
+        <div style="max-width: 650px; margin: 0 auto; background-color: #ffffff; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.05); overflow: hidden; border: 1px solid #eef2f6;">
+          <div style="padding: 24px; background: linear-gradient(135deg, #1f2937, #111827); color: #ffffff; text-align: center;">
+            <h1 style="margin: 0; font-size: 22px; font-weight: 600; letter-spacing: 0.5px;">AI Test Agent Platform</h1>
+            <p style="margin: 6px 0 0; font-size: 13px; color: #9ca3af; text-transform: uppercase; letter-spacing: 1px;">Execution Result Report</p>
+          </div>
+
+          <div style="padding: 24px;">
+            <div style="padding: 16px; margin-bottom: 24px; border-radius: 6px; background-color: hsl(45, 100%, 94%); color: hsl(38, 92%, 20%); border: 1px solid hsl(38, 92%, 20%); text-align: center;">
+              <div style="font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 1.5px; opacity: 0.8;">Suite Status</div>
+              <div style="font-size: 26px; font-weight: 800; margin-top: 4px; letter-spacing: 0.5px;">PARTIAL PASS</div>
+              <div style="font-size: 13px; font-weight: 600; margin-top: 6px;">4 passed / 2 failed / 6 total</div>
+            </div>
+
+            <h3 style="margin: 0 0 10px; font-size: 15px; color: #4b5563; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">
+              AI Executive Summary
+            </h3>
+            <div style="padding: 18px; margin-bottom: 24px; background-color: #f3f4f6; border-radius: 6px; border-left: 4px solid #3b82f6; font-size: 14px; line-height: 1.6; color: #374151;">
+              <p><strong>Executive Summary</strong></p>
+
+<p>The test suite execution for the <strong>www.msn.com</strong> domain has concluded with a total of 6 test cases executed across 3 scenarios. Below is a summary of the results and actionable insights:</p>
+
+<ul>
+    <li><strong>Total Test Cases:</strong> 6</li>
+    <li><strong>Passed:</strong> 4</li>
+    <li><strong>Failed:</strong> 2</li>
+    <li><strong>Skipped:</strong> 0</li>
+</ul>
+
+<p><strong>Key Results and Observations:</strong></p>
+<ul>
+    <li><strong>SMK-001: MSN Homepage Load Verification</strong> - Category: Smoke Testing, Duration: 4.82s
+        <ul>
+            <li>Status: <strong>PASSED</strong></li>
+            <li>All test cases executed successfully.</li>
+        </ul>
+    </li>
+    <li><strong>REG-001: MSN Navigation Sports Section Verification</strong> - Category: Regression Testing, Duration: 12.43s
+        <ul>
+            <li>Status: <strong>PARTIAL PASS</strong></li>
+            <li>Failure Root Cause: <em>Element 'Sports' not found within timeout (10000ms).</em></li>
+            <li><strong>Next Steps:</strong> Debug and verify the locator for the Sports section navigation button.</li>
+        </ul>
+    </li>
+    <li><strong>PERF-001: MSN Homepage Startup Performance and Load Time</strong> - Category: Performance Testing, Duration: 31.50s
+        <ul>
+            <li>Status: <strong>FAILED</strong></li>
+            <li>Failure Root Cause: <em>Page load exceeded the 30000ms timeout limit.</em></li>
+            <li><strong>Next Steps:</strong> Investigate server response times and optimize the page load duration.</li>
+            <li><strong>Note:</strong> This was the longest-running scenario in the suite.</li>
+        </ul>
+    </li>
+</ul>
+
+<p><strong>Conclusion:</strong> The test suite achieved a 67% pass rate, with two notable failures in Regression and Performance Testing. A detailed investigation and fixes are required to address element recognition in navigation and homepage load-time optimizations. No skipped, flaky, or interrupted test cases were observed, ensuring reliable execution quality.</p>
+            </div>
+
+            <h3 style="margin: 0 0 10px; font-size: 15px; color: #4b5563; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">
+              Execution Metrics
+            </h3>
+            <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 24px;">
+              <div style="background-color: #f9fafb; padding: 12px; border-radius: 6px; border: 1px solid #f3f4f6; text-align: center;">
+                <div style="font-size: 11px; color: #9ca3af; font-weight: bold; text-transform: uppercase;">Test Cases Run</div>
+                <div style="font-size: 20px; font-weight: bold; color: #111827; margin-top: 2px;">6</div>
+              </div>
+              <div style="background-color: #f9fafb; padding: 12px; border-radius: 6px; border: 1px solid #f3f4f6; text-align: center;">
+                <div style="font-size: 11px; color: #9ca3af; font-weight: bold; text-transform: uppercase;">Pass Rate</div>
+                <div style="font-size: 20px; font-weight: bold; color: #10b981; margin-top: 2px;">66.7%</div>
+              </div>
+              <div style="background-color: #f9fafb; padding: 12px; border-radius: 6px; border: 1px solid #f3f4f6; text-align: center;">
+                <div style="font-size: 11px; color: #9ca3af; font-weight: bold; text-transform: uppercase;">Passed / Failed</div>
+                <div style="font-size: 20px; font-weight: bold; color: #1f2937; margin-top: 2px;">
+                  <span style="color: #10b981;">4</span> / <span style="color: #ef4444;">2</span>
+                </div>
+              </div>
+              <div style="background-color: #f9fafb; padding: 12px; border-radius: 6px; border: 1px solid #f3f4f6; text-align: center;">
+                <div style="font-size: 11px; color: #9ca3af; font-weight: bold; text-transform: uppercase;">Total Duration</div>
+                <div style="font-size: 20px; font-weight: bold; color: #1f2937; margin-top: 2px;">48.75s</div>
+              </div>
+            </div>
+
+            <h3 style="margin: 0 0 10px; font-size: 15px; color: #4b5563; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">
+              Scenario Details
+            </h3>
+            <table style="width: 100%; border-collapse: collapse; text-align: left; font-size: 13px;">
+              <thead>
+                <tr style="background-color: #f9fafb; color: #6b7280; text-transform: uppercase; font-size: 11px; letter-spacing: 0.5px;">
+                  <th style="padding: 10px; border-bottom: 2px solid #e5e7eb;">Scenario</th>
+                  <th style="padding: 10px; border-bottom: 2px solid #e5e7eb;">Type</th>
+                  <th style="padding: 10px; border-bottom: 2px solid #e5e7eb;">Cases</th>
+                  <th style="padding: 10px; border-bottom: 2px solid #e5e7eb; text-align: center;">Status</th>
+                  <th style="padding: 10px; border-bottom: 2px solid #e5e7eb; text-align: right;">Time</th>
+                </tr>
+              </thead>
+              <tbody>
+                
+        <tr>
+          <td style="padding: 12px; border-bottom: 1px solid #eee;">
+            <strong style="color: #333;">SMK-001: MSN Homepage Load Verification</strong>
+            <div style="font-size: 12px; color: #666; margin-top: 2px;">Domain: www.msn.com</div>
+            
+          </td>
+          <td style="padding: 12px; border-bottom: 1px solid #eee; text-transform: capitalize; color: #555;">
+            Smoke Testing
+          </td>
+          <td style="padding: 12px; border-bottom: 1px solid #eee; color: #555;">
+            2 passed
+          </td>
+          <td style="padding: 12px; border-bottom: 1px solid #eee; text-align: center;">
+            <span style="display: inline-block; padding: 4px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; background-color: hsl(120, 80%, 96%); color: hsl(120, 60%, 25%);">
+              PASSED
+            </span>
+          </td>
+          <td style="padding: 12px; border-bottom: 1px solid #eee; text-align: right; font-weight: 500; color: #333;">
+            4.82s
+          </td>
+        </tr>
+      
+        <tr>
+          <td style="padding: 12px; border-bottom: 1px solid #eee;">
+            <strong style="color: #333;">REG-001: MSN Navigation Sports Section Verification</strong>
+            <div style="font-size: 12px; color: #666; margin-top: 2px;">Domain: www.msn.com</div>
+            <div style="font-size: 11px; color: #7f2020; margin-top: 5px; font-family: monospace; background: #fff5f5; padding: 6px; border-radius: 4px; border: 1px solid #ffe3e3;">Error: element &#39;Sports&#39; not found. Timeout 10000ms exceeded....</div>
+          </td>
+          <td style="padding: 12px; border-bottom: 1px solid #eee; text-transform: capitalize; color: #555;">
+            Regression Testing
+          </td>
+          <td style="padding: 12px; border-bottom: 1px solid #eee; color: #555;">
+            2 passed, 1 failed
+          </td>
+          <td style="padding: 12px; border-bottom: 1px solid #eee; text-align: center;">
+            <span style="display: inline-block; padding: 4px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; background-color: hsl(45, 100%, 94%); color: hsl(38, 92%, 20%);">
+              PARTIAL
+            </span>
+          </td>
+          <td style="padding: 12px; border-bottom: 1px solid #eee; text-align: right; font-weight: 500; color: #333;">
+            12.43s
+          </td>
+        </tr>
+      
+        <tr>
+          <td style="padding: 12px; border-bottom: 1px solid #eee;">
+            <strong style="color: #333;">PERF-001: MSN Homepage Startup Performance and Load Time</strong>
+            <div style="font-size: 12px; color: #666; margin-top: 2px;">Domain: www.msn.com</div>
+            <div style="font-size: 11px; color: #7f2020; margin-top: 5px; font-family: monospace; background: #fff5f5; padding: 6px; border-radius: 4px; border: 1px solid #ffe3e3;">Test timeout of 30000ms exceeded while running &#39;page.goto&#39;....</div>
+          </td>
+          <td style="padding: 12px; border-bottom: 1px solid #eee; text-transform: capitalize; color: #555;">
+            Performance Testing
+          </td>
+          <td style="padding: 12px; border-bottom: 1px solid #eee; color: #555;">
+            1 failed
+          </td>
+          <td style="padding: 12px; border-bottom: 1px solid #eee; text-align: center;">
+            <span style="display: inline-block; padding: 4px 8px; border-radius: 12px; font-size: 11px; font-weight: bold; background-color: hsl(0, 80%, 96%); color: hsl(0, 60%, 25%);">
+              FAILED
+            </span>
+          </td>
+          <td style="padding: 12px; border-bottom: 1px solid #eee; text-align: right; font-weight: 500; color: #333;">
+            31.50s
+          </td>
+        </tr>
+      
+              </tbody>
+            </table>
+          </div>
+
+          <div style="padding: 16px; background-color: #f9fafb; border-top: 1px solid #e5e7eb; text-align: center; font-size: 11px; color: #9ca3af;">
+            This email was auto-generated by the AI Multi-Agent Test System (v3.0).<br>
+            Allure reports and artifacts are stored locally in the workspace.
+          </div>
+        </div>
+      </body>
+      </html>
+    

@@ -39,7 +39,7 @@ INSTRUCTIONS:
 5. Wrap all steps in a single test() block.
 6. Use process.env for any credential values – NEVER hardcode them.
 7. Output ONLY the code in a single \`\`\`javascript code block.
-8. When asserting the URL using expect(page).toHaveURL(), use a regular expression (e.g., /.*todomvc.*/) or allow a trailing slash/hash to ensure redirects do not fail the assertion.
+8. When asserting the URL using expect(page).toHaveURL(), derive the regular expression from the actual recorded URL and allow a trailing slash/hash so redirects do not fail the assertion.
 9. Do not use non-existent assertions like "toHaveCountGreaterThan". To check count bounds, use expect(await locator.count()).toBeGreaterThan(n) or await expect(locator).toHaveCount(n).
 10. Save screenshots using page.screenshot({ path: '...' }). The screenshot path MUST be placed under the directory: "${screenshotDir}/" (using descriptive, clear names, e.g. "${screenshotDir}/search_results_page.png"). Always use forward slashes in screenshot paths. Prefer standard viewport screenshots (without fullPage: true) to avoid timeout issues on dynamic pages.
 11. NEVER guess class names (e.g. '.news-article-selector') or data-automationid attributes (e.g. '[data-automationid="..."]') that were not explicitly proven to exist. Instead, use robust accessibility selectors like page.getByRole(), page.getByText(), or simple HTML tags like page.locator('img') or page.locator('footer').
