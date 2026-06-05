@@ -1,0 +1,402 @@
+- generic [ref=e3]:
+  - banner [ref=e6]:
+    - generic [ref=e7]:
+      - generic "Skip to content" [ref=e8] [cursor=pointer]:
+        - button "Skip to content" [ref=e9]:
+          - generic:
+            - generic: Skip to content
+      - generic "Skip to footer" [ref=e10] [cursor=pointer]:
+        - button "Skip to footer" [ref=e11]:
+          - generic:
+            - generic: Skip to footer
+      - link "MSN" [ref=e14] [cursor=pointer]:
+        - /url: https://www.msn.com/en-in
+      - search [ref=e18]:
+        - generic [ref=e19]:
+          - generic "Web search" [ref=e20] [cursor=pointer]:
+            - button "Web search" [ref=e21]:
+              - generic:
+                - generic:
+                  - img
+          - searchbox "Enter your search term" [ref=e22]
+          - generic "Open Copilot" [ref=e26] [cursor=pointer]:
+            - button "Open Copilot" [ref=e27]:
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Open Copilot"
+      - generic [ref=e28]:
+        - generic "Open settings" [ref=e32] [cursor=pointer]:
+          - button "Open settings" [ref=e33]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Page settings
+                  - generic:
+                    - img
+        - generic:
+          - generic:
+            - generic:
+              - generic "Sign In"
+  - generic [ref=e35]:
+    - generic [ref=e37]:
+      - banner [ref=e38]
+      - generic [ref=e43]:
+        - navigation [ref=e45]:
+          - generic [ref=e46]:
+            - list [ref=e47]:
+              - listitem [ref=e48]:
+                - link "Discover" [ref=e49] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in
+            - list [ref=e50]:
+              - listitem [ref=e51]:
+                - link "News" [ref=e52] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f
+              - listitem [ref=e53]:
+                - link "Sports" [ref=e54] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/sports
+              - listitem [ref=e55]:
+                - link "Play" [ref=e56] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/play?cgfrom=cg_home_pivot
+              - listitem [ref=e57]:
+                - link "Money" [ref=e58] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/money
+              - listitem [ref=e59]:
+                - link "Weather" [ref=e60] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/weather
+              - listitem [ref=e61]:
+                - link "Watch" [ref=e62] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/video
+              - listitem [ref=e63]:
+                - link "Shopping" [ref=e64] [cursor=pointer]:
+                  - /url: https://www.bing.com/shop?entrypoint=msn&adunitId=378983&propertyId=316966&FORM=NVBSHP
+        - generic "Personalize your feed\"" [ref=e66] [cursor=pointer]:
+          - button "Personalize your feed\"" [ref=e67]:
+            - generic:
+              - generic:
+                - img
+            - generic:
+              - generic: Personalize
+    - main [ref=e70]:
+      - generic [ref=e72]:
+        - generic [ref=e73]:
+          - generic [ref=e76]:
+            - tablist [ref=e78]:
+              - tab [ref=e79] [cursor=pointer]
+              - tab [selected] [ref=e81] [cursor=pointer]
+              - tab [ref=e83] [cursor=pointer]
+              - tab [ref=e85] [cursor=pointer]
+              - tab [ref=e87] [cursor=pointer]
+              - tab [ref=e89] [cursor=pointer]
+              - tab [ref=e91] [cursor=pointer]
+              - tab [ref=e93] [cursor=pointer]
+              - tab [ref=e95] [cursor=pointer]
+              - tab [ref=e97] [cursor=pointer]
+              - tab [ref=e99] [cursor=pointer]
+              - tab [ref=e101] [cursor=pointer]
+              - tab [ref=e103] [cursor=pointer]
+              - tab [ref=e105] [cursor=pointer]
+              - tab [ref=e107] [cursor=pointer]
+              - tab [ref=e109] [cursor=pointer]
+              - tab [ref=e111] [cursor=pointer]
+              - tab [ref=e113] [cursor=pointer]
+              - tab [ref=e115] [cursor=pointer]
+              - tab [ref=e117] [cursor=pointer]
+              - tab [ref=e119] [cursor=pointer]
+              - tab [ref=e121] [cursor=pointer]
+              - tab [ref=e123] [cursor=pointer]
+              - tab [ref=e125] [cursor=pointer]
+              - tab [ref=e127] [cursor=pointer]
+              - tab [ref=e129] [cursor=pointer]
+              - tab [ref=e131] [cursor=pointer]
+              - tab [ref=e133] [cursor=pointer]
+            - button [ref=e137]
+            - button [ref=e140]
+            - 'article "GK: Which Indian city is called the litchi capital of the world?" [ref=e141] [cursor=pointer]':
+              - generic [ref=e143]:
+                - img [ref=e144]
+                - generic [ref=e145]:
+                  - generic [ref=e146]:
+                    - generic [ref=e147]:
+                      - generic [ref=e148]:
+                        - img [ref=e149]
+                        - generic [ref=e150]: News18
+                      - generic [ref=e151]: ·
+                      - generic [ref=e152]: 2w
+                    - 'link "GK: Which Indian city is called the litchi capital of the world?, News18" [ref=e153]':
+                      - /url: https://www.msn.com/en-in/travel/tripideas/gk-which-indian-city-is-called-the-litchi-capital-of-the-world/ss-AA23ywsO
+                      - text: "GK: Which Indian city is called the litchi capital of the world?"
+                  - generic [ref=e154]:
+                    - generic:
+                      - generic:
+                        - 'generic "GK: Which Indian city is called the litchi capital of the world?"'
+                - generic [ref=e155]:
+                  - button "Hide this story" [ref=e156]:
+                    - img [ref=e157]
+                    - text: Hide this story
+                  - button "See more" [ref=e158]:
+                    - img [ref=e159]
+          - article [ref=e160] [cursor=pointer]
+          - 'article "Salary is a hard drug to quit: Delhi man opens up about 60 days without income" [ref=e162] [cursor=pointer]':
+            - generic [ref=e164]:
+              - img [ref=e165]
+              - generic [ref=e166]:
+                - generic [ref=e167]:
+                  - generic [ref=e168]:
+                    - generic [ref=e169]:
+                      - img [ref=e170]
+                      - generic [ref=e171]: NDTV 24x7
+                    - generic [ref=e172]: ·
+                    - generic [ref=e173]: 1d
+                  - 'link "Salary is a hard drug to quit: Delhi man opens up about 60 days without income, NDTV 24x7" [ref=e174]':
+                    - /url: https://www.msn.com/en-in/news/india/salary-is-a-hard-drug-to-quit-delhi-man-opens-up-about-60-days-without-income/ar-AA24JhvP
+                    - text: "Salary is a hard drug to quit: Delhi man opens up about 60 days without income"
+                - generic [ref=e175]:
+                  - generic:
+                    - generic:
+                      - 'generic "Salary is a hard drug to quit: Delhi man opens up about 60 days without income"'
+              - generic [ref=e176]:
+                - button "Hide this story" [ref=e177]:
+                  - img [ref=e178]
+                  - text: Hide this story
+                - button "See more" [ref=e179]:
+                  - img [ref=e180]
+          - article "Discover German's newest hearing technology for crystal-clear sound!" [ref=e181] [cursor=pointer]:
+            - generic [ref=e183]:
+              - img [ref=e184]
+              - generic [ref=e185]:
+                - generic [ref=e186]:
+                  - generic [ref=e189]: hear.com
+                  - link "Discover German's newest hearing technology for crystal-clear sound!, hear.com" [ref=e190]:
+                    - /url: https://www.bing.com/api/v1/mediation/tracking?adUnit=1732768568&auId=89303b91-144c-4c66-b0cd-05683bc4a20e&bdc=pb&bidId=6&bidderId=4&cmExpId=RSV&impId=8&impTy=1&ldc=xfpczr&mkt=en-in&oAdUnit=1732768568&pId=1&publisherId=17160724&rId=b9d11ca9-b570-4736-9da7-8cdff4bbcd2d&region=apac&rlink=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8Epooj2iFIIo3dHs3Rzw4LjVUCUwq8-joHTc1rUM15-gyMlhkQFyRwgZA-skZQ662Df2n7TIU9JNer8pPXT4-PJSyZiy16QV_NHNzuLwy6cFZClmuvVufz5q0tZR4yCoW8vGTpIOaqFkRvG3BhbyRKRk_8uni3zsQtJt3cj5c2hGY36aFE0kIrhc3OfShFZSGrz-K3Q%26u%3DaHR0cHMlM2ElMmYlMmZpbi5oZWFyLmNvbSUyZmQlMmZlbl9wcmljZV9saXN0X2Rpc3BsYXlfbXNhbiUyZiUzZmFjdCUzZEFDVDAwMDAwOTk2MjRBQ1QlMjZ1dG1fc291cmNlJTNkbWNycy1hdWRpZW5jZS1uZXR3b3JrJTI2dXRtX21lZGl1bSUzZGRpc3BsYXklMjZ1dG1fY2FtcGFpZ24lM2Rpbl9lbl9oZWFfZGlzcGxheV9tY3JzLWF1ZGllbmNlLW5ldHdvcmtfcHJpY2VfbGlzdF9hY3FfbW9iaWxlX21zbl9BQ1QwMDAwMDk5NjI0QUNUJTI2Z2VvJTNkMjYxNjI5JTI2YWRncm91cCUzZDExNTU1ODg2ODI5Nzg4MTclMjZLZXl3b3JkJTNka2V5d29yZCUyNk1hdGNoVHlwZSUzZGUlMjZwb3NpdGlvbiUzZCUyNnV0bV9jb250ZW50JTNkJTI2bmV0d29yayUzZGElMjZwbGFjZW1lbnQlM2QlMjZ1dG1fcHVibGlzaGVyX0lEJTNkJTI2dXRtX3Rlcm0lM2QlMjZtc2Nsa2lkJTNkZGM3MzEyMjc3ZWRjMTdlYjVkZTc3ODA1MzViMGZmY2Y%26rlid%3Ddc7312277edc17eb5de7780535b0ffcf&rtype=targetURL&tagId=hp2-river-1&trafficGroup=zfa_angvir&trafficSubGroup=erfreir&uberGroup=hore_1c&uberSubGroup=erfreir
+                    - text: Discover German's newest hearing technology for crystal-clear sound!
+                - link "Sponsored" [ref=e192]:
+                  - /url: https://www.bing.com/api/v1/mediation/tracking?adUnit=1732768568&auId=89303b91-144c-4c66-b0cd-05683bc4a20e&bdc=pb&bidId=6&bidderId=4&cmExpId=RSV&impId=8&impTy=1&ldc=xfpczr&mkt=en-in&oAdUnit=1732768568&pId=1&publisherId=17160724&rId=b9d11ca9-b570-4736-9da7-8cdff4bbcd2d&region=apac&rlink=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8Epooj2iFIIo3dHs3Rzw4LjVUCUwq8-joHTc1rUM15-gyMlhkQFyRwgZA-skZQ662Df2n7TIU9JNer8pPXT4-PJSyZiy16QV_NHNzuLwy6cFZClmuvVufz5q0tZR4yCoW8vGTpIOaqFkRvG3BhbyRKRk_8uni3zsQtJt3cj5c2hGY36aFE0kIrhc3OfShFZSGrz-K3Q%26u%3DaHR0cHMlM2ElMmYlMmZpbi5oZWFyLmNvbSUyZmQlMmZlbl9wcmljZV9saXN0X2Rpc3BsYXlfbXNhbiUyZiUzZmFjdCUzZEFDVDAwMDAwOTk2MjRBQ1QlMjZ1dG1fc291cmNlJTNkbWNycy1hdWRpZW5jZS1uZXR3b3JrJTI2dXRtX21lZGl1bSUzZGRpc3BsYXklMjZ1dG1fY2FtcGFpZ24lM2Rpbl9lbl9oZWFfZGlzcGxheV9tY3JzLWF1ZGllbmNlLW5ldHdvcmtfcHJpY2VfbGlzdF9hY3FfbW9iaWxlX21zbl9BQ1QwMDAwMDk5NjI0QUNUJTI2Z2VvJTNkMjYxNjI5JTI2YWRncm91cCUzZDExNTU1ODg2ODI5Nzg4MTclMjZLZXl3b3JkJTNka2V5d29yZCUyNk1hdGNoVHlwZSUzZGUlMjZwb3NpdGlvbiUzZCUyNnV0bV9jb250ZW50JTNkJTI2bmV0d29yayUzZGElMjZwbGFjZW1lbnQlM2QlMjZ1dG1fcHVibGlzaGVyX0lEJTNkJTI2dXRtX3Rlcm0lM2QlMjZtc2Nsa2lkJTNkZGM3MzEyMjc3ZWRjMTdlYjVkZTc3ODA1MzViMGZmY2Y%26rlid%3Ddc7312277edc17eb5de7780535b0ffcf&rtype=targetURL&tagId=hp2-river-1&trafficGroup=zfa_angvir&trafficSubGroup=erfreir&uberGroup=hore_1c&uberSubGroup=erfreir
+              - button "See more" [ref=e194]:
+                - img [ref=e195]
+          - article [ref=e196] [cursor=pointer]:
+            - generic [ref=e202]:
+              - generic [ref=e204]:
+                - img "Watchlist suggestions" [ref=e206]
+                - link "Watchlist suggestions" [ref=e207]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?ocid=hpmsn
+                  - heading "Watchlist suggestions" [level=2] [ref=e208]
+                - button "More options" [ref=e210]
+              - generic [ref=e215]:
+                - link "DOW DJI ‎+1.73%‎ 51,561.93" [ref=e217]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?id=a6qja2&ocid=hpmsn
+                  - generic [ref=e218]:
+                    - generic [ref=e220]: DOW
+                    - generic [ref=e222]: DJI
+                  - generic [ref=e225]:
+                    - generic [ref=e226]: ‎+1.73%‎
+                    - generic [ref=e227]: 51,561.93
+                  - button "Add to watchlist" [ref=e230]:
+                    - img [ref=e231]
+                - link "Silver Silver ‎-1.45%‎ 72.90" [ref=e235]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?id=auvwr7&ocid=hpmsn
+                  - generic [ref=e236]:
+                    - generic [ref=e238]: Silver
+                    - generic [ref=e240]: Silver
+                  - generic [ref=e243]:
+                    - generic [ref=e244]: ‎-1.45%‎
+                    - generic [ref=e245]: "72.90"
+                  - button "Add to watchlist" [ref=e248]:
+                    - img [ref=e249]
+                - link "Citigroup Inc Citigroup Inc Rising fast ‎+4.02%‎ 135.15" [ref=e253]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?id=a1p3ww&noti=Price&ocid=hpmsn
+                  - generic [ref=e254]:
+                    - generic [ref=e255]:
+                      - generic [ref=e256]: Citigroup Inc
+                      - img "Citigroup Inc" [ref=e257]
+                    - generic [ref=e259]: Rising fast
+                  - generic [ref=e262]:
+                    - generic [ref=e263]: ‎+4.02%‎
+                    - generic [ref=e264]: "135.15"
+                  - button "Add to watchlist" [ref=e267]:
+                    - img [ref=e268]
+                - link "Dominion Energy Inc Dominion Energy Inc Rising fast ‎+1.59%‎ 66.50" [ref=e272]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?id=a1qpw7&noti=Price&ocid=hpmsn
+                  - generic [ref=e273]:
+                    - generic [ref=e274]:
+                      - generic [ref=e275]: Dominion Energy Inc
+                      - img "Dominion Energy Inc" [ref=e276]
+                    - generic [ref=e278]: Rising fast
+                  - generic [ref=e281]:
+                    - generic [ref=e282]: ‎+1.59%‎
+                    - generic [ref=e283]: "66.50"
+                  - button "Add to watchlist" [ref=e286]:
+                    - img [ref=e287]
+                - link "Tata Steel Ltd TATASTEEL ‎-1.28%‎ 207.88" [ref=e291]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?id=ahkaa2&ocid=hpmsn
+                  - generic [ref=e292]:
+                    - generic [ref=e294]: Tata Steel Ltd
+                    - generic [ref=e296]: TATASTEEL
+                  - generic [ref=e299]:
+                    - generic [ref=e300]: ‎-1.28%‎
+                    - generic [ref=e301]: "207.88"
+                  - button "Add to watchlist" [ref=e304]:
+                    - img [ref=e305]
+              - generic [ref=e309]:
+                - generic [ref=e310]:
+                  - generic "Previous" [ref=e311]:
+                    - button "Previous" [ref=e312]
+                  - tablist [ref=e314]:
+                    - tab "tab-0" [selected] [ref=e315]
+                    - tab "tab-1" [ref=e317]
+                    - tab "tab-2" [ref=e319]
+                    - tab "tab-3" [ref=e321]
+                  - generic "Next" [ref=e323]:
+                    - button "Next" [ref=e324]
+                - link "See watchlist suggestions" [ref=e326]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?ocid=hpmsn
+          - 'article "‘No Bhagwan songs, don’t go to temple’: Woman says she was shown Pakistani preacher''s videos in TCS Nashik case" [ref=e327] [cursor=pointer]':
+            - generic [ref=e329]:
+              - img [ref=e330]
+              - generic [ref=e331]:
+                - generic [ref=e332]:
+                  - generic [ref=e333]:
+                    - generic [ref=e334]:
+                      - img [ref=e335]
+                      - generic [ref=e336]: Hindustan Times
+                    - generic [ref=e337]: ·
+                    - generic [ref=e338]: 7h
+                  - 'link "‘No Bhagwan songs, don’t go to temple’: Woman says she was shown Pakistani preacher''s videos in TCS Nashik case, Hindustan Times" [ref=e339]':
+                    - /url: https://www.msn.com/en-in/news/india/no-bhagwan-songs-don-t-go-to-temple-woman-says-she-was-shown-pakistani-preacher-s-videos-in-tcs-nashik-case/ar-AA24R4es
+                    - text: "‘No Bhagwan songs, don’t go to temple’: Woman says she was shown Pakistani preacher's videos in TCS Nashik case"
+                - generic [ref=e340]:
+                  - generic:
+                    - generic:
+                      - 'generic "‘No Bhagwan songs, don’t go to temple’: Woman says she was shown Pakistani preacher''s videos in TCS Nashik case"'
+              - generic [ref=e341]:
+                - button "Hide this story" [ref=e342]:
+                  - img [ref=e343]
+                  - text: Hide this story
+                - button "See more" [ref=e344]:
+                  - img [ref=e345]
+          - article "Why more healthy-looking young people are dying of heart attacks" [ref=e346] [cursor=pointer]:
+            - generic [ref=e348]:
+              - img [ref=e349]
+              - generic [ref=e350]:
+                - generic [ref=e351]:
+                  - generic [ref=e352]:
+                    - generic [ref=e353]:
+                      - img [ref=e354]
+                      - generic [ref=e355]: Times Now
+                    - generic [ref=e356]: ·
+                    - generic [ref=e357]: 3w
+                  - link "Why more healthy-looking young people are dying of heart attacks, Times Now" [ref=e358]:
+                    - /url: https://www.msn.com/en-in/health/health-news/why-more-healthy-looking-young-people-are-dying-of-heart-attacks/ar-AA22QBvs
+                    - text: Why more healthy-looking young people are dying of heart attacks
+                - generic [ref=e359]:
+                  - generic:
+                    - generic:
+                      - generic "Why more healthy-looking young people are dying of heart attacks"
+              - generic [ref=e360]:
+                - button "Hide this story" [ref=e361]:
+                  - img [ref=e362]
+                  - text: Hide this story
+                - button "See more" [ref=e363]:
+                  - img [ref=e364]
+          - article "Aishwarya Rai’s top 5 important parenting lessons for today’s generation" [ref=e365] [cursor=pointer]:
+            - generic [ref=e367]:
+              - img [ref=e368]
+              - generic [ref=e369]:
+                - generic [ref=e370]:
+                  - generic [ref=e372]:
+                    - img [ref=e373]
+                    - generic [ref=e374]: The Times of India
+                  - link "Aishwarya Rai’s top 5 important parenting lessons for today’s generation, The Times of India" [ref=e375]:
+                    - /url: https://www.msn.com/en-in/entertainment/bollywood/aishwarya-rai-s-top-5-important-parenting-lessons-for-today-s-generation/ss-AA1QMgE4
+                    - text: Aishwarya Rai’s top 5 important parenting lessons for today’s generation
+                - generic [ref=e376]:
+                  - generic:
+                    - generic:
+                      - generic "Aishwarya Rai’s top 5 important parenting lessons for today’s generation"
+              - generic [ref=e377]:
+                - button "Hide this story" [ref=e378]:
+                  - img [ref=e379]
+                  - text: Hide this story
+                - button "See more" [ref=e380]:
+                  - img [ref=e381]
+          - article [ref=e382] [cursor=pointer]
+        - generic [ref=e384]:
+          - article [ref=e385] [cursor=pointer]
+          - article "6 warning signs that may indicate a snake is hiding near your home" [ref=e387] [cursor=pointer]:
+            - generic [ref=e389]:
+              - img [ref=e390]
+              - generic [ref=e391]:
+                - generic [ref=e392]:
+                  - generic [ref=e393]:
+                    - generic [ref=e394]:
+                      - img [ref=e395]
+                      - generic [ref=e396]: The Economic Times
+                    - generic [ref=e397]: ·
+                    - generic [ref=e398]: 2w
+                  - link "6 warning signs that may indicate a snake is hiding near your home, The Economic Times" [ref=e399]:
+                    - /url: https://www.msn.com/en-in/entertainment/news/6-warning-signs-that-may-indicate-a-snake-is-hiding-near-your-home/ss-AA23srxe
+                    - text: 6 warning signs that may indicate a snake is hiding near your home
+                - generic [ref=e400]:
+                  - generic:
+                    - generic:
+                      - generic "6 warning signs that may indicate a snake is hiding near your home"
+              - generic [ref=e401]:
+                - button "Hide this story" [ref=e402]:
+                  - img [ref=e403]
+                  - text: Hide this story
+                - button "See more" [ref=e404]:
+                  - img [ref=e405]
+          - article [ref=e406] [cursor=pointer]
+          - article [ref=e408] [cursor=pointer]
+          - article "India to launch E85 petrol tomorrow to deepen ethanol fuel shift" [ref=e415] [cursor=pointer]:
+            - generic [ref=e417]:
+              - img [ref=e418]
+              - generic [ref=e419]:
+                - generic [ref=e420]:
+                  - generic [ref=e421]:
+                    - generic [ref=e422]:
+                      - img [ref=e423]
+                      - generic [ref=e424]: Live Mint
+                    - generic [ref=e425]: ·
+                    - generic [ref=e426]: 11h
+                  - link "India to launch E85 petrol tomorrow to deepen ethanol fuel shift, Live Mint" [ref=e427]:
+                    - /url: https://www.msn.com/en-in/news/other/india-to-launch-e85-petrol-tomorrow-to-deepen-ethanol-fuel-shift/ar-AA24QX44
+                    - text: India to launch E85 petrol tomorrow to deepen ethanol fuel shift
+                - generic [ref=e428]:
+                  - generic:
+                    - generic:
+                      - generic "India to launch E85 petrol tomorrow to deepen ethanol fuel shift"
+              - generic [ref=e429]:
+                - button "Hide this story" [ref=e430]:
+                  - img [ref=e431]
+                  - text: Hide this story
+                - button "See more" [ref=e432]:
+                  - img [ref=e433]
+          - article "Parmeet Sethi hasn’t used an alarm in 10 years; expert says 'picture of good health'" [ref=e434] [cursor=pointer]:
+            - generic [ref=e436]:
+              - img [ref=e437]
+              - generic [ref=e438]:
+                - generic [ref=e439]:
+                  - generic [ref=e440]:
+                    - generic [ref=e441]:
+                      - img [ref=e442]
+                      - generic [ref=e443]: The Indian Express
+                    - generic [ref=e444]: ·
+                    - generic [ref=e445]: 1w
+                  - link "Parmeet Sethi hasn’t used an alarm in 10 years; expert says 'picture of good health', The Indian Express" [ref=e446]:
+                    - /url: https://www.msn.com/en-in/news/india/parmeet-sethi-hasn-t-used-an-alarm-in-10-years-expert-says-picture-of-good-health/ar-AA24jq8b
+                    - text: Parmeet Sethi hasn’t used an alarm in 10 years; expert says 'picture of good health'
+                - generic [ref=e447]:
+                  - generic:
+                    - generic:
+                      - generic "Parmeet Sethi hasn’t used an alarm in 10 years; expert says 'picture of good health'"
+              - generic [ref=e448]:
+                - button "Hide this story" [ref=e449]:
+                  - img [ref=e450]
+                  - text: Hide this story
+                - button "See more" [ref=e451]:
+                  - img [ref=e452]
+          - article [ref=e453] [cursor=pointer]
+          - article [ref=e460] [cursor=pointer]
+          - article [ref=e462] [cursor=pointer]
+        - article [ref=e465]

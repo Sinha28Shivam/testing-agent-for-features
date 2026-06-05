@@ -1,0 +1,3 @@
+[    1700ms] [INFO] AST library loaded: 1.10.94 @ https://adsdk.microsoft.com/ast/ast.js:4
+[    6552ms] [WARNING] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. @ https://assets.msn.com/staticsb/statics/latest/auth/msal-browser-5.6.2.min.js:1
+[    7121ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://assets.msn.com/service/msn/user?apikey=0QfOX3Vn51YCzitbLaRkTTBadtWpgTN8NZLW0C1SEM&activityId=6a22377e-2c6e-46be-ab7d-b944d0e1b3b2&ocid=pdp-peregrine&cm=en-in&it=web&user=m-1CD250C436056EAF07F947AB374C6FDE&scn=ANON&source=market-consolidation:0

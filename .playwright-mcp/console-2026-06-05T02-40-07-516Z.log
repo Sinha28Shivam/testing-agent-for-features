@@ -1,0 +1,9 @@
+[    2340ms] [INFO] AST library loaded: 1.10.94 @ https://adsdk.microsoft.com/ast/ast.js:4
+[    7098ms] [WARNING] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. @ https://assets.msn.com/staticsb/statics/latest/auth/msal-browser-5.6.2.min.js:1
+[    9134ms] [INFO] BSSO Telemetry: {"result":"Error","error":"NoExtension","type":"ChromeSsoTelemetry","data":{},"traces":["BrowserSSO Initialized","Creating ChromeBrowserCore provider","Sending message for method CreateProviderAsync","Received message for method CreateProviderAsync","Error: ChromeBrowserCore error NoExtension: Extension is not installed."]} @ https://aadcdn.msauth.net/shared/1.0/content/js/BssoInterrupt_Core_9GPLBwek-swGv_tRKLyCgw2.js:17
+[    9157ms] [ERROR] Failed to load resource: the server responded with a status of 404 () @ https://assets.msn.com/service/msn/user?apikey=0QfOX3Vn51YCzitbLaRkTTBadtWpgTN8NZLW0C1SEM&activityId=6a223708-c0c1-4a5d-bfbd-92f19471a563&ocid=pdp-peregrine&cm=en-in&it=web&user=m-36AE72A7B6896FCA195C65C8B77A6EDB&scn=ANON&source=market-consolidation:0
+[   16792ms] [LOG] true @ https://login.live.com/Me.htm?v=3:0
+[   16806ms] [LOG] Storage access: true @ https://login.live.com/Me.htm?v=3:0
+[   17401ms] [WARNING] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. @ https://www.msn.com/staticsb/statics/latest/auth/auth-redirect-blank-bridge.html#error=interaction_required&error_description=Session+information+is+not+sufficient+for+single-sign-on.&state=eyJpZCI6IjAxOWU5NWE3LTEwZmUtN2QxYi1iY2IzLTI5ZmNkOGM5NjEzYSIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoic2lsZW50In19:0
+[   18696ms] [LOG] Using PPID: 577a5ffe-c09d-4008-85dc-029cd836b499 @ :0
+[   20930ms] [ERROR] Attestation check for Shared Storage on https://www.googleadservices.com failed. @ https://www.googleadservices.com/pagead/managed/js/activeview/current/reach_worklet.html:0

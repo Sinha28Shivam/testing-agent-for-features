@@ -1,3 +1,6 @@
+import fs from 'fs/promises';
+import path from 'path';
+import yaml from 'js-yaml';
 import messageBus, { EVENTS } from '../core/MessageBus.js';
 import memoryAgent from './MemoryAgent.js';
 
@@ -16,8 +19,12 @@ class PlannerAgent {
         await messageBus.publish(EVENTS.PLAN_CREATED, plan);
       } catch (err) {
         console.error(`[PlannerAgent Error] Failed to create plan:`, err);
-        const fallbackPlan = this.createFallbackPlan(payload.runId, payload.prompt, payload.name);
-        await messageBus.publish(EVENTS.PLAN_CREATED, fallbackPlan);
+        try {
+          const fallbackPlan = await this.createFallbackPlan(payload.runId, payload.prompt, payload.name);
+          await messageBus.publish(EVENTS.PLAN_CREATED, fallbackPlan);
+        } catch (fallbackErr) {
+          console.error(`[PlannerAgent Error] Failed to create fallback plan:`, fallbackErr);
+        }
       }
     });
 
@@ -29,7 +36,7 @@ class PlannerAgent {
     console.log('[PlannerAgent] Parsing prompt using heuristics...');
     
     // 1. Extract Target URL
-    const targetUrl = this.extractTargetUrl(prompt);
+    const targetUrl = await this.resolveTargetUrl(prompt);
     if (!targetUrl) {
       throw new Error('No target URL found in prompt. Add a URL to the scenario prompt.');
     }
@@ -103,8 +110,8 @@ class PlannerAgent {
     return plan;
   }
 
-  createFallbackPlan(runId, prompt, name = null) {
-    const targetUrl = this.extractTargetUrl(prompt);
+  async createFallbackPlan(runId, prompt, name = null) {
+    const targetUrl = await this.resolveTargetUrl(prompt);
     if (!targetUrl) {
       throw new Error('Fallback planning failed because no target URL was found in prompt.');
     }
@@ -123,6 +130,84 @@ class PlannerAgent {
       coldStart: true,
       checklist: [`Navigate to ${targetUrl}`, 'Verify that target page loaded successfully']
     };
+  }
+
+  async resolveTargetUrl(prompt = '') {
+    // 1. Literal URL check
+    const literalUrl = this.extractTargetUrl(prompt);
+    if (literalUrl) {
+      return literalUrl;
+    }
+
+    console.log(`[PlannerAgent] No literal URL found in prompt. Attempting dynamic resolution...`);
+
+    const lowerPrompt = prompt.toLowerCase();
+
+    // 2. Try to find a URL from other scenarios in scenarios.yaml
+    try {
+      const yamlPath = path.resolve('scenarios.yaml');
+      const fileContent = await fs.readFile(yamlPath, 'utf-8');
+      const parsed = yaml.load(fileContent);
+      if (parsed && Array.isArray(parsed.scenarios)) {
+        for (const s of parsed.scenarios) {
+          if (!s.prompt) continue;
+          const u = this.extractTargetUrl(s.prompt);
+          if (u) {
+            const domain = this.extractDomain(u);
+            const domainBase = domain.replace(/^www\./i, '').split('.')[0];
+            if (domainBase && lowerPrompt.includes(domainBase)) {
+              console.log(`[PlannerAgent] Dynamically resolved URL from scenarios.yaml: "${u}" for brand "${domainBase}"`);
+              return u;
+            }
+          }
+        }
+      }
+    } catch (e) {
+      console.warn(`[PlannerAgent] Dynamic resolution from scenarios.yaml failed:`, e.message);
+    }
+
+    // 3. Try to find a domain in the database
+    try {
+      if (!memoryAgent.connected) {
+        await memoryAgent.connect();
+      }
+      const res = await memoryAgent.pgPool.query('SELECT domain FROM domain_profiles');
+      for (const row of res.rows) {
+        const domain = row.domain;
+        const domainBase = domain.replace(/^www\./i, '').split('.')[0];
+        if (domainBase && lowerPrompt.includes(domainBase)) {
+          const u = `https://${domain}`;
+          console.log(`[PlannerAgent] Dynamically resolved URL from domain profiles: "${u}"`);
+          return u;
+        }
+      }
+    } catch (e) {
+      console.warn(`[PlannerAgent] Dynamic resolution from database failed:`, e.message);
+    }
+
+    // 4. Default to first URL found in scenarios.yaml as fallback
+    try {
+      const yamlPath = path.resolve('scenarios.yaml');
+      const fileContent = await fs.readFile(yamlPath, 'utf-8');
+      const parsed = yaml.load(fileContent);
+      if (parsed && Array.isArray(parsed.scenarios)) {
+        for (const s of parsed.scenarios) {
+          if (!s.prompt) continue;
+          const u = this.extractTargetUrl(s.prompt);
+          if (u) {
+            console.log(`[PlannerAgent] Using first available URL from scenarios.yaml as fallback: "${u}"`);
+            return u;
+          }
+        }
+      }
+    } catch (e) {
+      // ignore
+    }
+
+    // 5. Ultimate fallback
+    const ultimateFallback = process.env.DEFAULT_TARGET_URL || 'https://www.msn.com/en-in';
+    console.log(`[PlannerAgent] Using ultimate fallback URL: "${ultimateFallback}"`);
+    return ultimateFallback;
   }
 
   extractTargetUrl(prompt = '') {

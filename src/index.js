@@ -24,6 +24,12 @@ dotenv.config();
 const activeRuns = new Map();
 const completedRuns = [];
 
+// Programmatic mode variables
+let isInitialized = false;
+let isProgrammatic = false;
+let programmaticResolve = null;
+let programmaticReject = null;
+
 function extractTargetUrlFromText(text = '') {
   const urlMatch = /(https?:\/\/[^\s"'`\)]+)/i.exec(text);
   if (urlMatch) {
@@ -186,7 +192,10 @@ async function resolveScriptPath(plan) {
   };
 }
 
-async function bootstrap() {
+export async function bootstrap() {
+  if (isInitialized) {
+    return;
+  }
   console.log('====================================================');
   console.log('       AI MULTI-AGENT TEST PLATFORM v3.0            ');
   console.log('====================================================\n');
@@ -206,6 +215,8 @@ async function bootstrap() {
 
   // 3. Setup event flow orchestration
   setupPipelineOrchestration();
+  
+  isInitialized = true;
 }
 
 function setupPipelineOrchestration() {
@@ -519,6 +530,14 @@ function checkGracefulShutdown() {
         console.error('[Orchestrator Error] Failed to send email report:', mailErr.message);
       }
       
+      if (isProgrammatic) {
+        console.log('[Orchestrator] Programmatic run finished. Keeping connections open for scheduler.');
+        if (programmaticResolve) {
+          programmaticResolve({ success: !hasFailures, runs: [...completedRuns] });
+        }
+        return;
+      }
+
       console.log('\n[Orchestrator] Gracefully shutting down connections...');
       await gitAgent.close();
       await memoryAgent.disconnect();
@@ -614,15 +633,36 @@ async function shutdownRun(runId, outcome) {
   checkGracefulShutdown();
 }
 
-async function main() {
-  const arg = process.argv.slice(2).join(' ').trim();
-  if (!arg) {
-    console.error('Error: Please provide a test prompt, e.g. npm start "Verify homepage loads at https://www.msn.com/en-in"');
-    console.error('Or a path to a scenarios file, e.g. npm start scenarios.yaml');
-    process.exit(1);
+export async function executePipeline(arg, runAsProgrammatic = false) {
+  isProgrammatic = runAsProgrammatic;
+  
+  if (isProgrammatic) {
+    return new Promise((resolve, reject) => {
+      programmaticResolve = resolve;
+      programmaticReject = reject;
+      runExecution(arg).catch(reject);
+    });
+  } else {
+    await runExecution(arg);
   }
+}
 
-  await bootstrap();
+async function runExecution(arg) {
+  // Synchronize scenarios from Azure DevOps if enabled
+  if (process.env.ADO_FETCH_ON_START === 'true' && (arg.endsWith('.yaml') || arg.endsWith('.yml'))) {
+    console.log('[Orchestrator] ADO_FETCH_ON_START is enabled. Syncing scenarios from Azure DevOps...');
+    try {
+      const { syncScenarios } = await import('./integration/AdoFetcher.js');
+      const syncSuccess = await syncScenarios();
+      if (syncSuccess) {
+        console.log('[Orchestrator] ADO scenarios synced successfully.');
+      } else {
+        console.warn('[Orchestrator Warning] ADO synchronization returned false. Using local cached file.');
+      }
+    } catch (err) {
+      console.warn('[Orchestrator Warning] Failed to run Azure DevOps synchronization:', err.message);
+    }
+  }
 
   // Clean allure-results directory at start of run
   const reporterType = (process.env.REPORTER_TYPE || '').toLowerCase();
@@ -655,13 +695,19 @@ async function main() {
       console.log(`[Orchestrator] Loaded ${prompts.length} scenarios from file: ${arg}`);
     } catch (err) {
       console.error(`[Orchestrator Error] Failed to read/parse scenarios file: ${err.message}`);
-      process.exit(1);
+      if (!isProgrammatic) {
+        process.exit(1);
+      }
+      throw err;
     }
   } else {
     prompts = [{ prompt: arg, name: null }];
   }
 
   totalPromptsCount = prompts.length;
+  completedPromptsCount = 0;
+  hasFailures = false;
+  completedRuns.length = 0;
 
   const maxConcurrency = parseInt(process.env.MAX_CONCURRENT_RUNS || '3', 10);
   console.log(`[Orchestrator] Starting execution of ${totalPromptsCount} scenarios with concurrency limit: ${maxConcurrency}`);
@@ -709,7 +755,25 @@ async function main() {
   await Promise.all(workers);
 }
 
-main().catch(err => {
-  console.error('[Orchestrator Fatal Error]', err);
-  process.exit(1);
-});
+async function main() {
+  const arg = process.argv.slice(2).join(' ').trim();
+  if (!arg) {
+    console.error('Error: Please provide a test prompt, e.g. npm start "Verify homepage loads at https://www.msn.com/en-in"');
+    console.error('Or a path to a scenarios file, e.g. npm start scenarios.yaml');
+    process.exit(1);
+  }
+
+  await bootstrap();
+  await executePipeline(arg, false);
+}
+
+// Check if run directly
+import { fileURLToPath } from 'url';
+const nodePath = path.resolve(process.argv[1]);
+const modulePath = fileURLToPath(import.meta.url);
+if (nodePath === modulePath || nodePath.replace(/\.[jt]s$/, '') === modulePath.replace(/\.[jt]s$/, '')) {
+  main().catch(err => {
+    console.error('[Orchestrator Fatal Error]', err);
+    process.exit(1);
+  });
+}

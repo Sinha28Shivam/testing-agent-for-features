@@ -1,0 +1,798 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - button "Skip to content" [ref=e3] [cursor=pointer]:
+      - generic [ref=e5]: Skip to content
+    - button "Accessibility Feedback" [ref=e6] [cursor=pointer]:
+      - generic [ref=e8]: Accessibility Feedback
+    - generic [ref=e9]:
+      - link "Back to Bing search" [ref=e10] [cursor=pointer]:
+        - /url: /?FORM=Z9FD1
+        - heading "Back to Bing search" [level=1] [ref=e11]
+      - search [ref=e12]:
+        - button "Search" [ref=e15] [cursor=pointer]
+        - searchbox "Enter your search here - Search suggestions will show as you type" [ref=e16]: Technology
+        - button "Search using an image" [ref=e22] [cursor=pointer]
+    - complementary "Account Rewards and Preferences" [ref=e24]:
+      - button "Microsoft Rewards" [ref=e25] [cursor=pointer]
+      - link "Sign in" [ref=e26] [cursor=pointer]:
+        - /url: javascript:void(0)
+        - generic "Sign in" [ref=e27]
+    - navigation "Search Filter" [ref=e28]:
+      - list [ref=e29]:
+        - listitem [ref=e30]:
+          - link "All" [ref=e31] [cursor=pointer]:
+            - /url: /?scope=web&FORM=HDRSC1
+        - listitem [ref=e32]:
+          - link "Search" [ref=e33] [cursor=pointer]:
+            - /url: /copilotsearch?q=Technology&FORM=CSSCOP
+            - img [ref=e34]
+            - text: Search
+        - listitem [ref=e36]:
+          - link "Videos" [ref=e37] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=794899712be035930eebe49f797a77f1d7d7710e360f476b52d74ea6f939ea19JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1UZWNobm9sb2d5JkZPUk09SERSU0M0&ntb=1
+        - listitem [ref=e38]:
+          - link "Images" [ref=e39] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=34724ee206105f8b39daba94de03e0c0bda6c64f90f7b69e34ed49ebfcc68e21JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L2ltYWdlcy9zZWFyY2g_cT1UZWNobm9sb2d5JkZPUk09SERSU0Mz&ntb=1
+        - listitem [ref=e40]:
+          - link "Maps" [ref=e41] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=52432697ca6dee27e48f5c3661a67e14d39f957a9c9587b5025dbef09010b344JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L21hcHM_cT1UZWNobm9sb2d5JkZPUk09SERSU0M2&ntb=1
+        - listitem [ref=e42]:
+          - link "News" [ref=e43] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=22d1164e1e09663764cb1e7de2e87607a0139490a44acca1610b0dc9e6f3cac7JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L25ld3Mvc2VhcmNoP3E9VGVjaG5vbG9neSZGT1JNPUhEUlNDNw&ntb=1
+        - listitem [ref=e44]:
+          - link "Copilot" [ref=e45] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=9d68173ac2e28869c0d7c420ce3ee95ff44b968e4018d2686738237984f5fa7eJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L2NoYXQ_cHJvbXB0PVRlY2hub2xvZ3kmc2VuZHF1ZXJ5PTEmRk9STT1TQ0NPRFg&ntb=1
+  - main "Search Results" [ref=e47]:
+    - generic [ref=e53]:
+      - generic "Technology Application of Knowledge" [ref=e55]:
+        - heading "Technology" [level=2] [ref=e56]
+        - generic [ref=e57]: Application of Knowledge
+      - tablist "Technology Application of Knowledge" [ref=e58]:
+        - tab "Overview" [selected] [ref=e59] [cursor=pointer]
+        - tab "History" [ref=e60] [cursor=pointer]
+        - tab "Types" [ref=e61] [cursor=pointer]
+        - tab "Impact" [ref=e62] [cursor=pointer]
+        - tab "Emerging Technologies" [ref=e63] [cursor=pointer]
+        - tab "Ethics" [ref=e64] [cursor=pointer]
+        - tab "Relation to Science" [ref=e65] [cursor=pointer]
+    - generic [ref=e66]:
+      - list [ref=e67]:
+        - listitem [ref=e68]:
+          - list [ref=e69]:
+            - listitem [ref=e70]:
+              - generic [ref=e71]:
+                - generic [ref=e72] [cursor=pointer]:
+                  - generic [ref=e77]: Telikin
+                  - generic [ref=e78]:
+                    - generic [ref=e79]: www.telikin.com
+                    - button "About our ads" [ref=e80]:
+                      - img "About our ads" [ref=e82]
+                - heading "Wind Currents Technology | Affordable Computer Repair" [level=2] [ref=e83]:
+                  - link "Wind Currents Technology | Affordable Computer Repair" [ref=e84] [cursor=pointer]:
+                    - /url: https://www.bing.com/aclk?ld=e8FWWczUd74SzLZjqJzjMbxzVUCUzQ2fkyHjEhA1ysOK1MO-hXrptmeROublLn1VyDlUp2YyfjLdeooAXmR3PmxJsklq75GmEtW2PljibkGuTf2Oi54v0c2MAuzfhKLljdeUyWuEZzjwaACZqGwJY_LNIEA2Cz067dZy9XG7P8v2N6sWIqxXTFpaPLOxjomyBEJjPtRcA4Lx6Z3MlfdE1JWvr4ITs&u=aHR0cHMlM2ElMmYlMmZ3d3cudGVsaWtpbi5jb20lMmYlM2Z1dG1fc291cmNlJTNkU0VNJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV90ZXJtJTNkTk9URVJNJTI2dXRtX2NhbXBhaWduJTNkU0VNU2VuaW9yJTI2bXNjbGtpZCUzZDEyMGFmNDVhMzNlOTE2Y2FiZTZlOWU3ODc4OTcwYzJm&rlid=120af45a33e916cabe6e9e7878970c2f&ntb=1
+                - generic [ref=e85]:
+                  - generic [ref=e86]:
+                    - generic [ref=e89]: Sponsored
+                    - text: Easy to Use Touchscreen Computers Designed for Seniors
+                  - paragraph [ref=e90]: Easy to Use · Family Friendly Features · Built-In Video Chat
+                  - generic [ref=e91]: "Key Features: Photo Sharing, Email Access, Touchscreen Interface, Video Chat and more"
+                - generic [ref=e92]:
+                  - list [ref=e93]:
+                    - listitem [ref=e94]:
+                      - link "Touchscreen Computers" [ref=e96] [cursor=pointer]:
+                        - /url: https://www.bing.com/aclk?ld=e8OEaAehrjEu01vkQ5mvrp9TVUCUxPGyNBeqzmul3RM_fPxBiAcRZCcsv7SbYlc5Ef7mUPbBaeNF6iA4VB-b6LKzwyqRNCs_wpkeSIc_K5mInrzIIJ6EHyPF37huKmGEbLXPEw9_z0at1olHEZC8v8AlwYZ_fvT1BZxzSZKYbM2qlwVb-PBI3DmvTgm9WALQ_scVihbf9uE9eLLI5bCQiP-o9e-yw&u=d3d3LnRlbGlraW4uY29tJTJmcmV2aWV3cy5waHAlM2Z1dG1fc291cmNlJTNkU0VNJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV90ZXJtJTNkTk9URVJNJTI2dXRtX2NhbXBhaWduJTNkU0VNU2VuaW9yJTI2bXNjbGtpZCUzZDlmMzM5Mzc2OGY3NzE2YzAxZTExZjk1NGM0MDlmNDUx&rlid=9f3393768f7716c01e11f954c409f451&ntb=1
+                    - listitem [ref=e97]:
+                      - link "About Connections at..." [ref=e99] [cursor=pointer]:
+                        - /url: https://www.bing.com/aclk?ld=e8-gGDPl8mUko7EO-mD3NImDVUCUy-OuW7NDSUim0Ykh2LoWNa1dh8Uxu0ePtwP6V7S1YTMb9iIpUPs9QUWK4K9a8KBKK1MQ2jlFBUthWSC8HJWG27rl-oYUCb-xBasGBWVlMk9hkEAck2VYkgc1qi2WNVoYZ7cbc2n2UHm4M0czX3P9MpG2M0R0BE7dV37I72j167eLzweegChMGi4Btb4DFVpuo&u=d3d3LnRlbGlraW4uY29tJTJmYmxvZyUzZnV0bV9zb3VyY2UlM2RTRU0lMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX3Rlcm0lM2ROT1RFUk0lMjZ1dG1fY2FtcGFpZ24lM2RTRU1TZW5pb3IlMjZtc2Nsa2lkJTNkNDY5NWYxMjg5OWM4MTNkYWUyNGE5YjBhZDJiNjkzNDA&rlid=4695f12899c813dae24a9b0ad2b69340&ntb=1
+                    - listitem [ref=e100]:
+                      - link "Video chat" [ref=e102] [cursor=pointer]:
+                        - /url: https://www.bing.com/aclk?ld=e8qjHP4WRzSLg9ZGi5H_fn3TVUCUw7QEQYhH29U-wUuvRtN1GqTZa1kXnCnNsfQ1nEL1t4eA1sNxsa5BRDFzvYfpJOIEOZJHjaIaK0rBFWPdedTkQxA2VOg5fw6XGgIWDJsL0yL6st6sYHfE-_Lnm2TmfNkj7_Dh1OTyBAW4PJZchHMAdrKJoDcOOVF9nApmoYOrKYBvGTDDd5LKSGOaDbacYeXV8&u=aHR0cHMlM2ElMmYlMmYlMmZ0ZWxpa2luLmNvbSUyZiUyM2FwcF92aWRlb2NoYXQlM2Z1dG1fc291cmNlJTNkU0VNJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV90ZXJtJTNkTk9URVJNJTI2dXRtX2NhbXBhaWduJTNkU0VNU2VuaW9yJTI2bXNjbGtpZCUzZDdiY2I3M2I4MTNjYzEwYTFkODkxMTk5YTU4YjIzNmQ4&rlid=7bcb73b813cc10a1d891199a58b236d8&ntb=1
+                  - list [ref=e103]:
+                    - listitem [ref=e104]:
+                      - link "Home Screen" [ref=e106] [cursor=pointer]:
+                        - /url: https://www.bing.com/aclk?ld=e8mi5gkSx6cG8ugONn_c84EDVUCUy-RZ6w3XJXEjaFt-y8BaKDDr37EUcVVmfNlZRYF7wRXViM6gxzMA6-jeHZHKuEMyHoA-ITMSafKn1SIjwwCP-Yde08DDodSpWha51JbCctSQFqiLr2XYcsgiKP6fESHiCsBsgogv_Yu-WB0XE1Knh95Io5km8Ou8jU0tXI-ky_9QQD15GqumVUWaXTIDXn7-4&u=aHR0cHMlM2ElMmYlMmYlMmZ0ZWxpa2luLmNvbSUyZiUyM2FwcF9ob21lJTNmdXRtX3NvdXJjZSUzZFNFTSUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fdGVybSUzZE5PVEVSTSUyNnV0bV9jYW1wYWlnbiUzZFNFTVNlbmlvciUyNm1zY2xraWQlM2Q1ZmZiMzVlZGYzZTAxMmRlZmRmOTVmY2ZiODllNGY0Yg&rlid=5ffb35edf3e012defdf95fcfb89e4f4b&ntb=1
+                    - listitem [ref=e107]:
+                      - link "Gifts for Seniors &..." [ref=e109] [cursor=pointer]:
+                        - /url: https://www.bing.com/aclk?ld=e8Xl0hS_ZUqIqVVwOWlTw0tDVUCUzym1Qp37KG1M_n083A6hpQPUtGEM3cUOp7gyQaBZemhgUxSCKOD226tkZG2ilxpXdyC-lF1N0qHJjD-6u3VNqIyGZj5uLH4nRZe4eziaqmTUn63TZktnY0wGUrFH58AAB1UndC6VSiPMUEnIYT8jZfHoPq3LUpRXJ3TOWJYjwDNcoq_vfJOIx8p1HuEaNdaBg&u=d3d3LnRlbGlraW4uY29tJTJmZ3JlYXRnaWZ0JTNmdXRtX3NvdXJjZSUzZFNFTSUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fdGVybSUzZE5PVEVSTSUyNnV0bV9jYW1wYWlnbiUzZFNFTVNlbmlvciUyNm1zY2xraWQlM2Q1YmY1NGY0MGRhOWExNWQ3ZjFmMzI1NjI5MWU0YmYzOQ&rlid=5bf54f40da9a15d7f1f3256291e4bf39&ntb=1
+                    - listitem [ref=e110]:
+                      - link "Telikin Makes a Great Gift" [ref=e112] [cursor=pointer]:
+                        - /url: https://www.bing.com/aclk?ld=e8VnqxDLMWUF6MgZz4y69J6DVUCUzTGLHUZIIXILsV1px-FP6nVeuhqzEOvBEGoki7p5LgiSegxIqVB9Z_Z9Q9EvH11ZTcTJxxi9A7i20mq7-YKZJhBIl3FLCe1kagTzNUDQpBbkSM6zLGkspTpFdvcc0SZls2WOJZSDMLjPOnj-jBpCVKe2ha1g_DwT34G7Q2VmxBGIGBMERQmVsKu8EkpwuXE7g&u=d3d3LnRlbGlraW4uY29tJTJmZ3JlYXRnaWZ0JTNmdXRtX3NvdXJjZSUzZFNFTSUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fdGVybSUzZE5PVEVSTSUyNnV0bV9jYW1wYWlnbiUzZFNFTVNlbmlvciUyNm1zY2xraWQlM2RlMDMwNTdjZWMwODYxZDc5NWM0OTNkZWM4YmY4NGU5Nw&rlid=e03057cec0861d795c493dec8bf84e97&ntb=1
+        - listitem [ref=e113]:
+          - generic [ref=e115]:
+            - generic [ref=e116]:
+              - heading "Copilot Search Branding" [level=2] [ref=e117]:
+                - link "Copilot Search Branding" [ref=e118] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=8d07c13b41c059dec73fc3ac1f45f91162343b0f94910bc8c84b0d0cb9a68b4fJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L2NvcGlsb3RzZWFyY2g_cT1UZWNobm9sb2d5JmZvcm09Q1NCUkFORA&ntb=1
+              - button "This summary was generated by AI from multiple online sources. Find the source links used for this summary under \"Based on sources\". Learn more about Bing search results here." [ref=e124]:
+                - button "Information" [ref=e125]:
+                  - img [ref=e126]
+            - region "Copilot Search" [ref=e130]:
+              - generic [ref=e131]:
+                - generic [ref=e133]:
+                  - generic [ref=e137]:
+                    - heading "Stay updated with the latest advancements in technology, including breakthroughs in AI, robotics, and sustainable innovations." [level=2] [ref=e138]:
+                      - strong [ref=e139]: Stay updated with the latest advancements in technology, including breakthroughs in AI, robotics, and sustainable innovations.
+                    - heading "Key Highlights in Technology" [level=3] [ref=e140]
+                    - list [ref=e141]:
+                      - listitem [ref=e142]:
+                        - paragraph [ref=e143]:
+                          - strong [ref=e144]: Artificial Intelligence
+                          - text: ": AI systems are becoming increasingly capable, with applications ranging from drafting legal documents to debugging software. The rise of AI is also raising questions about its reliability and the potential for over-accommodating chatbots to misinterpret user intent"
+                          - link "sciencenewstoday.org" [ref=e145] [cursor=pointer]:
+                            - /url: https://www.bing.com/ck/a?!&&p=ccd9042073784787dd56acff09b9557bf591a3ce735973a7a47cdf1157633c3dJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly93d3cuc2NpZW5jZW5ld3N0b2RheS5vcmcvdGVjaG5vbG9neQ&ntb=1
+                            - img [ref=e147]
+                            - generic [ref=e148]: sciencenewstoday.org
+                          - text: .
+                      - listitem [ref=e149]:
+                        - paragraph [ref=e150]:
+                          - strong [ref=e151]: Sustainable Innovations
+                          - text: ": Researchers are exploring environmentally friendly technologies, such as smart wheelchairs and AI-powered devices designed to assist in various tasks. Innovations inspired by nature, like the study of animal adaptations, are leading to new designs that improve human life"
+                          - link "Smithsonian Magazine" [ref=e152] [cursor=pointer]:
+                            - /url: https://www.bing.com/ck/a?!&&p=487279b099683af5138534f9172bb7f6756a934529eed1847361a0c52c5c5638JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly93d3cuc21pdGhzb25pYW5tYWcuY29tL2NhdGVnb3J5L3RlY2hub2xvZ3kv&ntb=1
+                            - img [ref=e154]
+                            - generic [ref=e155]: Smithsonian Magazine
+                          - text: .
+                      - listitem [ref=e156]:
+                        - paragraph [ref=e157]:
+                          - strong [ref=e158]: Robotics
+                          - text: ": The development of robots that can perform complex tasks, such as planting trees in difficult terrains, showcases the potential of robotics in addressing environmental challenges. Additionally, robots are being designed to gather data on marine mammals with minimal disturbance"
+                          - link "Smithsonian Magazine" [ref=e159] [cursor=pointer]:
+                            - /url: https://www.bing.com/ck/a?!&&p=487279b099683af5138534f9172bb7f6756a934529eed1847361a0c52c5c5638JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly93d3cuc21pdGhzb25pYW5tYWcuY29tL2NhdGVnb3J5L3RlY2hub2xvZ3kv&ntb=1
+                            - img [ref=e161]
+                            - generic [ref=e162]: Smithsonian Magazine
+                          - text: .
+                      - listitem [ref=e163]:
+                        - paragraph [ref=e164]:
+                          - strong [ref=e165]: Data Centers and Environmental Impact
+                          - text: ": As the demand for data centers grows, so does the concern over their economic and environmental impact. Efforts are being made to mitigate these effects while meeting the increasing need for data processing"
+                          - link "Smithsonian Magazine" [ref=e166] [cursor=pointer]:
+                            - /url: https://www.bing.com/ck/a?!&&p=487279b099683af5138534f9172bb7f6756a934529eed1847361a0c52c5c5638JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly93d3cuc21pdGhzb25pYW5tYWcuY29tL2NhdGVnb3J5L3RlY2hub2xvZ3kv&ntb=1
+                            - img [ref=e168]
+                            - generic [ref=e169]: Smithsonian Magazine
+                          - text: .
+                      - listitem [ref=e170]:
+                        - paragraph [ref=e171]:
+                          - strong [ref=e172]: Technological Events
+                          - text: ": Trade shows and exhibitions continue to showcase cutting-edge technologies, including health-monitoring mirrors and innovative toys aimed at developing STEM skills among students"
+                          - link "Smithsonian Magazine" [ref=e173] [cursor=pointer]:
+                            - /url: https://www.bing.com/ck/a?!&&p=487279b099683af5138534f9172bb7f6756a934529eed1847361a0c52c5c5638JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly93d3cuc21pdGhzb25pYW5tYWcuY29tL2NhdGVnb3J5L3RlY2hub2xvZ3kv&ntb=1
+                            - img [ref=e175]
+                            - generic [ref=e176]: Smithsonian Magazine
+                          - text: .
+                    - paragraph [ref=e177]: These highlights reflect the dynamic nature of technology and its ongoing evolution, impacting various aspects of life and industry. For more detailed insights, you can explore dedicated technology news platforms.
+                  - button "Read all" [disabled] [ref=e183]:
+                    - generic [ref=e184]: Read all
+                    - generic:
+                      - img
+                - list "References" [ref=e188]:
+                  - listitem [ref=e189]:
+                    - link "sciencenewstoday.org Latest Technology News & Innovations" [ref=e190] [cursor=pointer]:
+                      - /url: https://www.bing.com/ck/a?!&&p=ccd9042073784787dd56acff09b9557bf591a3ce735973a7a47cdf1157633c3dJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly93d3cuc2NpZW5jZW5ld3N0b2RheS5vcmcvdGVjaG5vbG9neQ&ntb=1
+                      - generic [ref=e191]:
+                        - generic [ref=e194]: sciencenewstoday.org
+                        - generic [ref=e196]: Latest Technology News & Innovations
+                  - listitem [ref=e197]:
+                    - link "Smithsonian Magazine Technology News & Insights | Smithsonian Magazine" [ref=e198] [cursor=pointer]:
+                      - /url: https://www.bing.com/ck/a?!&&p=487279b099683af5138534f9172bb7f6756a934529eed1847361a0c52c5c5638JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly93d3cuc21pdGhzb25pYW5tYWcuY29tL2NhdGVnb3J5L3RlY2hub2xvZ3kv&ntb=1
+                      - generic [ref=e199]:
+                        - generic [ref=e202]: Smithsonian Magazine
+                        - generic [ref=e204]: Technology News & Insights | Smithsonian Magazine
+            - generic [ref=e210]:
+              - button [ref=e211]
+              - button [ref=e214]
+              - list "Please use arrow keys to navigate" [ref=e219]:
+                - listitem [ref=e220]:
+                  - link "History of Technology" [ref=e221] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=c5614c01f52284c6aa108db9848a4e74c72a69b32e95a1681ee49125db06337fJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L2NvcGlsb3RzZWFyY2g_cT1IaXN0b3J5K29mK1RlY2hub2xvZ3kmZm9ybT1DU1NBTlM&ntb=1
+                    - generic [ref=e223]: History of Technology
+                - listitem [ref=e224]:
+                  - link "Modern Technology Trends" [ref=e225] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=d923d503e0407311a3e9fb99e7486579826a15ee7d4819448aa3bc28b92b7980JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L2NvcGlsb3RzZWFyY2g_cT1Nb2Rlcm4rVGVjaG5vbG9neStUcmVuZHMmZm9ybT1DU1NBTlM&ntb=1
+                    - generic [ref=e227]: Modern Technology Trends
+                - listitem [ref=e228]:
+                  - link "Examples of Emerging Technologies" [ref=e229] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=3b2f4501d30fc99a1de31e5ebff67eb7c5bace3225e89b9d030e72d911f2b370JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L2NvcGlsb3RzZWFyY2g_cT1FeGFtcGxlcytvZitFbWVyZ2luZytUZWNobm9sb2dpZXMmZm9ybT1DU1NBTlM&ntb=1
+                    - generic [ref=e231]: Examples of Emerging Technologies
+      - list [ref=e232]:
+        - listitem [ref=e233]:
+          - link "Wikipedia" [ref=e235] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=ce69b26aa90f3bbff2e24f4323d6abe1147a3cd980e64887c4013e2109fd3c40JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvVGVjaG5vbG9neQ&ntb=1
+            - generic [ref=e240]:
+              - generic [ref=e241]: Wikipedia
+              - generic [ref=e244]: https://en.wikipedia.org › wiki › Technology
+          - heading "Technology - Wikipedia" [level=2] [ref=e245]:
+            - link "Technology - Wikipedia" [ref=e246] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=ce69b26aa90f3bbff2e24f4323d6abe1147a3cd980e64887c4013e2109fd3c40JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvVGVjaG5vbG9neQ&ntb=1
+          - generic [ref=e247]:
+            - link "Technology is the application of conceptual knowledge to achieve practical goals, especially in a reproducible way. The word technology can also mean the products resulting from such efforts, including both tangible tools such as utensils or machines, and intangible ones such as software. …" [ref=e248] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=498af02aeb644544b78eced2f1ff603628f4d0b8c09a5e32af08aa5acda4cbeeJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvVGVjaG5vbG9neSNIZXJvU2VjdGlvbg&ntb=1
+            - generic [ref=e249]:
+              - generic [ref=e251]:
+                - link "Etymology" [ref=e252] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=6d9f894ca4560120663b1d17688ec45391f29fdc9f0a2ecc4096336f162ff5a8JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvVGVjaG5vbG9neSNFdHltb2xvZ3k&ntb=1
+                - generic [ref=e254]:
+                  - generic [ref=e255]:
+                    - heading "Etymology" [level=2] [ref=e256]
+                    - img [ref=e259]
+                  - paragraph [ref=e261]: "Technology is a term dating back to the early 17th century that meant 'systematic treatment' (from Greek Τεχνολογία, from the Greek: τέχνη, romanized: tékhnē, lit. 'craft, art' and -λογία (-logíā), 'study, knowledge'). It is predated in use by the …"
+              - link "View details" [ref=e266] [cursor=pointer]:
+                - /url: /images/search?view=detailV2&q=imgurl:https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Dampfturbine_Montage01.jpg/500px-Dampfturbine_Montage01.jpg&iss=sbi&mode=overlay&idpbck=1&idpp=WikiGoBig&FORM=IDPWGB&thid=ODL.2d14a5bafbd438b5947240d2d7187a98&mediaurl=https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Dampfturbine_Montage01.jpg/500px-Dampfturbine_Montage01.jpg
+              - link "View details" [ref=e269] [cursor=pointer]:
+                - /url: /images/search?view=detailV2&q=imgurl:https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Faustkeil_Nachbau%2C_2020_PD_a-7.jpg/375px-Faustkeil_Nachbau%2C_2020_PD_a-7.jpg&iss=sbi&mode=overlay&idpbck=1&idpp=WikiGoBig&FORM=IDPWGB&thid=ODL.3226b4d6fa86c1901b976cc8d83b3903&mediaurl=https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Faustkeil_Nachbau%2C_2020_PD_a-7.jpg/375px-Faustkeil_Nachbau%2C_2020_PD_a-7.jpg
+              - generic [ref=e271]:
+                - link "History" [ref=e272] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=574b8f6479f3b6a4bbf6417b2f749aee109142e71143b82ed46ff33c4273f377JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvVGVjaG5vbG9neSNIaXN0b3J5&ntb=1
+                - generic [ref=e274]:
+                  - generic [ref=e275]:
+                    - heading "History" [level=2] [ref=e276]
+                    - img [ref=e279]
+                  - paragraph [ref=e281]: PrehistoricTools were initially developed by hominids through observation and trial and error. Around 2 Mya (million years ago), they learned to make the first stone tools by hammering flakes off a pebble, forming …
+          - generic "Wikipedia text under CC-BY-SA license" [ref=e284]:
+            - text: Wikipedia text under
+            - link "CC-BY-SA license" [ref=e285] [cursor=pointer]:
+              - /url: https://www.bing.com/ck/a?!&&p=694770dc5324b57cc9f3a639e84f11917bea4cece78b460674f4a0d2eb548017JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbGljZW5zZXMvYnktc2EvMy4wLw&ntb=1
+        - listitem [ref=e286]:
+          - generic [ref=e287]:
+            - link "Explore this image" [ref=e290] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=ow+p1dWI&id=3D39A4AC76194F1CE4EADA23ED68372C2BF75CB3&thid=OIP.ow-p1dWIyoyflr87dK0ASAHaFK&mediaurl=https://cdn.britannica.com/61/257461-050-844FC5C5/Spot-four-legged-robot-Boston-Dynamics.jpg&q=Technology&ck=1568D69A2F85E162AAB1AB629EC29754&idpp=rc&expw=1600&exph=1114&form=rc2idp
+            - generic [ref=e292]:
+              - link "Britannica" [ref=e294] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=c10d65b65a774f0203a79669901446cf17ff83e5aa11cee5e8bb7816e6af4060JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly93d3cuYnJpdGFubmljYS5jb20vdGVjaG5vbG9neS90ZWNobm9sb2d5&ntb=1
+                - generic [ref=e299]:
+                  - generic [ref=e300]: Britannica
+                  - generic [ref=e303]: https://www.britannica.com › technology › technology
+              - heading "Technology | Definition, Examples, Types, & Facts" [level=2] [ref=e304]:
+                - link "Technology | Definition, Examples, Types, & Facts" [ref=e305] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=c10d65b65a774f0203a79669901446cf17ff83e5aa11cee5e8bb7816e6af4060JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly93d3cuYnJpdGFubmljYS5jb20vdGVjaG5vbG9neS90ZWNobm9sb2d5&ntb=1
+              - paragraph [ref=e306]: Apr 29, 2026 · Technology is the application of scientific knowledge to the …
+              - generic [ref=e308]:
+                - list [ref=e309]:
+                  - listitem [ref=e310]:
+                    - 'link "Author: The Editors of Encyclopaedia Britannica" [ref=e312] [cursor=pointer]':
+                      - /url: https://www.bing.com/ck/a?!&&p=791ce2aaaf2b9aba26efefb940cc2a46b6906be756150ecd658d398548934383JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3NlYXJjaD9xPVRoZStFZGl0b3JzK29mK0VuY3ljbG9wYWVkaWErQnJpdGFubmljYSZGT1JNPUZBQ1RSRQ&ntb=1
+                      - strong [ref=e313]: "Author:"
+                      - text: The Editors of Encyclopaedia Britannica
+                - list
+        - listitem [ref=e315]:
+          - generic [ref=e317]:
+            - generic [ref=e319]:
+              - heading "Videos of Technology" [level=2] [ref=e321]:
+                - link "Videos of Technology" [ref=e322] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=c60b2fc6515642f005633743e2c57066f77567a2d871cf16395e18528a016f4fJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1UZWNobm9sb2d5JnFwdnQ9VGVjaG5vbG9neSZGT1JNPVZEUkU&ntb=1
+              - list "Please use arrow keys to navigate" [ref=e329]:
+                - listitem [ref=e330]:
+                  - link "What Is Technology" [ref=e331] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=fa45a162105c52bb4087b29bed85c2ada1b2cc91cd927f93a234b09472f31492JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1XaGF0K0lzK1RlY2hub2xvZ3kmJkZPUk09VkFSU1FQ&ntb=1
+                    - generic "What Is Technology" [ref=e334]
+                - listitem [ref=e335]:
+                  - link "Technology Review" [ref=e336] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=3cc826a080e3df810b645a64589cf32719a4bff5169373fe23d6b685bad14d54JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1UZWNobm9sb2d5K1JldmlldyYmRk9STT1WQVJTUVA&ntb=1
+                    - generic "Technology Review" [ref=e339]
+                - listitem [ref=e340]:
+                  - link "Technology History" [ref=e341] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=6bd1ca8eda64355ac98984e39b8ca85db1a5b02c729ce0a024afd2c82240f464JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1UZWNobm9sb2d5K0hpc3RvcnkmJkZPUk09VkFSU1FQ&ntb=1
+                    - generic "Technology History" [ref=e344]
+                - listitem [ref=e345]:
+                  - link "Technology Documentary" [ref=e346] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=24ce75ba70bec71fcf26a83535655e4ff77928fee2feb6ec2cc4fa0b15588a6bJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1UZWNobm9sb2d5K0RvY3VtZW50YXJ5JiZGT1JNPVZBUlNRUA&ntb=1
+                    - generic "Technology Documentary" [ref=e349]
+                - listitem [ref=e350]:
+                  - link "Technologia" [ref=e351] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=d1796df066d2e38f1247d189d949d00e4387894870deb9b8ada06fc87cbc81f1JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1UZWNobm9sb2dpYSYmRk9STT1WQVJTUVA&ntb=1
+                    - generic "Technologia" [ref=e354]
+                - listitem [ref=e355]:
+                  - link "New Technology" [ref=e356] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=bacb5a8937d055179608c44477b579ee2e2e4eaa5eb872bb612c41f43371e866JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1OZXcrVGVjaG5vbG9neSYmRk9STT1WQVJTUVA&ntb=1
+                    - generic "New Technology" [ref=e359]
+                - listitem [ref=e360]:
+                  - link "Technology Innovation" [ref=e361] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=0e9bcaf69125c493c9a5f0b5ed54cb2c218c3d1923c180d18f6b29bce8f6e565JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1UZWNobm9sb2d5K0lubm92YXRpb24mJkZPUk09VkFSU1FQ&ntb=1
+                    - generic "Technology Innovation" [ref=e364]
+                - listitem [ref=e365]:
+                  - link "Raspberry Pi Projects" [ref=e366] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=de436a8574e8d5fb6bfcb84b0737ef3e66e71f85368732640424bf2556920f1fJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1SYXNwYmVycnkrUGkrUHJvamVjdHMmJkZPUk09VkFSU1FQ&ntb=1
+                    - generic "Raspberry Pi Projects" [ref=e369]
+                - listitem [ref=e370]:
+                  - link "Video for Technology" [ref=e371] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=5c8a129696dc2c8efaa15f3b775059ed4aa43fef4f22c51d0eacef0760dd6820JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1WaWRlbytmb3IrVGVjaG5vbG9neSYmRk9STT1WQVJTUVA&ntb=1
+                    - generic "Video for Technology" [ref=e374]
+                - listitem [ref=e375]:
+                  - link "Technologia 1Hr" [ref=e376] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=d49a4265093b1ec2ba40dfd2332b8f41045a52f2a6313567b0d7bbe536f62943JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1UZWNobm9sb2dpYSsxSHImJkZPUk09VkFSU1FQ&ntb=1
+                    - generic "Technologia 1Hr" [ref=e379]
+                - listitem [ref=e380]:
+                  - link "Technology Gadgets" [ref=e381] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=a11cb47b33d2dfa28fca3227325e165ac50cfd3a9de7eda0909470d8c915a4fbJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1UZWNobm9sb2d5K0dhZGdldHMmJkZPUk09VkFSU1FQ&ntb=1
+                    - generic "Technology Gadgets" [ref=e384]
+                - listitem [ref=e385]:
+                  - link "Technologia Door" [ref=e386] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=bb2df01a82de1f19d99f8c1718c584f90a48d626ae61e54adac37e77e9c17915JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1UZWNobm9sb2dpYStEb29yJiZGT1JNPVZBUlNRUA&ntb=1
+                    - generic "Technologia Door" [ref=e389]
+                - listitem [ref=e390]:
+                  - link "AX Technology" [ref=e391] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=8d6adc1310228f445dfb9d4275753ad251798f8b27b0cfd79ce76f7b02e7a294JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1BWCtUZWNobm9sb2d5JiZGT1JNPVZBUlNRUA&ntb=1
+                    - generic "AX Technology" [ref=e394]
+                - listitem [ref=e395]:
+                  - link "Technology Education" [ref=e396] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=dadb8aa30b973d3121caa9a9010986d0722d0a88bb3a76f63b02b33a67ddb1a6JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1UZWNobm9sb2d5K0VkdWNhdGlvbiYmRk9STT1WQVJTUVA&ntb=1
+                    - generic "Technology Education" [ref=e399]
+                - listitem [ref=e400]:
+                  - link "Define Technology" [ref=e401] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=9632ec02cf8a00ae8e49894f1f0d15980f0e207f05e139bb178abf8eb18b0643JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1EZWZpbmUrVGVjaG5vbG9neSYmRk9STT1WQVJTUVA&ntb=1
+                    - generic "Define Technology" [ref=e404]
+                - listitem [ref=e405]:
+                  - link "Advanced Technology" [ref=e406] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=756e37e09084c18899ff11be34c1e57ab24756ccc91dcdcc05db73375cd30387JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1BZHZhbmNlZCtUZWNobm9sb2d5JiZGT1JNPVZBUlNRUA&ntb=1
+                    - generic "Advanced Technology" [ref=e409]
+                - listitem [ref=e410]:
+                  - link "Biotechnology" [ref=e411] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=6ec08db049ef9b10ef2e6b211c1ef80765335452b6e8e6eea29270302a97ba05JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1CaW90ZWNobm9sb2d5JiZGT1JNPVZBUlNRUA&ntb=1
+                    - generic "Biotechnology" [ref=e414]
+                - listitem [ref=e415]:
+                  - link "Technology TED Talk" [ref=e416] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=fbe2dea56737d6615f3c018c77929538cecd79b084b6655933f16edf62d0d771JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1UZWNobm9sb2d5K1RFRCtUYWxrJiZGT1JNPVZBUlNRUA&ntb=1
+                    - generic "Technology TED Talk" [ref=e419]
+                - listitem [ref=e420]:
+                  - link "Technology 2023" [ref=e421] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=80467227d9df6cd0c477c30b128973fc9551239a78221f029c331b268e307ed5JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1UZWNobm9sb2d5KzIwMjMmJkZPUk09VkFSU1FQ&ntb=1
+                    - generic "Technology 2023" [ref=e424]
+                - listitem [ref=e425]:
+                  - link "Science Technology" [ref=e426] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=12085b6fee9aea2243751d593e7dd4ccc49fd1b4d948b3132fed7be468fcd8c9JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1TY2llbmNlK1RlY2hub2xvZ3kmJkZPUk09VkFSU1FQ&ntb=1
+                    - generic "Science Technology" [ref=e429]
+                - listitem [ref=e430]:
+                  - link "IT Technology Videos" [ref=e431] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=472efded28d89bdce98784db4b5ed58ecc65e61a222af208ea5517fb6019d324JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1JVCtUZWNobm9sb2d5K1ZpZGVvcyYmRk9STT1WQVJTUVA&ntb=1
+                    - generic "IT Technology Videos" [ref=e434]
+                - listitem [ref=e435]:
+                  - link "Robotics" [ref=e436] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=e0e0f31d8002d19cc070033b7a2ab9eaed96c59b1dc538d6791e48ea1e60e851JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1Sb2JvdGljcyYmRk9STT1WQVJTUVA&ntb=1
+                    - generic "Robotics" [ref=e439]
+                - listitem [ref=e440]:
+                  - link "Techology Vidies" [ref=e441] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=644bdfbe51578e8a20d86541e88ca04c32ef47ec9dacb31b0cc06757e95eb5aaJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1UZWNob2xvZ3krVmlkaWVzJiZGT1JNPVZBUlNRUA&ntb=1
+                    - generic "Techology Vidies" [ref=e444]
+                - listitem [ref=e445]:
+                  - link "Nanotechnology" [ref=e446] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=c6119bb22609868e6bba9443444e14eb5865e1734d81099a82865408b2539a19JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1OYW5vdGVjaG5vbG9neSYmRk9STT1WQVJTUVA&ntb=1
+                    - generic "Nanotechnology" [ref=e449]
+                - listitem [ref=e450]:
+                  - link "Artificial Intelligence" [ref=e451] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=1f0ed801b49f3366683aed37e2c36671c70fcf312aa79055d4727f3775f1cbe0JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1BcnRpZmljaWFsK0ludGVsbGlnZW5jZSYmRk9STT1WQVJTUVA&ntb=1
+                    - generic "Artificial Intelligence" [ref=e454]
+                - listitem [ref=e455]:
+                  - link "Engineering" [ref=e456] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=2ecd42bd7884b71291ad3270284e2d76a94454d3149284fc2f29bd26bcd16ad4JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1FbmdpbmVlcmluZyYmRk9STT1WQVJTUVA&ntb=1
+                    - generic "Engineering" [ref=e459]
+                - listitem [ref=e460]:
+                  - link "5G Technology" [ref=e461] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=092a485a70feaefdc61dc8f66f2bf6ee3528023cc884b5d9ad1f7ce0344d8045JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT01RytUZWNobm9sb2d5JiZGT1JNPVZBUlNRUA&ntb=1
+                    - generic "5G Technology" [ref=e464]
+                - listitem [ref=e465]:
+                  - link "Minecraft Technology Mod" [ref=e466] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=9a703236b2ffd6f3397692a00e198ea32770bce6c5d8140a3ec40583349a17f3JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1NaW5lY3JhZnQrVGVjaG5vbG9neStNb2QmJkZPUk09VkFSU1FQ&ntb=1
+                    - generic "Minecraft Technology Mod" [ref=e469]
+                - listitem [ref=e470]:
+                  - link "In the World" [ref=e471] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=52ff911cd0567f5d42a9f2692ea6c34208740b016384cc2ec3b93accf3fcfcf3JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1Jbit0aGUrV29ybGQmJkZPUk09VkFSU1FQ&ntb=1
+                    - generic "In the World" [ref=e474]
+                - listitem [ref=e475]:
+                  - link "Science" [ref=e476] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=f5727a0988a22d5f0de29227edbe67c3706d51cf649ca6db1bd3fc18e21d118fJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1TY2llbmNlJiZGT1JNPVZBUlNRUA&ntb=1
+                    - generic "Science" [ref=e479]
+                - listitem [ref=e480]:
+                  - link "2050 Technology" [ref=e481] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=639e5e26223327ba93bfe3a79ae8ccf4eaaebca9c2065cdebfa7282c3642bff7JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT0yMDUwK1RlY2hub2xvZ3kmJkZPUk09VkFSU1FQ&ntb=1
+                    - generic "2050 Technology" [ref=e484]
+                - listitem [ref=e485]:
+                  - link "Agriculture" [ref=e486] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=a185d24435faaf70c4c04a551623e42ff8ac5a805526ce5e6f78617a1e324d09JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1BZ3JpY3VsdHVyZSYmRk9STT1WQVJTUVA&ntb=1
+                    - generic "Agriculture" [ref=e489]
+                - listitem [ref=e490]:
+                  - link "Space Exploration" [ref=e491] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=0e07216095a59fa71fa599d3e57aec158ec8486e25678231ff054a9c0ad54909JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1TcGFjZStFeHBsb3JhdGlvbiYmRk9STT1WQVJTUVA&ntb=1
+                    - generic "Space Exploration" [ref=e494]
+                - listitem [ref=e495]:
+                  - link "Short Video" [ref=e496] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=93bf6f3079a8beada29546dcbf623f4e7707d49c61355692231e112fa973a57dJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1TaG9ydCtWaWRlbyYmRk9STT1WQVJTUVA&ntb=1
+                    - generic "Short Video" [ref=e499]
+                - listitem [ref=e500]:
+                  - link "AI Technology" [ref=e501] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=1a55534d7d103422d631686565a6886bdfd94736fae80001bcfc8176516fb9b7JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1BSStUZWNobm9sb2d5JiZGT1JNPVZBUlNRUA&ntb=1
+                    - generic "AI Technology" [ref=e504]
+                - listitem [ref=e505]:
+                  - link "Amazing Modern" [ref=e506] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=8f50ac2c4c9878f163b40a9d1b46eec4671f4db1981802d3ea554b60c6561cc8JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1BbWF6aW5nK01vZGVybiYmRk9STT1WQVJTUVA&ntb=1
+                    - generic "Amazing Modern" [ref=e509]
+                - listitem [ref=e510]:
+                  - link "2022 Technology" [ref=e511] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=fb09200f0265e51c2437ae92a053e814af352aed05aae01bba53b802249679bfJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT0yMDIyK1RlY2hub2xvZ3kmJkZPUk09VkFSU1FQ&ntb=1
+                    - generic "2022 Technology" [ref=e514]
+                - listitem [ref=e515]:
+                  - link "Technology Meaning" [ref=e516] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=88fe1450112452ed473bb671b71e29d53adf24dc3fc8a447773dc244f68d1758JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1UZWNobm9sb2d5K01lYW5pbmcmJkZPUk09VkFSU1FQ&ntb=1
+                    - generic "Technology Meaning" [ref=e519]
+                - listitem [ref=e520]:
+                  - link "Agriculture Modern" [ref=e521] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=94da8261474626c86ff69436ec89f17a3ae364986f33598c28f046aae2b7571cJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1BZ3JpY3VsdHVyZStNb2Rlcm4mJkZPUk09VkFSU1FQ&ntb=1
+                    - generic "Agriculture Modern" [ref=e524]
+                - listitem [ref=e525]:
+                  - link "IT Consultant" [ref=e526] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=917ec826216dd076b25a1078601df7ced5e6f47de3642450cb8157ca84157cacJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1JVCtDb25zdWx0YW50JiZGT1JNPVZBUlNRUA&ntb=1
+                    - generic "IT Consultant" [ref=e529]
+                - listitem [ref=e530]:
+                  - link "Trending" [ref=e531] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=b9c73653d6ecee2eb9a2339cb9f010c9a4f98820c6ad47fcf4a16414bf6aee99JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1UcmVuZGluZyYmRk9STT1WQVJTUVA&ntb=1
+                    - generic "Trending" [ref=e534]
+                - listitem [ref=e535]:
+                  - link "Amazing Future Ideas" [ref=e536] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=5bc3775fedb76e9c988ce9f7ecdaee64d00d96de11d37c3a2826dfb79a0a75c1JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1BbWF6aW5nK0Z1dHVyZStJZGVhcyYmRk9STT1WQVJTUVA&ntb=1
+                    - generic "Amazing Future Ideas" [ref=e539]
+                - listitem [ref=e540]:
+                  - link "2021 Technology News" [ref=e541] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=26f26484376dcc9c287234e8ff7231e841e51294099c89b64ebb8b0241954410JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT0yMDIxK1RlY2hub2xvZ3krTmV3cyYmRk9STT1WQVJTUVA&ntb=1
+                    - generic "2021 Technology News" [ref=e544]
+                - listitem [ref=e545]:
+                  - link "Amazing Future" [ref=e546] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=2253bb75c4b5a1220bea1b2f0014d2ddf02e56b76be509118329474dc0be38bbJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1BbWF6aW5nK0Z1dHVyZSYmRk9STT1WQVJTUVA&ntb=1
+                    - generic "Amazing Future" [ref=e549]
+                - listitem [ref=e550]:
+                  - link "Technologia Informatyczna Mapa" [ref=e551] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=fc5d2b38b5033fc97293eeb367809e8ef85f6269459acad3b8c72b33b161d55aJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1UZWNobm9sb2dpYStJbmZvcm1hdHljem5hK01hcGEmJkZPUk09VkFSU1FQ&ntb=1
+                    - generic "Technologia Informatyczna Mapa" [ref=e554]
+                - listitem [ref=e555]:
+                  - link "Science and Technology for Children" [ref=e556] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=f207d53c75bdc98e0afea9b92ae3bd43731bde525523d863cc1b37604b3680f2JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1TY2llbmNlK2FuZCtUZWNobm9sb2d5K2ZvcitDaGlsZHJlbiYmRk9STT1WQVJTUVA&ntb=1
+                    - generic "Science and Technology for Children" [ref=e559]
+                - listitem [ref=e560]:
+                  - link "Future Technology" [ref=e561] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=10bb41424387744835725372ba9d363664a8f7f549002288696ddb1ab7a50262JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1GdXR1cmUrVGVjaG5vbG9neSYmRk9STT1WQVJTUVA&ntb=1
+                    - generic "Future Technology" [ref=e564]
+                - listitem [ref=e565]:
+                  - link "Cloud Computing" [ref=e566] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=ae5b0fd2f2e43a3396c08d8b6b11afb77fc2b16291399ec079ae83b795f9100bJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1DbG91ZCtDb21wdXRpbmcmJkZPUk09VkFSU1FQ&ntb=1
+                    - generic "Cloud Computing" [ref=e569]
+                - listitem [ref=e570]:
+                  - link "Mechanical Engineering" [ref=e571] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=d74bb3740496bec0e6e6c1dd45af1ef30b276967e49e8ac791170bad785874cfJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1NZWNoYW5pY2FsK0VuZ2luZWVyaW5nJiZGT1JNPVZBUlNRUA&ntb=1
+                    - generic "Mechanical Engineering" [ref=e574]
+                - listitem [ref=e575]:
+                  - link "Drone Technology" [ref=e576] [cursor=pointer]:
+                    - /url: https://www.bing.com/ck/a?!&&p=497808e9b27bd0d48acdc627ee5528882fd5f7dd9ba7475d772d173a490f0becJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_cT1Ecm9uZStUZWNobm9sb2d5JiZGT1JNPVZBUlNRUA&ntb=1
+                    - generic "Drone Technology" [ref=e579]
+              - generic [ref=e581]:
+                - 'link "10 Technologies Shaping the Modern World | Complete Overview || ALL IN ONE from YouTube · Duration: 3 minutes 43 seconds · 10 views · uploaded on 5 months ago · uploaded by All In One · Click to play. · Technology is transforming every part of our lives — from how we communicate and travel to how we generate energy, grow food, and treat diseases. In this video, we explore 10 major technologies shaping the modern world, including Information Technology, Communication Technology, Industrial and Manufacturing Technology, Transportation ..." [ref=e584] [cursor=pointer]':
+                  - /url: https://www.bing.com/ck/a?!&&p=3ea7b11d0379f37db8a01f166debb7ba6e9b2c386e336299515a726e3a66672eJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9VGVjaG5vbG9neSZtaWQ9NDU4NTREMDY5RjQxNDg3OEI0ODY0NTg1NEQwNjlGNDE0ODc4QjQ4NiZjaHVybD1odHRwcyUzYSUyZiUyZnd3dy55b3V0dWJlLmNvbSUyZmNoYW5uZWwlMmZVQzQwTno2ZGNsbUIxMDlkQjVDMF9fVncmRk9STT1WSVJF&ntb=1
+                  - generic [ref=e585]:
+                    - generic [ref=e586]:
+                      - img "10 Technologies Shaping the Modern World | Complete Overview || ALL IN ONE" [ref=e588]
+                      - generic [ref=e594]: 3:43
+                    - generic [ref=e595]:
+                      - generic "10 Technologies Shaping the Modern World | Complete Overview || ALL IN ONE" [ref=e596]
+                      - generic [ref=e597]:
+                        - generic [ref=e598]:
+                          - img "Video source site" [ref=e599]
+                          - text: YouTube · All In One
+                        - generic [ref=e600]: 10 views · 5 months ago
+                - 'link "Top 20 New Technology Trends That Will Define the Future [PART 2] from YouTube · Duration: 15 minutes · 7.3K views · uploaded on 3 months ago · uploaded by AI Uncovered · Click to play. · What if the future is being shaped faster than anyone expected? In this video, we break down the top 20 new technology trends that will define the future, part 2—focusing on the innovations quietly transforming how we live, work, and think. From advanced AI systems and next-generation computing to biotech breakthroughs, automation, and ..." [ref=e603] [cursor=pointer]':
+                  - /url: https://www.bing.com/ck/a?!&&p=28724afc4d3d12e0fd7a552250d19cb008c01b83773ff138c5d850c5eb07b0e3JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9VGVjaG5vbG9neSZtaWQ9MzlGMEIzOEE2RDNFMDdEQjlCMDMzOUYwQjM4QTZEM0UwN0RCOUIwMyZjaHVybD1odHRwcyUzYSUyZiUyZnd3dy55b3V0dWJlLmNvbSUyZmNoYW5uZWwlMmZVQ1VURjYxVU5FeFJkam1vSzVtWHdXZlEmRk9STT1WSVJF&ntb=1
+                  - generic [ref=e604]:
+                    - generic [ref=e605]:
+                      - img "Top 20 New Technology Trends That Will Define the Future [PART 2]" [ref=e607]
+                      - generic [ref=e613]: 15:00
+                    - generic [ref=e614]:
+                      - generic "Top 20 New Technology Trends That Will Define the Future [PART 2]" [ref=e615]:
+                        - text: Top 20 New
+                        - strong [ref=e616]: Technology
+                        - text: Trends That Will Define the Future [PART 2]
+                      - generic [ref=e617]:
+                        - generic [ref=e618]:
+                          - img "Video source site" [ref=e619]
+                          - text: YouTube · AI Uncovered
+                        - generic [ref=e620]: 7.3K views · 3 months ago
+                - 'link "The Future of Technology is Here! Mind-Blowing Innovations You Must See👨‍💻#ai #science #tech#shorts from YouTube · Duration: 9 seconds · uploaded on 1 month ago · uploaded by AI Knowledge Hub · Click to play. · Welcome to the future of Science & Technology! 🚀 In this video, we explore some of the most incredible innovations that are changing the world right now — from AI and robots to space technology and smart inventions. You’ll discover how technology is shaping our daily life, making things faster, smarter, and more efficient. Whether you''re ..." [ref=e623] [cursor=pointer]':
+                  - /url: https://www.bing.com/ck/a?!&&p=d37b96d156088a17e588d77323e42d524b4c473e35d86d29f6bc6588ea79127cJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9VGVjaG5vbG9neSZtaWQ9QjY5Nzk4ODUyMURCOTlGRDlDRTFCNjk3OTg4NTIxREI5OUZEOUNFMSZjaHVybD1odHRwcyUzYSUyZiUyZnd3dy55b3V0dWJlLmNvbSUyZmNoYW5uZWwlMmZVQ1hScGJtcXJJdXpqSXlReWoyemhWVncmbW1zY249c3R2byZGT1JNPVZJUkU&ntb=1
+                  - generic [ref=e624]:
+                    - generic [ref=e625]:
+                      - 'img "The Future of Technology is Here! Mind-Blowing Innovations You Must See👨‍💻#ai #science #tech#shorts" [ref=e627]'
+                      - generic [ref=e633]: 0:09
+                    - generic [ref=e634]:
+                      - 'generic "The Future of Technology is Here! Mind-Blowing Innovations You Must See👨‍💻#ai #science #tech#shorts" [ref=e635]':
+                        - text: The Future of
+                        - strong [ref=e636]: Technology
+                        - text: "is Here! Mind-Blowing Innovations You Must See👨‍💻#ai #science #tech#shorts"
+                      - generic [ref=e637]:
+                        - generic [ref=e638]:
+                          - img "Video source site" [ref=e639]
+                          - text: YouTube · AI Knowledge Hub
+                        - generic [ref=e640]: 1 month ago
+              - generic [ref=e641]:
+                - link "Short videos" [ref=e642] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=88df3fd52159d3de5ec8657221aca4ad78d584b4d4367cba81ee9e2bb022fae5JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9zZWFyY2g_JnE9dGVjaG5vbG9neSZxZnQ9K2ZpbHRlcnVpJTNhZmlsdGVyaGludC1zaG9ydHZpZGVvJnZpZXc9c2hvcnR2aWRlbyZGT1JNPVNWUlRSVA&ntb=1
+                - generic [ref=e648]:
+                  - button [ref=e649] [cursor=pointer]
+                  - button [ref=e654] [cursor=pointer]
+                  - list "Please use arrow keys to navigate" [ref=e661]:
+                    - listitem [ref=e662]:
+                      - 'link "This ₹3000 gadget is value for money 💰 from YouTube · Duration: 56 seconds · 33.2K views · uploaded on 1 week ago · uploaded by Mr Techpedia · Click to play." [ref=e664] [cursor=pointer]':
+                        - /url: https://www.bing.com/ck/a?!&&p=3bae958a26a44ac0333eb41da82c66e69999103d352bb7cc2266eec5deddc402JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9VGVjaG5vbG9neSYmbWlkPUQ4MkM1ODdGM0Y5MTA2MkYxMDI0RDgyQzU4N0YzRjkxMDYyRjEwMjQmY2h1cmw9aHR0cHMlM2ElMmYlMmZ3d3cueW91dHViZS5jb20lMmZjaGFubmVsJTJmVUNYNlM3MVlpU2tyRW5KX3pjSUthSTlnJm1tc2NuPXN0dm8mRk9STT1WSVJF&ntb=1
+                        - generic [ref=e665]:
+                          - img "This ₹3000 gadget is value for money 💰" [ref=e668]
+                          - generic [ref=e677]: YouTube
+                    - listitem [ref=e678]:
+                      - 'link "Why is Everyone Wearing Wired Earphones? from YouTube · Duration: 1 minutes · 7.4M views · uploaded on 3 weeks ago · uploaded by Mrwhosetheboss · Click to play." [ref=e680] [cursor=pointer]':
+                        - /url: https://www.bing.com/ck/a?!&&p=202369c41c9609b7ca9e941e6053a539831b2450d135f75187b9c307d523119cJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9VGVjaG5vbG9neSYmbWlkPTgzRkIwRTg3RkMzQ0E1RTI2MDZBODNGQjBFODdGQzNDQTVFMjYwNkEmY2h1cmw9aHR0cHMlM2ElMmYlMmZ3d3cueW91dHViZS5jb20lMmZjaGFubmVsJTJmVUNNaUpSQXdETlNOenVZZU4ydVdhMHBBJm1tc2NuPXN0dm8mRk9STT1WSVJF&ntb=1
+                        - generic [ref=e681]:
+                          - img "Why is Everyone Wearing Wired Earphones?" [ref=e684]
+                          - generic [ref=e693]: YouTube
+                    - listitem [ref=e694]:
+                      - 'link "This Is How Eggs Are Sorted in Factories 🥚⚙️ from YouTube · Duration: 7 seconds · 4M views · uploaded on 1 month ago · uploaded by Techie Sapien · Click to play." [ref=e696] [cursor=pointer]':
+                        - /url: https://www.bing.com/ck/a?!&&p=2cd1b714c14dc0a7644e283b0f0e446e0212e89a38c4fb623536540051a73b54JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9VGVjaG5vbG9neSYmbWlkPTUyNkFCQzA1NDM2QUMyRTM3MjQzNTI2QUJDMDU0MzZBQzJFMzcyNDMmY2h1cmw9aHR0cHMlM2ElMmYlMmZ3d3cueW91dHViZS5jb20lMmZjaGFubmVsJTJmVUN3UDBWeG1WQlBQV085R2lNSktuM1ZnJm1tc2NuPXN0dm8mRk9STT1WSVJF&ntb=1
+                        - generic [ref=e697]:
+                          - img "This Is How Eggs Are Sorted in Factories 🥚⚙️" [ref=e700]
+                          - generic [ref=e709]: YouTube
+                    - listitem [ref=e710]:
+                      - 'link "How America Tried to Stop India’s Cryogenic Engine 🚀 from YouTube · Duration: 1 minutes 8 seconds · 987.5K views · uploaded on 1 month ago · uploaded by HumanlyTrue · Click to play." [ref=e712] [cursor=pointer]':
+                        - /url: https://www.bing.com/ck/a?!&&p=0af20998b84e0769bf218927676ba2b743f07153fa64da026383315f7dbe06d8JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9VGVjaG5vbG9neSYmbWlkPUQ4RDg3MUIwMUFENEU4NkM1MEI2RDhEODcxQjAxQUQ0RTg2QzUwQjYmY2h1cmw9aHR0cHMlM2ElMmYlMmZ3d3cueW91dHViZS5jb20lMmZjaGFubmVsJTJmVUM5cTJDRTR4SFY1bGVEVUpXS2JrbnNnJm1tc2NuPXN0dm8mRk9STT1WSVJF&ntb=1
+                        - generic [ref=e713]:
+                          - img "How America Tried to Stop India’s Cryogenic Engine 🚀" [ref=e716]
+                          - generic [ref=e725]: YouTube
+                    - listitem [ref=e726]:
+                      - 'link "Warum die Formel E auf ABB setzt, damit der Strom nie ausfällt. from YouTube · Duration: 1 minutes 18 seconds · 2.5M views · uploaded on 1 month ago · uploaded by ABB · Click to play." [ref=e728] [cursor=pointer]':
+                        - /url: https://www.bing.com/ck/a?!&&p=2e7e8efacac19c07bf5e70ba1b99199e936b9f22cad3878493da4852a4d582d3JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9VGVjaG5vbG9neSYmbWlkPUQ1MkJDQjc5Q0IzMDhBM0UyMENDRDUyQkNCNzlDQjMwOEEzRTIwQ0MmY2h1cmw9aHR0cHMlM2ElMmYlMmZ3d3cueW91dHViZS5jb20lMmZjaGFubmVsJTJmVUN0NWMzUEs2UFE4NmhKZnB6X2RoY3hnJm1tc2NuPXN0dm8mRk9STT1WSVJF&ntb=1
+                        - generic [ref=e729]:
+                          - img "Warum die Formel E auf ABB setzt, damit der Strom nie ausfällt." [ref=e732]
+                          - generic [ref=e741]: YouTube
+                    - listitem [ref=e742]:
+                      - 'link "GaN, GaN, GaN! What does GaN actually mean, and what does Anker do with it that no one else does? from YouTube · Duration: 1 minutes 6 seconds · 907.8K views · uploaded on 3 weeks ago · uploaded by Anker · Click to play." [ref=e744] [cursor=pointer]':
+                        - /url: https://www.bing.com/ck/a?!&&p=c9544432639e309dfc813b2b61efab9458a1f5569f4b0a800c5929f47cb143e6JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3ZpZGVvcy9yaXZlcnZpZXcvcmVsYXRlZHZpZGVvP3E9VGVjaG5vbG9neSYmbWlkPTg4NUVFMEQ3MjcyM0E5NEVDQTNBODg1RUUwRDcyNzIzQTk0RUNBM0EmY2h1cmw9aHR0cHMlM2ElMmYlMmZ3d3cueW91dHViZS5jb20lMmZjaGFubmVsJTJmVUNxZERuVElGY1A0MDJCY1RvMkEzME93Jm1tc2NuPXN0dm8mRk9STT1WSVJF&ntb=1
+                        - generic [ref=e757]: YouTube
+            - button "See more" [ref=e760]:
+              - generic [ref=e761]: See more
+              - img [ref=e763]
+        - listitem [ref=e766]:
+          - generic [ref=e767]:
+            - link "Explore this image" [ref=e770] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=7sDjKWDU&id=85BD7FD517EBB5036D582280CD5FF04D13D4BE02&thid=OIP.7sDjKWDUgOhE_Rrl8m5HUQHaEK&mediaurl=https://ichef.bbci.co.uk/images/ic/480x270/p0ls4h1v.jpg.webp&q=Technology&ck=A23D9281B32EF176DB454B72DDA5F881&idpp=rc&expw=480&exph=270&form=rc2idp
+            - generic [ref=e772]:
+              - link "BBC" [ref=e774] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=00a7e5bb103aa7384fe3f2a85b9d4ad4438f548a4e3ae35fc281a50281c4b9d7JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly93d3cuYmJjLmNvbS90ZWNobm9sb2d5&ntb=1
+                - generic [ref=e779]:
+                  - generic [ref=e780]: BBC
+                  - generic [ref=e783]: https://www.bbc.com › technology
+              - heading "BBC Technology | Technology, Health, Environment, AI" [level=2] [ref=e784]:
+                - link "BBC Technology | Technology, Health, Environment, AI" [ref=e785] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=00a7e5bb103aa7384fe3f2a85b9d4ad4438f548a4e3ae35fc281a50281c4b9d7JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly93d3cuYmJjLmNvbS90ZWNobm9sb2d5&ntb=1
+              - paragraph [ref=e786]: BBC Technology brings you the latest in Technology news and coverage from around the world, including health, environment, AI, and more
+        - listitem [ref=e788]:
+          - generic [ref=e789]:
+            - link "Explore this image" [ref=e792] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=4v5ec70f&id=97165BF8C0B5676DCDF46C9C4E18F82D91303602&thid=OIP.4v5ec70f_QnmyyBZ0hih8QHaE8&mediaurl=https://www.computertechreviews.com/wp-content/uploads/2025/04/What-is-Technology_-Definition-Types-and-More.jpg&q=Technology&ck=881262B89ED2A465809457CA026D246C&idpp=rc&expw=1200&exph=800&form=rc2idp
+            - generic [ref=e794]:
+              - link "computertechreviews.com" [ref=e796] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=97364b5e2f70e8ea297b7e5c27d9d5e64dc526f652414062bfd0d590e05a7fa5JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly93d3cuY29tcHV0ZXJ0ZWNocmV2aWV3cy5jb20vZGVmaW5pdGlvbi90ZWNobm9sb2d5Lw&ntb=1
+                - generic [ref=e801]:
+                  - generic [ref=e802]: computertechreviews.com
+                  - generic [ref=e805]: https://www.computertechreviews.com › definition › techn…
+              - heading "What is Technology? Definition, Types & Importance …" [level=2] [ref=e806]:
+                - link "What is Technology? Definition, Types & Importance …" [ref=e807] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=97364b5e2f70e8ea297b7e5c27d9d5e64dc526f652414062bfd0d590e05a7fa5JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly93d3cuY29tcHV0ZXJ0ZWNocmV2aWV3cy5jb20vZGVmaW5pdGlvbi90ZWNobm9sb2d5Lw&ntb=1
+              - paragraph [ref=e808]: Apr 9, 2026 · Technology refers to the application of scientific knowledge, tools, systems, and techniques to solve problems, improve efficiency, and enhance …
+        - listitem [ref=e810]:
+          - link "SciTechDaily" [ref=e812] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=290fd1ec09ff654458a282f879618fd64f1c995c5349efc613096b0e9c540496JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly9zY2l0ZWNoZGFpbHkuY29tL25ld3MvdGVjaG5vbG9neS8&ntb=1
+            - generic [ref=e817]:
+              - generic [ref=e818]: SciTechDaily
+              - generic [ref=e821]: https://scitechdaily.com › news › technology
+          - heading "Technology News, Research & Innovations - SciTechDaily" [level=2] [ref=e822]:
+            - link "Technology News, Research & Innovations - SciTechDaily":
+              - /url: https://www.bing.com/ck/a?!&&p=290fd1ec09ff654458a282f879618fd64f1c995c5349efc613096b0e9c540496JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly9zY2l0ZWNoZGFpbHkuY29tL25ld3MvdGVjaG5vbG9neS8&ntb=1
+          - paragraph [ref=e824]: Find the latest technology news and interesting research articles on breakthroughs in nanotechnology, biotechnology, green tech, and more.
+        - listitem [ref=e825]:
+          - generic [ref=e826]:
+            - link "Explore this image" [ref=e829] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=UJFP8sKF&id=3B182695CB4CE7FFE6944E8FAB9BFE7E2620CBBD&thid=OIP.UJFP8sKFJoBfmhEScaWECwHaEK&mediaurl=https://images.indianexpress.com/2024/04/imoo-z7-review-featured.jpg&q=Technology&ck=B7CDF994E4F6AE2E5579BD48C260E93E&idpp=rc&expw=1600&exph=900&form=rc2idp
+            - generic [ref=e831]:
+              - link "The Indian Express" [ref=e833] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=fee4a3bd119a0c7a540ba46bcb370fdb72d07c15a86bf7a545d6ec55e1e758e8JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly9pbmRpYW5leHByZXNzLmNvbS9zZWN0aW9uL3RlY2hub2xvZ3kv&ntb=1
+                - generic [ref=e838]:
+                  - generic [ref=e839]: The Indian Express
+                  - generic [ref=e842]: https://indianexpress.com › section › technology
+              - heading "Tech News, Latest Technology News Today, New …" [level=2] [ref=e843]:
+                - link "Tech News, Latest Technology News Today, New …" [ref=e844] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=fee4a3bd119a0c7a540ba46bcb370fdb72d07c15a86bf7a545d6ec55e1e758e8JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly9pbmRpYW5leHByZXNzLmNvbS9zZWN0aW9uL3RlY2hub2xvZ3kv&ntb=1
+              - paragraph [ref=e845]: "14 hours ago · Tech News: Get the latest technology today news, reviews, and updates on smartphones, laptops, gaming, wearables, and more. Stay updated …"
+        - listitem [ref=e847]:
+          - link "Gadgets 360" [ref=e849] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=5a52ae4830a65464306bea19ffb094b80ba28db99c6560037820518ffd927caaJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly93d3cuZ2FkZ2V0czM2MC5jb20vbmV3cw&ntb=1
+            - generic [ref=e854]:
+              - generic [ref=e855]: Gadgets 360
+              - generic [ref=e858]: https://www.gadgets360.com › news
+          - heading "Technology News - Latest Tech News Today, New Gadgets, Mobile ..." [level=2] [ref=e859]:
+            - link "Technology News - Latest Tech News Today, New Gadgets, Mobile ...":
+              - /url: https://www.bing.com/ck/a?!&&p=5a52ae4830a65464306bea19ffb094b80ba28db99c6560037820518ffd927caaJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly93d3cuZ2FkZ2V0czM2MC5jb20vbmV3cw&ntb=1
+          - paragraph [ref=e861]: 1 day ago · Get trending tech news, mobile phones, laptops, reviews, software updates, video games, internet and other technology updates on gadgets from India and around the world.
+        - listitem [ref=e862]:
+          - generic [ref=e863]:
+            - generic [ref=e866]:
+              - link "Explore this image" [ref=e867] [cursor=pointer]:
+                - /url: /images/search?view=detailV2&ccid=079wVOCY&id=D8C1DB60C7D4802EC8DDEA005809B4E34C5E3E73&thid=OIP.079wVOCYtxC9-SghW4WezAHaEK&mediaurl=https://wp.technologyreview.com/wp-content/uploads/2024/08/240815-technologyhumanity.jpg?fit=560&q=Technology&ck=382D89F1DD347CC839ACD52928AB9A75&idpp=rc&expw=3000&exph=1687&form=rc2idp
+              - link "Explore this image" [ref=e869] [cursor=pointer]:
+                - /url: /images/search?view=detailV2&ccid=oPgW3AUc&id=D8C1DB60C7D4802EC8DDDA5C395DDB405FFB9943&thid=OIP.oPgW3AUcg1bo6xu1EWxboQHaEK&mediaurl=https://wp.technologyreview.com/wp-content/uploads/2024/01/AI-in-Everything-Final-Jennifer-Dionisio.jpg?fit=295&q=Technology&ck=AF549338A3A838374EB25613B2EAB17A&idpp=rc&expw=3000&exph=1688&form=rc2idp
+              - link "Explore this image" [ref=e871] [cursor=pointer]:
+                - /url: /images/search?view=detailV2&ccid=99mvSVHZ&id=D8C1DB60C7D4802EC8DDDDF8C5AC3146E8E968C9&thid=OIP.99mvSVHZfXphLzSwbqKKBgHaEK&mediaurl=https://wp.technologyreview.com/wp-content/uploads/2024/10/miotke_MIT_1.jpg?fit=295&q=Technology&ck=8E74A8D5AEC13041C061AC12F785162B&idpp=rc&expw=3000&exph=1688&form=rc2idp
+            - generic [ref=e873]:
+              - link "MIT Technology Review" [ref=e875] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=02e9b0958362855c815cca60c3b410dad8a36da3d4ba9442d214e879fe18626bJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly93d3cudGVjaG5vbG9neXJldmlldy5jb20v&ntb=1
+                - generic [ref=e880]:
+                  - generic [ref=e881]: MIT Technology Review
+                  - generic [ref=e884]: https://www.technologyreview.com
+              - heading "MIT Technology Review" [level=2] [ref=e885]:
+                - link "MIT Technology Review" [ref=e886] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=02e9b0958362855c815cca60c3b410dad8a36da3d4ba9442d214e879fe18626bJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly93d3cudGVjaG5vbG9neXJldmlldy5jb20v&ntb=1
+              - paragraph [ref=e887]: MIT Technology Review's authoritative overview of the 10 technologies, emerging trends, bold ideas, and powerful movements in AI in 2026. …
+        - listitem [ref=e889]:
+          - generic [ref=e890]:
+            - link "Explore this image" [ref=e893] [cursor=pointer]:
+              - /url: /images/search?view=detailV2&ccid=MISVc0vV&id=A133CE48AA4F53FC49FB84DBF63F2DE8901C0C1B&thid=OIP.MISVc0vVAHXMHdZ0jz3xZQHaJ1&mediaurl=https://intothecommerce.com/wp-content/uploads/2025/08/Haribabu-recent-photo.jpg&q=Technology&ck=073EC19B455879BC079B5EE3D682D416&idpp=rc&expw=1663&exph=2209&form=rc2idp
+            - generic [ref=e895]:
+              - link "intothecommerce.com" [ref=e897] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=8a43bcd50dd35fcf2ce769de04e7335a886e422efc33df2d031fd14cb6b6baa5JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly9pbnRvdGhlY29tbWVyY2UuY29tL2dlbmVyYWwvd2hhdC1pcy10ZWNobm9sb2d5Lw&ntb=1
+                - generic [ref=e902]:
+                  - generic [ref=e903]: intothecommerce.com
+                  - generic [ref=e906]: https://intothecommerce.com › general › what-is-technology
+              - heading "What Is Technology? The Definition, Types, and Impacts" [level=2] [ref=e907]:
+                - link "What Is Technology? The Definition, Types, and Impacts" [ref=e908] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=8a43bcd50dd35fcf2ce769de04e7335a886e422efc33df2d031fd14cb6b6baa5JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly9pbnRvdGhlY29tbWVyY2UuY29tL2dlbmVyYWwvd2hhdC1pcy10ZWNobm9sb2d5Lw&ntb=1
+              - paragraph [ref=e909]: Sep 22, 2024 · At its core, technology refers to the tools, systems, or methods that are developed and used to solve problems, improve processes, and enhance …
+        - listitem [ref=e911]:
+          - generic [ref=e912]:
+            - generic [ref=e915]:
+              - link "Explore this image" [ref=e916] [cursor=pointer]:
+                - /url: /images/search?view=detailV2&ccid=sX0KuryD&id=48FD90B941C0EFEA4A6C0C4586673AA986953882&thid=OIP.sX0KuryDn4M31IB2lt8WpgHaEJ&mediaurl=https://www.sciencenewstoday.org/wp-content/uploads/2026/03/atom-thin-material-cou-1250x700.jpg&q=Technology&ck=E877FCF0D27EFC2F6351E0C4A3914140&idpp=rc&expw=1250&exph=700&form=rc2idp
+              - link "Explore this image" [ref=e918] [cursor=pointer]:
+                - /url: /images/search?view=detailV2&ccid=JMlfAFW1&id=48FD90B941C0EFEA4A6C97BE1B8AD98652789C87&thid=OIP.JMlfAFW1Z5-j6T2iFwhc_QHaHa&mediaurl=https://www.sciencenewstoday.org/wp-content/uploads/2025/05/21c8daeb-c722-48d2-90c8-d6851e770860.jpeg&q=Technology&ck=E094124501DDF6214BB95F932685EE44&idpp=rc&expw=1024&exph=1024&form=rc2idp
+              - link "Explore this image" [ref=e920] [cursor=pointer]:
+                - /url: /images/search?view=detailV2&ccid=2E4gOZfe&id=48FD90B941C0EFEA4A6CDADD24C0DD4D7DD0145F&thid=OIP.2E4gOZfejUSoqW9XQtfs6wHaHa&mediaurl=https://www.sciencenewstoday.org/wp-content/uploads/2025/07/Artificial-intelligence-robot-white-background-1.jpeg&q=Technology&ck=4309AB7D87C92B0A2B63EE1E011F4E2E&idpp=rc&expw=800&exph=800&form=rc2idp
+            - generic [ref=e922]:
+              - link "sciencenewstoday.org" [ref=e924] [cursor=pointer]:
+                - /url: https://www.bing.com/ck/a?!&&p=e7fa05928069664b38065982ef140d323f91a6fa546b0319134949a0d84936b3JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly93d3cuc2NpZW5jZW5ld3N0b2RheS5vcmcvdGhlLWV2b2x1dGlvbi1vZi10ZWNobm9sb2d5LWZyb20tdGhlLXN0b25lLWFnZS10by10b2RheQ&ntb=1
+                - generic [ref=e929]:
+                  - generic [ref=e930]: sciencenewstoday.org
+                  - generic [ref=e933]: https://www.sciencenewstoday.org › the-evoluti…
+              - 'heading "The Evolution of Technology: From the Stone …" [level=2] [ref=e934]':
+                - 'link "The Evolution of Technology: From the Stone …" [ref=e935] [cursor=pointer]':
+                  - /url: https://www.bing.com/ck/a?!&&p=e7fa05928069664b38065982ef140d323f91a6fa546b0319134949a0d84936b3JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cHM6Ly93d3cuc2NpZW5jZW5ld3N0b2RheS5vcmcvdGhlLWV2b2x1dGlvbi1vZi10ZWNobm9sb2d5LWZyb20tdGhlLXN0b25lLWFnZS10by10b2RheQ&ntb=1
+              - paragraph [ref=e936]: May 1, 2025 · From the first spark of fire struck by a flintstone to the dazzling advancements of artificial intelligence, the history of …
+        - listitem [ref=e938]:
+          - list [ref=e939]:
+            - listitem [ref=e940]:
+              - generic [ref=e941]:
+                - generic [ref=e942] [cursor=pointer]:
+                  - generic [ref=e947]: Telikin
+                  - generic [ref=e948]:
+                    - generic [ref=e949]: www.telikin.com
+                    - button "About our ads" [ref=e950]:
+                      - img "About our ads" [ref=e952]
+                - heading "Wind Currents Technology | Affordable Computer Repair" [level=2] [ref=e953]:
+                  - link "Wind Currents Technology | Affordable Computer Repair" [ref=e954] [cursor=pointer]:
+                    - /url: https://www.bing.com/aclk?ld=e8OiS9x9m1DKitHu4l651nujVUCUz6xuidLBa3rHeXxS10WxRUCU42tpLoy9Ln5ZGO-Ubm1tzsNAwlv5Lq_ANagphMouhg24y6iVpsiPjJHhiNgxYD4CMjBXEdq54rNlS_TIi0DylEa4qe597CpL02hhCuOqLPD-TUOBRgfZBed8mpVl7GfgSeQA55vv-ZGKB2xD30XMwi8BYKYiaqwGUpv2_99U8&u=aHR0cHMlM2ElMmYlMmZ3d3cudGVsaWtpbi5jb20lMmYlM2Z1dG1fc291cmNlJTNkU0VNJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV90ZXJtJTNkTk9URVJNJTI2dXRtX2NhbXBhaWduJTNkU0VNU2VuaW9yJTI2bXNjbGtpZCUzZGZiYzk0ZTAxNzM1ZjE0NDc3MWJkMjQyMzM4MjEzM2Zk&rlid=fbc94e01735f144771bd2423382133fd&ntb=1
+                - generic [ref=e955]:
+                  - generic [ref=e956]:
+                    - generic [ref=e959]: Sponsored
+                    - text: Easy to Use Touchscreen Computers Designed for Seniors
+                  - paragraph [ref=e960]: Easy to Use · Family Friendly Features · Built-In Video Chat
+                  - generic [ref=e961]: "Key Features: Photo Sharing, Email Access, Touchscreen Interface, Video Chat and more"
+                - generic [ref=e964]:
+                  - button [ref=e965] [cursor=pointer]
+                  - button [ref=e970] [cursor=pointer]
+                  - list "Please use arrow keys to navigate" [ref=e977]:
+                    - listitem [ref=e978] [cursor=pointer]:
+                      - link "Touchscreen Computers" [ref=e980]:
+                        - /url: https://www.bing.com/aclk?ld=e823gKpxHTdzIqE29FOVRUnjVUCUyzUF8rmQ__uWw9G7ze9jHleGWXUMr2XyPfHHlGICXhMhEY7msjkwqHLxhpoDOHmFB3c3zNMnHL4NXa88dytiI1AHz36ytmsYkO6QzkNpQRj7MfbWzlXE-p87-8oWqlds1Za2yno6OFPCxBR9qJlPoDTzldryx01TGpuYRan1Zecusn0942qU8SExPR9wJHZjw&u=d3d3LnRlbGlraW4uY29tJTJmcmV2aWV3cy5waHAlM2Z1dG1fc291cmNlJTNkU0VNJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV90ZXJtJTNkTk9URVJNJTI2dXRtX2NhbXBhaWduJTNkU0VNU2VuaW9yJTI2bXNjbGtpZCUzZGQwY2QwMDk1NzRiNTFkNGY1MzllNmFiNzNmY2JkNmYy&rlid=d0cd009574b51d4f539e6ab73fcbd6f2&ntb=1
+                        - generic [ref=e981]: Touchscreen Computers
+                    - listitem [ref=e982] [cursor=pointer]:
+                      - link "Home Screen" [ref=e984]:
+                        - /url: https://www.bing.com/aclk?ld=e8jdRUwLufTcrBNo6miRj0FzVUCUwrKAonYUj-2uMUVXD8NMUinNDqt0BoVdsZaa2RmZiOlFu6jDLULazjiKSd9C2nF6UbzKTgCxp5PVybq18ijo0i612XKOjbxTVaKYvb8wJrMqUt4Oah6WMcviDMSagj65zlWX8Se0fJhgqzbfUxIIyo8FrrU3OFnDmEVB4i347AhB0bkj2gBZktbR7JYW2Ax_g&u=aHR0cHMlM2ElMmYlMmYlMmZ0ZWxpa2luLmNvbSUyZiUyM2FwcF9ob21lJTNmdXRtX3NvdXJjZSUzZFNFTSUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fdGVybSUzZE5PVEVSTSUyNnV0bV9jYW1wYWlnbiUzZFNFTVNlbmlvciUyNm1zY2xraWQlM2QyN2YxODk3YjZkNTkxMDZhYjY2NmUzNTkyNjI3MmI3ZQ&rlid=27f1897b6d59106ab666e35926272b7e&ntb=1
+                        - generic [ref=e985]: Home Screen
+                    - listitem [ref=e986] [cursor=pointer]:
+                      - link "About Connections at..." [ref=e988]:
+                        - /url: https://www.bing.com/aclk?ld=e82NgeR9fJw1AJo7m_TtLCPjVUCUxJzlccGLEbcbrh9C5DSC5t1AOKtMVBZmFHVNq9ClWlOJaRB8EYNVq637MYbk6tVKdCcpE0hIaGsxX9_3iZpoLrp6TMKUSmMoGC9-Hbr5TYAXoBdZ4sPkklmug5UwWUIcg4tMlQ5nYV_AbKdfldPKY3XchDNTrH_AM4PlG9CA2h66LAY2EA2_s7qAtdBbngh5I&u=d3d3LnRlbGlraW4uY29tJTJmYmxvZyUzZnV0bV9zb3VyY2UlM2RTRU0lMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX3Rlcm0lM2ROT1RFUk0lMjZ1dG1fY2FtcGFpZ24lM2RTRU1TZW5pb3IlMjZtc2Nsa2lkJTNkNjA3NGZmZDhmZWM4MWVkOGVkY2U5NWZhYjViNjYwNTk&rlid=6074ffd8fec81ed8edce95fab5b66059&ntb=1
+                        - generic [ref=e989]: About Connections at...
+                    - listitem [ref=e990] [cursor=pointer]:
+                      - link "Gifts for Seniors &..." [ref=e992]:
+                        - /url: https://www.bing.com/aclk?ld=e8JOiRG_tF9JyiI8kxEBoQAzVUCUw8oIFUAsZfheffMlaULziUOfvxKb0BDJgo_8QDVfK1ThO-2AjFSPQSb7DWUj0U4OgXQPPJh3k1frP9tkVwM3SkgPZ4_01tc8CC1RXHbpT8piTwb7Lvd6EIivjr8DVPC6HkI2WFKpKn99H3Khe7fVVE40jWSbrNlpgQn5zcq0otSw9Q8--aWtCL7EV6klQAkDk&u=d3d3LnRlbGlraW4uY29tJTJmZ3JlYXRnaWZ0JTNmdXRtX3NvdXJjZSUzZFNFTSUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fdGVybSUzZE5PVEVSTSUyNnV0bV9jYW1wYWlnbiUzZFNFTVNlbmlvciUyNm1zY2xraWQlM2Q3Y2QyY2IxZjZlOWUxNmM4ZTYyNmExM2QyNWUwYWY3Ng&rlid=7cd2cb1f6e9e16c8e626a13d25e0af76&ntb=1
+                        - generic [ref=e993]: Gifts for Seniors &...
+                    - listitem [ref=e994] [cursor=pointer]:
+                      - link "Video chat" [ref=e996]:
+                        - /url: https://www.bing.com/aclk?ld=e8MrVULmklpULWjaQ2zTfF3zVUCUyPcsODh3kNM5VBJQtoGNJue71pbOjqGTlc-kWNSxzAS6ZEXLgHvRF9F17pTlEdVo_Y1qat_RWHjR77b5gRLVoza1xLVVptM1mnaSVyY2RpqDxsBSPv2alLzj0Me_s4C5CrrSrgMHophopuGsFhKZIpKnVipE9EdTf0CwbqKw5rorH11q40kE-t0eu2DYw196I&u=aHR0cHMlM2ElMmYlMmYlMmZ0ZWxpa2luLmNvbSUyZiUyM2FwcF92aWRlb2NoYXQlM2Z1dG1fc291cmNlJTNkU0VNJTI2dXRtX21lZGl1bSUzZGNwYyUyNnV0bV90ZXJtJTNkTk9URVJNJTI2dXRtX2NhbXBhaWduJTNkU0VNU2VuaW9yJTI2bXNjbGtpZCUzZDhjYTA5YjA1M2NmMjFiYTUwODU2ZjEyNzc3OGM0Yjdj&rlid=8ca09b053cf21ba50856f127778c4b7c&ntb=1
+                        - generic [ref=e997]: Video chat
+                    - listitem [ref=e998] [cursor=pointer]:
+                      - link "Telikin Makes a Great Gift" [ref=e1000]:
+                        - /url: https://www.bing.com/aclk?ld=e8Q5-RiRXbXQMDBZfN81ey8DVUCUz1_Q_bsKN-VxkSxBMi0tK0Z_MzkxCP3k-MZRkjA62JUuLt1dbUC-qi6F3dS43NxDFNn_ksrXJGZF7c6wuR8SJ3ludBhWI47OCBNSTQm_B0aadMdhA95Auoimoyr61qA2a1Mowz35SHeOHwzuvOy7-dxDEDDRcqfro5YMgGy9MBMXtwTWHOIwe96FGF_HHX6dg&u=d3d3LnRlbGlraW4uY29tJTJmZ3JlYXRnaWZ0JTNmdXRtX3NvdXJjZSUzZFNFTSUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fdGVybSUzZE5PVEVSTSUyNnV0bV9jYW1wYWlnbiUzZFNFTVNlbmlvciUyNm1zY2xraWQlM2RkZDNiNDI0N2E3MGIxZjg2NGMxNzI4NjVlYzc1YzI2MQ&rlid=dd3b4247a70b1f864c172865ec75c261&ntb=1
+                        - generic [ref=e1001]: Telikin Makes a Great Gift
+                    - listitem [ref=e1002] [cursor=pointer]:
+                      - link "Open Source" [ref=e1004]:
+                        - /url: https://www.bing.com/aclk?ld=e8XkKEQoUAWdXBFlY4YjrQKzVUCUzfs9EUMsKW7qY7GuXyYd4zbi3lCdphDq0ua8e1EBpB33jFsEaa9AgiavZp8UGhzPTN9t5sVyC-10Nec1kReOXt6a4w6O2ojaVj0KcvtxPcQ69o9U-Ghii18g5iF3RHdO6D_aTgBIV1_r7gd_6XRIzGE6-uhRMV-g4IC8k394BzdigmDWOqQiJk2MFqMrUt2dU&u=aHR0cHMlM2ElMmYlMmYlMmZ0ZWxpa2luLmNvbSUyZm9wZW4tc291cmNlJTNmdXRtX3NvdXJjZSUzZFNFTSUyNnV0bV9tZWRpdW0lM2RjcGMlMjZ1dG1fdGVybSUzZE5PVEVSTSUyNnV0bV9jYW1wYWlnbiUzZFNFTVNlbmlvciUyNm1zY2xraWQlM2QxY2I3MDFiZGUwMTcxMWFiYjc0ZjZiOWZhYjY5YTI0NA&rlid=1cb701bde01711abb74f6b9fab69a244&ntb=1
+                        - generic [ref=e1005]: Open Source
+                    - listitem [ref=e1006] [cursor=pointer]:
+                      - link "Address Book" [ref=e1008]:
+                        - /url: https://www.bing.com/aclk?ld=e8wlcbfAGYsntluVqtt1sqhzVUCUxhqWKczq3J66LhYIpYcLFj4gwsN8ltasB1m9VTTrAfyFiOW3Ujs3AkfQBjTxkrYte-CufNlDV9Lt3pQ_c9T9o9zn3oY4abuM3ft5w5qpaHJFcrBzji2FOQzsjVqWthpComHrHsSLUFnUnipkkqtgIZk8PRsMv-G_7j7GTHo1IQKB1K6B4U1xgrCZz82YzAwFI&u=aHR0cHMlM2ElMmYlMmYlMmZ0ZWxpa2luLmNvbSUyZiUyM2FwcF9jb250YWN0cyUzZnV0bV9zb3VyY2UlM2RTRU0lMjZ1dG1fbWVkaXVtJTNkY3BjJTI2dXRtX3Rlcm0lM2ROT1RFUk0lMjZ1dG1fY2FtcGFpZ24lM2RTRU1TZW5pb3IlMjZtc2Nsa2lkJTNkZWU2NGIxNWVlNWMzMWUxOTRkN2ZkYjdjYWViZDI4OTA&rlid=ee64b15ee5c31e194d7fdb7caebd2890&ntb=1
+                        - generic [ref=e1009]: Address Book
+        - listitem [ref=e1010]:
+          - generic [ref=e1011]:
+            - heading "Deep dive into Technology" [level=2] [ref=e1012]:
+              - text: Deep dive into
+              - strong [ref=e1013]: Technology
+            - list [ref=e1014]:
+              - listitem [ref=e1015]:
+                - link "technology meaning" [ref=e1016] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=33c21d4ab01b20532cc23c90ccf430068995e9acceaac5f5a8952310589005c2JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3NlYXJjaD9xPXRlY2hub2xvZ3krbWVhbmluZyZGT1JNPVFTUkUx&ntb=1
+                  - generic [ref=e1018]:
+                    - text: technology
+                    - strong [ref=e1019]: meaning
+              - listitem [ref=e1020]:
+                - link "technology definition" [ref=e1021] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=a64bb389276822aecfe6e56b0bfc30dcd88b5584be5a04eb7ac4219fe737a717JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3NlYXJjaD9xPXRlY2hub2xvZ3krZGVmaW5pdGlvbiZGT1JNPVFTUkUy&ntb=1
+                  - generic [ref=e1023]:
+                    - text: technology
+                    - strong [ref=e1024]: definition
+              - listitem [ref=e1025]:
+                - link "technology news" [ref=e1026] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=bd325ee05834b592325d8e1771b8bf90d4611997f921c298397036660481212aJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3NlYXJjaD9xPXRlY2hub2xvZ3krbmV3cyZGT1JNPVFTUkUz&ntb=1
+                  - generic [ref=e1028]:
+                    - text: technology
+                    - strong [ref=e1029]: news
+              - listitem [ref=e1030]:
+                - link "technology wikipedia" [ref=e1031] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=06a23bb2a9df149012c477bd3bd64b3af18eadb6d0175e93d04b75688f70ad1aJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3NlYXJjaD9xPXRlY2hub2xvZ3krV2lraXBlZGlhJkZPUk09UVNSRTQ&ntb=1
+                  - generic [ref=e1033]:
+                    - text: technology
+                    - strong [ref=e1034]: wikipedia
+              - listitem [ref=e1035]:
+                - link "technology examples" [ref=e1036] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=80e6afdf7e6a34c81b222b18eb1fd3e6e92e603faaee6a59f8ede31caca219efJmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3NlYXJjaD9xPXRlY2hub2xvZ3krZXhhbXBsZXMmRk9STT1RU1JFNQ&ntb=1
+                  - generic [ref=e1038]:
+                    - text: technology
+                    - strong [ref=e1039]: examples
+              - listitem [ref=e1040]:
+                - link "list of technologies" [ref=e1041] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=4dcaca688aab87a5f6c64b2fd401626260130800b1dcd47e4d235c8926e22bc7JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3NlYXJjaD9xPWxpc3Qrb2YrdGVjaG5vbG9naWVzJkZPUk09UVNSRTY&ntb=1
+                  - strong [ref=e1044]: list of technologies
+              - listitem [ref=e1045]:
+                - link "technologia" [ref=e1046] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=d93c8ec44a974aa5a22c9bd060e1b68eb49f5619650cd3ab8435e70101c94443JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3NlYXJjaD9xPXRlY2hub2xvZ2lhJkZPUk09UVNSRTc&ntb=1
+                  - strong [ref=e1049]: technologia
+              - listitem [ref=e1050]:
+                - link "technology trends" [ref=e1051] [cursor=pointer]:
+                  - /url: https://www.bing.com/ck/a?!&&p=4b04988b80c37669125243edb6263634f25d78b6f7d96989f2da1b4a4c94ad84JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1L3NlYXJjaD9xPXRlY2hub2xvZ3krdHJlbmRzJkZPUk09UVNSRTg&ntb=1
+                  - generic [ref=e1053]:
+                    - text: technology
+                    - strong [ref=e1054]: trends
+        - listitem [ref=e1055]:
+          - navigation "More results for Technology":
+            - list:
+              - listitem [ref=e1056]:
+                - generic "Page 1" [ref=e1057]: "1"
+              - listitem [ref=e1058]:
+                - link "Page 2" [ref=e1059] [cursor=pointer]:
+                  - /url: /search?q=Technology&refig=6a224b6aed874a009a738008dccbec1f&mkt=en-in&ocid=&FPIG=4CA14E09800D4B919538D60D484DDF98&first=11&FORM=PERE
+                  - text: "2"
+              - listitem [ref=e1060]:
+                - link "Page 3" [ref=e1061] [cursor=pointer]:
+                  - /url: /search?q=Technology&refig=6a224b6aed874a009a738008dccbec1f&mkt=en-in&ocid=&FPIG=4CA14E09800D4B919538D60D484DDF98&first=21&FORM=PERE1
+                  - text: "3"
+              - listitem [ref=e1062]:
+                - link "Next page" [ref=e1063] [cursor=pointer]:
+                  - /url: /search?q=Technology&refig=6a224b6aed874a009a738008dccbec1f&mkt=en-in&ocid=&FPIG=4CA14E09800D4B919538D60D484DDF98&first=11&FORM=PORE
+      - complementary "Additional Results" [ref=e1064]:
+        - list
+  - contentinfo [ref=e1065]:
+    - generic [ref=e1066]:
+      - list:
+        - listitem [ref=e1067]:
+          - link "Privacy" [ref=e1068] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=f137d172045a2c9e77d0ff5419964a28d4e38f8885b0065a4ee47643bae25607JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSWQ9NTIxODM5&ntb=1
+        - listitem [ref=e1069]:
+          - link "Terms" [ref=e1070] [cursor=pointer]:
+            - /url: https://www.bing.com/ck/a?!&&p=fc98a377f0fe5e67db4839efb5301e5b1a1aaaa56b4e521875c5e9e8104ae919JmltdHM9MTc4MDUzMTIwMA&ptn=3&ver=2&hsh=4&fclid=1cc98285-735a-67f1-16fc-95ea722066a3&u=a1aHR0cDovL2dvLm1pY3Jvc29mdC5jb20vZndsaW5rLz9MaW5rSUQ9MjQ2MzM4&ntb=1

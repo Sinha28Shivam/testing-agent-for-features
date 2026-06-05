@@ -1,0 +1,25 @@
+# Cron Jobs Schedule Definitions
+# Define your periodic execution tasks here.
+# format:
+#   - name: unique job identifier
+#     schedule: standard 5 or 6-field cron expression
+#     target: path to scenarios.yaml file OR a raw prompt string
+#     enabled: true/false
+
+jobs:
+  - name: "daily-regression"
+    schedule: "0 0 * * *" # Every day at midnight
+    target: "scenarios.yaml"
+    enabled: true
+
+  # Example of an hourly prompt run
+  - name: "msn-sports-hourly-sanity"
+    schedule: "0 * * * *" # Every hour
+    target: "Verify sports page loads at https://www.msn.com/en-in/sports"
+    enabled: false
+
+  # Run every minute for testing/verification (enable this to test the cron daemon)
+  - name: "quick-sanity-test"
+    schedule: "*/1 * * * *" # Every minute
+    target: "scenarios.yaml"
+    enabled: false

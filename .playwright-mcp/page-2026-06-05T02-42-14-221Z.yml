@@ -1,0 +1,450 @@
+- generic [ref=e3]:
+  - banner [ref=e6]:
+    - generic [ref=e7]:
+      - generic "Skip to content" [ref=e8] [cursor=pointer]:
+        - button "Skip to content" [ref=e9]:
+          - generic:
+            - generic: Skip to content
+      - generic "Skip to footer" [ref=e10] [cursor=pointer]:
+        - button "Skip to footer" [ref=e11]:
+          - generic:
+            - generic: Skip to footer
+      - link "MSN" [ref=e14] [cursor=pointer]:
+        - /url: https://www.msn.com/en-in
+      - search [ref=e18]:
+        - generic [ref=e19]:
+          - generic "Web search" [ref=e20] [cursor=pointer]:
+            - button "Web search" [ref=e21]:
+              - generic:
+                - generic:
+                  - img
+          - searchbox "Enter your search term" [ref=e22]
+          - generic "Open Copilot" [ref=e26] [cursor=pointer]:
+            - button "Open Copilot" [ref=e27]:
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Open Copilot"
+      - generic [ref=e28]:
+        - generic "Open settings" [ref=e32] [cursor=pointer]:
+          - button "Open settings" [ref=e33]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Page settings
+                  - generic:
+                    - img
+        - generic:
+          - generic:
+            - generic:
+              - generic "Sign In"
+  - generic [ref=e34]:
+    - generic [ref=e35]:
+      - generic [ref=e40]:
+        - list [ref=e43]:
+          - listitem [ref=e44]:
+            - link "Outlook.com" [ref=e47] [cursor=pointer]:
+              - /url: https://outlook.com
+              - generic [ref=e51]: Outlook.com
+          - listitem [ref=e52]:
+            - link "Flipkart" [ref=e55] [cursor=pointer]:
+              - /url: https://clk.tradedoubler.com/click?p=401531&a=3419260&epi=enin-msn-hp-mestripe
+              - generic [ref=e58]:
+                - generic [ref=e59]: Flipkart
+                - generic [ref=e61]: Sponsored
+          - listitem [ref=e62]:
+            - link "Find a tutor" [ref=e65] [cursor=pointer]:
+              - /url: https://www.bing.com/pros?FORM=BPIMNS
+              - generic [ref=e69]: Find a tutor
+          - listitem [ref=e70]:
+            - link "Booking.com" [ref=e73] [cursor=pointer]:
+              - /url: https://www.booking.com/index.html?aid=1624937&label=enin-msn-hp-mestripe
+              - generic [ref=e76]:
+                - generic [ref=e77]: Booking.com
+                - generic [ref=e79]: Sponsored
+          - listitem [ref=e80]:
+            - link "Nykaa" [ref=e83] [cursor=pointer]:
+              - /url: https://sovrn.co/p9zogj8
+              - generic [ref=e86]:
+                - generic [ref=e87]: Nykaa
+                - generic [ref=e89]: Sponsored
+          - listitem [ref=e90]:
+            - link "Facebook" [ref=e93] [cursor=pointer]:
+              - /url: https://www.facebook.com
+              - generic [ref=e97]: Facebook
+          - listitem [ref=e98]:
+            - link "Microsoft 365" [ref=e101] [cursor=pointer]:
+              - /url: https://www.office.com/?omkt=en-IN
+              - generic [ref=e105]: Microsoft 365
+          - listitem [ref=e106]:
+            - link "X" [ref=e109] [cursor=pointer]:
+              - /url: https://x.com
+              - generic [ref=e113]: X
+          - listitem [ref=e114]:
+            - link "OneDrive" [ref=e117] [cursor=pointer]:
+              - /url: https://onedrive.live.com/?wt.mc_id=oo_msn_msnhomepage_header
+              - generic [ref=e121]: OneDrive
+          - listitem [ref=e122]:
+            - link "Skype" [ref=e125] [cursor=pointer]:
+              - /url: https://www.skype.com/
+              - generic [ref=e129]: Skype
+          - listitem [ref=e130]:
+            - link "OneNote" [ref=e133] [cursor=pointer]:
+              - /url: https://www.onenote.com/notebooks?WT.mc_id=MSN_OneNote_TopMenu&auth=1&wdorigin=msn
+              - generic [ref=e137]: OneNote
+          - listitem [ref=e138]:
+            - link "Maps" [ref=e141] [cursor=pointer]:
+              - /url: https://bing.com/maps/?FORM=MSNMAP
+              - generic [ref=e145]: Maps
+          - listitem [ref=e146]:
+            - link "Microsoft Store" [ref=e149] [cursor=pointer]:
+              - /url: https://www.microsoft.com/en-in
+              - generic [ref=e153]: Microsoft Store
+        - button [ref=e154]:
+          - img [ref=e157]
+      - generic [ref=e159]:
+        - banner [ref=e160]
+        - generic [ref=e165]:
+          - navigation [ref=e167]:
+            - generic [ref=e168]:
+              - list [ref=e169]:
+                - listitem [ref=e170]:
+                  - link "Discover" [ref=e171] [cursor=pointer]:
+                    - /url: https://www.msn.com/en-in
+              - list [ref=e172]:
+                - listitem [ref=e173]:
+                  - link "News" [ref=e174] [cursor=pointer]:
+                    - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f
+                - listitem [ref=e175]:
+                  - link "Sports" [ref=e176] [cursor=pointer]:
+                    - /url: https://www.msn.com/en-in/sports
+                - listitem [ref=e177]:
+                  - link "Play" [ref=e178] [cursor=pointer]:
+                    - /url: https://www.msn.com/en-in/play?cgfrom=cg_home_pivot
+                - listitem [ref=e179]:
+                  - link "Money" [ref=e180] [cursor=pointer]:
+                    - /url: https://www.msn.com/en-in/money
+                - listitem [ref=e181]:
+                  - link "Weather" [ref=e182] [cursor=pointer]:
+                    - /url: https://www.msn.com/en-in/weather
+                - listitem [ref=e183]:
+                  - link "Watch" [ref=e184] [cursor=pointer]:
+                    - /url: https://www.msn.com/en-in/video
+                - listitem [ref=e185]:
+                  - link "Shopping" [ref=e186] [cursor=pointer]:
+                    - /url: https://www.bing.com/shop?entrypoint=msn&adunitId=378983&propertyId=316966&FORM=NVBSHP
+          - generic "Personalize your feed\"" [ref=e188] [cursor=pointer]:
+            - button "Personalize your feed\"" [ref=e189]:
+              - generic:
+                - generic:
+                  - img
+              - generic:
+                - generic: Personalize
+      - main [ref=e192]:
+        - generic [ref=e195]:
+          - generic [ref=e198]:
+            - tablist [ref=e200]:
+              - tab [ref=e201] [cursor=pointer]
+              - tab [selected] [ref=e203] [cursor=pointer]
+              - tab [ref=e205] [cursor=pointer]
+              - tab [ref=e207] [cursor=pointer]
+              - tab [ref=e209] [cursor=pointer]
+              - tab [ref=e211] [cursor=pointer]
+              - tab [ref=e213] [cursor=pointer]
+              - tab [ref=e215] [cursor=pointer]
+              - tab [ref=e217] [cursor=pointer]
+              - tab [ref=e219] [cursor=pointer]
+              - tab [ref=e221] [cursor=pointer]
+              - tab [ref=e223] [cursor=pointer]
+              - tab [ref=e225] [cursor=pointer]
+              - tab [ref=e227] [cursor=pointer]
+              - tab [ref=e229] [cursor=pointer]
+              - tab [ref=e231] [cursor=pointer]
+              - tab [ref=e233] [cursor=pointer]
+              - tab [ref=e235] [cursor=pointer]
+              - tab [ref=e237] [cursor=pointer]
+              - tab [ref=e239] [cursor=pointer]
+              - tab [ref=e241] [cursor=pointer]
+              - tab [ref=e243] [cursor=pointer]
+              - tab [ref=e245] [cursor=pointer]
+              - tab [ref=e247] [cursor=pointer]
+              - tab [ref=e249] [cursor=pointer]
+              - tab [ref=e251] [cursor=pointer]
+              - tab [ref=e253] [cursor=pointer]
+              - tab [ref=e255] [cursor=pointer]
+              - tab [ref=e257] [cursor=pointer]
+            - button [ref=e261]
+            - button [ref=e264]
+            - article "Shooter Action MMO" [ref=e265] [cursor=pointer]:
+              - generic [ref=e267]:
+                - img [ref=e268]
+                - generic [ref=e269]:
+                  - generic [ref=e270]:
+                    - generic [ref=e273]: Crossout
+                    - link "Shooter Action MMO, Crossout" [ref=e274]:
+                      - /url: https://msft-ssp-apac.adnxs.com/click2?e=wqT_3QKhAfBDoQAAAAMAxBkFAQiB74jRBhCVy_fgz62gqSoY6rfC4ozn8phLIIT9sBAomAIwxH04uARA7O2mggJI8opOUABaA1VTRGIBBZBoAXABeJmgZ4ABtdMFiAEBkAEAmAEFoAECqQFYObTIdr6fP7EBEQoIuQEABQEI6D_BFR4AyRUKNNgBjr0C4AEA8AEA-AEA/s=46f7185b6663afa8eaef5a43604ccee6e36133b9/bcr=AAAAAAAA8D8=/pp=0.03/bn=92597/clickenc=https%3A%2F%2Fapi.taboola.com%2F2.0%2Fjson%2Fmsn-india-home%2Frecommendations.notify-click%3Fapp.type%3Dbidder%26app.apikey%3D69629143827c91b118c7e0dc9f2a4eb0059feae9%26response.id%3D__5ba0f3eaa89b0ada477d92fe0b973aca__fffb8933154a7c528fa26d28920e627f%26response.session%3Dv2_b9fa4167e4118d3a8213c80a5a7e45d0_5418335271509859306_1780627330_1780627330_CIi3jgYQ7_w-GP2k3s208Lr4nQEgASgMMGc4mNEKQPWPEEjLu_QDUP___________wFYAGAAaMSG5uz7h7C6bHABgAEAiAEAkAEA%26item.id%3D%257E%257EV1%257E%257E-1895865495493179574%257E%257EEjs_oeEHzpB0s39l1ZckS9AewKs_c1QiPF9ir3R1vSKB7XLmoA_j28SAgy11IH0u3aoogmtI0n8idYo9N9hyDOLxD3GvAJFX3VOIPfQmIueH0Yr9MEDj9YTwa__25q-bTYu7ywb7nLbJh3iisb9P88rsQwPEJCPUtcM6BLYfmOHM5OxxQa2JPncDjP8zGcKzAaoXpbUh2uUQWowa1qGIAozUN8uC7O3CTVERvUaFkB3i1X8Z9Nrmkzsw3vD01FwFUCIhcigDKLqfXahALYKC6tN4cV6iD6ykhq4_X4D-RgvhYbym6hsogv6YgWyO2BpafDbzwwdWa6UApUauRm_aYVkxiVzkqUwUQ7lMUC_-Z67QN95X3bkDyp-WFsizFYM7%26item.type%3Dtext%26sig%3D2122a3a03997bb9f334a3376a8e72b9c00b86643f0a0%26redir%3Dhttps%253A%252F%252Fcrossout.net%252Fplay4free%252F%253Fr%253Dtaboola_31242326%2526utm_source%253Dtaboola%2526utm_medium%253Dreferral%2526tblci%253DGiBgVSgerK55_-SnIrX389uvGwuDiGUEpO4aT8xhZ5g1giDip2MowPP5yJTLksmTATDv_D4%2523tblciGiBgVSgerK55_-SnIrX389uvGwuDiGUEpO4aT8xhZ5g1giDip2MowPP5yJTLksmTATDv_D4%26st%3Df%26ui%3D5418335271509859306%26cpb%3DGPghINrqHyoZc2cudGFib29sYXN5bmRpY2F0aW9uLmNvbTIIdHJjMzAzNDQ4gIbqwQlAmNEKSPWPEFDLu_QDWP___________wFjCN3__________wEQ3f__________ARgjZGMI5J4BELDIARhDZGMI3P__________ARDc__________8BGCRkYwi7__________8BELv__________wEYRWRjCKaIARCjrAEYB2RjCNIDEOAGGAhkYwj3__________8BEPf__________wEYCWRjCIi8ARCP8QEYSmRjCKQnEIo1GC9kYwiqNRCITRgyZGMI8iQQnaEBGBRkYwjQDBDTEhgXZGMIlhQQnRwYGGRjCKiFARDuqAEYOmRjCPQUEJ4dGB9kahMyMjk3OTE1OTU2MTIyODE2OTA1eAGAAeIjiAHq-ZifApABGJgBqKijrekzogEEU0NPTqoBElNDT05fTVNGVF9NT05FVElaRbIBElNDT05fTVNGVF9NT05FVElaRboBBGhvbWXAAcCeBMoBAnNn0AEA2wEQAdwB%26viperAppType%3DSCON
+                      - text: Shooter Action MMO
+                  - link "Sponsored" [ref=e276]:
+                    - /url: https://msft-ssp-apac.adnxs.com/click2?e=wqT_3QKhAfBDoQAAAAMAxBkFAQiB74jRBhCVy_fgz62gqSoY6rfC4ozn8phLIIT9sBAomAIwxH04uARA7O2mggJI8opOUABaA1VTRGIBBZBoAXABeJmgZ4ABtdMFiAEBkAEAmAEFoAECqQFYObTIdr6fP7EBEQoIuQEABQEI6D_BFR4AyRUKNNgBjr0C4AEA8AEA-AEA/s=46f7185b6663afa8eaef5a43604ccee6e36133b9/bcr=AAAAAAAA8D8=/pp=0.03/bn=92597/clickenc=https%3A%2F%2Fapi.taboola.com%2F2.0%2Fjson%2Fmsn-india-home%2Frecommendations.notify-click%3Fapp.type%3Dbidder%26app.apikey%3D69629143827c91b118c7e0dc9f2a4eb0059feae9%26response.id%3D__5ba0f3eaa89b0ada477d92fe0b973aca__fffb8933154a7c528fa26d28920e627f%26response.session%3Dv2_b9fa4167e4118d3a8213c80a5a7e45d0_5418335271509859306_1780627330_1780627330_CIi3jgYQ7_w-GP2k3s208Lr4nQEgASgMMGc4mNEKQPWPEEjLu_QDUP___________wFYAGAAaMSG5uz7h7C6bHABgAEAiAEAkAEA%26item.id%3D%257E%257EV1%257E%257E-1895865495493179574%257E%257EEjs_oeEHzpB0s39l1ZckS9AewKs_c1QiPF9ir3R1vSKB7XLmoA_j28SAgy11IH0u3aoogmtI0n8idYo9N9hyDOLxD3GvAJFX3VOIPfQmIueH0Yr9MEDj9YTwa__25q-bTYu7ywb7nLbJh3iisb9P88rsQwPEJCPUtcM6BLYfmOHM5OxxQa2JPncDjP8zGcKzAaoXpbUh2uUQWowa1qGIAozUN8uC7O3CTVERvUaFkB3i1X8Z9Nrmkzsw3vD01FwFUCIhcigDKLqfXahALYKC6tN4cV6iD6ykhq4_X4D-RgvhYbym6hsogv6YgWyO2BpafDbzwwdWa6UApUauRm_aYVkxiVzkqUwUQ7lMUC_-Z67QN95X3bkDyp-WFsizFYM7%26item.type%3Dtext%26sig%3D2122a3a03997bb9f334a3376a8e72b9c00b86643f0a0%26redir%3Dhttps%253A%252F%252Fcrossout.net%252Fplay4free%252F%253Fr%253Dtaboola_31242326%2526utm_source%253Dtaboola%2526utm_medium%253Dreferral%2526tblci%253DGiBgVSgerK55_-SnIrX389uvGwuDiGUEpO4aT8xhZ5g1giDip2MowPP5yJTLksmTATDv_D4%2523tblciGiBgVSgerK55_-SnIrX389uvGwuDiGUEpO4aT8xhZ5g1giDip2MowPP5yJTLksmTATDv_D4%26st%3Df%26ui%3D5418335271509859306%26cpb%3DGPghINrqHyoZc2cudGFib29sYXN5bmRpY2F0aW9uLmNvbTIIdHJjMzAzNDQ4gIbqwQlAmNEKSPWPEFDLu_QDWP___________wFjCN3__________wEQ3f__________ARgjZGMI5J4BELDIARhDZGMI3P__________ARDc__________8BGCRkYwi7__________8BELv__________wEYRWRjCKaIARCjrAEYB2RjCNIDEOAGGAhkYwj3__________8BEPf__________wEYCWRjCIi8ARCP8QEYSmRjCKQnEIo1GC9kYwiqNRCITRgyZGMI8iQQnaEBGBRkYwjQDBDTEhgXZGMIlhQQnRwYGGRjCKiFARDuqAEYOmRjCPQUEJ4dGB9kahMyMjk3OTE1OTU2MTIyODE2OTA1eAGAAeIjiAHq-ZifApABGJgBqKijrekzogEEU0NPTqoBElNDT05fTVNGVF9NT05FVElaRbIBElNDT05fTVNGVF9NT05FVElaRboBBGhvbWXAAcCeBMoBAnNn0AEA2wEQAdwB%26viperAppType%3DSCON
+                - button "See more" [ref=e278]:
+                  - img [ref=e279]
+          - article [ref=e280] [cursor=pointer]:
+            - generic [ref=e284]:
+              - generic: Sponsored
+          - article "Anushka Sharma’s homeopathy post sparks backlash, the liver doctor calls her ‘illiterate celeb’" [ref=e285] [cursor=pointer]:
+            - generic [ref=e287]:
+              - img [ref=e288]
+              - generic [ref=e289]:
+                - generic [ref=e290]:
+                  - generic [ref=e291]:
+                    - generic [ref=e292]:
+                      - img [ref=e293]
+                      - generic [ref=e294]: Moneycontrol
+                    - generic [ref=e295]: ·
+                    - generic [ref=e296]: 15h
+                  - link "Anushka Sharma’s homeopathy post sparks backlash, the liver doctor calls her ‘illiterate celeb’, Moneycontrol" [ref=e297]:
+                    - /url: https://www.msn.com/en-in/money/topstories/anushka-sharma-s-homeopathy-post-sparks-backlash-the-liver-doctor-calls-her-illiterate-celeb/ar-AA24P9Lh
+                    - text: Anushka Sharma’s homeopathy post sparks backlash, the liver doctor calls her ‘illiterate celeb’
+                - generic "Anushka Sharma’s homeopathy post sparks backlash, the liver doctor calls her ‘illiterate celeb’" [ref=e300]:
+                  - generic [ref=e302]:
+                    - generic [ref=e303]:
+                      - button "46 Like" [ref=e304]:
+                        - generic [ref=e305]:
+                          - img [ref=e306]
+                          - generic [ref=e308]: "46"
+                      - button "Dislike" [ref=e309]:
+                        - img [ref=e311]
+                    - link "View comments 1 Comment" [ref=e314]:
+                      - /url: https://www.msn.com/en-in/money/topstories/anushka-sharma-s-homeopathy-post-sparks-backlash-the-liver-doctor-calls-her-illiterate-celeb/ar-AA24P9Lh#comments
+                      - button "View comments 1 Comment" [ref=e315]:
+                        - img [ref=e316]
+                      - generic [ref=e318]: "1"
+              - generic [ref=e319]:
+                - button "Hide this story" [ref=e320]:
+                  - img [ref=e321]
+                  - text: Hide this story
+                - button "See more" [ref=e322]:
+                  - img [ref=e323]
+          - article "Discover German's newest hearing technology for crystal-clear sound!" [ref=e324] [cursor=pointer]:
+            - generic [ref=e326]:
+              - img [ref=e327]
+              - generic [ref=e328]:
+                - generic [ref=e329]:
+                  - generic [ref=e332]: hear.com
+                  - link "Discover German's newest hearing technology for crystal-clear sound!, hear.com" [ref=e333]:
+                    - /url: https://www.bing.com/api/v1/mediation/tracking?adUnit=1732768568&auId=846cc6d5-8810-4c42-9b52-3bc2997fa960&bdc=pb&bidId=5&bidderId=4&cmExpId=RSV&impId=8&impTy=1&ldc=xfoczr&mkt=en-in&oAdUnit=1732768568&pId=1&publisherId=17160724&rId=f7e8ca81-28ee-4862-871c-e8f0c0e7ab4e&region=apac&rlink=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8yOUgY054xcJ9TqF_qVbuCDVUCUwGnYiVlLInq4hrOiLKHjQjwk0Mk5qVdnLamVhUNZmU29xHpnCpt03NcifZtrxkbELK0l4lkKeTqI8gK7cXzXJ2b7cBF3zd42fQAjKhpc_Cf_PucQUpgwI4cA5XszSNY6kPQYK9RT1Wvf3wW3RWryQVj25LCVWP1wyWARlqGKOLdA%26u%3DaHR0cHMlM2ElMmYlMmZpbi5oZWFyLmNvbSUyZmQlMmZlbl9wcmljZV9saXN0X2Rpc3BsYXlfbXNhbiUyZiUzZmFjdCUzZEFDVDAwMDAwOTk2MjRBQ1QlMjZ1dG1fc291cmNlJTNkbWNycy1hdWRpZW5jZS1uZXR3b3JrJTI2dXRtX21lZGl1bSUzZGRpc3BsYXklMjZ1dG1fY2FtcGFpZ24lM2Rpbl9lbl9oZWFfZGlzcGxheV9tY3JzLWF1ZGllbmNlLW5ldHdvcmtfcHJpY2VfbGlzdF9hY3FfbW9iaWxlX21zbl9BQ1QwMDAwMDk5NjI0QUNUJTI2Z2VvJTNkMjYxNjI5JTI2YWRncm91cCUzZDExNTU1ODg2ODI5Nzg4MTclMjZLZXl3b3JkJTNka2V5d29yZCUyNk1hdGNoVHlwZSUzZGUlMjZwb3NpdGlvbiUzZCUyNnV0bV9jb250ZW50JTNkJTI2bmV0d29yayUzZGElMjZwbGFjZW1lbnQlM2QlMjZ1dG1fcHVibGlzaGVyX0lEJTNkJTI2dXRtX3Rlcm0lM2QlMjZtc2Nsa2lkJTNkZjU5NzFkMTJmOTFlMWI3ODc1YTU3NzMwY2U5YzY3YTA%26rlid%3Df5971d12f91e1b7875a57730ce9c67a0&rtype=targetURL&tagId=hp2-river-1&trafficGroup=zfa_angvir&trafficSubGroup=erfreir&uberGroup=hore_1c&uberSubGroup=erfreir
+                    - text: Discover German's newest hearing technology for crystal-clear sound!
+                - link "Sponsored" [ref=e335]:
+                  - /url: https://www.bing.com/api/v1/mediation/tracking?adUnit=1732768568&auId=846cc6d5-8810-4c42-9b52-3bc2997fa960&bdc=pb&bidId=5&bidderId=4&cmExpId=RSV&impId=8&impTy=1&ldc=xfoczr&mkt=en-in&oAdUnit=1732768568&pId=1&publisherId=17160724&rId=f7e8ca81-28ee-4862-871c-e8f0c0e7ab4e&region=apac&rlink=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8yOUgY054xcJ9TqF_qVbuCDVUCUwGnYiVlLInq4hrOiLKHjQjwk0Mk5qVdnLamVhUNZmU29xHpnCpt03NcifZtrxkbELK0l4lkKeTqI8gK7cXzXJ2b7cBF3zd42fQAjKhpc_Cf_PucQUpgwI4cA5XszSNY6kPQYK9RT1Wvf3wW3RWryQVj25LCVWP1wyWARlqGKOLdA%26u%3DaHR0cHMlM2ElMmYlMmZpbi5oZWFyLmNvbSUyZmQlMmZlbl9wcmljZV9saXN0X2Rpc3BsYXlfbXNhbiUyZiUzZmFjdCUzZEFDVDAwMDAwOTk2MjRBQ1QlMjZ1dG1fc291cmNlJTNkbWNycy1hdWRpZW5jZS1uZXR3b3JrJTI2dXRtX21lZGl1bSUzZGRpc3BsYXklMjZ1dG1fY2FtcGFpZ24lM2Rpbl9lbl9oZWFfZGlzcGxheV9tY3JzLWF1ZGllbmNlLW5ldHdvcmtfcHJpY2VfbGlzdF9hY3FfbW9iaWxlX21zbl9BQ1QwMDAwMDk5NjI0QUNUJTI2Z2VvJTNkMjYxNjI5JTI2YWRncm91cCUzZDExNTU1ODg2ODI5Nzg4MTclMjZLZXl3b3JkJTNka2V5d29yZCUyNk1hdGNoVHlwZSUzZGUlMjZwb3NpdGlvbiUzZCUyNnV0bV9jb250ZW50JTNkJTI2bmV0d29yayUzZGElMjZwbGFjZW1lbnQlM2QlMjZ1dG1fcHVibGlzaGVyX0lEJTNkJTI2dXRtX3Rlcm0lM2QlMjZtc2Nsa2lkJTNkZjU5NzFkMTJmOTFlMWI3ODc1YTU3NzMwY2U5YzY3YTA%26rlid%3Df5971d12f91e1b7875a57730ce9c67a0&rtype=targetURL&tagId=hp2-river-1&trafficGroup=zfa_angvir&trafficSubGroup=erfreir&uberGroup=hore_1c&uberSubGroup=erfreir
+              - button "See more" [ref=e337]:
+                - img [ref=e338]
+          - article [ref=e339] [cursor=pointer]:
+            - generic [ref=e345]:
+              - generic [ref=e347]:
+                - img "Watchlist suggestions" [ref=e349]
+                - link "Watchlist suggestions" [ref=e350]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?ocid=hpmsn
+                  - heading "Watchlist suggestions" [level=2] [ref=e351]
+                - button "More options" [ref=e353]
+              - generic [ref=e358]:
+                - link "DOW DOW Rising fast ‎+1.73%‎ 51,561.93" [ref=e360]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?id=a6qja2&noti=Price&ocid=hpmsn
+                  - generic [ref=e361]:
+                    - generic [ref=e362]:
+                      - generic [ref=e363]: DOW
+                      - img "DOW" [ref=e364]
+                    - generic [ref=e366]: Rising fast
+                  - generic [ref=e371]:
+                    - generic [ref=e372]: ‎+1.73%‎
+                    - generic [ref=e373]: 51,561.93
+                  - button "Add to watchlist" [ref=e376]:
+                    - img [ref=e377]
+                - link "Silver Silver Dropping fast ‎-1.57%‎ 72.81" [ref=e381]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?id=auvwr7&noti=Price&ocid=hpmsn
+                  - generic [ref=e382]:
+                    - generic [ref=e383]:
+                      - generic [ref=e384]: Silver
+                      - img "Silver" [ref=e385]
+                    - generic [ref=e387]: Dropping fast
+                  - generic [ref=e392]:
+                    - generic [ref=e393]: ‎-1.57%‎
+                    - generic [ref=e394]: "72.81"
+                  - button "Add to watchlist" [ref=e397]:
+                    - img [ref=e398]
+                - link "ITC Ltd ITC ‎+1.19%‎ 280.30" [ref=e402]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?id=ahie2w&ocid=hpmsn
+                  - generic [ref=e403]:
+                    - generic [ref=e405]: ITC Ltd
+                    - generic [ref=e407]: ITC
+                  - generic [ref=e412]:
+                    - generic [ref=e413]: ‎+1.19%‎
+                    - generic [ref=e414]: "280.30"
+                  - button "Add to watchlist" [ref=e417]:
+                    - img [ref=e418]
+                - link "Citigroup Inc Citigroup Inc Rising fast ‎+4.02%‎ 135.15" [ref=e422]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?id=a1p3ww&noti=Price&ocid=hpmsn
+                  - generic [ref=e423]:
+                    - generic [ref=e424]:
+                      - generic [ref=e425]: Citigroup Inc
+                      - img "Citigroup Inc" [ref=e426]
+                    - generic [ref=e428]: Rising fast
+                  - generic [ref=e433]:
+                    - generic [ref=e434]: ‎+4.02%‎
+                    - generic [ref=e435]: "135.15"
+                  - button "Add to watchlist" [ref=e438]:
+                    - img [ref=e439]
+                - link "Dominion Energy Inc Dominion Energy Inc Rising fast ‎+1.59%‎ 66.50" [ref=e443]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?id=a1qpw7&noti=Price&ocid=hpmsn
+                  - generic [ref=e444]:
+                    - generic [ref=e445]:
+                      - generic [ref=e446]: Dominion Energy Inc
+                      - img "Dominion Energy Inc" [ref=e447]
+                    - generic [ref=e449]: Rising fast
+                  - generic [ref=e454]:
+                    - generic [ref=e455]: ‎+1.59%‎
+                    - generic [ref=e456]: "66.50"
+                  - button "Add to watchlist" [ref=e459]:
+                    - img [ref=e460]
+              - generic [ref=e464]:
+                - generic [ref=e465]:
+                  - generic "Previous" [ref=e466]:
+                    - button "Previous" [ref=e467]
+                  - tablist [ref=e469]:
+                    - tab "tab-0" [selected] [ref=e470]
+                    - tab "tab-1" [ref=e472]
+                    - tab "tab-2" [ref=e474]
+                    - tab "tab-3" [ref=e476]
+                    - tab "tab-4" [ref=e478]
+                    - tab "tab-5"
+                    - tab "tab-6"
+                  - generic "Next" [ref=e480]:
+                    - button "Next" [ref=e481]
+                - link "See watchlist suggestions" [ref=e483]:
+                  - /url: https://www.msn.com/en-in/money/watchlist?ocid=hpmsn
+          - article "The American Express® Platinum Card" [ref=e484] [cursor=pointer]:
+            - generic [ref=e486]:
+              - img [ref=e487]
+              - generic [ref=e488]:
+                - generic [ref=e489]:
+                  - generic [ref=e492]: American Express®
+                  - link "The American Express® Platinum Card, American Express®" [ref=e493]:
+                    - /url: https://www.bing.com/api/v1/mediation/tracking?adUnit=1732768568&auId=49656a64-f345-42fe-84c4-0488d206f295&bdc=pb&bidId=4&bidderId=4&cmExpId=RSV&impId=9&impTy=1&ldc=xfoczr&mkt=en-in&oAdUnit=1732768568&pId=1&publisherId=17160724&rId=f7e8ca81-28ee-4862-871c-e8f0c0e7ab4e&region=apac&rlink=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8PDm61THe3g4CJYBnXfA4jTVUCUxVeI5eY-GzxF72PGk5ka5R-CCE4X98M3StFZIc9uQvgaCr8CABz6PBnNyNP3Syd9vijT_7Mu7StSRfbo1evYvRyW7c3pj2ITGZ_7TZx3E0acezFbEq3NE2jE8-lQCXP18CGVJ90W51gDZ0mLWPrKmjXehe9DIlIdgLklB7Z-8R9g%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuYW1lcmljYW5leHByZXNzLmNvbSUyZmluJTJmY2hhcmdlLWNhcmRzJTJmcGxhdGludW0tY2FyZCUyZiUzZkNQSUQlM2QxMDA2MTIxNzIlMjZtc2Nsa2lkJTNkOGViZmFmYjgxZDFkMWQ4OTExYWFjNTlhMmE5ZmU4MGI%26rlid%3D8ebfafb81d1d1d8911aac59a2a9fe80b&rtype=targetURL&tagId=hp2-river-2&trafficGroup=zfa_angvir&trafficSubGroup=erfreir&uberGroup=hore_1c&uberSubGroup=erfreir
+                    - text: The American Express® Platinum Card
+                - link "Sponsored" [ref=e495]:
+                  - /url: https://www.bing.com/api/v1/mediation/tracking?adUnit=1732768568&auId=49656a64-f345-42fe-84c4-0488d206f295&bdc=pb&bidId=4&bidderId=4&cmExpId=RSV&impId=9&impTy=1&ldc=xfoczr&mkt=en-in&oAdUnit=1732768568&pId=1&publisherId=17160724&rId=f7e8ca81-28ee-4862-871c-e8f0c0e7ab4e&region=apac&rlink=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8PDm61THe3g4CJYBnXfA4jTVUCUxVeI5eY-GzxF72PGk5ka5R-CCE4X98M3StFZIc9uQvgaCr8CABz6PBnNyNP3Syd9vijT_7Mu7StSRfbo1evYvRyW7c3pj2ITGZ_7TZx3E0acezFbEq3NE2jE8-lQCXP18CGVJ90W51gDZ0mLWPrKmjXehe9DIlIdgLklB7Z-8R9g%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuYW1lcmljYW5leHByZXNzLmNvbSUyZmluJTJmY2hhcmdlLWNhcmRzJTJmcGxhdGludW0tY2FyZCUyZiUzZkNQSUQlM2QxMDA2MTIxNzIlMjZtc2Nsa2lkJTNkOGViZmFmYjgxZDFkMWQ4OTExYWFjNTlhMmE5ZmU4MGI%26rlid%3D8ebfafb81d1d1d8911aac59a2a9fe80b&rtype=targetURL&tagId=hp2-river-2&trafficGroup=zfa_angvir&trafficSubGroup=erfreir&uberGroup=hore_1c&uberSubGroup=erfreir
+              - button "See more" [ref=e497]:
+                - img [ref=e498]
+          - 'article "Cardiologist shares how to identify 1st sign of heart attack, silent symptoms: ''Rarely feels like sharp, stabbing pain''" [ref=e499] [cursor=pointer]':
+            - generic [ref=e501]:
+              - img [ref=e502]
+              - generic [ref=e503]:
+                - generic [ref=e504]:
+                  - generic [ref=e506]:
+                    - img [ref=e507]
+                    - generic [ref=e508]: Hindustan Times
+                  - 'link "Cardiologist shares how to identify 1st sign of heart attack, silent symptoms: ''Rarely feels like sharp, stabbing pain'', Hindustan Times" [ref=e509]':
+                    - /url: https://www.msn.com/en-in/health/health-news/cardiologist-shares-how-to-identify-1st-sign-of-heart-attack-silent-symptoms-rarely-feels-like-sharp-stabbing-pain/ar-AA1UE4JB
+                    - text: "Cardiologist shares how to identify 1st sign of heart attack, silent symptoms: 'Rarely feels like sharp, stabbing pain'"
+                - 'generic "Cardiologist shares how to identify 1st sign of heart attack, silent symptoms: ''Rarely feels like sharp, stabbing pain''" [ref=e512]':
+                  - generic [ref=e514]:
+                    - generic [ref=e515]:
+                      - button "1k Like" [ref=e516]:
+                        - generic [ref=e517]:
+                          - img [ref=e518]
+                          - generic [ref=e520]: 1k
+                      - button "Dislike" [ref=e521]:
+                        - img [ref=e523]
+                    - link "View comments 2 Comment" [ref=e526]:
+                      - /url: https://www.msn.com/en-in/health/health-news/cardiologist-shares-how-to-identify-1st-sign-of-heart-attack-silent-symptoms-rarely-feels-like-sharp-stabbing-pain/ar-AA1UE4JB#comments
+                      - button "View comments 2 Comment" [ref=e527]:
+                        - img [ref=e528]
+                      - generic [ref=e530]: "2"
+              - generic [ref=e531]:
+                - button "Hide this story" [ref=e532]:
+                  - img [ref=e533]
+                  - text: Hide this story
+                - button "See more" [ref=e534]:
+                  - img [ref=e535]
+          - 'article "GK: Which Indian city is called the litchi capital of the world?" [ref=e536] [cursor=pointer]':
+            - generic [ref=e538]:
+              - img [ref=e539]
+              - generic [ref=e540]:
+                - generic [ref=e541]:
+                  - generic [ref=e542]:
+                    - generic [ref=e543]:
+                      - img [ref=e544]
+                      - generic [ref=e545]: News18
+                    - generic [ref=e546]: ·
+                    - generic [ref=e547]: 2w
+                  - 'link "GK: Which Indian city is called the litchi capital of the world?, News18" [ref=e548]':
+                    - /url: https://www.msn.com/en-in/travel/tripideas/gk-which-indian-city-is-called-the-litchi-capital-of-the-world/ss-AA23ywsO
+                    - text: "GK: Which Indian city is called the litchi capital of the world?"
+                - 'generic "GK: Which Indian city is called the litchi capital of the world?" [ref=e551]':
+                  - generic [ref=e553]:
+                    - generic [ref=e554]:
+                      - button "449 Like" [ref=e555]:
+                        - generic [ref=e556]:
+                          - img [ref=e557]
+                          - generic [ref=e559]: "449"
+                      - button "Dislike" [ref=e560]:
+                        - img [ref=e562]
+                    - link "View comments 6 Comment" [ref=e565]:
+                      - /url: https://www.msn.com/en-in/travel/tripideas/gk-which-indian-city-is-called-the-litchi-capital-of-the-world/ss-AA23ywsO#comments
+                      - button "View comments 6 Comment" [ref=e566]:
+                        - img [ref=e567]
+                      - generic [ref=e569]: "6"
+              - generic [ref=e570]:
+                - button "Hide this story" [ref=e571]:
+                  - img [ref=e572]
+                  - text: Hide this story
+                - button "See more" [ref=e573]:
+                  - img [ref=e574]
+          - article [ref=e575] [cursor=pointer]:
+            - generic [ref=e580]:
+              - generic [ref=e582]:
+                - link "Top stories" [ref=e584]:
+                  - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f?cvid=6a22377e36fa419fac533b5b70c74e6f&ocid=hpmsn
+                  - heading "Top stories" [level=2] [ref=e585]
+                - button "More options" [ref=e587]
+              - list [ref=e590]:
+                - 'listitem "PM Modi ''good friend of mine'': Trump says India-US trade deal likely soon" [ref=e591]':
+                  - generic [ref=e592]:
+                    - generic [ref=e593]:
+                      - img [ref=e594]
+                      - generic [ref=e595]:
+                        - generic: WION ·now
+                    - generic [ref=e596]: "PM Modi 'good friend of mine': Trump says India-US trade deal likely soon"
+                - listitem "BJP names 11 candidates for Rajya Sabha elections. Check full list" [ref=e597]:
+                  - generic [ref=e598]:
+                    - generic [ref=e599]:
+                      - img [ref=e600]
+                      - generic [ref=e601]:
+                        - generic: Hindustan Times ·1h
+                    - generic [ref=e602]: BJP names 11 candidates for Rajya Sabha elections. Check full list
+                - listitem "Vladimir Putin praises PM Modi, Xi Jinping; says Russia won't interfere in 'delicate' India-China ties" [ref=e603]:
+                  - generic [ref=e604]:
+                    - generic [ref=e605]:
+                      - img [ref=e606]
+                      - generic [ref=e607]:
+                        - generic: Times Now ·1h
+                    - generic [ref=e608]: Vladimir Putin praises PM Modi, Xi Jinping; says Russia won't interfere in 'delicate' India-China ties
+              - generic [ref=e610]:
+                - generic [ref=e611]:
+                  - generic "Previous" [ref=e612]:
+                    - button "Previous" [ref=e613]
+                  - tablist [ref=e615]:
+                    - tab "tab-0" [selected] [ref=e616]
+                    - tab "tab-1" [ref=e618]
+                    - tab "tab-2" [ref=e620]
+                  - generic "Next" [ref=e622]:
+                    - button "Next" [ref=e623]
+                - link "See more" [ref=e625]:
+                  - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f?cvid=6a22377e36fa419fac533b5b70c74e6f&ocid=hpmsn
+    - contentinfo [ref=e628]:
+      - generic "Feedback" [ref=e630] [cursor=pointer]:
+        - button "Feedback" [ref=e631]:
+          - generic:
+            - generic:
+              - img
+          - generic:
+            - generic: Feedback

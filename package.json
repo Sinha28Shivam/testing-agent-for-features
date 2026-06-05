@@ -6,6 +6,8 @@
   "scripts": {
     "start": "node src/index.js",
     "db:init": "node src/db/init.js",
+    "cron:start": "node src/cron/CronScheduler.js",
+    "ado:fetch": "node src/integration/sync_ado.js",
     "test": "npx playwright test"
   },
   "keywords": [],
@@ -19,6 +21,7 @@
     "dotenv": "^17.4.2",
     "js-yaml": "^4.1.1",
     "mongodb": "^7.2.0",
+    "node-cron": "^4.2.1",
     "nodemailer": "^8.0.10",
     "pg": "^8.21.0",
     "playwright": "^1.60.0",

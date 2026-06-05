@@ -1,0 +1,274 @@
+- generic [ref=e3]:
+  - banner [ref=e6]:
+    - generic [ref=e7]:
+      - generic "Skip to content" [ref=e8] [cursor=pointer]:
+        - button "Skip to content" [ref=e9]:
+          - generic:
+            - generic: Skip to content
+      - generic "Skip to footer" [ref=e10] [cursor=pointer]:
+        - button "Skip to footer" [ref=e11]:
+          - generic:
+            - generic: Skip to footer
+      - link "MSN" [ref=e14] [cursor=pointer]:
+        - /url: https://www.msn.com/en-in
+      - search [ref=e18]:
+        - generic [ref=e19]:
+          - generic "Web search" [ref=e20] [cursor=pointer]:
+            - button "Web search" [ref=e21]:
+              - generic:
+                - generic:
+                  - img
+          - searchbox "Enter your search term" [ref=e22]
+      - generic [ref=e23]:
+        - generic "Open settings" [ref=e27] [cursor=pointer]:
+          - button "Open settings" [ref=e28]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Page settings
+                  - generic:
+                    - img
+        - generic:
+          - generic:
+            - generic:
+              - generic "Sign In"
+  - generic [ref=e30]:
+    - generic [ref=e33]:
+      - banner [ref=e34]
+      - generic [ref=e40]:
+        - navigation [ref=e42]:
+          - generic [ref=e43]:
+            - list [ref=e44]:
+              - listitem [ref=e45]:
+                - link "Discover" [ref=e46] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in
+            - list [ref=e47]:
+              - listitem [ref=e48]:
+                - link "News" [ref=e49] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f
+              - listitem [ref=e50]:
+                - link "Sports" [ref=e51] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/sports
+              - listitem [ref=e52]:
+                - link "Play" [ref=e53] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/play?cgfrom=cg_home_pivot
+              - listitem [ref=e54]:
+                - link "Money" [ref=e55] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/money
+              - listitem [ref=e56]:
+                - link "Weather" [ref=e57] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/weather
+              - listitem [ref=e58]:
+                - link "Watch" [ref=e59] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/video
+              - listitem [ref=e60]:
+                - link "Shopping" [ref=e61] [cursor=pointer]:
+                  - /url: https://www.bing.com/shop?entrypoint=msn&adunitId=378983&propertyId=316966&FORM=NVBSHP
+        - generic "Personalize your feed\"" [ref=e63] [cursor=pointer]:
+          - button "Personalize your feed\"" [ref=e64]:
+            - generic:
+              - generic:
+                - img
+            - generic:
+              - generic: Personalize
+    - main [ref=e67]:
+      - generic [ref=e70]:
+        - article "Colon cancer symptoms that often appear without pain" [ref=e74] [cursor=pointer]:
+          - generic [ref=e76]:
+            - img [ref=e77]
+            - generic [ref=e78]:
+              - generic [ref=e79]:
+                - generic [ref=e81]:
+                  - img [ref=e82]
+                  - generic [ref=e83]: The Times of India
+                - link "Colon cancer symptoms that often appear without pain, The Times of India" [ref=e84]:
+                  - /url: https://www.msn.com/en-in/health/other/colon-cancer-symptoms-that-often-appear-without-pain/ss-AA1MV2wn
+                  - text: Colon cancer symptoms that often appear without pain
+              - generic [ref=e85]:
+                - generic:
+                  - generic:
+                    - generic "Colon cancer symptoms that often appear without pain"
+            - generic [ref=e86]:
+              - button "Hide this story" [ref=e87]:
+                - img [ref=e88]
+                - text: Hide this story
+              - button "See more" [ref=e89]:
+                - img [ref=e90]
+        - article [ref=e91] [cursor=pointer]
+        - 'article "''Everybody said Shafali'': Harmanpreet Kaur opens up on crucial World Cup selection call" [ref=e93] [cursor=pointer]':
+          - generic [ref=e95]:
+            - img [ref=e96]
+            - generic [ref=e97]:
+              - generic [ref=e98]:
+                - generic [ref=e99]:
+                  - generic [ref=e100]:
+                    - img [ref=e101]
+                    - generic [ref=e102]: ABP - Live
+                  - generic [ref=e103]: ·
+                  - generic [ref=e104]: 11h
+                - 'link "''Everybody said Shafali'': Harmanpreet Kaur opens up on crucial World Cup selection call, ABP - Live" [ref=e105]':
+                  - /url: https://www.msn.com/en-in/news/other/everybody-said-shafali-harmanpreet-kaur-opens-up-on-crucial-world-cup-selection-call/ar-AA24PEuU
+                  - text: "'Everybody said Shafali': Harmanpreet Kaur opens up on crucial World Cup selection call"
+              - generic [ref=e106]:
+                - generic:
+                  - generic:
+                    - 'generic "''Everybody said Shafali'': Harmanpreet Kaur opens up on crucial World Cup selection call"'
+            - generic [ref=e107]:
+              - button "Hide this story" [ref=e108]:
+                - img [ref=e109]
+                - text: Hide this story
+              - button "See more" [ref=e110]:
+                - img [ref=e111]
+        - article "2 Crore Term Plan @ ₹915/m*" [ref=e112] [cursor=pointer]:
+          - generic [ref=e114]:
+            - img [ref=e115]
+            - generic [ref=e116]:
+              - generic [ref=e117]:
+                - generic [ref=e120]: SBI Life Insurance
+                - link "2 Crore Term Plan @ ₹915/m*, SBI Life Insurance" [ref=e121]:
+                  - /url: https://www.bing.com/api/v1/mediation/tracking?adUnit=1732768568&auId=0e11100a-4a97-41e3-817d-dc8bc7a9e5e4&bdc=pb&bidId=3&bidderId=4&cmExpId=RSV&impId=8&impTy=1&ldc=xfnczr&mkt=en-in&oAdUnit=1732768568&pId=1&publisherId=17160724&rId=da6de750-b379-4243-b757-f48da3d1785c&region=apac&rlink=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8-lH4d6hEHm1IbpG_n6rCbzVUCUzmU14ufI2u3N6qJSFkU2ZJgYJkPqK_6YlUD1ub5Upg0bJ-5f3lwRN8UGBmKF0giEvEqWukEBFO_rj6yN5MFuafpJKR-n0Hkt_DY7HMP3rSLn4nXlsdYC0TUPMk374Xxwc8SOCze5E0iOIj7wetPGwDaJEGr5wimo6NV7pnI2Zi6A%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuc2JpbGlmZS5jby5pbiUyZmVwb2xpY3klMmZTbWFydFNoaWVsZFBsdXMlMmZVSSUyZlBlcnNvbmFsRGV0YWlsc01pbm9yLmFzcHglM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RkaXNwbGF5JTI2dXRtX2NhbXBhaWduJTNkTFNfU0JJX1NTUExfRFBfT3Blbl9QSV9GQU0yQ1IlMjZ1dG1fdGVybSUzZDgyNTMyNTAyNjgzMjA1JTI2dXRtX2NvbnRlbnQlM2Q2NjM1NDMxODYlMjZtc2Nsa2lkJTNkNmY3YWYzMDcwNzk0MWQ1YWMxMDg5OTI1NGMxNDk2YWQ%26rlid%3D6f7af30707941d5ac10899254c1496ad&rtype=targetURL&tagId=hp2-river-1&trafficGroup=zfa_angvir&trafficSubGroup=erfreir&uberGroup=hore_1c&uberSubGroup=pbageby_5
+                  - text: 2 Crore Term Plan @ ₹915/m*
+              - link "Sponsored" [ref=e123]:
+                - /url: https://www.bing.com/api/v1/mediation/tracking?adUnit=1732768568&auId=0e11100a-4a97-41e3-817d-dc8bc7a9e5e4&bdc=pb&bidId=3&bidderId=4&cmExpId=RSV&impId=8&impTy=1&ldc=xfnczr&mkt=en-in&oAdUnit=1732768568&pId=1&publisherId=17160724&rId=da6de750-b379-4243-b757-f48da3d1785c&region=apac&rlink=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8-lH4d6hEHm1IbpG_n6rCbzVUCUzmU14ufI2u3N6qJSFkU2ZJgYJkPqK_6YlUD1ub5Upg0bJ-5f3lwRN8UGBmKF0giEvEqWukEBFO_rj6yN5MFuafpJKR-n0Hkt_DY7HMP3rSLn4nXlsdYC0TUPMk374Xxwc8SOCze5E0iOIj7wetPGwDaJEGr5wimo6NV7pnI2Zi6A%26u%3DaHR0cHMlM2ElMmYlMmZ3d3cuc2JpbGlmZS5jby5pbiUyZmVwb2xpY3klMmZTbWFydFNoaWVsZFBsdXMlMmZVSSUyZlBlcnNvbmFsRGV0YWlsc01pbm9yLmFzcHglM2Z1dG1fc291cmNlJTNkYmluZyUyNnV0bV9tZWRpdW0lM2RkaXNwbGF5JTI2dXRtX2NhbXBhaWduJTNkTFNfU0JJX1NTUExfRFBfT3Blbl9QSV9GQU0yQ1IlMjZ1dG1fdGVybSUzZDgyNTMyNTAyNjgzMjA1JTI2dXRtX2NvbnRlbnQlM2Q2NjM1NDMxODYlMjZtc2Nsa2lkJTNkNmY3YWYzMDcwNzk0MWQ1YWMxMDg5OTI1NGMxNDk2YWQ%26rlid%3D6f7af30707941d5ac10899254c1496ad&rtype=targetURL&tagId=hp2-river-1&trafficGroup=zfa_angvir&trafficSubGroup=erfreir&uberGroup=hore_1c&uberSubGroup=pbageby_5
+            - button "See more" [ref=e125]:
+              - img [ref=e126]
+        - article [ref=e127] [cursor=pointer]:
+          - generic [ref=e133]:
+            - generic [ref=e135]:
+              - img "Watchlist suggestions" [ref=e137]
+              - link "Watchlist suggestions" [ref=e138]:
+                - /url: https://www.msn.com/en-in/money/watchlist?ocid=hpmsn
+                - heading "Watchlist suggestions" [level=2] [ref=e139]
+              - button "More options" [ref=e141]
+            - generic [ref=e146]:
+              - link "DOW DJI ‎+1.73%‎ 51,561.93" [ref=e148]:
+                - /url: https://www.msn.com/en-in/money/watchlist?id=a6qja2&ocid=hpmsn
+                - generic [ref=e149]:
+                  - generic [ref=e151]: DOW
+                  - generic [ref=e153]: DJI
+                - generic [ref=e156]:
+                  - generic [ref=e157]: ‎+1.73%‎
+                  - generic [ref=e158]: 51,561.93
+                - button "Add to watchlist" [ref=e161]:
+                  - img [ref=e162]
+              - link "Silver Silver ‎-1.43%‎ 72.91" [ref=e166]:
+                - /url: https://www.msn.com/en-in/money/watchlist?id=auvwr7&ocid=hpmsn
+                - generic [ref=e167]:
+                  - generic [ref=e169]: Silver
+                  - generic [ref=e171]: Silver
+                - generic [ref=e174]:
+                  - generic [ref=e175]: ‎-1.43%‎
+                  - generic [ref=e176]: "72.91"
+                - button "Add to watchlist" [ref=e179]:
+                  - img [ref=e180]
+              - link "Citigroup Inc Citigroup Inc Rising fast ‎+4.02%‎ 135.15" [ref=e184]:
+                - /url: https://www.msn.com/en-in/money/watchlist?id=a1p3ww&noti=Price&ocid=hpmsn
+                - generic [ref=e185]:
+                  - generic [ref=e186]:
+                    - generic [ref=e187]: Citigroup Inc
+                    - img "Citigroup Inc" [ref=e188]
+                  - generic [ref=e190]: Rising fast
+                - generic [ref=e193]:
+                  - generic [ref=e194]: ‎+4.02%‎
+                  - generic [ref=e195]: "135.15"
+                - button "Add to watchlist" [ref=e198]:
+                  - img [ref=e199]
+              - link "Dominion Energy Inc Dominion Energy Inc Rising fast ‎+1.59%‎ 66.50" [ref=e203]:
+                - /url: https://www.msn.com/en-in/money/watchlist?id=a1qpw7&noti=Price&ocid=hpmsn
+                - generic [ref=e204]:
+                  - generic [ref=e205]:
+                    - generic [ref=e206]: Dominion Energy Inc
+                    - img "Dominion Energy Inc" [ref=e207]
+                  - generic [ref=e209]: Rising fast
+                - generic [ref=e212]:
+                  - generic [ref=e213]: ‎+1.59%‎
+                  - generic [ref=e214]: "66.50"
+                - button "Add to watchlist" [ref=e217]:
+                  - img [ref=e218]
+              - link "Tata Steel Ltd TATASTEEL ‎-1.16%‎ 208.12" [ref=e222]:
+                - /url: https://www.msn.com/en-in/money/watchlist?id=ahkaa2&ocid=hpmsn
+                - generic [ref=e223]:
+                  - generic [ref=e225]: Tata Steel Ltd
+                  - generic [ref=e227]: TATASTEEL
+                - generic [ref=e230]:
+                  - generic [ref=e231]: ‎-1.16%‎
+                  - generic [ref=e232]: "208.12"
+                - button "Add to watchlist" [ref=e235]:
+                  - img [ref=e236]
+            - generic [ref=e240]:
+              - generic [ref=e241]:
+                - generic "Previous" [ref=e242]:
+                  - button "Previous" [ref=e243]
+                - tablist [ref=e245]:
+                  - tab "tab-0" [selected] [ref=e246]
+                  - tab "tab-1" [ref=e248]
+                  - tab "tab-2" [ref=e250]
+                  - tab "tab-3" [ref=e252]
+                - generic "Next" [ref=e254]:
+                  - button "Next" [ref=e255]
+              - link "See watchlist suggestions" [ref=e257]:
+                - /url: https://www.msn.com/en-in/money/watchlist?ocid=hpmsn
+        - article "Which gas is known as laughing gas? Know this fun science fact!" [ref=e258] [cursor=pointer]:
+          - generic [ref=e260]:
+            - img [ref=e261]
+            - generic [ref=e262]:
+              - generic [ref=e263]:
+                - generic [ref=e265]:
+                  - img [ref=e266]
+                  - generic [ref=e267]: Jagran Josh
+                - link "Which gas is known as laughing gas? Know this fun science fact!, Jagran Josh" [ref=e268]:
+                  - /url: https://www.msn.com/en-in/entertainment/tv/which-gas-is-known-as-laughing-gas-know-this-fun-science-fact/ar-AA1Scjfk
+                  - text: Which gas is known as laughing gas? Know this fun science fact!
+              - generic [ref=e269]:
+                - generic:
+                  - generic:
+                    - generic "Which gas is known as laughing gas? Know this fun science fact!"
+            - generic [ref=e270]:
+              - button "Hide this story" [ref=e271]:
+                - img [ref=e272]
+                - text: Hide this story
+              - button "See more" [ref=e273]:
+                - img [ref=e274]
+        - article "What Happens to Your Kidneys If You Drink Karela Juice Every Day?" [ref=e275] [cursor=pointer]:
+          - generic [ref=e277]:
+            - img [ref=e278]
+            - generic [ref=e279]:
+              - generic [ref=e280]:
+                - generic [ref=e282]:
+                  - img [ref=e283]
+                  - generic [ref=e284]: Times Now
+                - link "What Happens to Your Kidneys If You Drink Karela Juice Every Day?, Times Now" [ref=e285]:
+                  - /url: https://www.msn.com/en-in/health/health-news/what-happens-to-your-kidneys-if-you-drink-karela-juice-every-day/ar-AA1KDpkk
+                  - text: What Happens to Your Kidneys If You Drink Karela Juice Every Day?
+              - generic [ref=e286]:
+                - generic:
+                  - generic:
+                    - generic "What Happens to Your Kidneys If You Drink Karela Juice Every Day?"
+            - generic [ref=e287]:
+              - button "Hide this story" [ref=e288]:
+                - img [ref=e289]
+                - text: Hide this story
+              - button "See more" [ref=e290]:
+                - img [ref=e291]
+        - article "Karan Johar movies that shaped Bollywood love stories" [ref=e292] [cursor=pointer]:
+          - generic [ref=e294]:
+            - img [ref=e295]
+            - generic [ref=e296]:
+              - generic [ref=e297]:
+                - generic [ref=e299]:
+                  - img [ref=e300]
+                  - generic [ref=e301]: The Times of India
+                - link "Karan Johar movies that shaped Bollywood love stories, The Times of India" [ref=e302]:
+                  - /url: https://www.msn.com/en-in/entertainment/bollywood/karan-johar-movies-that-shaped-bollywood-love-stories/ss-AA1NJmm9
+                  - text: Karan Johar movies that shaped Bollywood love stories
+              - generic [ref=e303]:
+                - generic:
+                  - generic:
+                    - generic "Karan Johar movies that shaped Bollywood love stories"
+            - generic [ref=e304]:
+              - button "Hide this story" [ref=e305]:
+                - img [ref=e306]
+                - text: Hide this story
+              - button "See more" [ref=e307]:
+                - img [ref=e308]
+        - article [ref=e309] [cursor=pointer]

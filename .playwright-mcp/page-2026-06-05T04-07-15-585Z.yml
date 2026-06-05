@@ -1,0 +1,381 @@
+- generic [ref=e3]:
+  - banner [ref=e6]:
+    - generic [ref=e7]:
+      - generic "Skip to content" [ref=e8] [cursor=pointer]:
+        - button "Skip to content" [ref=e9]:
+          - generic:
+            - generic: Skip to content
+      - generic "Skip to footer" [ref=e10] [cursor=pointer]:
+        - button "Skip to footer" [ref=e11]:
+          - generic:
+            - generic: Skip to footer
+      - link "MSN" [ref=e14] [cursor=pointer]:
+        - /url: https://www.msn.com/en-in
+      - search [ref=e18]:
+        - generic [ref=e19]:
+          - generic "Web search" [ref=e20] [cursor=pointer]:
+            - button "Web search" [ref=e21]:
+              - generic:
+                - generic:
+                  - img
+          - searchbox "Enter your search term" [ref=e22]
+      - generic [ref=e23]:
+        - generic "Open settings" [ref=e27] [cursor=pointer]:
+          - button "Open settings" [ref=e28]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Page settings
+                  - generic:
+                    - img
+        - generic:
+          - generic:
+            - generic:
+              - generic "Sign In"
+  - generic [ref=e30]:
+    - generic [ref=e35]:
+      - list [ref=e38]:
+        - listitem [ref=e39]:
+          - link "Outlook.com" [ref=e42] [cursor=pointer]:
+            - /url: https://outlook.com
+            - generic [ref=e46]: Outlook.com
+        - listitem [ref=e47]:
+          - link "Flipkart" [ref=e50] [cursor=pointer]:
+            - /url: https://clk.tradedoubler.com/click?p=401531&a=3419260&epi=enin-msn-hp-mestripe
+            - generic [ref=e53]:
+              - generic [ref=e54]: Flipkart
+              - generic [ref=e56]: Sponsored
+        - listitem [ref=e57]:
+          - link "Find a tutor" [ref=e60] [cursor=pointer]:
+            - /url: https://www.bing.com/pros?FORM=BPIMNS
+            - generic [ref=e64]: Find a tutor
+        - listitem [ref=e65]:
+          - link "Booking.com" [ref=e68] [cursor=pointer]:
+            - /url: https://www.booking.com/index.html?aid=1624937&label=enin-msn-hp-mestripe
+            - generic [ref=e71]:
+              - generic [ref=e72]: Booking.com
+              - generic [ref=e74]: Sponsored
+        - listitem [ref=e75]:
+          - link "Nykaa" [ref=e78] [cursor=pointer]:
+            - /url: https://sovrn.co/p9zogj8
+            - generic [ref=e81]:
+              - generic [ref=e82]: Nykaa
+              - generic [ref=e84]: Sponsored
+        - listitem [ref=e85]:
+          - link "Facebook" [ref=e88] [cursor=pointer]:
+            - /url: https://www.facebook.com
+            - generic [ref=e92]: Facebook
+        - listitem [ref=e93]:
+          - link "Microsoft 365" [ref=e96] [cursor=pointer]:
+            - /url: https://www.office.com/?omkt=en-IN
+            - generic [ref=e100]: Microsoft 365
+        - listitem [ref=e101]:
+          - link "X" [ref=e104] [cursor=pointer]:
+            - /url: https://x.com
+            - generic [ref=e108]: X
+        - listitem [ref=e109]:
+          - link "OneDrive" [ref=e112] [cursor=pointer]:
+            - /url: https://onedrive.live.com/?wt.mc_id=oo_msn_msnhomepage_header
+            - generic [ref=e116]: OneDrive
+        - listitem [ref=e117]:
+          - link "Skype" [ref=e120] [cursor=pointer]:
+            - /url: https://www.skype.com/
+            - generic [ref=e124]: Skype
+        - listitem [ref=e125]:
+          - link "OneNote" [ref=e128] [cursor=pointer]:
+            - /url: https://www.onenote.com/notebooks?WT.mc_id=MSN_OneNote_TopMenu&auth=1&wdorigin=msn
+            - generic [ref=e132]: OneNote
+        - listitem [ref=e133]:
+          - link "Maps" [ref=e136] [cursor=pointer]:
+            - /url: https://bing.com/maps/?FORM=MSNMAP
+            - generic [ref=e140]: Maps
+        - listitem [ref=e141]:
+          - link "Microsoft Store" [ref=e144] [cursor=pointer]:
+            - /url: https://www.microsoft.com/en-in
+            - generic [ref=e148]: Microsoft Store
+      - button [ref=e149]:
+        - img [ref=e152]
+    - generic [ref=e154]:
+      - banner [ref=e155]
+      - generic [ref=e160]:
+        - navigation [ref=e162]:
+          - generic [ref=e163]:
+            - list [ref=e164]:
+              - listitem [ref=e165]:
+                - link "Discover" [ref=e166] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in
+            - list [ref=e167]:
+              - listitem [ref=e168]:
+                - link "News" [ref=e169] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f
+              - listitem [ref=e170]:
+                - link "Sports" [ref=e171] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/sports
+              - listitem [ref=e172]:
+                - link "Play" [ref=e173] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/play?cgfrom=cg_home_pivot
+              - listitem [ref=e174]:
+                - link "Money" [ref=e175] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/money
+              - listitem [ref=e176]:
+                - link "Weather" [ref=e177] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/weather
+              - listitem [ref=e178]:
+                - link "Watch" [ref=e179] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/video
+              - listitem [ref=e180]:
+                - link "Shopping" [ref=e181] [cursor=pointer]:
+                  - /url: https://www.bing.com/shop?entrypoint=msn&adunitId=378983&propertyId=316966&FORM=NVBSHP
+        - generic "Personalize your feed\"" [ref=e183] [cursor=pointer]:
+          - button "Personalize your feed\"" [ref=e184]:
+            - generic:
+              - generic:
+                - img
+            - generic:
+              - generic: Personalize
+    - main [ref=e187]:
+      - generic [ref=e190]:
+        - generic [ref=e193]:
+          - tablist [ref=e195]:
+            - tab [selected] [ref=e196] [cursor=pointer]
+            - tab [ref=e198] [cursor=pointer]
+            - tab [ref=e200] [cursor=pointer]
+            - tab [ref=e202] [cursor=pointer]
+            - tab [ref=e204] [cursor=pointer]
+            - tab [ref=e206] [cursor=pointer]
+            - tab [ref=e208] [cursor=pointer]
+            - tab [ref=e210] [cursor=pointer]
+            - tab [ref=e212] [cursor=pointer]
+            - tab [ref=e214] [cursor=pointer]
+            - tab [ref=e216] [cursor=pointer]
+            - tab [ref=e218] [cursor=pointer]
+            - tab [ref=e220] [cursor=pointer]
+            - tab [ref=e222] [cursor=pointer]
+            - tab [ref=e224] [cursor=pointer]
+            - tab [ref=e226] [cursor=pointer]
+            - tab [ref=e228] [cursor=pointer]
+            - tab [ref=e230] [cursor=pointer]
+            - tab [ref=e232] [cursor=pointer]
+            - tab [ref=e234] [cursor=pointer]
+            - tab [ref=e236] [cursor=pointer]
+            - tab [ref=e238] [cursor=pointer]
+            - tab [ref=e240] [cursor=pointer]
+            - tab [ref=e242] [cursor=pointer]
+            - tab [ref=e244] [cursor=pointer]
+            - tab [ref=e246] [cursor=pointer]
+            - tab [ref=e248] [cursor=pointer]
+            - tab [ref=e250] [cursor=pointer]
+            - tab [ref=e252] [cursor=pointer]
+            - tab [ref=e254] [cursor=pointer]
+            - tab [ref=e256] [cursor=pointer]
+          - button [ref=e260]
+          - button [ref=e263]
+          - 'article "5 people who should avoid walnuts: Health risks you need to know" [ref=e264] [cursor=pointer]':
+            - generic [ref=e266]:
+              - img [ref=e267]
+              - generic [ref=e268]:
+                - generic [ref=e269]:
+                  - generic [ref=e271]:
+                    - img [ref=e272]
+                    - generic [ref=e273]: The Times of India
+                  - 'link "5 people who should avoid walnuts: Health risks you need to know, The Times of India" [ref=e274]':
+                    - /url: https://www.msn.com/en-in/health/other/5-people-who-should-avoid-walnuts-health-risks-you-need-to-know/ar-AA1KX8UR
+                    - text: "5 people who should avoid walnuts: Health risks you need to know"
+                - generic [ref=e275]:
+                  - generic:
+                    - generic:
+                      - 'generic "5 people who should avoid walnuts: Health risks you need to know"'
+              - generic [ref=e276]:
+                - button "Hide this story" [ref=e277]:
+                  - img [ref=e278]
+                  - text: Hide this story
+                - button "See more" [ref=e279]:
+                  - img [ref=e280]
+        - article [ref=e281] [cursor=pointer]:
+          - generic [ref=e285]:
+            - generic: Sponsored
+        - 'article "The most expensive disrespect: Peddi under fire as Janhvi Kapoor likes post questioning her character’s portrayal" [ref=e286] [cursor=pointer]':
+          - generic [ref=e288]:
+            - img [ref=e289]
+            - generic [ref=e290]:
+              - generic [ref=e291]:
+                - generic [ref=e292]:
+                  - generic [ref=e293]:
+                    - img [ref=e294]
+                    - generic [ref=e295]: The Daily Jagran
+                  - generic [ref=e296]: ·
+                  - generic [ref=e297]: 11h
+                - 'link "The most expensive disrespect: Peddi under fire as Janhvi Kapoor likes post questioning her character’s portrayal, The Daily Jagran" [ref=e298]':
+                  - /url: https://www.msn.com/en-in/news/other/the-most-expensive-disrespect-peddi-under-fire-as-janhvi-kapoor-likes-post-questioning-her-character-s-portrayal/ar-AA24QqE1
+                  - text: "The most expensive disrespect: Peddi under fire as Janhvi Kapoor likes post questioning her character’s portrayal"
+              - generic [ref=e299]:
+                - generic:
+                  - generic:
+                    - 'generic "The most expensive disrespect: Peddi under fire as Janhvi Kapoor likes post questioning her character’s portrayal"'
+            - generic [ref=e300]:
+              - button "Hide this story" [ref=e301]:
+                - img [ref=e302]
+                - text: Hide this story
+              - button "See more" [ref=e303]:
+                - img [ref=e304]
+        - article [ref=e305] [cursor=pointer]
+        - article [ref=e312] [cursor=pointer]:
+          - generic [ref=e318]:
+            - generic [ref=e320]:
+              - img "Watchlist suggestions" [ref=e322]
+              - link "Watchlist suggestions" [ref=e323]:
+                - /url: https://www.msn.com/en-in/money/watchlist?ocid=hpmsn
+                - heading "Watchlist suggestions" [level=2] [ref=e324]
+              - button "More options" [ref=e326]
+            - generic [ref=e331]:
+              - link "DOW DJI ‎+1.73%‎ 51,561.93" [ref=e333]:
+                - /url: https://www.msn.com/en-in/money/watchlist?id=a6qja2&ocid=hpmsn
+                - generic [ref=e334]:
+                  - generic [ref=e336]: DOW
+                  - generic [ref=e338]: DJI
+                - generic [ref=e341]:
+                  - generic [ref=e342]: ‎+1.73%‎
+                  - generic [ref=e343]: 51,561.93
+                - button "Add to watchlist" [ref=e346]:
+                  - img [ref=e347]
+              - link "Silver Silver ‎-1.43%‎ 72.91" [ref=e351]:
+                - /url: https://www.msn.com/en-in/money/watchlist?id=auvwr7&ocid=hpmsn
+                - generic [ref=e352]:
+                  - generic [ref=e354]: Silver
+                  - generic [ref=e356]: Silver
+                - generic [ref=e359]:
+                  - generic [ref=e360]: ‎-1.43%‎
+                  - generic [ref=e361]: "72.91"
+                - button "Add to watchlist" [ref=e364]:
+                  - img [ref=e365]
+              - link "Citigroup Inc Citigroup Inc Rising fast ‎+4.02%‎ 135.15" [ref=e369]:
+                - /url: https://www.msn.com/en-in/money/watchlist?id=a1p3ww&noti=Price&ocid=hpmsn
+                - generic [ref=e370]:
+                  - generic [ref=e371]:
+                    - generic [ref=e372]: Citigroup Inc
+                    - img "Citigroup Inc" [ref=e373]
+                  - generic [ref=e375]: Rising fast
+                - generic [ref=e378]:
+                  - generic [ref=e379]: ‎+4.02%‎
+                  - generic [ref=e380]: "135.15"
+                - button "Add to watchlist" [ref=e383]:
+                  - img [ref=e384]
+              - link "Dominion Energy Inc Dominion Energy Inc Rising fast ‎+1.59%‎ 66.50" [ref=e388]:
+                - /url: https://www.msn.com/en-in/money/watchlist?id=a1qpw7&noti=Price&ocid=hpmsn
+                - generic [ref=e389]:
+                  - generic [ref=e390]:
+                    - generic [ref=e391]: Dominion Energy Inc
+                    - img "Dominion Energy Inc" [ref=e392]
+                  - generic [ref=e394]: Rising fast
+                - generic [ref=e397]:
+                  - generic [ref=e398]: ‎+1.59%‎
+                  - generic [ref=e399]: "66.50"
+                - button "Add to watchlist" [ref=e402]:
+                  - img [ref=e403]
+              - link "Tata Steel Ltd TATASTEEL ‎-1.22%‎ 208.00" [ref=e407]:
+                - /url: https://www.msn.com/en-in/money/watchlist?id=ahkaa2&ocid=hpmsn
+                - generic [ref=e408]:
+                  - generic [ref=e410]: Tata Steel Ltd
+                  - generic [ref=e412]: TATASTEEL
+                - generic [ref=e415]:
+                  - generic [ref=e416]: ‎-1.22%‎
+                  - generic [ref=e417]: "208.00"
+                - button "Add to watchlist" [ref=e420]:
+                  - img [ref=e421]
+            - generic [ref=e425]:
+              - generic [ref=e426]:
+                - generic "Previous" [ref=e427]:
+                  - button "Previous" [ref=e428]
+                - tablist [ref=e430]:
+                  - tab "tab-0" [selected] [ref=e431]
+                  - tab "tab-1" [ref=e433]
+                  - tab "tab-2" [ref=e435]
+                  - tab "tab-3" [ref=e437]
+                - generic "Next" [ref=e439]:
+                  - button "Next" [ref=e440]
+              - link "See watchlist suggestions" [ref=e442]:
+                - /url: https://www.msn.com/en-in/money/watchlist?ocid=hpmsn
+        - article [ref=e443] [cursor=pointer]
+        - 'article "Cardiologist shares how to identify 1st sign of heart attack, silent symptoms: ''Rarely feels like sharp, stabbing pain''" [ref=e450] [cursor=pointer]':
+          - generic [ref=e452]:
+            - img [ref=e453]
+            - generic [ref=e454]:
+              - generic [ref=e455]:
+                - generic [ref=e457]:
+                  - img [ref=e458]
+                  - generic [ref=e459]: Hindustan Times
+                - 'link "Cardiologist shares how to identify 1st sign of heart attack, silent symptoms: ''Rarely feels like sharp, stabbing pain'', Hindustan Times" [ref=e460]':
+                  - /url: https://www.msn.com/en-in/health/health-news/cardiologist-shares-how-to-identify-1st-sign-of-heart-attack-silent-symptoms-rarely-feels-like-sharp-stabbing-pain/ar-AA1UE4JB
+                  - text: "Cardiologist shares how to identify 1st sign of heart attack, silent symptoms: 'Rarely feels like sharp, stabbing pain'"
+              - generic [ref=e461]:
+                - generic:
+                  - generic:
+                    - 'generic "Cardiologist shares how to identify 1st sign of heart attack, silent symptoms: ''Rarely feels like sharp, stabbing pain''"'
+            - generic [ref=e462]:
+              - button "Hide this story" [ref=e463]:
+                - img [ref=e464]
+                - text: Hide this story
+              - button "See more" [ref=e465]:
+                - img [ref=e466]
+        - article "4 life lessons hidden in the Hanuman Chalisa" [ref=e467] [cursor=pointer]:
+          - generic [ref=e469]:
+            - img [ref=e470]
+            - generic [ref=e471]:
+              - generic [ref=e472]:
+                - generic [ref=e474]:
+                  - img [ref=e475]
+                  - generic [ref=e476]: The Times of India
+                - link "4 life lessons hidden in the Hanuman Chalisa, The Times of India" [ref=e477]:
+                  - /url: https://www.msn.com/en-in/entertainment/news/4-life-lessons-hidden-in-the-hanuman-chalisa/ss-AA1W6sHt
+                  - text: 4 life lessons hidden in the Hanuman Chalisa
+              - generic [ref=e478]:
+                - generic:
+                  - generic:
+                    - generic "4 life lessons hidden in the Hanuman Chalisa"
+            - generic [ref=e479]:
+              - button "Hide this story" [ref=e480]:
+                - img [ref=e481]
+                - text: Hide this story
+              - button "See more" [ref=e482]:
+                - img [ref=e483]
+        - article [ref=e484] [cursor=pointer]:
+          - generic [ref=e489]:
+            - generic [ref=e491]:
+              - link "Top stories" [ref=e493]:
+                - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f?cvid=6a224b6aed874a009a738008dccbec1f&ocid=hpmsn
+                - heading "Top stories" [level=2] [ref=e494]
+              - button "More options" [ref=e496]
+            - list [ref=e499]:
+              - 'listitem "PM Modi ''good friend of mine'': Trump says India-US trade deal likely soon" [ref=e500]':
+                - generic [ref=e501]:
+                  - generic [ref=e502]:
+                    - img [ref=e503]
+                    - generic [ref=e504]:
+                      - generic: WION ·now
+                  - generic [ref=e505]: "PM Modi 'good friend of mine': Trump says India-US trade deal likely soon"
+              - listitem "Noida high-rise evacuated after fire in 12th floor flat, video captures flames" [ref=e506]:
+                - generic [ref=e507]:
+                  - generic [ref=e508]:
+                    - img [ref=e509]
+                    - generic [ref=e510]:
+                      - generic: Hindustan Times ·13m
+                  - generic [ref=e511]: Noida high-rise evacuated after fire in 12th floor flat, video captures flames
+              - listitem "Vladimir Putin praises PM Modi, Xi Jinping; says Russia won't interfere in 'delicate' India-China ties" [ref=e512]:
+                - generic [ref=e513]:
+                  - generic [ref=e514]:
+                    - img [ref=e515]
+                    - generic [ref=e516]:
+                      - generic: Times Now ·2h
+                  - generic [ref=e517]: Vladimir Putin praises PM Modi, Xi Jinping; says Russia won't interfere in 'delicate' India-China ties
+            - generic [ref=e519]:
+              - generic [ref=e520]:
+                - generic "Previous" [ref=e521]:
+                  - button "Previous" [ref=e522]
+                - tablist [ref=e524]:
+                  - tab "tab-0" [selected] [ref=e525]
+                  - tab "tab-1" [ref=e527]
+                  - tab "tab-2" [ref=e529]
+                - generic "Next" [ref=e531]:
+                  - button "Next" [ref=e532]
+              - link "See more" [ref=e534]:
+                - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f?cvid=6a224b6aed874a009a738008dccbec1f&ocid=hpmsn

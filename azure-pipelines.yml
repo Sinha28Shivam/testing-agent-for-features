@@ -1,0 +1,62 @@
+# Azure DevOps CI/CD Pipeline for AI Test Agent
+# This pipeline synchronizes test scenarios from ADO Test Plans, executes them via Playwright,
+# and publishes the test results back to the ADO Test Runs/Execute dashboard.
+
+trigger: none # Triggered manually or via ADO schedule
+
+pool:
+  vmImage: 'ubuntu-latest' # Standard virtual machine image
+
+variables:
+  # Reference a variable group in ADO which stores secrets like ADO_PAT, GITHUB_TOKEN, etc.
+  # - group: TestAgentSecrets
+  
+  # Default project settings (override these or link them to variables)
+  ADO_ORG: 'sharmahima'
+  ADO_PROJECT: 'Test Lumen'
+  ADO_PLAN_ID: '2'
+  ADO_SUITE_ID: '2'
+  REPORTER_TYPE: 'azure' # Configures Playwright JUnit reporting for Azure DevOps
+
+steps:
+  - task: NodeTool@0
+    inputs:
+      versionSpec: '20.x'
+    displayName: 'Install Node.js'
+
+  - script: |
+      npm install
+      npx playwright install --with-deps chromium
+    displayName: 'Install NPM Dependencies and Playwright Chromium'
+
+  - script: |
+      node src/integration/sync_ado.js
+    displayName: 'Synchronize Scenarios from ADO Test Plans'
+    env:
+      # Inject credentials securely from ADO Pipeline variables
+      ADO_PAT: $(ADO_PAT)
+      ADO_ORG: $(ADO_ORG)
+      ADO_PROJECT: $(ADO_PROJECT)
+      ADO_PLAN_ID: $(ADO_PLAN_ID)
+      ADO_SUITE_ID: $(ADO_SUITE_ID)
+
+  - script: |
+      npm start scenarios.yaml
+    displayName: 'Execute AI Multi-Agent Test Runs'
+    env:
+      # Pass through all necessary LLM provider API credentials
+      GITHUB_TOKEN: $(GITHUB_TOKEN)
+      OPENAI_API_KEY: $(OPENAI_API_KEY)
+      AZURE_OPENAI_API_KEY: $(AZURE_OPENAI_API_KEY)
+      AZURE_OPENAI_ENDPOINT: $(AZURE_OPENAI_ENDPOINT)
+      AZURE_OPENAI_DEPLOYMENT: $(AZURE_OPENAI_DEPLOYMENT)
+      REPORTER_TYPE: $(REPORTER_TYPE)
+
+  - task: PublishTestResults@2
+    inputs:
+      testResultsFormat: 'JUnit'
+      testResultsFiles: 'test-results/junit/results.xml'
+      mergeTestResults: true
+      failTaskOnFailedTests: true
+    displayName: 'Publish Test Results to Azure DevOps'
+    condition: always()

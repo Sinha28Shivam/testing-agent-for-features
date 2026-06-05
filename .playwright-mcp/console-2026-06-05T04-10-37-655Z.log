@@ -1,0 +1,33 @@
+[     427ms] [WARNING] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. @ https://res.public.onecdn.static.microsoft/owamail/hashed-v1/msalv5/scripts/owa.39669.m.131b211d.js:0
+[    1062ms] [ERROR] The Content Security Policy directive 'upgrade-insecure-requests' is ignored when delivered in a report-only policy. @ https://outlook.live.com/mail/oauthRedirect.html#error=login_required&error_description=Silent+authentication+was+denied.+The+user+must+first+sign+in+and+if+needed+grant+the+client+application+access+to+the+scope+'service::outlook.office.com::MBI_SSL+openid+profile+offline_access'.&state=eyJpZCI6IjAxOWU5NWY5LWQyNmMtN2E4My04MjdhLWUyYjAzMjg4YTliZCIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoic2lsZW50In19%7ceyJtc2FsVmVyc2lvbiI6IjUuOC4wIn0%7caHR0cHM6Ly9vdXRsb29rLmxpdmUuY29tL21haWwv&clientdata=m%7c0x8004100C%7c0x80041009%7cmicrosoftonline.com%7cnone:0
+[    1062ms] [WARNING] An iframe which has both allow-scripts and allow-same-origin for its sandbox attribute can escape its sandboxing. @ https://outlook.live.com/mail/oauthRedirect.html#error=login_required&error_description=Silent+authentication+was+denied.+The+user+must+first+sign+in+and+if+needed+grant+the+client+application+access+to+the+scope+'service::outlook.office.com::MBI_SSL+openid+profile+offline_access'.&state=eyJpZCI6IjAxOWU5NWY5LWQyNmMtN2E4My04MjdhLWUyYjAzMjg4YTliZCIsIm1ldGEiOnsiaW50ZXJhY3Rpb25UeXBlIjoic2lsZW50In19%7ceyJtc2FsVmVyc2lvbiI6IjUuOC4wIn0%7caHR0cHM6Ly9vdXRsb29rLmxpdmUuY29tL21haWwv&clientdata=m%7c0x8004100C%7c0x80041009%7cmicrosoftonline.com%7cnone:0
+[    3718ms] [LOG] Value type: string @ https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2Fmail%2F&sdf=0:825
+[    3719ms] [LOG] Value type: string @ https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2Fmail%2F&sdf=0:825
+[    3721ms] [LOG] Value type: string @ https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2Fmail%2F&sdf=0:825
+[    3722ms] [LOG] Value type: string @ https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2Fmail%2F&sdf=0:825
+[    3898ms] [LOG] Value type: string @ https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2Fmail%2F&sdf=0:825
+[    3898ms] [LOG] Value type: string @ https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2Fmail%2F&sdf=0:825
+[    3900ms] [LOG] Value type: string @ https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2Fmail%2F&sdf=0:825
+[    3900ms] [LOG] Value type: string @ https://www.microsoft.com/en-us/microsoft-365/outlook/email-and-calendar-software-microsoft-outlook?deeplink=%2Fmail%2F&sdf=0:825
+[    3922ms] Identifier 'OneCloudUtil' has already been declared
+[    3975ms] Identifier 'LocalStorageUtil' has already been declared
+[    4030ms] Identifier 'OneCloudUtil' has already been declared
+[    4082ms] Identifier 'LocalStorageUtil' has already been declared
+[    4186ms] Identifier 'OneCloudUtil' has already been declared
+[    4382ms] Identifier 'LocalStorageUtil' has already been declared
+[    4581ms] Identifier 'OneCloudUtil' has already been declared
+[    4628ms] Identifier 'LocalStorageUtil' has already been declared
+[    4676ms] Identifier 'OneCloudUtil' has already been declared
+[    4716ms] Identifier 'LocalStorageUtil' has already been declared
+[    4770ms] Identifier 'OneCloudUtil' has already been declared
+[    4837ms] Identifier 'LocalStorageUtil' has already been declared
+[    5720ms] [LOG] 1DS Initialized.. @ https://www.microsoft.com/golf/etc.clientlibs/microsoft/components/structure/page/clientlibs/custom-oneds.ACSHASH2b7224aac4ea4007cb4436ebcdc8cec8.min.js:0
+[    7369ms] [LOG] Clarity loaded @ https://www.microsoft.com/msonecloudapi/assets/msocbody.js:700
+[    7785ms] [LOG] new condition found @ https://assets.adobedtm.com/launch-ENc0cbffaf0f8248c3a934a56818d7737e.min.js:7
+[   17828ms] [LOG] MWF v2.8.1 @ https://www.microsoft.com/golf/etc.clientlibs/onecloud/clientlibs/clientlib-mwf-new/main-light.ACSHASHfe9d5283cc0a38f995b64bf0f39192eb.min.js:13154
+[   31905ms] [LOG] gpc opt-in @ https://www.microsoft.com/golf/etc.clientlibs/microsoft/clientlibs/cookie-compliance-manager.ACSHASHd471cafc5d23f4577f5cf2676dcc276a.min.js:4
+[   31906ms] [LOG] Clarity consent granted @ https://www.microsoft.com/golf/etc.clientlibs/microsoft/clientlibs/cookie-compliance-manager.ACSHASHd471cafc5d23f4577f5cf2676dcc276a.min.js:4
+[   32038ms] [INFO] [WC Visibility Fix] None of the target tags were found in the DOM. @ https://www.microsoft.com/msonecloudapi/assets/msocbody.js:728
+[   32697ms] [LOG] sendToVortex Call @ https://www.microsoft.com/golf/etc.clientlibs/microsoft/clientlibs/exp-analytics/v1.ACSHASHbf7b336dbb370c984e1bf59b1a980d86.min.js:0
+[   35765ms] [LOG] Clarity consent granted @ https://www.microsoft.com/golf/etc.clientlibs/microsoft/clientlibs/cookie-compliance-manager.ACSHASHd471cafc5d23f4577f5cf2676dcc276a.min.js:4
+[  102477ms] [LOG] UHF 1.0 not found after timeout: header[data-header-footprint] .c-uhfh-actions @ https://www.microsoft.com/msonecloudapi/assets/msochead.js:156

@@ -1,0 +1,169 @@
+- generic [ref=e3]:
+  - banner [ref=e6]:
+    - generic [ref=e7]:
+      - generic "Skip to content" [ref=e8] [cursor=pointer]:
+        - button "Skip to content" [ref=e9]:
+          - generic:
+            - generic: Skip to content
+      - generic "Skip to footer" [ref=e10] [cursor=pointer]:
+        - button "Skip to footer" [ref=e11]:
+          - generic:
+            - generic: Skip to footer
+      - link "MSN" [ref=e14] [cursor=pointer]:
+        - /url: https://www.msn.com/en-in
+      - search [ref=e18]:
+        - generic [ref=e19]:
+          - generic "Web search" [ref=e20] [cursor=pointer]:
+            - button "Web search" [ref=e21]:
+              - generic:
+                - generic:
+                  - img
+          - searchbox "Enter your search term" [ref=e22]
+      - generic [ref=e23]:
+        - generic "Open settings" [ref=e27] [cursor=pointer]:
+          - button "Open settings" [ref=e28]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Page settings
+                  - generic:
+                    - img
+        - generic:
+          - generic:
+            - generic:
+              - generic "Sign In"
+  - generic [ref=e30]:
+    - generic [ref=e33]:
+      - banner [ref=e34]
+      - generic [ref=e40]:
+        - navigation [ref=e42]:
+          - generic [ref=e43]:
+            - list [ref=e44]:
+              - listitem [ref=e45]:
+                - link "Discover" [ref=e46] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in
+            - list [ref=e47]:
+              - listitem [ref=e48]:
+                - link "News" [ref=e49] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f
+              - listitem [ref=e50]:
+                - link "Sports" [ref=e51] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/sports
+              - listitem [ref=e52]:
+                - link "Play" [ref=e53] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/play?cgfrom=cg_home_pivot
+              - listitem [ref=e54]:
+                - link "Money" [ref=e55] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/money
+              - listitem [ref=e56]:
+                - link "Weather" [ref=e57] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/weather
+              - listitem [ref=e58]:
+                - link "Watch" [ref=e59] [cursor=pointer]:
+                  - /url: https://www.msn.com/en-in/video
+              - listitem [ref=e60]:
+                - link "Shopping" [ref=e61] [cursor=pointer]:
+                  - /url: https://www.bing.com/shop?entrypoint=msn&adunitId=378983&propertyId=316966&FORM=NVBSHP
+        - generic "Personalize your feed\"" [ref=e63] [cursor=pointer]:
+          - button "Personalize your feed\"" [ref=e64]:
+            - generic:
+              - generic:
+                - img
+            - generic:
+              - generic: Personalize
+    - main [ref=e67]:
+      - generic [ref=e70]:
+        - article "5 hidden colon cancer signs that appear early and often without any pain" [ref=e74] [cursor=pointer]:
+          - generic [ref=e76]:
+            - img [ref=e77]
+            - generic [ref=e78]:
+              - generic [ref=e79]:
+                - generic [ref=e81]:
+                  - img [ref=e82]
+                  - generic [ref=e83]: The Economic Times
+                - link "5 hidden colon cancer signs that appear early and often without any pain, The Economic Times" [ref=e84]:
+                  - /url: https://www.msn.com/en-in/health/other/5-hidden-colon-cancer-signs-that-appear-early-and-often-without-any-pain/ss-AA1N81YU
+                  - text: 5 hidden colon cancer signs that appear early and often without any pain
+              - generic [ref=e85]:
+                - generic:
+                  - generic:
+                    - generic "5 hidden colon cancer signs that appear early and often without any pain"
+            - generic [ref=e86]:
+              - button "Hide this story" [ref=e87]:
+                - img [ref=e88]
+                - text: Hide this story
+              - button "See more" [ref=e89]:
+                - img [ref=e90]
+        - article [ref=e91] [cursor=pointer]
+        - 'article "''Did not tell me...'': RJD MP breaks silence on helping Cockroach Janta Party in holding presser" [ref=e93] [cursor=pointer]':
+          - generic [ref=e95]:
+            - generic [ref=e101]:
+              - generic [ref=e102]:
+                - generic [ref=e103]:
+                  - generic [ref=e104]:
+                    - img [ref=e105]
+                    - generic [ref=e106]: The Times of India
+                  - generic [ref=e107]: ·
+                  - generic [ref=e108]: 5h
+                - 'link "''Did not tell me...'': RJD MP breaks silence on helping Cockroach Janta Party in holding presser, The Times of India" [ref=e109]':
+                  - /url: https://www.msn.com/en-in/news/other/did-not-tell-me-rjd-mp-breaks-silence-on-helping-cockroach-janta-party-in-holding-presser/vi-AA24QFRz
+                  - text: "'Did not tell me...': RJD MP breaks silence on helping Cockroach Janta Party in holding presser"
+              - generic [ref=e110]:
+                - generic:
+                  - generic:
+                    - 'generic "''Did not tell me...'': RJD MP breaks silence on helping Cockroach Janta Party in holding presser"'
+            - generic [ref=e111]:
+              - button "Hide this story" [ref=e112]:
+                - img [ref=e113]
+                - text: Hide this story
+              - button "See more" [ref=e114]:
+                - img [ref=e115]
+        - article [ref=e116] [cursor=pointer]
+        - article [ref=e123] [cursor=pointer]
+        - article [ref=e125] [cursor=pointer]
+        - 'article "GK: Which Indian city is called the litchi capital of the world?" [ref=e132] [cursor=pointer]':
+          - generic [ref=e134]:
+            - img [ref=e135]
+            - generic [ref=e136]:
+              - generic [ref=e137]:
+                - generic [ref=e138]:
+                  - generic [ref=e139]:
+                    - img [ref=e140]
+                    - generic [ref=e141]: News18
+                  - generic [ref=e142]: ·
+                  - generic [ref=e143]: 2w
+                - 'link "GK: Which Indian city is called the litchi capital of the world?, News18" [ref=e144]':
+                  - /url: https://www.msn.com/en-in/travel/tripideas/gk-which-indian-city-is-called-the-litchi-capital-of-the-world/ss-AA23ywsO
+                  - text: "GK: Which Indian city is called the litchi capital of the world?"
+              - generic [ref=e145]:
+                - generic:
+                  - generic:
+                    - 'generic "GK: Which Indian city is called the litchi capital of the world?"'
+            - generic [ref=e146]:
+              - button "Hide this story" [ref=e147]:
+                - img [ref=e148]
+                - text: Hide this story
+              - button "See more" [ref=e149]:
+                - img [ref=e150]
+        - article "4 heart-healing drinks that quietly clean your arteries and support better blood flow" [ref=e151] [cursor=pointer]:
+          - generic [ref=e153]:
+            - img [ref=e154]
+            - generic [ref=e155]:
+              - generic [ref=e156]:
+                - generic [ref=e158]:
+                  - img [ref=e159]
+                  - generic [ref=e160]: The Economic Times
+                - link "4 heart-healing drinks that quietly clean your arteries and support better blood flow, The Economic Times" [ref=e161]:
+                  - /url: https://www.msn.com/en-in/health/other/4-heart-healing-drinks-that-quietly-clean-your-arteries-and-support-better-blood-flow/ar-AA1OAF3F
+                  - text: 4 heart-healing drinks that quietly clean your arteries and support better blood flow
+              - generic [ref=e162]:
+                - generic:
+                  - generic:
+                    - generic "4 heart-healing drinks that quietly clean your arteries and support better blood flow"
+            - generic [ref=e163]:
+              - button "Hide this story" [ref=e164]:
+                - img [ref=e165]
+                - text: Hide this story
+              - button "See more" [ref=e166]:
+                - img [ref=e167]
+        - article [ref=e168] [cursor=pointer]

@@ -1,0 +1,452 @@
+- generic [ref=e3]:
+  - banner [ref=e6]:
+    - generic [ref=e7]:
+      - generic "Skip to content" [ref=e8] [cursor=pointer]:
+        - button "Skip to content" [ref=e9]:
+          - generic:
+            - generic: Skip to content
+      - generic "Skip to footer" [ref=e10] [cursor=pointer]:
+        - button "Skip to footer" [ref=e11]:
+          - generic:
+            - generic: Skip to footer
+      - link "MSN" [ref=e14] [cursor=pointer]:
+        - /url: https://www.msn.com/en-in
+      - search [ref=e18]:
+        - generic [ref=e19]:
+          - generic "Web search" [ref=e20] [cursor=pointer]:
+            - button "Web search" [ref=e21]:
+              - generic:
+                - generic:
+                  - img
+          - searchbox "Enter your search term" [ref=e22]
+          - generic "Open Copilot" [ref=e26] [cursor=pointer]:
+            - button "Open Copilot" [ref=e27]:
+              - generic:
+                - generic:
+                  - generic:
+                    - img "Open Copilot"
+      - generic [ref=e28]:
+        - generic "Open settings" [ref=e32] [cursor=pointer]:
+          - button "Open settings" [ref=e33]:
+            - generic:
+              - generic:
+                - generic:
+                  - generic: Page settings
+                  - generic:
+                    - img
+        - generic:
+          - generic:
+            - generic:
+              - generic "Sign In"
+  - generic [ref=e34]:
+    - generic [ref=e35]:
+      - generic [ref=e40]:
+        - list [ref=e43]:
+          - listitem [ref=e44]:
+            - link "Outlook.com" [ref=e47] [cursor=pointer]:
+              - /url: https://outlook.com
+              - generic [ref=e51]: Outlook.com
+          - listitem [ref=e52]:
+            - link "Flipkart" [ref=e55] [cursor=pointer]:
+              - /url: https://clk.tradedoubler.com/click?p=401531&a=3419260&epi=enin-msn-hp-mestripe
+              - generic [ref=e58]:
+                - generic [ref=e59]: Flipkart
+                - generic [ref=e61]: Sponsored
+          - listitem [ref=e62]:
+            - link "Find a tutor" [ref=e65] [cursor=pointer]:
+              - /url: https://www.bing.com/pros?FORM=BPIMNS
+              - generic [ref=e69]: Find a tutor
+          - listitem [ref=e70]:
+            - link "Booking.com" [ref=e73] [cursor=pointer]:
+              - /url: https://www.booking.com/index.html?aid=1624937&label=enin-msn-hp-mestripe
+              - generic [ref=e76]:
+                - generic [ref=e77]: Booking.com
+                - generic [ref=e79]: Sponsored
+          - listitem [ref=e80]:
+            - link "Nykaa" [ref=e83] [cursor=pointer]:
+              - /url: https://sovrn.co/p9zogj8
+              - generic [ref=e86]:
+                - generic [ref=e87]: Nykaa
+                - generic [ref=e89]: Sponsored
+          - listitem [ref=e90]:
+            - link "Facebook" [ref=e93] [cursor=pointer]:
+              - /url: https://www.facebook.com
+              - generic [ref=e97]: Facebook
+          - listitem [ref=e98]:
+            - link "Microsoft 365" [ref=e101] [cursor=pointer]:
+              - /url: https://www.office.com/?omkt=en-IN
+              - generic [ref=e105]: Microsoft 365
+          - listitem [ref=e106]:
+            - link "X" [ref=e109] [cursor=pointer]:
+              - /url: https://x.com
+              - generic [ref=e113]: X
+          - listitem [ref=e114]:
+            - link "OneDrive" [ref=e117] [cursor=pointer]:
+              - /url: https://onedrive.live.com/?wt.mc_id=oo_msn_msnhomepage_header
+              - generic [ref=e121]: OneDrive
+          - listitem [ref=e122]:
+            - link "Skype" [ref=e125] [cursor=pointer]:
+              - /url: https://www.skype.com/
+              - generic [ref=e129]: Skype
+          - listitem [ref=e130]:
+            - link "OneNote" [ref=e133] [cursor=pointer]:
+              - /url: https://www.onenote.com/notebooks?WT.mc_id=MSN_OneNote_TopMenu&auth=1&wdorigin=msn
+              - generic [ref=e137]: OneNote
+          - listitem [ref=e138]:
+            - link "Maps" [ref=e141] [cursor=pointer]:
+              - /url: https://bing.com/maps/?FORM=MSNMAP
+              - generic [ref=e145]: Maps
+          - listitem [ref=e146]:
+            - link "Microsoft Store" [ref=e149] [cursor=pointer]:
+              - /url: https://www.microsoft.com/en-in
+              - generic [ref=e153]: Microsoft Store
+        - button [ref=e154]:
+          - img [ref=e157]
+      - generic [ref=e159]:
+        - banner [ref=e160]
+        - generic [ref=e165]:
+          - navigation [ref=e167]:
+            - generic [ref=e168]:
+              - list [ref=e169]:
+                - listitem [ref=e170]:
+                  - link "Discover" [ref=e171] [cursor=pointer]:
+                    - /url: https://www.msn.com/en-in
+              - list [ref=e172]:
+                - listitem [ref=e173]:
+                  - link "News" [ref=e174] [cursor=pointer]:
+                    - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f
+                - listitem [ref=e175]:
+                  - link "Sports" [ref=e176] [cursor=pointer]:
+                    - /url: https://www.msn.com/en-in/sports
+                - listitem [ref=e177]:
+                  - link "Play" [ref=e178] [cursor=pointer]:
+                    - /url: https://www.msn.com/en-in/play?cgfrom=cg_home_pivot
+                - listitem [ref=e179]:
+                  - link "Money" [ref=e180] [cursor=pointer]:
+                    - /url: https://www.msn.com/en-in/money
+                - listitem [ref=e181]:
+                  - link "Weather" [ref=e182] [cursor=pointer]:
+                    - /url: https://www.msn.com/en-in/weather
+                - listitem [ref=e183]:
+                  - link "Watch" [ref=e184] [cursor=pointer]:
+                    - /url: https://www.msn.com/en-in/video
+                - listitem [ref=e185]:
+                  - link "Shopping" [ref=e186] [cursor=pointer]:
+                    - /url: https://www.bing.com/shop?entrypoint=msn&adunitId=378983&propertyId=316966&FORM=NVBSHP
+          - generic "Personalize your feed\"" [ref=e188] [cursor=pointer]:
+            - button "Personalize your feed\"" [ref=e189]:
+              - generic:
+                - generic:
+                  - img
+              - generic:
+                - generic: Personalize
+      - main [ref=e192]:
+        - generic [ref=e195]:
+          - generic [ref=e198]:
+            - tablist [ref=e200]:
+              - tab [selected] [ref=e201] [cursor=pointer]
+              - tab [ref=e203] [cursor=pointer]
+              - tab [ref=e205] [cursor=pointer]
+              - tab [ref=e207] [cursor=pointer]
+              - tab [ref=e209] [cursor=pointer]
+              - tab [ref=e211] [cursor=pointer]
+              - tab [ref=e213] [cursor=pointer]
+              - tab [ref=e215] [cursor=pointer]
+              - tab [ref=e217] [cursor=pointer]
+              - tab [ref=e219] [cursor=pointer]
+              - tab [ref=e221] [cursor=pointer]
+              - tab [ref=e223] [cursor=pointer]
+              - tab [ref=e225] [cursor=pointer]
+              - tab [ref=e227] [cursor=pointer]
+              - tab [ref=e229] [cursor=pointer]
+              - tab [ref=e231] [cursor=pointer]
+              - tab [ref=e233] [cursor=pointer]
+              - tab [ref=e235] [cursor=pointer]
+              - tab [ref=e237] [cursor=pointer]
+              - tab [ref=e239] [cursor=pointer]
+              - tab [ref=e241] [cursor=pointer]
+              - tab [ref=e243] [cursor=pointer]
+              - tab [ref=e245] [cursor=pointer]
+              - tab [ref=e247] [cursor=pointer]
+              - tab [ref=e249] [cursor=pointer]
+              - tab [ref=e251] [cursor=pointer]
+              - tab [ref=e253] [cursor=pointer]
+              - tab [ref=e255] [cursor=pointer]
+              - tab [ref=e257] [cursor=pointer]
+              - tab [ref=e259] [cursor=pointer]
+            - button [ref=e263]
+            - button [ref=e266]
+            - 'article "Forget keto and gym: Kidney doctor who lost 40 kg says only one rule truly works for weight loss" [ref=e267] [cursor=pointer]':
+              - generic [ref=e269]:
+                - img [ref=e270]
+                - generic [ref=e271]:
+                  - generic [ref=e272]:
+                    - generic [ref=e274]:
+                      - img [ref=e275]
+                      - generic [ref=e276]: The Economic Times
+                    - 'link "Forget keto and gym: Kidney doctor who lost 40 kg says only one rule truly works for weight loss, The Economic Times" [ref=e277]':
+                      - /url: https://www.msn.com/en-in/health/other/forget-keto-and-gym-kidney-doctor-who-lost-40-kg-says-only-one-rule-truly-works-for-weight-loss/ss-AA1RRVwx
+                      - text: "Forget keto and gym: Kidney doctor who lost 40 kg says only one rule truly works for weight loss"
+                  - 'generic "Forget keto and gym: Kidney doctor who lost 40 kg says only one rule truly works for weight loss" [ref=e280]':
+                    - generic [ref=e282]:
+                      - generic [ref=e283]:
+                        - button "131 Like" [ref=e284]:
+                          - generic [ref=e285]:
+                            - img [ref=e286]
+                            - generic [ref=e288]: "131"
+                        - button "Dislike" [ref=e289]:
+                          - img [ref=e291]
+                      - link "View comments 1 Comment" [ref=e294]:
+                        - /url: https://www.msn.com/en-in/health/other/forget-keto-and-gym-kidney-doctor-who-lost-40-kg-says-only-one-rule-truly-works-for-weight-loss/ss-AA1RRVwx#comments
+                        - button "View comments 1 Comment" [ref=e295]:
+                          - img [ref=e296]
+                        - generic [ref=e298]: "1"
+                - generic [ref=e299]:
+                  - button "Hide this story" [ref=e300]:
+                    - img [ref=e301]
+                    - text: Hide this story
+                  - button "See more" [ref=e302]:
+                    - img [ref=e303]
+          - article [ref=e304] [cursor=pointer]:
+            - generic [ref=e308]:
+              - generic: Sponsored
+          - article "Anushka Sharma’s homeopathy post sparks backlash, the liver doctor calls her ‘illiterate celeb’" [ref=e309] [cursor=pointer]:
+            - generic [ref=e311]:
+              - img [ref=e312]
+              - generic [ref=e313]:
+                - generic [ref=e314]:
+                  - generic [ref=e315]:
+                    - generic [ref=e316]:
+                      - img [ref=e317]
+                      - generic [ref=e318]: Moneycontrol
+                    - generic [ref=e319]: ·
+                    - generic [ref=e320]: 15h
+                  - link "Anushka Sharma’s homeopathy post sparks backlash, the liver doctor calls her ‘illiterate celeb’, Moneycontrol" [ref=e321]:
+                    - /url: https://www.msn.com/en-in/money/topstories/anushka-sharma-s-homeopathy-post-sparks-backlash-the-liver-doctor-calls-her-illiterate-celeb/ar-AA24P9Lh
+                    - text: Anushka Sharma’s homeopathy post sparks backlash, the liver doctor calls her ‘illiterate celeb’
+                - generic "Anushka Sharma’s homeopathy post sparks backlash, the liver doctor calls her ‘illiterate celeb’" [ref=e324]:
+                  - generic [ref=e326]:
+                    - generic [ref=e327]:
+                      - button "46 Like" [ref=e328]:
+                        - generic [ref=e329]:
+                          - img [ref=e330]
+                          - generic [ref=e332]: "46"
+                      - button "Dislike" [ref=e333]:
+                        - img [ref=e335]
+                    - link "View comments 1 Comment" [ref=e338]:
+                      - /url: https://www.msn.com/en-in/money/topstories/anushka-sharma-s-homeopathy-post-sparks-backlash-the-liver-doctor-calls-her-illiterate-celeb/ar-AA24P9Lh#comments
+                      - button "View comments 1 Comment" [ref=e339]:
+                        - img [ref=e340]
+                      - generic [ref=e342]: "1"
+              - generic [ref=e343]:
+                - button "Hide this story" [ref=e344]:
+                  - img [ref=e345]
+                  - text: Hide this story
+                - button "See more" [ref=e346]:
+                  - img [ref=e347]
+          - article "Discover German's newest hearing technology for crystal-clear sound!" [ref=e348] [cursor=pointer]:
+            - generic [ref=e350]:
+              - img [ref=e351]
+              - generic [ref=e352]:
+                - generic [ref=e353]:
+                  - generic [ref=e356]: hear.com
+                  - link "Discover German's newest hearing technology for crystal-clear sound!, hear.com" [ref=e357]:
+                    - /url: https://www.bing.com/api/v1/mediation/tracking?adUnit=1732768568&auId=2be24466-4626-4a9c-8800-7632aef0ba21&bdc=pb&bidId=3&bidderId=4&cmExpId=RSV&impId=8&impTy=1&ldc=xfoczr&mkt=en-in&oAdUnit=1732768568&pId=1&publisherId=17160724&rId=ba171042-d627-48d8-90c2-9f924cd204c9&region=apac&rlink=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8JszgG9331s9jsSFoRQYZAzVUCUyQYH2_oBBqShtHOZUGsKl8VWbcjkZdJYT6fE9sKhxvRh7vOdaRpk13z6_8SbGDmNy6PywPWl25ZAThIGNWuc0ST7acB9TD-XPVwbChLX33NKLGjErPdrFhJP_EuH36ecYwJrdp1DEp-Vw1fJW-aUbYwTCL-r1BtvcpD3Fg66_FYg%26u%3DaHR0cHMlM2ElMmYlMmZpbi5oZWFyLmNvbSUyZmQlMmZlbl9wcmljZV9saXN0X2Rpc3BsYXlfbXNhbiUyZiUzZmFjdCUzZEFDVDAwMDAwOTk2MjRBQ1QlMjZ1dG1fc291cmNlJTNkbWNycy1hdWRpZW5jZS1uZXR3b3JrJTI2dXRtX21lZGl1bSUzZGRpc3BsYXklMjZ1dG1fY2FtcGFpZ24lM2Rpbl9lbl9oZWFfZGlzcGxheV9tY3JzLWF1ZGllbmNlLW5ldHdvcmtfcHJpY2VfbGlzdF9hY3FfbW9iaWxlX21zbl9BQ1QwMDAwMDk5NjI0QUNUJTI2Z2VvJTNkMjYxNjI5JTI2YWRncm91cCUzZDExNTU1ODg2ODI5Nzg4MTclMjZLZXl3b3JkJTNka2V5d29yZCUyNk1hdGNoVHlwZSUzZGUlMjZwb3NpdGlvbiUzZCUyNnV0bV9jb250ZW50JTNkJTI2bmV0d29yayUzZGElMjZwbGFjZW1lbnQlM2QlMjZ1dG1fcHVibGlzaGVyX0lEJTNkJTI2dXRtX3Rlcm0lM2QlMjZtc2Nsa2lkJTNkZjM4NjFiNWYzYjYyMWE1ODcwZjU3MTdkMGNlMWRhYTY%26rlid%3Df3861b5f3b621a5870f5717d0ce1daa6&rtype=targetURL&tagId=hp2-river-1&trafficGroup=zfa_angvir&trafficSubGroup=erfreir&uberGroup=hore_1c&uberSubGroup=erfreir
+                    - text: Discover German's newest hearing technology for crystal-clear sound!
+                - link "Sponsored" [ref=e359]:
+                  - /url: https://www.bing.com/api/v1/mediation/tracking?adUnit=1732768568&auId=2be24466-4626-4a9c-8800-7632aef0ba21&bdc=pb&bidId=3&bidderId=4&cmExpId=RSV&impId=8&impTy=1&ldc=xfoczr&mkt=en-in&oAdUnit=1732768568&pId=1&publisherId=17160724&rId=ba171042-d627-48d8-90c2-9f924cd204c9&region=apac&rlink=https%3A%2F%2Fwww.bing.com%2Faclick%3Fld%3De8JszgG9331s9jsSFoRQYZAzVUCUyQYH2_oBBqShtHOZUGsKl8VWbcjkZdJYT6fE9sKhxvRh7vOdaRpk13z6_8SbGDmNy6PywPWl25ZAThIGNWuc0ST7acB9TD-XPVwbChLX33NKLGjErPdrFhJP_EuH36ecYwJrdp1DEp-Vw1fJW-aUbYwTCL-r1BtvcpD3Fg66_FYg%26u%3DaHR0cHMlM2ElMmYlMmZpbi5oZWFyLmNvbSUyZmQlMmZlbl9wcmljZV9saXN0X2Rpc3BsYXlfbXNhbiUyZiUzZmFjdCUzZEFDVDAwMDAwOTk2MjRBQ1QlMjZ1dG1fc291cmNlJTNkbWNycy1hdWRpZW5jZS1uZXR3b3JrJTI2dXRtX21lZGl1bSUzZGRpc3BsYXklMjZ1dG1fY2FtcGFpZ24lM2Rpbl9lbl9oZWFfZGlzcGxheV9tY3JzLWF1ZGllbmNlLW5ldHdvcmtfcHJpY2VfbGlzdF9hY3FfbW9iaWxlX21zbl9BQ1QwMDAwMDk5NjI0QUNUJTI2Z2VvJTNkMjYxNjI5JTI2YWRncm91cCUzZDExNTU1ODg2ODI5Nzg4MTclMjZLZXl3b3JkJTNka2V5d29yZCUyNk1hdGNoVHlwZSUzZGUlMjZwb3NpdGlvbiUzZCUyNnV0bV9jb250ZW50JTNkJTI2bmV0d29yayUzZGElMjZwbGFjZW1lbnQlM2QlMjZ1dG1fcHVibGlzaGVyX0lEJTNkJTI2dXRtX3Rlcm0lM2QlMjZtc2Nsa2lkJTNkZjM4NjFiNWYzYjYyMWE1ODcwZjU3MTdkMGNlMWRhYTY%26rlid%3Df3861b5f3b621a5870f5717d0ce1daa6&rtype=targetURL&tagId=hp2-river-1&trafficGroup=zfa_angvir&trafficSubGroup=erfreir&uberGroup=hore_1c&uberSubGroup=erfreir
+              - button "See more" [ref=e361]:
+                - img [ref=e362]
+          - article [ref=e363] [cursor=pointer]:
+            - generic [ref=e368]:
+              - generic [ref=e370]:
+                - link "Games" [ref=e372]:
+                  - /url: https://www.msn.com/en-in/play?ocid=msedgntp&cgfrom=cg_ntp_sd_cardtitle
+                  - heading "Games" [level=2] [ref=e373]
+                - button "More options" [ref=e375]
+              - list [ref=e379]:
+                - generic:
+                  - listitem [ref=e380]:
+                    - link "Casino Heist Slots" [ref=e381]:
+                      - /url: https://www.msn.com/en-in/play/games/casino-heist-slots/cg-9mt0xqt1zlbq?cgfrom=cg_ntp_sd_cardgameitem&ocid=hpmsn&cvid=6a22377e2c6e46beab7db944d0e1b3b2&ei=3
+                      - generic [ref=e382]:
+                        - img "Casino Heist Slots"
+                  - listitem [ref=e383]:
+                    - link "Slots Lounge" [ref=e384]:
+                      - /url: https://www.msn.com/en-in/play/games/slots-lounge/cg-9nnwpnjtvmgl?cgfrom=cg_ntp_sd_cardgameitem&ocid=hpmsn&cvid=6a22377e2c6e46beab7db944d0e1b3b2&ei=3
+                      - generic [ref=e385]:
+                        - img "Slots Lounge"
+                  - listitem [ref=e386]:
+                    - link "Sudoku Master" [ref=e387]:
+                      - /url: https://www.msn.com/en-in/play/games/sudoku-master/cg-9nsq1zfk0z36?cgfrom=cg_ntp_sd_cardgameitem&ocid=hpmsn&cvid=6a22377e2c6e46beab7db944d0e1b3b2&ei=3
+                      - generic [ref=e388]:
+                        - img "Sudoku Master"
+                  - listitem [ref=e389]:
+                    - link "Color Fill 3D" [ref=e390]:
+                      - /url: https://www.msn.com/en-in/play/games/color-fill-3d/cg-9n1lxftghk59?cgfrom=cg_ntp_sd_cardgameitem&ocid=hpmsn&cvid=6a22377e2c6e46beab7db944d0e1b3b2&ei=3
+                      - generic [ref=e391]:
+                        - img "Color Fill 3D"
+                  - listitem [ref=e392]:
+                    - link "Amazing Spider Solitaire" [ref=e393]:
+                      - /url: https://www.msn.com/en-in/play/games/amazing-spider-solitaire/cg-9pl8blkwr1n2?cgfrom=cg_ntp_sd_cardgameitem&ocid=hpmsn&cvid=6a22377e2c6e46beab7db944d0e1b3b2&ei=3
+                      - generic [ref=e394]:
+                        - img "Amazing Spider Solitaire"
+                  - listitem [ref=e395]:
+                    - link "Car Park Simulator" [ref=e396]:
+                      - /url: https://www.msn.com/en-in/play/games/car-park-simulator/cg-9n96gnlxsktg?cgfrom=cg_ntp_sd_cardgameitem&ocid=hpmsn&cvid=6a22377e2c6e46beab7db944d0e1b3b2&ei=3
+                      - generic [ref=e397]:
+                        - img "Car Park Simulator"
+                  - listitem [ref=e398]:
+                    - link "Draw the Bridge" [ref=e399]:
+                      - /url: https://www.msn.com/en-in/play/games/draw-the-bridge/cg-9nvq40981t9r?cgfrom=cg_ntp_sd_cardgameitem&ocid=hpmsn&cvid=6a22377e2c6e46beab7db944d0e1b3b2&ei=3
+                      - generic [ref=e400]:
+                        - img "Draw the Bridge"
+                  - listitem [ref=e401]:
+                    - link "Plumber World" [ref=e402]:
+                      - /url: https://www.msn.com/en-in/play/games/plumber-world/cg-9n4hmnpm6mvj?cgfrom=cg_ntp_sd_cardgameitem&ocid=hpmsn&cvid=6a22377e2c6e46beab7db944d0e1b3b2&ei=3
+                      - generic [ref=e403]:
+                        - img "Plumber World"
+                  - listitem [ref=e404]:
+                    - link "Stickman Parkour" [ref=e405]:
+                      - /url: https://www.msn.com/en-in/play/games/stickman-parkour/cg-9nz8j2k2m5jb?cgfrom=cg_ntp_sd_cardgameitem&ocid=hpmsn&cvid=6a22377e2c6e46beab7db944d0e1b3b2&ei=3
+                      - generic [ref=e406]:
+                        - img "Stickman Parkour"
+              - generic [ref=e408]:
+                - generic [ref=e409]:
+                  - generic "Previous" [ref=e410]:
+                    - button "Previous" [ref=e411]
+                  - tablist [ref=e413]:
+                    - tab "tab-0" [selected] [ref=e414]
+                    - tab "tab-1" [ref=e416]
+                  - generic "Next" [ref=e418]:
+                    - button "Next" [ref=e419]
+                - link "Explore more games" [ref=e421]:
+                  - /url: https://www.msn.com/en-in/play?ocid=msedgntp&cgfrom=cg_ntp_sd_cardseemore
+          - 'article "Go beyond performance: Intel®" [ref=e422] [cursor=pointer]':
+            - generic [ref=e424]:
+              - img [ref=e425]
+              - generic [ref=e426]:
+                - generic [ref=e427]:
+                  - generic [ref=e430]: Intel
+                  - 'link "Go beyond performance: Intel®, Intel" [ref=e431]':
+                    - /url: https://msft-ssp-apac.adnxs.com/click2?e=wqT_3QKkAfBDpAAAAAMAxBkFAQiD74jRBhCp_9DO9Pf_sFwYja7lkLqn795rIO77sBAomAIwnxc4twFAjp7R5AJI8opOUABaA1VTRGIBBZBoAXABeJmgZ4ABptMFiAEBkAEAmAEFoAECqQHsH975VZCEP7EBEQoouQEAAADgUbiuP8EVHgDJFQpA2AGOvQLgAQDwAYbxxgj4AQA./s=11c89fbf07b4b2ac4c91a3debceaa17b290724e7/bcr=AAAAAAAA8D8=/pp=0.01/bn=92582/clickenc=https%3A%2F%2Fpn.ybp.yahoo.com%2Fcj%2Fcrid%2Flb-5-3Q63ML4u17Zfb_rdFGnMKSub9ds%2Fcd%2FhcqDQiHqTfParF9J4w9kugtCV-j9Eonbmq2WfWfAk5C-BLhtZsHdebqc-8j5hzbCHDU-3RcN0LuAV4ruiUqCcG4WxqHnX_ZQubVgMZqYsSKuJXMIlwi3JibazeM6QGh5nyfLHyWYsLEKtNqB28MA4Gi8jEJ03k_9Hg36yV1Ft0WLQTsHMlA8aSldPoi8ITkmKdahLNg5j-dxVPHehLSpfxXczkjIUlmPQc-Dw_RzR6M-dVS_CPzCr8gRwIjM7admp9BF66z5JSE%2Frurl%2Fhttps%3A%2F%2Fgame.intel.com%2Fus%2Fcore-gaming%2F%3Fcid%3Ddiad%26source%3Dgcm%26campid%3D35740953%26sid%3D4309167%26plid%3D445608366%26aid%3D638686164%26crid%3D254693421%26dclid%3DCNXB7Ku0kJQDFXJNqwIdLOoRhQ%26gad_source%3D7%26gad_campaignid%3D23771150595
+                    - text: "Go beyond performance: Intel®"
+                - link "Sponsored" [ref=e433]:
+                  - /url: https://msft-ssp-apac.adnxs.com/click2?e=wqT_3QKkAfBDpAAAAAMAxBkFAQiD74jRBhCp_9DO9Pf_sFwYja7lkLqn795rIO77sBAomAIwnxc4twFAjp7R5AJI8opOUABaA1VTRGIBBZBoAXABeJmgZ4ABptMFiAEBkAEAmAEFoAECqQHsH975VZCEP7EBEQoouQEAAADgUbiuP8EVHgDJFQpA2AGOvQLgAQDwAYbxxgj4AQA./s=11c89fbf07b4b2ac4c91a3debceaa17b290724e7/bcr=AAAAAAAA8D8=/pp=0.01/bn=92582/clickenc=https%3A%2F%2Fpn.ybp.yahoo.com%2Fcj%2Fcrid%2Flb-5-3Q63ML4u17Zfb_rdFGnMKSub9ds%2Fcd%2FhcqDQiHqTfParF9J4w9kugtCV-j9Eonbmq2WfWfAk5C-BLhtZsHdebqc-8j5hzbCHDU-3RcN0LuAV4ruiUqCcG4WxqHnX_ZQubVgMZqYsSKuJXMIlwi3JibazeM6QGh5nyfLHyWYsLEKtNqB28MA4Gi8jEJ03k_9Hg36yV1Ft0WLQTsHMlA8aSldPoi8ITkmKdahLNg5j-dxVPHehLSpfxXczkjIUlmPQc-Dw_RzR6M-dVS_CPzCr8gRwIjM7admp9BF66z5JSE%2Frurl%2Fhttps%3A%2F%2Fgame.intel.com%2Fus%2Fcore-gaming%2F%3Fcid%3Ddiad%26source%3Dgcm%26campid%3D35740953%26sid%3D4309167%26plid%3D445608366%26aid%3D638686164%26crid%3D254693421%26dclid%3DCNXB7Ku0kJQDFXJNqwIdLOoRhQ%26gad_source%3D7%26gad_campaignid%3D23771150595
+              - button "See more" [ref=e435]:
+                - img [ref=e436]
+          - 'article "The Delhi fire disaster: Family of eight dies in minutes" [ref=e437] [cursor=pointer]':
+            - generic [ref=e439]:
+              - generic [ref=e443]:
+                - generic [ref=e444]:
+                  - generic [ref=e445]:
+                    - generic [ref=e446]:
+                      - img [ref=e447]
+                      - generic [ref=e448]: NDTV 24x7
+                    - generic [ref=e449]: ·
+                    - generic [ref=e450]: 7h
+                  - 'link "The Delhi fire disaster: Family of eight dies in minutes, NDTV 24x7" [ref=e451]':
+                    - /url: https://www.msn.com/en-in/news/other/the-delhi-fire-disaster-family-of-eight-dies-in-minutes/vi-AA24QGFt
+                    - text: "The Delhi fire disaster: Family of eight dies in minutes"
+                - 'generic "The Delhi fire disaster: Family of eight dies in minutes" [ref=e454]':
+                  - generic [ref=e456]:
+                    - generic [ref=e457]:
+                      - button "1 Like" [ref=e458]:
+                        - generic [ref=e459]:
+                          - img [ref=e460]
+                          - generic [ref=e462]: "1"
+                      - button "Dislike" [ref=e463]:
+                        - img [ref=e465]
+                    - link "Start the conversation" [ref=e468]:
+                      - /url: https://www.msn.com/en-in/news/other/the-delhi-fire-disaster-family-of-eight-dies-in-minutes/vi-AA24QGFt#comments
+                      - button "Start the conversation" [ref=e469]:
+                        - img [ref=e470]
+              - generic [ref=e472]:
+                - button "Hide this story" [ref=e473]:
+                  - img [ref=e474]
+                  - text: Hide this story
+                - button "See more" [ref=e475]:
+                  - img [ref=e476]
+          - 'article "GK: Which Indian city is called the litchi capital of the world?" [ref=e477] [cursor=pointer]':
+            - generic [ref=e479]:
+              - img [ref=e480]
+              - generic [ref=e481]:
+                - generic [ref=e482]:
+                  - generic [ref=e483]:
+                    - generic [ref=e484]:
+                      - img [ref=e485]
+                      - generic [ref=e486]: News18
+                    - generic [ref=e487]: ·
+                    - generic [ref=e488]: 2w
+                  - 'link "GK: Which Indian city is called the litchi capital of the world?, News18" [ref=e489]':
+                    - /url: https://www.msn.com/en-in/travel/tripideas/gk-which-indian-city-is-called-the-litchi-capital-of-the-world/ss-AA23ywsO
+                    - text: "GK: Which Indian city is called the litchi capital of the world?"
+                - 'generic "GK: Which Indian city is called the litchi capital of the world?" [ref=e492]':
+                  - generic [ref=e494]:
+                    - generic [ref=e495]:
+                      - button "449 Like" [ref=e496]:
+                        - generic [ref=e497]:
+                          - img [ref=e498]
+                          - generic [ref=e500]: "449"
+                      - button "Dislike" [ref=e501]:
+                        - img [ref=e503]
+                    - link "View comments 6 Comment" [ref=e506]:
+                      - /url: https://www.msn.com/en-in/travel/tripideas/gk-which-indian-city-is-called-the-litchi-capital-of-the-world/ss-AA23ywsO#comments
+                      - button "View comments 6 Comment" [ref=e507]:
+                        - img [ref=e508]
+                      - generic [ref=e510]: "6"
+              - generic [ref=e511]:
+                - button "Hide this story" [ref=e512]:
+                  - img [ref=e513]
+                  - text: Hide this story
+                - button "See more" [ref=e514]:
+                  - img [ref=e515]
+          - article [ref=e516] [cursor=pointer]:
+            - generic [ref=e521]:
+              - generic [ref=e523]:
+                - link "Top stories" [ref=e525]:
+                  - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f?cvid=6a22377e2c6e46beab7db944d0e1b3b2&ocid=hpmsn
+                  - heading "Top stories" [level=2] [ref=e526]
+                - button "More options" [ref=e528]
+              - list [ref=e531]:
+                - 'listitem "PM Modi ''good friend of mine'': Trump says India-US trade deal likely soon" [ref=e532]':
+                  - generic [ref=e533]:
+                    - generic [ref=e534]:
+                      - img [ref=e535]
+                      - generic [ref=e536]:
+                        - generic: WION ·now
+                    - generic [ref=e537]: "PM Modi 'good friend of mine': Trump says India-US trade deal likely soon"
+                - listitem "BJP names 11 candidates for Rajya Sabha elections. Check full list" [ref=e538]:
+                  - generic [ref=e539]:
+                    - generic [ref=e540]:
+                      - img [ref=e541]
+                      - generic [ref=e542]:
+                        - generic: Hindustan Times ·1h
+                    - generic [ref=e543]: BJP names 11 candidates for Rajya Sabha elections. Check full list
+                - listitem "Vladimir Putin praises PM Modi, Xi Jinping; says Russia won't interfere in 'delicate' India-China ties" [ref=e544]:
+                  - generic [ref=e545]:
+                    - generic [ref=e546]:
+                      - img [ref=e547]
+                      - generic [ref=e548]:
+                        - generic: Times Now ·1h
+                    - generic [ref=e549]: Vladimir Putin praises PM Modi, Xi Jinping; says Russia won't interfere in 'delicate' India-China ties
+              - generic [ref=e551]:
+                - generic [ref=e552]:
+                  - generic "Previous" [ref=e553]:
+                    - button "Previous" [ref=e554]
+                  - tablist [ref=e556]:
+                    - tab "tab-0" [selected] [ref=e557]
+                    - tab "tab-1" [ref=e559]
+                    - tab "tab-2" [ref=e561]
+                  - generic "Next" [ref=e563]:
+                    - button "Next" [ref=e564]
+                - link "See more" [ref=e566]:
+                  - /url: https://www.msn.com/en-in/channel/topic/Top%20stories/tp-Y_0b495ad3-9beb-45f8-9214-c8e95aa2468f?cvid=6a22377e2c6e46beab7db944d0e1b3b2&ocid=hpmsn
+    - contentinfo [ref=e569]:
+      - generic "Feedback" [ref=e571] [cursor=pointer]:
+        - button "Feedback" [ref=e572]:
+          - generic:
+            - generic:
+              - img
+          - generic:
+            - generic: Feedback
